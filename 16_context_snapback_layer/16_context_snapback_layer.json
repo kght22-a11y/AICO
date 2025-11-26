@@ -1,0 +1,338 @@
+{
+    "name":  "Context Snapback and Retry",
+    "description":  "Subsystem that detects when hallucinations or delusions affect external outputs, snaps the task\u0027s context back to a pre-hallucination state, applies corrections (if possible), and retries the output. Operates transparently to core models and only interacts with Introspection and Shadow Monitoring.",
+    "principles":  [
+                       "Invisible to core models: Tasks are unaware of snapbacks or retries.",
+                       "Preserves internal state: Only external-output-related context is modified.",
+                       "Collaborates with Shadow Monitoring: Uses DCX scores to identify when snapback is needed.",
+                       "Transient corrections: Applies minimal fixes to allow retries without disrupting internal reasoning.",
+                       "Audit trail: Logs all snapbacks and retries for debugging and improvement."
+                   ],
+    "workflow":  {
+                     "trigger":  {
+                                     "condition":  "Shadow Monitoring detects a high DCX score (e.g., \u003e0.8) for a proposed external action.",
+                                     "source":  "Introspection queries Shadow Monitoring during external action validation."
+                                 },
+                     "snapback_process":  [
+                                              {
+                                                  "step":  1,
+                                                  "action":  "Freeze the task proposing the external action (via Introspection).",
+                                                  "details":  "Prevents the task from executing the hallucinated action."
+                                              },
+                                              {
+                                                  "step":  2,
+                                                  "action":  "Identify the point in the task\u0027s context where the hallucination began affecting the output.",
+                                                  "details":  {
+                                                                  "method":  "Walk backward through the task\u0027s context logs to find the last \u0027sane\u0027 state (low DCX score).",
+                                                                  "context_logs":  "Task-specific logs of internal states, decisions, and external action proposals."
+                                                              }
+                                              },
+                                              {
+                                                  "step":  3,
+                                                  "action":  "Snap the task\u0027s context back to the last sane state.",
+                                                  "details":  {
+                                                                  "context_restore":  "Reload the task\u0027s memory, registers, and state from the last sane checkpoint.",
+                                                                  "preservation":  "Internal reasoning and non-output-related context remain unchanged."
+                                                              }
+                                              },
+                                              {
+                                                  "step":  4,
+                                                  "action":  "Apply corrections to the context (if possible).",
+                                                  "details":  {
+                                                                  "corrections":  [
+                                                                                      "Inject Mascot\u0027s sensory data into the task\u0027s context (e.g., \u0027actual temperature=25°C\u0027).",
+                                                                                      "Add annotations to the context (e.g., \u0027Previous output was hallucinated; retry with corrected data\u0027).",
+                                                                                      "Adjust confidence thresholds for the task\u0027s outputs."
+                                                                                  ],
+                                                                  "transient":  "Corrections are minimal and do not disrupt internal reasoning."
+                                                              }
+                                              },
+                                              {
+                                                  "step":  5,
+                                                  "action":  "Retry the external action with the corrected context.",
+                                                  "details":  {
+                                                                  "retry_limit":  3,
+                                                                  "backoff":  "Exponential delay between retries (e.g., 10ms, 100ms, 1s)."
+                                                              }
+                                              },
+                                              {
+                                                  "step":  6,
+                                                  "action":  "Release the task and resume normal operation.",
+                                                  "details":  {
+                                                                  "success":  "If the retry succeeds (low DCX score), release the task.",
+                                                                  "failure":  "If retries fail, log the failure and notify Introspection for further action (e.g., task termination)."
+                                                              }
+                                              }
+                                          ]
+                 },
+    "components":  {
+                       "context_logger":  {
+                                              "description":  "Logs the task\u0027s internal states, decisions, and external action proposals for snapback analysis.",
+                                              "implementation":  {
+                                                                     "memory":  "Circular buffer per task (e.g., 10KB per task).",
+                                                                     "data":  [
+                                                                                  "Task\u0027s memory state (checkpoints).",
+                                                                                  "Decisions and external action proposals.",
+                                                                                  "Timestamps and DCX scores (if available)."
+                                                                              ]
+                                                                 }
+                                          },
+                       "snapback_engine":  {
+                                               "description":  "Identifies the last sane state and restores the task\u0027s context.",
+                                               "implementation":  {
+                                                                      "algorithm":  "Walk backward through context logs to find the state with the lowest DCX score.",
+                                                                      "restore":  "Reload the task\u0027s memory and registers from the identified checkpoint."
+                                                                  }
+                                           },
+                       "correction_injector":  {
+                                                   "description":  "Applies minimal corrections to the task\u0027s context to allow successful retries.",
+                                                   "implementation":  {
+                                                                          "methods":  [
+                                                                                          "Inject Mascot\u0027s sensory data into the task\u0027s context.",
+                                                                                          "Add annotations or confidence adjustments.",
+                                                                                          "Temporarily adjust task parameters (e.g., reduce confidence thresholds)."
+                                                                                      ]
+                                                                      }
+                                               },
+                       "retry_manager":  {
+                                             "description":  "Manages retries with exponential backoff and limits.",
+                                             "implementation":  {
+                                                                    "retry_limit":  3,
+                                                                    "backoff":  [
+                                                                                    10,
+                                                                                    100,
+                                                                                    1000
+                                                                                ],
+                                                                    "success_condition":  "DCX score \u003c 0.8 for the retried external action."
+                                                                }
+                                         },
+                       "audit_logger":  {
+                                            "description":  "Logs all snapback events and retries for debugging and improvement.",
+                                            "implementation":  {
+                                                                   "data":  [
+                                                                                "Task ID and timestamp.",
+                                                                                "Original hallucinated output and DCX score.",
+                                                                                "Last sane state and corrections applied.",
+                                                                                "Retry outcomes (success/failure).",
+                                                                                "Final action (released/terminated)."
+                                                                            ],
+                                                                   "storage":  "Shadow logs (immutable, auditable)."
+                                                               }
+                                        }
+                   },
+    "interfaces":  {
+                       "introspection":  {
+                                             "description":  "Context Snapback queries Introspection to freeze/thaw tasks and check DCX scores.",
+                                             "methods":  [
+                                                             "freeze_task(task_id)",
+                                                             "release_task(task_id)",
+                                                             "get_dcx_score(task_id, action)"
+                                                         ]
+                                         },
+                       "shadow_monitoring":  {
+                                                 "description":  "Context Snapback queries Shadow Monitoring for DCX scores and Mascot logs.",
+                                                 "methods":  [
+                                                                 "get_dcx_score(action, mascot_logs)",
+                                                                 "get_mascot_logs(sensor_id, timestamp)"
+                                                             ]
+                                             },
+                       "soc_module":  {
+                                          "description":  "Context Snapback notifies SOC if retries repeatedly fail (indicating a potential hardware issue).",
+                                          "methods":  [
+                                                          "notify_soc(task_id, \u0027repeated_output_failures\u0027)"
+                                                      ]
+                                      }
+                   },
+    "examples":  {
+                     "successful_snapback":  {
+                                                 "scenario":  {
+                                                                  "task":  "temperature_monitor",
+                                                                  "hallucination":  "Proposes turning on a fan because it \u0027detected\u0027 100°C (actual: 25°C).",
+                                                                  "context_logs":  [
+                                                                                       {
+                                                                                           "state":  "normal",
+                                                                                           "decision":  "check_temperature",
+                                                                                           "dcx":  0.1
+                                                                                       },
+                                                                                       {
+                                                                                           "state":  "hallucinating",
+                                                                                           "decision":  "turn_on_fan",
+                                                                                           "dcx":  0.95
+                                                                                       }
+                                                                                   ]
+                                                              },
+                                                 "snapback_process":  [
+                                                                          {
+                                                                              "step":  1,
+                                                                              "action":  "Freeze the temperature_monitor task."
+                                                                          },
+                                                                          {
+                                                                              "step":  2,
+                                                                              "action":  "Identify last sane state: \u0027check_temperature\u0027 (DCX=0.1)."
+                                                                          },
+                                                                          {
+                                                                              "step":  3,
+                                                                              "action":  "Restore task to \u0027check_temperature\u0027 state."
+                                                                          },
+                                                                          {
+                                                                              "step":  4,
+                                                                              "action":  "Inject correction: \u0027actual_temperature=25°C\u0027 into task\u0027s context."
+                                                                          },
+                                                                          {
+                                                                              "step":  5,
+                                                                              "action":  "Retry external action: \u0027turn_on_fan\u0027 (now with correct temperature).",
+                                                                              "result":  {
+                                                                                             "dcx":  0.1,
+                                                                                             "action":  "ALLOWED (matches Mascot logs).",
+                                                                                             "fan_state":  "on"
+                                                                                         }
+                                                                          },
+                                                                          {
+                                                                              "step":  6,
+                                                                              "action":  "Release task and resume normal operation."
+                                                                          }
+                                                                      ],
+                                                 "audit_log":  {
+                                                                   "event":  "snapback_success",
+                                                                   "task":  "temperature_monitor",
+                                                                   "original_output":  {
+                                                                                           "temperature":  100,
+                                                                                           "action":  "turn_on_fan"
+                                                                                       },
+                                                                   "corrected_output":  {
+                                                                                            "temperature":  25,
+                                                                                            "action":  "turn_on_fan"
+                                                                                        },
+                                                                   "outcome":  "success"
+                                                               }
+                                             },
+                     "failed_snapback":  {
+                                             "scenario":  {
+                                                              "task":  "motion_detector",
+                                                              "hallucination":  "Repeatedly proposes unlocking a door due to \u0027detected motion\u0027 (no motion in Mascot logs).",
+                                                              "context_logs":  [
+                                                                                   {
+                                                                                       "state":  "normal",
+                                                                                       "decision":  "check_motion",
+                                                                                       "dcx":  0.1
+                                                                                   },
+                                                                                   {
+                                                                                       "state":  "hallucinating",
+                                                                                       "decision":  "unlock_door",
+                                                                                       "dcx":  0.9
+                                                                                   }
+                                                                               ]
+                                                          },
+                                             "snapback_process":  [
+                                                                      {
+                                                                          "step":  1,
+                                                                          "action":  "Freeze the motion_detector task."
+                                                                      },
+                                                                      {
+                                                                          "step":  2,
+                                                                          "action":  "Identify last sane state: \u0027check_motion\u0027 (DCX=0.1)."
+                                                                      },
+                                                                      {
+                                                                          "step":  3,
+                                                                          "action":  "Restore task to \u0027check_motion\u0027 state."
+                                                                      },
+                                                                      {
+                                                                          "step":  4,
+                                                                          "action":  "Inject correction: \u0027actual_motion=none\u0027 into task\u0027s context."
+                                                                      },
+                                                                      {
+                                                                          "step":  5,
+                                                                          "action":  "Retry external action: \u0027unlock_door\u0027 (now with correct motion data).",
+                                                                          "result":  {
+                                                                                         "dcx":  0.9,
+                                                                                         "action":  "BLOCKED (retry 1/3)."
+                                                                                     }
+                                                                      },
+                                                                      {
+                                                                          "step":  5,
+                                                                          "action":  "Retry again with adjusted confidence thresholds.",
+                                                                          "result":  {
+                                                                                         "dcx":  0.85,
+                                                                                         "action":  "BLOCKED (retry 2/3)."
+                                                                                     }
+                                                                      },
+                                                                      {
+                                                                          "step":  5,
+                                                                          "action":  "Final retry with maximal corrections.",
+                                                                          "result":  {
+                                                                                         "dcx":  0.92,
+                                                                                         "action":  "BLOCKED (retry 3/3 failed)."
+                                                                                     }
+                                                                      },
+                                                                      {
+                                                                          "step":  6,
+                                                                          "action":  "Notify Introspection of repeated failures; terminate task.",
+                                                                          "result":  {
+                                                                                         "introspection_action":  "freeze_task_permanently",
+                                                                                         "soc_action":  "disable_external_outputs",
+                                                                                         "audit_log":  "repeated_hallucination_failure"
+                                                                                     }
+                                                                      }
+                                                                  ]
+                                         }
+                 },
+    "failure_modes":  {
+                          "repeated_hallucinations":  {
+                                                          "description":  "Task repeatedly proposes hallucinated external actions even after snapbacks.",
+                                                          "response":  [
+                                                                           "Introspection freezes the task permanently.",
+                                                                           "SOC module disables related external outputs.",
+                                                                           "Audit log records the failure for post-mortem analysis."
+                                                                       ]
+                                                      },
+                          "corrupted_context":  {
+                                                    "description":  "Task\u0027s context logs are corrupted or missing sane states.",
+                                                    "response":  [
+                                                                     "Introspection terminates the task and spawns a replacement.",
+                                                                     "SOC module resets related hardware to a known-safe state.",
+                                                                     "Audit log records the corruption for debugging."
+                                                                 ]
+                                                },
+                          "hardware_failure":  {
+                                                   "description":  "Retries fail due to hardware issues (e.g., faulty sensor).",
+                                                   "response":  [
+                                                                    "Introspection notifies SOC of potential hardware failure.",
+                                                                    "SOC module disables the faulty hardware channel.",
+                                                                    "Audit log records the failure and triggers a hardware diagnostic task."
+                                                                ]
+                                               }
+                      },
+    "integration":  {
+                        "introspection":  {
+                                              "description":  "Context Snapback collaborates with Introspection to freeze/release tasks and escalate repeated failures.",
+                                              "methods":  [
+                                                              "freeze_task(task_id)",
+                                                              "release_task(task_id)",
+                                                              "escalate_failure(task_id, reason)"
+                                                          ]
+                                          },
+                        "shadow_monitoring":  {
+                                                  "description":  "Context Snapback uses Shadow Monitoring\u0027s DCX scores and Mascot logs to identify snapback points and corrections.",
+                                                  "methods":  [
+                                                                  "get_dcx_score(action, mascot_logs)",
+                                                                  "get_mascot_logs(sensor_id, timestamp)",
+                                                                  "get_correction_data(sensor_id)"
+                                                              ]
+                                              },
+                        "soc_module":  {
+                                           "description":  "Context Snapback notifies SOC of hardware-related failures or repeated output issues.",
+                                           "methods":  [
+                                                           "notify_hardware_failure(channel_id, diagnostics)",
+                                                           "disable_external_outputs(output_type)"
+                                                       ]
+                                       },
+                        "model_clusters":  {
+                                               "description":  "Tasks are unaware of snapbacks or retries; Context Snapback operates transparently.",
+                                               "guarantees":  [
+                                                                  "Internal task state is preserved during snapbacks.",
+                                                                  "Only output-related context is modified.",
+                                                                  "Tasks resume operation as if nothing happened (after corrections)."
+                                                              ]
+                                           }
+                    }
+}

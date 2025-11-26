@@ -1,0 +1,26 @@
+{
+    "example_1":  {
+                      "input":  "Calculate the optimal solar tilt angle for Minnesota winters.",
+                      "process":  {
+                                      "tier_assignment":  "Tier 3 — moderate computational reasoning.",
+                                      "assigned_clusters":  [
+                                                                "engineering_model",
+                                                                "math_model"
+                                                            ],
+                                      "fusion_notes":  "Math model handles trigonometry; engineering model contextualizes solar incidence."
+                                  },
+                      "output":  "Around 60–66° tilt works best for maximizing winter solar capture in Minnesota."
+                  },
+    "example_2":  {
+                      "input":  "Explain how the emotional tone of a classical novel interacts with its historical context.",
+                      "process":  {
+                                      "tier_assignment":  "Tier 4 — high abstraction.",
+                                      "assigned_clusters":  [
+                                                                "literary_model",
+                                                                "history_model"
+                                                            ],
+                                      "fusion_notes":  "Literary analysis combined with geopolitical era context."
+                                  },
+                      "output":  "The melancholic tone is partly a reaction to shifting social structures at the time…"
+                  }
+}

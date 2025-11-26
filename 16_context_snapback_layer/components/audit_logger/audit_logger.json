@@ -1,0 +1,13 @@
+{
+    "description":  "Logs all snapback events and retries for debugging and improvement.",
+    "implementation":  {
+                           "data":  [
+                                        "Task ID and timestamp.",
+                                        "Original hallucinated output and DCX score.",
+                                        "Last sane state and corrections applied.",
+                                        "Retry outcomes (success/failure).",
+                                        "Final action (released/terminated)."
+                                    ],
+                           "storage":  "Shadow logs (immutable, auditable)."
+                       }
+}

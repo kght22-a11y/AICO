@@ -1,0 +1,10 @@
+{
+    "overdispatch":  {
+                         "description":  "Too many models get invoked, causing unnecessary complexity.",
+                         "mitigation":  "Adaptive dispatch heuristics."
+                     },
+    "underdipatch":  {
+                         "description":  "Hard problems routed to the wrong simple model.",
+                         "mitigation":  "Shadow feedback cross-check."
+                     }
+}

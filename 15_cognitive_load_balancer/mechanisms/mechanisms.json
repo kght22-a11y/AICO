@@ -1,0 +1,6 @@
+{
+    "load_measurement":  "Analyzes token density, branching factor, and complexity profile.",
+    "cluster_dispatcher":  "Routes subtasks to engineering, linguistic, planning, or safety submodels.",
+    "parallel_reasoner":  "Allows concurrent reasoning threads when safe.",
+    "termination_controller":  "Prevents infinite internal recursion or overthinking."
+}

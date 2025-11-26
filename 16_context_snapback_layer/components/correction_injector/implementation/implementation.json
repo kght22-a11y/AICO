@@ -1,0 +1,7 @@
+{
+    "methods":  [
+                    "Inject Mascot\u0027s sensory data into the task\u0027s context.",
+                    "Add annotations or confidence adjustments.",
+                    "Temporarily adjust task parameters (e.g., reduce confidence thresholds)."
+                ]
+}

@@ -1,0 +1,55 @@
+{
+    "context_logger":  {
+                           "description":  "Logs the task\u0027s internal states, decisions, and external action proposals for snapback analysis.",
+                           "implementation":  {
+                                                  "memory":  "Circular buffer per task (e.g., 10KB per task).",
+                                                  "data":  [
+                                                               "Task\u0027s memory state (checkpoints).",
+                                                               "Decisions and external action proposals.",
+                                                               "Timestamps and DCX scores (if available)."
+                                                           ]
+                                              }
+                       },
+    "snapback_engine":  {
+                            "description":  "Identifies the last sane state and restores the task\u0027s context.",
+                            "implementation":  {
+                                                   "algorithm":  "Walk backward through context logs to find the state with the lowest DCX score.",
+                                                   "restore":  "Reload the task\u0027s memory and registers from the identified checkpoint."
+                                               }
+                        },
+    "correction_injector":  {
+                                "description":  "Applies minimal corrections to the task\u0027s context to allow successful retries.",
+                                "implementation":  {
+                                                       "methods":  [
+                                                                       "Inject Mascot\u0027s sensory data into the task\u0027s context.",
+                                                                       "Add annotations or confidence adjustments.",
+                                                                       "Temporarily adjust task parameters (e.g., reduce confidence thresholds)."
+                                                                   ]
+                                                   }
+                            },
+    "retry_manager":  {
+                          "description":  "Manages retries with exponential backoff and limits.",
+                          "implementation":  {
+                                                 "retry_limit":  3,
+                                                 "backoff":  [
+                                                                 10,
+                                                                 100,
+                                                                 1000
+                                                             ],
+                                                 "success_condition":  "DCX score \u003c 0.8 for the retried external action."
+                                             }
+                      },
+    "audit_logger":  {
+                         "description":  "Logs all snapback events and retries for debugging and improvement.",
+                         "implementation":  {
+                                                "data":  [
+                                                             "Task ID and timestamp.",
+                                                             "Original hallucinated output and DCX score.",
+                                                             "Last sane state and corrections applied.",
+                                                             "Retry outcomes (success/failure).",
+                                                             "Final action (released/terminated)."
+                                                         ],
+                                                "storage":  "Shadow logs (immutable, auditable)."
+                                            }
+                     }
+}

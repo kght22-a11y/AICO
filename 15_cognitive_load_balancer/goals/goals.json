@@ -1,0 +1,6 @@
+{
+    "1":  "Allocate reasoning depth proportional to problem complexity.",
+    "2":  "Offload specialized reasoning tasks to appropriate internal models.",
+    "3":  "Prevent cognitive overuse patterns that slow output or trigger hallucinations.",
+    "4":  "Ensure efficient multi-step reasoning."
+}

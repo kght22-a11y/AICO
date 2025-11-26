@@ -1,0 +1,12 @@
+{
+    "input":  "Explain how the emotional tone of a classical novel interacts with its historical context.",
+    "process":  {
+                    "tier_assignment":  "Tier 4 — high abstraction.",
+                    "assigned_clusters":  [
+                                              "literary_model",
+                                              "history_model"
+                                          ],
+                    "fusion_notes":  "Literary analysis combined with geopolitical era context."
+                },
+    "output":  "The melancholic tone is partly a reaction to shifting social structures at the time…"
+}
