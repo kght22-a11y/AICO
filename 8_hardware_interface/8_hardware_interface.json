@@ -1,0 +1,69 @@
+{
+    "description":  "Direct low-level interface allowing safe probing, MMIO reads/writes in sandboxed mode, and controlled interaction with unknown hardware.",
+    "functions":  [
+                      "Read/write device registers with sandboxed wrappers",
+                      "Probe and infer device behavior via controlled experiments",
+                      "Provide safe emulation fallback for unknown or risky ops",
+                      "Expose hardware map to controller with confidence metadata"
+                  ],
+    "components":  {
+                       "mmio_driver":  {
+                                           "description":  "Low-level driver with rate-limits and safety checks",
+                                           "methods":  [
+                                                           "read(addr)",
+                                                           "write(addr, value)"
+                                                       ]
+                                       },
+                       "probe_sandbox":  {
+                                             "description":  "Executes hardware probes in a constrained environment and records responses",
+                                             "methods":  [
+                                                             "run_probe_sequence(seq_id)"
+                                                         ]
+                                         },
+                       "device_map_builder":  {
+                                                  "description":  "Aggregates probe results into device descriptions and usage stats",
+                                                  "outputs":  [
+                                                                  "device_map.json"
+                                                              ]
+                                              }
+                   },
+    "workflows":  {
+                      "safe_probe":  [
+                                         "controller requests probe",
+                                         "probe_sandbox.prepare(environment)",
+                                         "mmio_driver.execute_limited_sequence()",
+                                         "device_map_builder.ingest_results()",
+                                         "log to audit and shadow"
+                                     ],
+                      "emulated_fallback":  [
+                                                "if hardware unresponsive or dangerous",
+                                                "use emulation layer to validate higher-level logic",
+                                                "flag for operator review"
+                                            ]
+                  },
+    "failure_modes":  {
+                          "fatal_probe":  {
+                                              "symptom":  "Probe appears to have damaged hardware or caused unsafe output",
+                                              "response":  [
+                                                               "SOC disable external outputs",
+                                                               "notify operator",
+                                                               "preserve logs for forensics"
+                                                           ]
+                                          },
+                          "ambiguous_response":  {
+                                                     "symptom":  "Probe returns non-deterministic values",
+                                                     "response":  [
+                                                                      "increase sample size",
+                                                                      "escalate to controller for cautious handling"
+                                                                  ]
+                                                 }
+                      },
+    "examples":  {
+                     "identify_sensor":  {
+                                             "scenario":  "Unknown device on I2C",
+                                             "action":  "probe_sandbox tries safe read sequences, device_map_builder correlates response signatures"
+                                         }
+                 },
+    "[speculative_addition]":  true,
+    "speculative_reasoning":  "A library of known probe patterns and heuristics (community-sourced) would speed mapping unknown devices; include as opt-in dataset."
+}

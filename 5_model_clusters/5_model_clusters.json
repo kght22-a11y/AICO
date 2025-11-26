@@ -1,0 +1,72 @@
+{
+    "description":  "Specialized transformer or non-transformer modules (language, vision, planning, radio, symbolic reasoning) used as workers; run as isolated clusters with per-cluster context isolation.",
+    "functions":  [
+                      "Perform domain-specific inference",
+                      "Participate in DCX exchanges when requested",
+                      "Produce structured outputs and confidence metadata"
+                  ],
+    "components":  {
+                       "language_cluster":  {
+                                                "description":  "Handles natural language understanding and generation tasks",
+                                                "properties":  [
+                                                                   "context_window",
+                                                                   "response_policy",
+                                                                   "cost_model"
+                                                               ]
+                                            },
+                       "vision_cluster":  {
+                                              "description":  "Processes image/video frames and extracts structured observations",
+                                              "properties":  [
+                                                                 "frame_rate",
+                                                                 "resolution",
+                                                                 "confidence_thresholds"
+                                                             ]
+                                          },
+                       "symbolic_planner":  {
+                                                "description":  "Performs deterministic planning and binding to hardware ops",
+                                                "properties":  [
+                                                                   "planner_depth",
+                                                                   "constraint_solver"
+                                                               ]
+                                            }
+                   },
+    "workflows":  {
+                      "inference_request":  [
+                                                "controller.send_request(cluster_id, payload)",
+                                                "cluster.perform_inference()",
+                                                "cluster.return_structured_output()",
+                                                "controller.aggregate_and_log()"
+                                            ],
+                      "dcx_exchange_cycle":  [
+                                                 "models produce context snapshots",
+                                                 "shadow_monitoring.compute_dcx()",
+                                                 "controller merges according to merge_context rules"
+                                             ]
+                  },
+    "failure_modes":  {
+                          "model_degradation":  {
+                                                    "symptom":  "Cluster outputs become inconsistent or slow",
+                                                    "response":  [
+                                                                     "restart cluster",
+                                                                     "switch to backup weights",
+                                                                     "escalate to operator"
+                                                                 ]
+                                                },
+                          "confidentiality_breach":  {
+                                                         "symptom":  "Unauthorized memory access detected",
+                                                         "response":  [
+                                                                          "isolate process",
+                                                                          "audit logs",
+                                                                          "terminate offending process"
+                                                                      ]
+                                                     }
+                      },
+    "examples":  {
+                     "vision_to_action":  {
+                                              "scenario":  "Vision detects temperature display change",
+                                              "action":  "vision_cluster -\u003e controller -\u003e hardware_interface read to confirm"
+                                          }
+                 },
+    "[speculative_addition]":  true,
+    "speculative_reasoning":  "Support for mixed-precision clusters to trade accuracy for latency could be added as optional performance tuning."
+}

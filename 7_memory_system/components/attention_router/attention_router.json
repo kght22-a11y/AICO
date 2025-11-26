@@ -1,0 +1,7 @@
+{
+    "description":  "Routes queries to memory segments most relevant to a task",
+    "methods":  [
+                    "route(query_vector)",
+                    "evict(policy)"
+                ]
+}

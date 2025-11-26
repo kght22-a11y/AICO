@@ -1,0 +1,16 @@
+{
+    "corrupted_snapshot":  {
+                               "symptom":  "Snapshot checksum mismatch",
+                               "response":  [
+                                                "attempt fallback snapshot",
+                                                "notify introspection",
+                                                "do not restore corrupted snapshot"
+                                            ]
+                           },
+    "unauthorized_access":  {
+                                "symptom":  "Unexpected read/write pattern detected",
+                                "response":  [
+                                                 "quarantine access, revoke keys, escalate to operator"
+                                             ]
+                            }
+}

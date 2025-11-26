@@ -1,0 +1,4 @@
+{
+    "description":  "Encrypted, append-only archive for audit and memory",
+    "encryption":  "AEAD with sealed keys from bootstrap"
+}

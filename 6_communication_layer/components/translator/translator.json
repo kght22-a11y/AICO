@@ -1,0 +1,8 @@
+{
+    "description":  "Maps external semantics to internal representations and vice versa",
+    "methods":  [
+                    "translate_to_internal()",
+                    "translate_to_external()"
+                ],
+    "notes":  "[speculative_addition]: Internal translation strategies may include learned adapters with deterministic audited outputs; see speculative_reasoning."
+}

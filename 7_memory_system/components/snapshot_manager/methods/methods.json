@@ -1,0 +1,4 @@
+[
+    "create_snapshot(task_id)",
+    "restore_snapshot(snapshot_id)"
+]

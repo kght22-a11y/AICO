@@ -1,0 +1,8 @@
+{
+    "description":  "Circular per-task buffers for recent context",
+    "properties":  [
+                       "size_bytes",
+                       "retention_ms",
+                       "checkpoint_frequency"
+                   ]
+}

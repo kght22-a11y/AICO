@@ -1,0 +1,7 @@
+{
+    "description":  "Receives external messages (HTTP, RF, serial) and normalizes them",
+    "methods":  [
+                    "normalize(message)",
+                    "authenticate(source)"
+                ]
+}

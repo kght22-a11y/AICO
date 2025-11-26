@@ -1,0 +1,7 @@
+{
+    "symptom":  "Translator produces differing semantics over time",
+    "response":  [
+                     "roll back translator to last verified version",
+                     "audit and retrain offline"
+                 ]
+}

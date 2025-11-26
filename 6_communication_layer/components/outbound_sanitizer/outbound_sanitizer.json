@@ -1,0 +1,7 @@
+{
+    "description":  "Ensures no internal-only details leak externally; applies content filters and policy checks",
+    "methods":  [
+                    "sanitize(payload)",
+                    "apply_pseudonymization()"
+                ]
+}

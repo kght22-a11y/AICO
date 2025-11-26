@@ -1,0 +1,8 @@
+{
+    "symptom":  "Unauthorized memory access detected",
+    "response":  [
+                     "isolate process",
+                     "audit logs",
+                     "terminate offending process"
+                 ]
+}

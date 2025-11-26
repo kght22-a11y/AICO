@@ -1,0 +1,6 @@
+{
+    "description":  "Aggregates probe results into device descriptions and usage stats",
+    "outputs":  [
+                    "device_map.json"
+                ]
+}

@@ -1,0 +1,25 @@
+{
+    "language_cluster":  {
+                             "description":  "Handles natural language understanding and generation tasks",
+                             "properties":  [
+                                                "context_window",
+                                                "response_policy",
+                                                "cost_model"
+                                            ]
+                         },
+    "vision_cluster":  {
+                           "description":  "Processes image/video frames and extracts structured observations",
+                           "properties":  [
+                                              "frame_rate",
+                                              "resolution",
+                                              "confidence_thresholds"
+                                          ]
+                       },
+    "symbolic_planner":  {
+                             "description":  "Performs deterministic planning and binding to hardware ops",
+                             "properties":  [
+                                                "planner_depth",
+                                                "constraint_solver"
+                                            ]
+                         }
+}

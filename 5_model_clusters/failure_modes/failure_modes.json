@@ -1,0 +1,18 @@
+{
+    "model_degradation":  {
+                              "symptom":  "Cluster outputs become inconsistent or slow",
+                              "response":  [
+                                               "restart cluster",
+                                               "switch to backup weights",
+                                               "escalate to operator"
+                                           ]
+                          },
+    "confidentiality_breach":  {
+                                   "symptom":  "Unauthorized memory access detected",
+                                   "response":  [
+                                                    "isolate process",
+                                                    "audit logs",
+                                                    "terminate offending process"
+                                                ]
+                               }
+}

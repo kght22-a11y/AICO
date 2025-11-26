@@ -1,0 +1,6 @@
+{
+    "vision_to_action":  {
+                             "scenario":  "Vision detects temperature display change",
+                             "action":  "vision_cluster -\u003e controller -\u003e hardware_interface read to confirm"
+                         }
+}

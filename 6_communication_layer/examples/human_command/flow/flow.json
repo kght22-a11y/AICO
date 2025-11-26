@@ -1,0 +1,1 @@
+"inbound_adapter -\u003e translator -\u003e controller -\u003e memory_system read -\u003e translator -\u003e outbound_sanitizer -\u003e response"

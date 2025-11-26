@@ -1,0 +1,5 @@
+[
+    "attempt fallback snapshot",
+    "notify introspection",
+    "do not restore corrupted snapshot"
+]

@@ -1,0 +1,4 @@
+[
+    "normalize(message)",
+    "authenticate(source)"
+]

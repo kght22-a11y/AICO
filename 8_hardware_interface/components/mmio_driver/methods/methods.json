@@ -1,0 +1,4 @@
+[
+    "read(addr)",
+    "write(addr, value)"
+]

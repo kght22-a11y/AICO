@@ -1,0 +1,5 @@
+[
+    "monitor for nonconforming packet signature",
+    "shadow_monitoring.flag_anomaly()",
+    "introspection may freeze or alert"
+]

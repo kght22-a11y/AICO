@@ -1,0 +1,6 @@
+[
+    "Short-term context buffers per task/cluster",
+    "Encrypted long-term archival",
+    "Access control enforcement and audit logging",
+    "Versioned snapshots for context-snapback"
+]

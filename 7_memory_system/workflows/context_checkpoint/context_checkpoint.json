@@ -1,0 +1,5 @@
+[
+    "short_term_buffers.save_checkpoint()",
+    "snapshot_manager.create_snapshot()",
+    "write index entry to audit logs"
+]

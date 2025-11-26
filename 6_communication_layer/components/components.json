@@ -1,0 +1,28 @@
+{
+    "inbound_adapter":  {
+                            "description":  "Receives external messages (HTTP, RF, serial) and normalizes them",
+                            "methods":  [
+                                            "normalize(message)",
+                                            "authenticate(source)"
+                                        ]
+                        },
+    "translator":  {
+                       "description":  "Maps external semantics to internal representations and vice versa",
+                       "methods":  [
+                                       "translate_to_internal()",
+                                       "translate_to_external()"
+                                   ],
+                       "notes":  "[speculative_addition]: Internal translation strategies may include learned adapters with deterministic audited outputs; see speculative_reasoning."
+                   },
+    "outbound_sanitizer":  {
+                               "description":  "Ensures no internal-only details leak externally; applies content filters and policy checks",
+                               "methods":  [
+                                               "sanitize(payload)",
+                                               "apply_pseudonymization()"
+                                           ]
+                           },
+    "audit_logger":  {
+                         "description":  "Records full metadata and sanitized content for all messages",
+                         "storage":  "shadow_logs + external_audit_archive"
+                     }
+}

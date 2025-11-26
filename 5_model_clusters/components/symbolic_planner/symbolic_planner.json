@@ -1,0 +1,7 @@
+{
+    "description":  "Performs deterministic planning and binding to hardware ops",
+    "properties":  [
+                       "planner_depth",
+                       "constraint_solver"
+                   ]
+}

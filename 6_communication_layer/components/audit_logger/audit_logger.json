@@ -1,0 +1,4 @@
+{
+    "description":  "Records full metadata and sanitized content for all messages",
+    "storage":  "shadow_logs + external_audit_archive"
+}

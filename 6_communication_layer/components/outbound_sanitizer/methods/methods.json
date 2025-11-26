@@ -1,0 +1,4 @@
+[
+    "sanitize(payload)",
+    "apply_pseudonymization()"
+]
