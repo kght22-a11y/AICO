@@ -1,0 +1,8 @@
+{
+    "description":  "Tasks are unaware of snapbacks or retries; Context Snapback operates transparently.",
+    "guarantees":  [
+                       "Internal task state is preserved during snapbacks.",
+                       "Only output-related context is modified.",
+                       "Tasks resume operation as if nothing happened (after corrections)."
+                   ]
+}

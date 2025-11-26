@@ -1,0 +1,5 @@
+[
+    "get_dcx_score(action, mascot_logs)",
+    "get_mascot_logs(sensor_id, timestamp)",
+    "get_correction_data(sensor_id)"
+]

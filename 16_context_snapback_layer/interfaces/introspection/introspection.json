@@ -1,0 +1,8 @@
+{
+    "description":  "Context Snapback queries Introspection to freeze/thaw tasks and check DCX scores.",
+    "methods":  [
+                    "freeze_task(task_id)",
+                    "release_task(task_id)",
+                    "get_dcx_score(task_id, action)"
+                ]
+}

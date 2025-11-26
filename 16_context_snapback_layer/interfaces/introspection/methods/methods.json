@@ -1,0 +1,5 @@
+[
+    "freeze_task(task_id)",
+    "release_task(task_id)",
+    "get_dcx_score(task_id, action)"
+]

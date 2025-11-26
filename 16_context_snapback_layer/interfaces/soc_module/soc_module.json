@@ -1,0 +1,6 @@
+{
+    "description":  "Context Snapback notifies SOC if retries repeatedly fail (indicating a potential hardware issue).",
+    "methods":  [
+                    "notify_soc(task_id, \u0027repeated_output_failures\u0027)"
+                ]
+}

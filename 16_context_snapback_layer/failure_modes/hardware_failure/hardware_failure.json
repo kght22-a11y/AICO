@@ -1,0 +1,8 @@
+{
+    "description":  "Retries fail due to hardware issues (e.g., faulty sensor).",
+    "response":  [
+                     "Introspection notifies SOC of potential hardware failure.",
+                     "SOC module disables the faulty hardware channel.",
+                     "Audit log records the failure and triggers a hardware diagnostic task."
+                 ]
+}

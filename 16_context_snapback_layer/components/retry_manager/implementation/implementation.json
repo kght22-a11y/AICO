@@ -1,0 +1,9 @@
+{
+    "retry_limit":  3,
+    "backoff":  [
+                    10,
+                    100,
+                    1000
+                ],
+    "success_condition":  "DCX score \u003c 0.8 for the retried external action."
+}

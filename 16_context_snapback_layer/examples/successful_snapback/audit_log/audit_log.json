@@ -1,0 +1,13 @@
+{
+    "event":  "snapback_success",
+    "task":  "temperature_monitor",
+    "original_output":  {
+                            "temperature":  100,
+                            "action":  "turn_on_fan"
+                        },
+    "corrected_output":  {
+                             "temperature":  25,
+                             "action":  "turn_on_fan"
+                         },
+    "outcome":  "success"
+}

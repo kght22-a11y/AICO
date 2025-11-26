@@ -1,0 +1,5 @@
+[
+    "freeze_task(task_id)",
+    "release_task(task_id)",
+    "escalate_failure(task_id, reason)"
+]

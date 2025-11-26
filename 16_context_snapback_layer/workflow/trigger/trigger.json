@@ -1,0 +1,4 @@
+{
+    "condition":  "Shadow Monitoring detects a high DCX score (e.g., \u003e0.8) for a proposed external action.",
+    "source":  "Introspection queries Shadow Monitoring during external action validation."
+}

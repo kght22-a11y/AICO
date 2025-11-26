@@ -1,0 +1,26 @@
+{
+    "repeated_hallucinations":  {
+                                    "description":  "Task repeatedly proposes hallucinated external actions even after snapbacks.",
+                                    "response":  [
+                                                     "Introspection freezes the task permanently.",
+                                                     "SOC module disables related external outputs.",
+                                                     "Audit log records the failure for post-mortem analysis."
+                                                 ]
+                                },
+    "corrupted_context":  {
+                              "description":  "Task\u0027s context logs are corrupted or missing sane states.",
+                              "response":  [
+                                               "Introspection terminates the task and spawns a replacement.",
+                                               "SOC module resets related hardware to a known-safe state.",
+                                               "Audit log records the corruption for debugging."
+                                           ]
+                          },
+    "hardware_failure":  {
+                             "description":  "Retries fail due to hardware issues (e.g., faulty sensor).",
+                             "response":  [
+                                              "Introspection notifies SOC of potential hardware failure.",
+                                              "SOC module disables the faulty hardware channel.",
+                                              "Audit log records the failure and triggers a hardware diagnostic task."
+                                          ]
+                         }
+}

@@ -1,0 +1,7 @@
+{
+    "description":  "Context Snapback notifies SOC of hardware-related failures or repeated output issues.",
+    "methods":  [
+                    "notify_hardware_failure(channel_id, diagnostics)",
+                    "disable_external_outputs(output_type)"
+                ]
+}

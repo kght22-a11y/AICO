@@ -1,0 +1,4 @@
+[
+    "notify_hardware_failure(channel_id, diagnostics)",
+    "disable_external_outputs(output_type)"
+]

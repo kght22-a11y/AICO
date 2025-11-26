@@ -1,0 +1,133 @@
+{
+    "successful_snapback":  {
+                                "scenario":  {
+                                                 "task":  "temperature_monitor",
+                                                 "hallucination":  "Proposes turning on a fan because it \u0027detected\u0027 100°C (actual: 25°C).",
+                                                 "context_logs":  [
+                                                                      {
+                                                                          "state":  "normal",
+                                                                          "decision":  "check_temperature",
+                                                                          "dcx":  0.1
+                                                                      },
+                                                                      {
+                                                                          "state":  "hallucinating",
+                                                                          "decision":  "turn_on_fan",
+                                                                          "dcx":  0.95
+                                                                      }
+                                                                  ]
+                                             },
+                                "snapback_process":  [
+                                                         {
+                                                             "step":  1,
+                                                             "action":  "Freeze the temperature_monitor task."
+                                                         },
+                                                         {
+                                                             "step":  2,
+                                                             "action":  "Identify last sane state: \u0027check_temperature\u0027 (DCX=0.1)."
+                                                         },
+                                                         {
+                                                             "step":  3,
+                                                             "action":  "Restore task to \u0027check_temperature\u0027 state."
+                                                         },
+                                                         {
+                                                             "step":  4,
+                                                             "action":  "Inject correction: \u0027actual_temperature=25°C\u0027 into task\u0027s context."
+                                                         },
+                                                         {
+                                                             "step":  5,
+                                                             "action":  "Retry external action: \u0027turn_on_fan\u0027 (now with correct temperature).",
+                                                             "result":  {
+                                                                            "dcx":  0.1,
+                                                                            "action":  "ALLOWED (matches Mascot logs).",
+                                                                            "fan_state":  "on"
+                                                                        }
+                                                         },
+                                                         {
+                                                             "step":  6,
+                                                             "action":  "Release task and resume normal operation."
+                                                         }
+                                                     ],
+                                "audit_log":  {
+                                                  "event":  "snapback_success",
+                                                  "task":  "temperature_monitor",
+                                                  "original_output":  {
+                                                                          "temperature":  100,
+                                                                          "action":  "turn_on_fan"
+                                                                      },
+                                                  "corrected_output":  {
+                                                                           "temperature":  25,
+                                                                           "action":  "turn_on_fan"
+                                                                       },
+                                                  "outcome":  "success"
+                                              }
+                            },
+    "failed_snapback":  {
+                            "scenario":  {
+                                             "task":  "motion_detector",
+                                             "hallucination":  "Repeatedly proposes unlocking a door due to \u0027detected motion\u0027 (no motion in Mascot logs).",
+                                             "context_logs":  [
+                                                                  {
+                                                                      "state":  "normal",
+                                                                      "decision":  "check_motion",
+                                                                      "dcx":  0.1
+                                                                  },
+                                                                  {
+                                                                      "state":  "hallucinating",
+                                                                      "decision":  "unlock_door",
+                                                                      "dcx":  0.9
+                                                                  }
+                                                              ]
+                                         },
+                            "snapback_process":  [
+                                                     {
+                                                         "step":  1,
+                                                         "action":  "Freeze the motion_detector task."
+                                                     },
+                                                     {
+                                                         "step":  2,
+                                                         "action":  "Identify last sane state: \u0027check_motion\u0027 (DCX=0.1)."
+                                                     },
+                                                     {
+                                                         "step":  3,
+                                                         "action":  "Restore task to \u0027check_motion\u0027 state."
+                                                     },
+                                                     {
+                                                         "step":  4,
+                                                         "action":  "Inject correction: \u0027actual_motion=none\u0027 into task\u0027s context."
+                                                     },
+                                                     {
+                                                         "step":  5,
+                                                         "action":  "Retry external action: \u0027unlock_door\u0027 (now with correct motion data).",
+                                                         "result":  {
+                                                                        "dcx":  0.9,
+                                                                        "action":  "BLOCKED (retry 1/3)."
+                                                                    }
+                                                     },
+                                                     {
+                                                         "step":  5,
+                                                         "action":  "Retry again with adjusted confidence thresholds.",
+                                                         "result":  {
+                                                                        "dcx":  0.85,
+                                                                        "action":  "BLOCKED (retry 2/3)."
+                                                                    }
+                                                     },
+                                                     {
+                                                         "step":  5,
+                                                         "action":  "Final retry with maximal corrections.",
+                                                         "result":  {
+                                                                        "dcx":  0.92,
+                                                                        "action":  "BLOCKED (retry 3/3 failed)."
+                                                                    }
+                                                     },
+                                                     {
+                                                         "step":  6,
+                                                         "action":  "Notify Introspection of repeated failures; terminate task.",
+                                                         "result":  {
+                                                                        "introspection_action":  "freeze_task_permanently",
+                                                                        "soc_action":  "disable_external_outputs",
+                                                                        "audit_log":  "repeated_hallucination_failure"
+                                                                    }
+                                                     }
+                                                 ]
+                        }
+}

@@ -1,0 +1,16 @@
+{
+    "task":  "motion_detector",
+    "hallucination":  "Repeatedly proposes unlocking a door due to \u0027detected motion\u0027 (no motion in Mascot logs).",
+    "context_logs":  [
+                         {
+                             "state":  "normal",
+                             "decision":  "check_motion",
+                             "dcx":  0.1
+                         },
+                         {
+                             "state":  "hallucinating",
+                             "decision":  "unlock_door",
+                             "dcx":  0.9
+                         }
+                     ]
+}
