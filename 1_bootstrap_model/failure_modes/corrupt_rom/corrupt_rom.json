@@ -1,0 +1,8 @@
+{
+    "symptom":  "Signature mismatch",
+    "response":  [
+                     "stop boot",
+                     "emit forensic report",
+                     "require physical access for recovery"
+                 ]
+}

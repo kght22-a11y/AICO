@@ -1,0 +1,11 @@
+{
+    "description":  "Static verifier for bootstrap images",
+    "inputs":  [
+                   "ROM image",
+                   "expected signature list"
+               ],
+    "outputs":  [
+                    "boot_pass/fail",
+                    "signed_boot_report"
+                ]
+}

@@ -1,0 +1,17 @@
+{
+    "scheduler_starvation":  {
+                                 "symptom":  "High priority tasks blocked by resource deadlock",
+                                 "response":  [
+                                                  "detect via allocator",
+                                                  "throttle low-priority",
+                                                  "notify introspection"
+                                              ]
+                             },
+    "heartbeat_loss":  {
+                           "symptom":  "Cluster stopped sending heartbeats",
+                           "response":  [
+                                            "restart cluster",
+                                            "escalate to SOC if restart fails"
+                                        ]
+                       }
+}

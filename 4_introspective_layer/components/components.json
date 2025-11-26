@@ -1,0 +1,22 @@
+{
+    "safety_evaluator":  {
+                             "description":  "Evaluates actions and outputs against safety policies",
+                             "methods":  [
+                                             "evaluate(action)",
+                                             "compute_risk_score()"
+                                         ]
+                         },
+    "freeze_manager":  {
+                           "description":  "Executes freezes; supports collective unfreeze procedures",
+                           "methods":  [
+                                           "freeze_agent(agent_id)",
+                                           "collective_unfreeze(token)"
+                                       ]
+                       },
+    "audit_explainer":  {
+                            "description":  "Generates human-readable rationales for interventions",
+                            "methods":  [
+                                            "explain_freeze(event_id)"
+                                        ]
+                        }
+}

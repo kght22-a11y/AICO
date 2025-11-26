@@ -1,0 +1,7 @@
+[
+    "Verify integrity and authenticity of model binaries at boot",
+    "Check compute, memory, peripheral allocations and availability",
+    "Validate introspective layer and DMS/SOC readiness",
+    "Initialize secure storage and bootstrap keys",
+    "Record a signed boot report to immutable audit storage"
+]

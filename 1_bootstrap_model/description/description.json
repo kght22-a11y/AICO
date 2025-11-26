@@ -1,0 +1,1 @@
+"Immutable startup model baked into ASIC/ROM. Responsible for hardware and software integrity checks, minimal orchestration until handoff, and secure chain-of-trust establishment."

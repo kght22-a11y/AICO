@@ -1,0 +1,7 @@
+{
+    "description":  "Evaluates actions and outputs against safety policies",
+    "methods":  [
+                    "evaluate(action)",
+                    "compute_risk_score()"
+                ]
+}

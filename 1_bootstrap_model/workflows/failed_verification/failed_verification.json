@@ -1,0 +1,5 @@
+[
+    "halt further boot",
+    "emit signed_failure_report -\u003e debug_channel",
+    "light LED/warn and require human intervention"
+]

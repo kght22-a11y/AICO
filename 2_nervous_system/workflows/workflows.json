@@ -1,0 +1,12 @@
+{
+    "schedule_task":  [
+                          "task_queue.insert(task)",
+                          "resource_allocator.reserve(task.resource_requirements)",
+                          "notify_model_cluster(task.assigned_cluster)"
+                      ],
+    "preempt_for_urgent":  [
+                               "fast_abort_controller.preempt(lower_priority_task)",
+                               "reassign resources",
+                               "ensure log of preemption in audit"
+                           ]
+}

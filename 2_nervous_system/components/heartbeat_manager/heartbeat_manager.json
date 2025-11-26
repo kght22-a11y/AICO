@@ -1,0 +1,7 @@
+{
+    "description":  "Monitors agent heartbeats and triggers recovery",
+    "methods":  [
+                    "register_heartbeat(agent_id)",
+                    "get_status()"
+                ]
+}

@@ -1,0 +1,6 @@
+[
+    "task_id",
+    "priority",
+    "deadline",
+    "resource_requirements"
+]

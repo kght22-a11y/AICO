@@ -1,0 +1,4 @@
+[
+    "abort_task(task_id)",
+    "engage_soc_fail_safe()"
+]

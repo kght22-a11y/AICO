@@ -1,0 +1,7 @@
+[
+    "rom_verifier.verify()",
+    "hardware_probe.enumerate()",
+    "key_vault_init.seal_keys()",
+    "launch_main_aico(enclave=true)",
+    "write signed_boot_report -\u003e immutable_storage"
+]

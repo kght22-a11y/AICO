@@ -1,0 +1,6 @@
+[
+    "intent_parser.parse_goal()",
+    "task_orchestrator.decompose()",
+    "nervous_system.schedule_task()",
+    "monitor until completion and compile results"
+]

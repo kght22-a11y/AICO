@@ -1,0 +1,5 @@
+[
+    "fast_abort_controller.preempt(lower_priority_task)",
+    "reassign resources",
+    "ensure log of preemption in audit"
+]

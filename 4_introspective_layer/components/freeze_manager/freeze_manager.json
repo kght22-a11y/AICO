@@ -1,0 +1,7 @@
+{
+    "description":  "Executes freezes; supports collective unfreeze procedures",
+    "methods":  [
+                    "freeze_agent(agent_id)",
+                    "collective_unfreeze(token)"
+                ]
+}

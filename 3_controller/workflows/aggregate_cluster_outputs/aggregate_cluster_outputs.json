@@ -1,0 +1,5 @@
+[
+    "collect outputs",
+    "apply conflict_resolver",
+    "if unresolved -\u003e request introspection review"
+]

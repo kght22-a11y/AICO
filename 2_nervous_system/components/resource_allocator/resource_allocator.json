@@ -1,0 +1,8 @@
+{
+    "description":  "Allocates compute and IO resources according to policies",
+    "policies":  [
+                     "safety_first",
+                     "latency_sensitive",
+                     "batch_tasks"
+                 ]
+}

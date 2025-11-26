@@ -1,0 +1,8 @@
+{
+    "symptom":  "High priority tasks blocked by resource deadlock",
+    "response":  [
+                     "detect via allocator",
+                     "throttle low-priority",
+                     "notify introspection"
+                 ]
+}
