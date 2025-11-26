@@ -1,0 +1,5 @@
+{
+    "os_drive":  "512GB NVMe Gen3",
+    "baremetal_drive":  "512GB NVMe Gen3",
+    "artifact_archive":  "2TB NVMe Gen4"
+}

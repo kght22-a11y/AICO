@@ -1,0 +1,4 @@
+[
+    "token_id",
+    "signed_attestation{token_id, counter, scope, expiry}"
+]

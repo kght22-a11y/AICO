@@ -1,0 +1,17 @@
+{
+    "atomic_issue_token_and_attest":  {
+                                          "name":  "issue_token_atomic",
+                                          "description":  "Atomically issue capability token, increment monotonic counter, and emit signed attestation",
+                                          "inputs":  [
+                                                         "requester_id",
+                                                         "scope",
+                                                         "expiry_seconds"
+                                                     ],
+                                          "outputs":  [
+                                                          "token_id",
+                                                          "signed_attestation{token_id, counter, scope, expiry}"
+                                                      ],
+                                          "atomicity_guarantee":  "hardware_enforced",
+                                          "failure_semantics":  "no_partial_commit; rollback on failure"
+                                      }
+}
