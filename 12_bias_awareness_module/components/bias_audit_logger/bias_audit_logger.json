@@ -1,0 +1,13 @@
+{
+    "description":  "Provides structured logs for all bias detections and corrections.",
+    "fields_logged":  [
+                          "timestamp",
+                          "bias_category",
+                          "bias_severity",
+                          "before_state",
+                          "after_state",
+                          "dcx_drift_info",
+                          "correction_details",
+                          "cluster_vote"
+                      ]
+}

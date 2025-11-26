@@ -1,0 +1,5 @@
+[
+    "Watch heartbeat",
+    "Engage SOC if heartbeat absent",
+    "Preserve compute for logging before cut"
+]

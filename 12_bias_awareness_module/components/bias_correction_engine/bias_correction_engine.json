@@ -1,0 +1,9 @@
+{
+    "description":  "Applies corrections to internal reasoning paths and outputs.",
+    "strategies":  [
+                       "weight_balancing",
+                       "confidence_adjustment",
+                       "semantic_refactoring",
+                       "contextual_broadening"
+                   ]
+}

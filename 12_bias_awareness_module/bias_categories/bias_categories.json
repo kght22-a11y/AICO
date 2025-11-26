@@ -1,0 +1,33 @@
+{
+    "cognitive_biases":  [
+                             "confirmation_bias",
+                             "anchoring_bias",
+                             "availability_heuristic",
+                             "optimism_bias",
+                             "pessimism_bias",
+                             "narrative_bias",
+                             "pattern_invention_bias"
+                         ],
+    "linguistic_biases":  [
+                              "sentiment_drift",
+                              "stylistic_overfitting",
+                              "politeness_bias",
+                              "verbosity_bias",
+                              "verbosity_collapse",
+                              "context-amplification_bias"
+                          ],
+    "contextual_biases":  [
+                              "temporality_shift",
+                              "overalignment_with_recent_context",
+                              "hyper-focus_bias",
+                              "domain_expertise_projection",
+                              "misread_of_user_intent"
+                          ],
+    "systemic_biases":  [
+                            "training_distribution_distortions",
+                            "cultural_imbalance",
+                            "frequency-induced distortion",
+                            "synthetic_overshadowing",
+                            "rare-case_blindness"
+                        ]
+}

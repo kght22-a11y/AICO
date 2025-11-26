@@ -1,0 +1,14 @@
+{
+    "inductive_heartbeat_receiver":  {
+                                         "description":  "Hardware-only receiver that expects periodic pulses",
+                                         "properties":  [
+                                                            "cannot be overridden by main CPU"
+                                                        ]
+                                     },
+    "power_hold_logic":  {
+                             "description":  "Short power hold to finish logging before full shutdown",
+                             "properties":  [
+                                                "hold_duration_ms"
+                                            ]
+                         }
+}

@@ -1,0 +1,5 @@
+[
+    "dms_watchdog_interface.detect_loss()",
+    "relay_array.open()",
+    "log event to debug_channel + immutable storage"
+]

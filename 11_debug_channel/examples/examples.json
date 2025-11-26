@@ -1,0 +1,6 @@
+{
+    "post_mortem_packet":  {
+                               "scenario":  "SOC forced cut after safety violation",
+                               "action":  "debug_channel emits fixed packet for operator retrieval"
+                           }
+}

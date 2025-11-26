@@ -1,0 +1,192 @@
+{
+    "name":  "Bias Awareness Module",
+    "description":  "Continuously detects, signals, and mitigates cognitive, linguistic, contextual, and systemic biases across internal model clusters. This module operates as a corrective overlay that does not alter core model architecture but provides real-time annotations, warnings, and statistical corrections to ensure consistent, fair, accurate internal representations and outputs.",
+    "principles":  [
+                       "Biases are inevitable but detectable.",
+                       "Mitigation should not suppress valid signals.",
+                       "Corrections must be transparent to logs and shadow systems.",
+                       "Module does not assume authority over Controller — it provides evidence and recommendations.",
+                       "Bias correction must never distort factual or safety-critical information."
+                   ],
+    "bias_categories":  {
+                            "cognitive_biases":  [
+                                                     "confirmation_bias",
+                                                     "anchoring_bias",
+                                                     "availability_heuristic",
+                                                     "optimism_bias",
+                                                     "pessimism_bias",
+                                                     "narrative_bias",
+                                                     "pattern_invention_bias"
+                                                 ],
+                            "linguistic_biases":  [
+                                                      "sentiment_drift",
+                                                      "stylistic_overfitting",
+                                                      "politeness_bias",
+                                                      "verbosity_bias",
+                                                      "verbosity_collapse",
+                                                      "context-amplification_bias"
+                                                  ],
+                            "contextual_biases":  [
+                                                      "temporality_shift",
+                                                      "overalignment_with_recent_context",
+                                                      "hyper-focus_bias",
+                                                      "domain_expertise_projection",
+                                                      "misread_of_user_intent"
+                                                  ],
+                            "systemic_biases":  [
+                                                    "training_distribution_distortions",
+                                                    "cultural_imbalance",
+                                                    "frequency-induced distortion",
+                                                    "synthetic_overshadowing",
+                                                    "rare-case_blindness"
+                                                ]
+                        },
+    "workflow":  {
+                     "step_1_monitor_input":  {
+                                                  "description":  "Every input from external world, mascot, controller, or internal systems is scanned for bias artifacts before entering shared context.",
+                                                  "methods":  [
+                                                                  "token-level bias signature detection",
+                                                                  "embedding similarity to known bias vectors",
+                                                                  "frequency deviation scoring"
+                                                              ]
+                                              },
+                     "step_2_monitor_internal_state":  {
+                                                           "description":  "Continuously evaluates internal hidden states for bias drift or instability.",
+                                                           "methods":  [
+                                                                           "compare cluster outputs for divergence",
+                                                                           "DCX drift scoring",
+                                                                           "shadow layer cross-checking"
+                                                                       ]
+                                                       },
+                     "step_3_bias_flagging":  {
+                                                  "description":  "Flags any detected biases and assigns severity.",
+                                                  "severity_levels":  [
+                                                                          "low: harmless drift",
+                                                                          "medium: meaningful distortion",
+                                                                          "high: actions or conclusions at risk",
+                                                                          "critical: safety relevance"
+                                                                      ]
+                                              },
+                     "step_4_apply_bias_corrections":  {
+                                                           "description":  "Adjusts internal weighting, amplifies underrepresented signals, or attenuates overrepresented ones.",
+                                                           "methods":  [
+                                                                           "vector balancing",
+                                                                           "cluster comparison normalization",
+                                                                           "confidence recalibration"
+                                                                       ],
+                                                           "constraints":  [
+                                                                               "do not erase important outliers",
+                                                                               "do not override controller authority"
+                                                                           ]
+                                                       },
+                     "step_5_report_and_log":  {
+                                                   "description":  "All operations produce transparent logs.",
+                                                   "log_targets":  [
+                                                                       "shadow_logs",
+                                                                       "controller_runtime_report",
+                                                                       "audit_trail"
+                                                                   ]
+                                               }
+                 },
+    "components":  {
+                       "bias_detector_engine":  {
+                                                    "description":  "Primary analytic engine that evaluates inputs, hidden states, and outputs.",
+                                                    "algorithms":  [
+                                                                       "bias_vector_projection",
+                                                                       "semantic_mirroring",
+                                                                       "distribution_gap_measure",
+                                                                       "DCX_bias_scan"
+                                                                   ],
+                                                    "outputs":  [
+                                                                    "bias_flags",
+                                                                    "severity_scores",
+                                                                    "recommended_corrections"
+                                                                ]
+                                                },
+                       "bias_correction_engine":  {
+                                                      "description":  "Applies corrections to internal reasoning paths and outputs.",
+                                                      "strategies":  [
+                                                                         "weight_balancing",
+                                                                         "confidence_adjustment",
+                                                                         "semantic_refactoring",
+                                                                         "contextual_broadening"
+                                                                     ]
+                                                  },
+                       "bias_audit_logger":  {
+                                                 "description":  "Provides structured logs for all bias detections and corrections.",
+                                                 "fields_logged":  [
+                                                                       "timestamp",
+                                                                       "bias_category",
+                                                                       "bias_severity",
+                                                                       "before_state",
+                                                                       "after_state",
+                                                                       "dcx_drift_info",
+                                                                       "correction_details",
+                                                                       "cluster_vote"
+                                                                   ]
+                                             }
+                   },
+    "interfaces":  {
+                       "introspection":  {
+                                             "methods":  [
+                                                             "report_bias_flags()",
+                                                             "inject_correction_suggestions()",
+                                                             "provide_before_after_states()"
+                                                         ]
+                                         },
+                       "shadow_monitoring":  {
+                                                 "methods":  [
+                                                                 "cross_validate_bias_findings()",
+                                                                 "notify_shadow_if_contradiction()"
+                                                             ]
+                                             },
+                       "controller":  {
+                                          "methods":  [
+                                                          "receive_bias_summary()",
+                                                          "manually_override_bias_flag()"
+                                                      ]
+                                      },
+                       "mascot":  {
+                                      "description":  "Passive — Mascot’s outputs are analyzed but Mascot does not act on bias signals."
+                                  }
+                   },
+    "examples":  {
+                     "example_1_confirmation_bias":  {
+                                                         "input":  "User claims the sky is green.",
+                                                         "internal_state_before":  "Model cluster leaning toward unlikely but exploring user meaning.",
+                                                         "bias_detected":  "confirmation_bias due to recent hallucination correction in reflective pause.",
+                                                         "correction":  "Bias Awareness Module reduces overweighting of internal speculation.",
+                                                         "internal_state_after":  "More accurate grounding — identifies claim as false unless user indicates metaphor.",
+                                                         "logged":  true
+                                                     },
+                     "example_2_stylistic_overfitting":  {
+                                                             "scenario":  "Model begins mirroring user slang excessively.",
+                                                             "bias_detected":  "linguistic bias — style over-alignment.",
+                                                             "correction":  "Reduce stylistic imitation to preserve clarity.",
+                                                             "after":  "Neutral and consistent tone restored."
+                                                         },
+                     "example_3_context_amplification_bias":  {
+                                                                  "scenario":  "System believes minor user detail is central.",
+                                                                  "cause":  "Over-alignment to recent conversational input.",
+                                                                  "correction":  "Broaden contextual window, bring in longer-term conversational balance."
+                                                              }
+                 },
+    "failure_modes":  {
+                          "false_positive_bias_flag":  {
+                                                           "description":  "Valid signal incorrectly flagged as bias.",
+                                                           "mitigation":  "Controller cross-check; shadow layer arbitration."
+                                                       },
+                          "false_negative_bias_flag":  {
+                                                           "description":  "Bias goes undetected.",
+                                                           "mitigation":  "Periodic reflective pause + shadow comparison."
+                                                       },
+                          "over_correction":  {
+                                                  "description":  "Bias correction suppresses important outlier data.",
+                                                  "mitigation":  "Limit correction magnitude; require cluster voting."
+                                              },
+                          "systemic_training_bias_unresolvable":  {
+                                                                      "description":  "Some systemic biases may be outside AICO’s architectural reach.",
+                                                                      "mitigation":  "Full transparency in logs; human review required."
+                                                                  }
+                      }
+}

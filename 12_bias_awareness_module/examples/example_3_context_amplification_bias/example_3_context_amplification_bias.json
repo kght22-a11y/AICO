@@ -1,0 +1,5 @@
+{
+    "scenario":  "System believes minor user detail is central.",
+    "cause":  "Over-alignment to recent conversational input.",
+    "correction":  "Broaden contextual window, bring in longer-term conversational balance."
+}

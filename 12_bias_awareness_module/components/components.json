@@ -1,0 +1,38 @@
+{
+    "bias_detector_engine":  {
+                                 "description":  "Primary analytic engine that evaluates inputs, hidden states, and outputs.",
+                                 "algorithms":  [
+                                                    "bias_vector_projection",
+                                                    "semantic_mirroring",
+                                                    "distribution_gap_measure",
+                                                    "DCX_bias_scan"
+                                                ],
+                                 "outputs":  [
+                                                 "bias_flags",
+                                                 "severity_scores",
+                                                 "recommended_corrections"
+                                             ]
+                             },
+    "bias_correction_engine":  {
+                                   "description":  "Applies corrections to internal reasoning paths and outputs.",
+                                   "strategies":  [
+                                                      "weight_balancing",
+                                                      "confidence_adjustment",
+                                                      "semantic_refactoring",
+                                                      "contextual_broadening"
+                                                  ]
+                               },
+    "bias_audit_logger":  {
+                              "description":  "Provides structured logs for all bias detections and corrections.",
+                              "fields_logged":  [
+                                                    "timestamp",
+                                                    "bias_category",
+                                                    "bias_severity",
+                                                    "before_state",
+                                                    "after_state",
+                                                    "dcx_drift_info",
+                                                    "correction_details",
+                                                    "cluster_vote"
+                                                ]
+                          }
+}

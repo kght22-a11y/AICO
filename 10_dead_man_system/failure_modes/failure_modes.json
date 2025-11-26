@@ -1,0 +1,9 @@
+{
+    "false_heartbeat_loss":  {
+                                 "symptom":  "Transient missed pulse due to electrical noise",
+                                 "response":  [
+                                                  "require multiple misses to trigger",
+                                                  "log and report to operator"
+                                              ]
+                             }
+}

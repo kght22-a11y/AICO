@@ -1,0 +1,7 @@
+{
+    "on_soc_event":  [
+                         "compile telemetry via telemetry_formatter",
+                         "send via debug_channel",
+                         "persist to immutable storage"
+                     ]
+}

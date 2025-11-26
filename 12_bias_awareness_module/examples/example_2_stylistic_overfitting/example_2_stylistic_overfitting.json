@@ -1,0 +1,6 @@
+{
+    "scenario":  "Model begins mirroring user slang excessively.",
+    "bias_detected":  "linguistic bias — style over-alignment.",
+    "correction":  "Reduce stylistic imitation to preserve clarity.",
+    "after":  "Neutral and consistent tone restored."
+}

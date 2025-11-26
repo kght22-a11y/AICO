@@ -1,0 +1,14 @@
+{
+    "description":  "Primary analytic engine that evaluates inputs, hidden states, and outputs.",
+    "algorithms":  [
+                       "bias_vector_projection",
+                       "semantic_mirroring",
+                       "distribution_gap_measure",
+                       "DCX_bias_scan"
+                   ],
+    "outputs":  [
+                    "bias_flags",
+                    "severity_scores",
+                    "recommended_corrections"
+                ]
+}

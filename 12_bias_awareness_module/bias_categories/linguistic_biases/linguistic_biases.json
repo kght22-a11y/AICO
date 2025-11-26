@@ -1,0 +1,8 @@
+[
+    "sentiment_drift",
+    "stylistic_overfitting",
+    "politeness_bias",
+    "verbosity_bias",
+    "verbosity_collapse",
+    "context-amplification_bias"
+]

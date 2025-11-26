@@ -1,0 +1,14 @@
+{
+    "telemetry_formatter":  {
+                                "description":  "Compiles a fixed-size telemetry packet",
+                                "fields":  [
+                                               "event_id",
+                                               "timestamp",
+                                               "short_trace_hash"
+                                           ]
+                            },
+    "transmit_buffer":  {
+                            "description":  "Small circular buffer retained for debug_channel use",
+                            "size_kb":  64
+                        }
+}

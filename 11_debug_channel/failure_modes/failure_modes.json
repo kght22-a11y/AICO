@@ -1,0 +1,9 @@
+{
+    "buffer_overrun":  {
+                           "symptom":  "Too many events queued for debug_channel",
+                           "response":  [
+                                            "drop nonessential entries with policy",
+                                            "record overflow event"
+                                        ]
+                       }
+}
