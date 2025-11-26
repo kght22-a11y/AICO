@@ -1,0 +1,7 @@
+[
+    "controller requests probe",
+    "probe_sandbox.prepare(environment)",
+    "mmio_driver.execute_limited_sequence()",
+    "device_map_builder.ingest_results()",
+    "log to audit and shadow"
+]

@@ -1,0 +1,4 @@
+{
+    "scenario":  "Introspection requests hard cut due to safety violation",
+    "action":  "SOC relay_array.open(), debug_channel sends minimal telemetry"
+}

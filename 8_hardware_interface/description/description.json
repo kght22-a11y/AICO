@@ -1,0 +1,1 @@
+"Direct low-level interface allowing safe probing, MMIO reads/writes in sandboxed mode, and controlled interaction with unknown hardware."

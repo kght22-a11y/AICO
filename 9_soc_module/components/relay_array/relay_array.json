@@ -1,0 +1,7 @@
+{
+    "description":  "Physically isolates outputs on trigger",
+    "properties":  [
+                       "redundant_relays",
+                       "manual_override"
+                   ]
+}

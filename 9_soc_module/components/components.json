@@ -1,0 +1,15 @@
+{
+    "relay_array":  {
+                        "description":  "Physically isolates outputs on trigger",
+                        "properties":  [
+                                           "redundant_relays",
+                                           "manual_override"
+                                       ]
+                    },
+    "dms_watchdog_interface":  {
+                                   "description":  "Listens for DMS heartbeat and acts on loss/tamper",
+                                   "methods":  [
+                                                   "on_heartbeat_loss()"
+                                               ]
+                               }
+}

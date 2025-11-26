@@ -1,0 +1,4 @@
+{
+    "scenario":  "Unknown device on I2C",
+    "action":  "probe_sandbox tries safe read sequences, device_map_builder correlates response signatures"
+}

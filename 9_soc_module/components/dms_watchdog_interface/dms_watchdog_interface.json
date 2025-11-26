@@ -1,0 +1,6 @@
+{
+    "description":  "Listens for DMS heartbeat and acts on loss/tamper",
+    "methods":  [
+                    "on_heartbeat_loss()"
+                ]
+}

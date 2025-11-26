@@ -1,0 +1,6 @@
+[
+    "Monitor for agentic threats and unsafe outputs",
+    "Enforce freeze/thaw semantics with voting if necessary",
+    "Provide justification logs for freezes",
+    "Interface with Shadow Monitoring and Context Snapback"
+]

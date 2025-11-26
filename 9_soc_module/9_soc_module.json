@@ -1,0 +1,45 @@
+{
+    "description":  "Hardware layer that can physically cut outputs (power, RF, actuators) independent of AICO\u0027s main CPU. Dumb logic via MOSFET/relays driven by DMS line for guaranteed hardware fail-safes.",
+    "functions":  [
+                      "Cut external power lines or outputs",
+                      "Disable wireless interfaces",
+                      "Operate on inductive DMS heartbeat loss"
+                  ],
+    "components":  {
+                       "relay_array":  {
+                                           "description":  "Physically isolates outputs on trigger",
+                                           "properties":  [
+                                                              "redundant_relays",
+                                                              "manual_override"
+                                                          ]
+                                       },
+                       "dms_watchdog_interface":  {
+                                                      "description":  "Listens for DMS heartbeat and acts on loss/tamper",
+                                                      "methods":  [
+                                                                      "on_heartbeat_loss()"
+                                                                  ]
+                                                  }
+                   },
+    "workflows":  {
+                      "engage_fail_safe":  [
+                                               "dms_watchdog_interface.detect_loss()",
+                                               "relay_array.open()",
+                                               "log event to debug_channel + immutable storage"
+                                           ]
+                  },
+    "failure_modes":  {
+                          "stuck_relay":  {
+                                              "symptom":  "Relay fails to open",
+                                              "response":  [
+                                                               "fallback to redundant relay",
+                                                               "alert operator"
+                                                           ]
+                                          }
+                      },
+    "examples":  {
+                     "emergency_disable":  {
+                                               "scenario":  "Introspection requests hard cut due to safety violation",
+                                               "action":  "SOC relay_array.open(), debug_channel sends minimal telemetry"
+                                           }
+                 }
+}

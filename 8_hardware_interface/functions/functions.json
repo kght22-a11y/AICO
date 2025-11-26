@@ -1,0 +1,6 @@
+[
+    "Read/write device registers with sandboxed wrappers",
+    "Probe and infer device behavior via controlled experiments",
+    "Provide safe emulation fallback for unknown or risky ops",
+    "Expose hardware map to controller with confidence metadata"
+]

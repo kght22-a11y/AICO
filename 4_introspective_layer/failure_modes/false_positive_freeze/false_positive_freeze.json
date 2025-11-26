@@ -1,0 +1,7 @@
+{
+    "symptom":  "Unnecessary freeze triggered",
+    "response":  [
+                     "short timeout auto-thaw with human-in-the-loop",
+                     "log justification"
+                 ]
+}
