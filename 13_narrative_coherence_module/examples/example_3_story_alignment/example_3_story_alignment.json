@@ -1,0 +1,5 @@
+{
+    "scenario":  "Model clusters disagree on implied motivations in a multi-step plan.",
+    "correction":  "Narrative Validator selects highest-confidence motivation and re-aligns clusters.",
+    "result":  "Unified narrative restored."
+}

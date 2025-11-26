@@ -1,0 +1,5 @@
+[
+    "report_bias_flags()",
+    "inject_correction_suggestions()",
+    "provide_before_after_states()"
+]

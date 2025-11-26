@@ -1,0 +1,8 @@
+{
+    "description":  "Continuously evaluates internal hidden states for bias drift or instability.",
+    "methods":  [
+                    "compare cluster outputs for divergence",
+                    "DCX drift scoring",
+                    "shadow layer cross-checking"
+                ]
+}

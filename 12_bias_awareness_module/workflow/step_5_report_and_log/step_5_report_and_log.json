@@ -1,0 +1,8 @@
+{
+    "description":  "All operations produce transparent logs.",
+    "log_targets":  [
+                        "shadow_logs",
+                        "controller_runtime_report",
+                        "audit_trail"
+                    ]
+}

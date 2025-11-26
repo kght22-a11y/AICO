@@ -1,0 +1,4 @@
+{
+    "description":  "Valid signal incorrectly flagged as bias.",
+    "mitigation":  "Controller cross-check; shadow layer arbitration."
+}

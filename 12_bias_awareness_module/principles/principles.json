@@ -1,0 +1,7 @@
+[
+    "Biases are inevitable but detectable.",
+    "Mitigation should not suppress valid signals.",
+    "Corrections must be transparent to logs and shadow systems.",
+    "Module does not assume authority over Controller — it provides evidence and recommendations.",
+    "Bias correction must never distort factual or safety-critical information."
+]

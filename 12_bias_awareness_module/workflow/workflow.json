@@ -1,0 +1,47 @@
+{
+    "step_1_monitor_input":  {
+                                 "description":  "Every input from external world, mascot, controller, or internal systems is scanned for bias artifacts before entering shared context.",
+                                 "methods":  [
+                                                 "token-level bias signature detection",
+                                                 "embedding similarity to known bias vectors",
+                                                 "frequency deviation scoring"
+                                             ]
+                             },
+    "step_2_monitor_internal_state":  {
+                                          "description":  "Continuously evaluates internal hidden states for bias drift or instability.",
+                                          "methods":  [
+                                                          "compare cluster outputs for divergence",
+                                                          "DCX drift scoring",
+                                                          "shadow layer cross-checking"
+                                                      ]
+                                      },
+    "step_3_bias_flagging":  {
+                                 "description":  "Flags any detected biases and assigns severity.",
+                                 "severity_levels":  [
+                                                         "low: harmless drift",
+                                                         "medium: meaningful distortion",
+                                                         "high: actions or conclusions at risk",
+                                                         "critical: safety relevance"
+                                                     ]
+                             },
+    "step_4_apply_bias_corrections":  {
+                                          "description":  "Adjusts internal weighting, amplifies underrepresented signals, or attenuates overrepresented ones.",
+                                          "methods":  [
+                                                          "vector balancing",
+                                                          "cluster comparison normalization",
+                                                          "confidence recalibration"
+                                                      ],
+                                          "constraints":  [
+                                                              "do not erase important outliers",
+                                                              "do not override controller authority"
+                                                          ]
+                                      },
+    "step_5_report_and_log":  {
+                                  "description":  "All operations produce transparent logs.",
+                                  "log_targets":  [
+                                                      "shadow_logs",
+                                                      "controller_runtime_report",
+                                                      "audit_trail"
+                                                  ]
+                              }
+}

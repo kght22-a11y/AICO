@@ -1,0 +1,4 @@
+{
+    "description":  "Bias correction suppresses important outlier data.",
+    "mitigation":  "Limit correction magnitude; require cluster voting."
+}

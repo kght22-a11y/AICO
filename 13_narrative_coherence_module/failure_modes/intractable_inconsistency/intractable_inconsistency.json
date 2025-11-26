@@ -1,0 +1,4 @@
+{
+    "description":  "Conflicting states from different clusters cannot be unified.",
+    "mitigation":  "Forward to controller; require external decision."
+}
