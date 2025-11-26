@@ -1,0 +1,9 @@
+{
+    "description":  "Validates output or internal reasoning before release to controller.",
+    "checks":  [
+                   "temporal order",
+                   "causal integrity",
+                   "cross-model consistency",
+                   "log coherence"
+               ]
+}

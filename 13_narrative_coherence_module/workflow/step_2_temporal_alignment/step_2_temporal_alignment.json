@@ -1,0 +1,8 @@
+{
+    "description":  "Ensures that events and reasoning steps obey chronological order.",
+    "methods":  [
+                    "timestamp analysis",
+                    "embedding temporal mapping",
+                    "cluster cross checking"
+                ]
+}

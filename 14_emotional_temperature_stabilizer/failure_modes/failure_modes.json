@@ -1,0 +1,10 @@
+{
+    "flatness":  {
+                     "description":  "Tone becomes too neutral.",
+                     "mitigation":  "Dynamic tone variance reintroduced when emotional authenticity is beneficial."
+                 },
+    "misread_affect":  {
+                           "description":  "Misinterprets sarcasm or humor.",
+                           "mitigation":  "Shadow-layer context cues + sarcasm detector."
+                       }
+}

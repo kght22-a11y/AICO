@@ -1,0 +1,6 @@
+{
+    "methods":  [
+                    "signal_contradictions()",
+                    "validate_causal_maps()"
+                ]
+}

@@ -1,0 +1,6 @@
+{
+    "methods":  [
+                    "retrieve_internal_thought_chain()",
+                    "submit_coherence_flags()"
+                ]
+}

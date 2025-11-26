@@ -1,0 +1,5 @@
+[
+    "detect_time_inconsistencies",
+    "correct_temporal_overlaps",
+    "maintain event chronologies"
+]

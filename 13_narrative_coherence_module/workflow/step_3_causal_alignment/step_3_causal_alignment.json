@@ -1,0 +1,7 @@
+{
+    "description":  "Checks that inferred conclusions follow logically from premises.",
+    "methods":  [
+                    "cause-effect embedding analysis",
+                    "shadow contradiction review"
+                ]
+}

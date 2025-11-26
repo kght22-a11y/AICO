@@ -1,0 +1,42 @@
+{
+    "step_1_collect_context":  {
+                                   "description":  "Aggregates ongoing threads, world state, and task context.",
+                                   "tools":  [
+                                                 "context_snapback_layer",
+                                                 "shadow_monitoring",
+                                                 "introspection logs"
+                                             ]
+                               },
+    "step_2_temporal_alignment":  {
+                                      "description":  "Ensures that events and reasoning steps obey chronological order.",
+                                      "methods":  [
+                                                      "timestamp analysis",
+                                                      "embedding temporal mapping",
+                                                      "cluster cross checking"
+                                                  ]
+                                  },
+    "step_3_causal_alignment":  {
+                                    "description":  "Checks that inferred conclusions follow logically from premises.",
+                                    "methods":  [
+                                                    "cause-effect embedding analysis",
+                                                    "shadow contradiction review"
+                                                ]
+                                },
+    "step_4_resolve_contradictions":  {
+                                          "description":  "Attempts to unify conflicting interpretations.",
+                                          "strategies":  [
+                                                             "confidence weighting",
+                                                             "premise refinement",
+                                                             "discard_low_dcx_paths"
+                                                         ]
+                                      },
+    "step_5_final_consistency_pass":  {
+                                          "description":  "Validates output or internal reasoning before release to controller.",
+                                          "checks":  [
+                                                         "temporal order",
+                                                         "causal integrity",
+                                                         "cross-model consistency",
+                                                         "log coherence"
+                                                     ]
+                                      }
+}

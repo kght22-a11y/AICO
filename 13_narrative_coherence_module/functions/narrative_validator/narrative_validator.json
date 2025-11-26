@@ -1,0 +1,9 @@
+{
+    "description":  "Performs final coherence checks on long outputs and internal reasoning.",
+    "operations":  [
+                       "detect contradictions",
+                       "resolve conflicts",
+                       "evaluate narrative flow",
+                       "enforce consistency"
+                   ]
+}
