@@ -1,0 +1,6 @@
+{
+    "description":  "Provides ground truth data for realignment during reflective pauses.",
+    "methods":  [
+                    "get_snapshot()"
+                ]
+}

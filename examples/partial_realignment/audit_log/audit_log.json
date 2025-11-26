@@ -1,0 +1,7 @@
+{
+    "event":  "reflective_partial_realignment",
+    "internal_state_after":  {
+                                 "motion_detected":  "low_confidence"
+                             },
+    "action_outcome":  "unlock_door remains blocked (still hallucinated)."
+}

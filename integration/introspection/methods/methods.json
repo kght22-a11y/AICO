@@ -1,0 +1,4 @@
+[
+    "adjust_state_batch(task_ids, corrections)",
+    "re_evaluate_actions_batch(pending_actions)"
+]

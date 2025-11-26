@@ -1,0 +1,22 @@
+[
+    {
+        "step":  1,
+        "action":  "Enter reflective state; query Mascot."
+    },
+    {
+        "step":  2,
+        "action":  "Compute DCX: 0.9 (high)."
+    },
+    {
+        "step":  3,
+        "action":  "Adjust internal state: annotate \u0027motion_detected\u0027 with \u0027low_confidence\u0027."
+    },
+    {
+        "step":  4,
+        "action":  "Re-evaluate action: DCX remains 0.85 (high); keep blocked."
+    },
+    {
+        "step":  5,
+        "action":  "Exit reflective state; log discrepancy for review."
+    }
+]

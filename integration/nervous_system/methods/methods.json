@@ -1,0 +1,4 @@
+[
+    "register_idle_callback(minutes=15, callback=enter_reflective_pause)",
+    "abort_reflective_pause()"
+]

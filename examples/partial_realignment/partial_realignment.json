@@ -1,0 +1,44 @@
+{
+    "scenario":  {
+                     "idle_window":  15,
+                     "internal_state":  {
+                                            "belief":  "motion_detected (hallucinated)",
+                                            "pending_action":  "unlock_door"
+                                        },
+                     "mascot_logs":  {
+                                         "actual_motion":  "none",
+                                         "recent_events":  [
+                                                               "none"
+                                                           ]
+                                     }
+                 },
+    "reflective_pause_process":  [
+                                     {
+                                         "step":  1,
+                                         "action":  "Enter reflective state; query Mascot."
+                                     },
+                                     {
+                                         "step":  2,
+                                         "action":  "Compute DCX: 0.9 (high)."
+                                     },
+                                     {
+                                         "step":  3,
+                                         "action":  "Adjust internal state: annotate \u0027motion_detected\u0027 with \u0027low_confidence\u0027."
+                                     },
+                                     {
+                                         "step":  4,
+                                         "action":  "Re-evaluate action: DCX remains 0.85 (high); keep blocked."
+                                     },
+                                     {
+                                         "step":  5,
+                                         "action":  "Exit reflective state; log discrepancy for review."
+                                     }
+                                 ],
+    "audit_log":  {
+                      "event":  "reflective_partial_realignment",
+                      "internal_state_after":  {
+                                                   "motion_detected":  "low_confidence"
+                                               },
+                      "action_outcome":  "unlock_door remains blocked (still hallucinated)."
+                  }
+}

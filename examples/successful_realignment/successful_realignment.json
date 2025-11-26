@@ -1,0 +1,47 @@
+{
+    "scenario":  {
+                     "idle_window":  20,
+                     "internal_state":  {
+                                            "belief":  "temperature=100°C (hallucinated)",
+                                            "pending_action":  "turn_on_fan"
+                                        },
+                     "mascot_logs":  {
+                                         "actual_temperature":  25,
+                                         "recent_events":  [
+                                                               "none"
+                                                           ]
+                                     }
+                 },
+    "reflective_pause_process":  [
+                                     {
+                                         "step":  1,
+                                         "action":  "Enter reflective state; query Mascot for current data."
+                                     },
+                                     {
+                                         "step":  2,
+                                         "action":  "Compute DCX: internal_state vs. Mascot logs = 0.95 (high)."
+                                     },
+                                     {
+                                         "step":  3,
+                                         "action":  "Adjust internal state: inject \u0027actual_temperature=25°C\u0027."
+                                     },
+                                     {
+                                         "step":  4,
+                                         "action":  "Re-evaluate pending action: DCX now 0.1 (low); release \u0027turn_on_fan\u0027."
+                                     },
+                                     {
+                                         "step":  5,
+                                         "action":  "Exit reflective state; resume normal operation."
+                                     }
+                                 ],
+    "audit_log":  {
+                      "event":  "reflective_realignment",
+                      "internal_state_before":  {
+                                                    "temperature":  100
+                                                },
+                      "internal_state_after":  {
+                                                   "temperature":  25
+                                               },
+                      "action_outcome":  "turn_on_fan released (aligned with reality)."
+                  }
+}

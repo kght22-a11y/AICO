@@ -1,0 +1,8 @@
+{
+    "description":  "Internal state remains misaligned after multiple reflective pauses.",
+    "response":  [
+                     "Escalate to Introspection for deeper analysis.",
+                     "Log persistent misalignment for audit.",
+                     "Consider task termination if safety-critical."
+                 ]
+}

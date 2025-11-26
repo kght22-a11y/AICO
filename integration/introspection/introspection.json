@@ -1,0 +1,7 @@
+{
+    "description":  "Adjusts internal states and re-evaluates actions during reflective pauses.",
+    "methods":  [
+                    "adjust_state_batch(task_ids, corrections)",
+                    "re_evaluate_actions_batch(pending_actions)"
+                ]
+}

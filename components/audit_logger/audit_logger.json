@@ -1,0 +1,12 @@
+{
+    "description":  "Logs all realignments, corrections, and re-evaluated actions.",
+    "implementation":  {
+                           "data":  [
+                                        "Timestamp and duration of reflective pause.",
+                                        "Internal states adjusted (before/after).",
+                                        "Mascot data used for realignment.",
+                                        "Re-evaluated actions and outcomes."
+                                    ],
+                           "storage":  "Shadow logs (immutable, auditable)."
+                       }
+}

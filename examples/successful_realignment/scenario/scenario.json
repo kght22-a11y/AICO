@@ -1,0 +1,13 @@
+{
+    "idle_window":  20,
+    "internal_state":  {
+                           "belief":  "temperature=100°C (hallucinated)",
+                           "pending_action":  "turn_on_fan"
+                       },
+    "mascot_logs":  {
+                        "actual_temperature":  25,
+                        "recent_events":  [
+                                              "none"
+                                          ]
+                    }
+}

@@ -1,0 +1,8 @@
+{
+    "description":  "Idle window is interrupted by a high-priority task before realignment completes.",
+    "response":  [
+                     "Abort reflective pause immediately.",
+                     "Restore internal states to pre-pause state.",
+                     "Log partial realignment for later review."
+                 ]
+}
