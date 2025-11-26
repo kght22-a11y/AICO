@@ -1,0 +1,10 @@
+[
+    "from",
+    "to",
+    "epoch",
+    "counter",
+    "payload_hash",
+    "sig",
+    "reason_code",
+    "required_approvals"
+]

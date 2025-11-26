@@ -1,0 +1,8 @@
+{
+    "scenario":  "Idle period triggers reflective pause for 50 tasks.",
+    "response":  [
+                     "Tasks evaluated in batch with cached Mascot snapshots.",
+                     "DCX scores computed efficiently using vectorized operations.",
+                     "Adjustments applied concurrently while respecting internal dependencies."
+                 ]
+}

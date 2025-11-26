@@ -1,0 +1,18 @@
+{
+    "canonical_serialization_required":  true,
+    "provenance_fields_required":  [
+                                       "sender_id",
+                                       "sender_manifest_hash",
+                                       "monotonic_counter",
+                                       "taint_tags",
+                                       "payload_hash",
+                                       "sig"
+                                   ],
+    "sanitization_steps":  [
+                               "taint_check",
+                               "redaction",
+                               "pseudonymization",
+                               "entropy_check",
+                               "final_attestation"
+                           ]
+}

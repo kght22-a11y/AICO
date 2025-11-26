@@ -1,0 +1,7 @@
+[
+    "Dynamic resource allocation: Assign compute to active tasks based on priority.",
+    "Low-latency context management: Minimize time for snapback, reflective pauses, and external action validation.",
+    "Parallel execution: Tasks can operate concurrently, with safe synchronization for shared resources.",
+    "Modular scalability: New tasks, models, or sensors can be added without disrupting existing operations.",
+    "Predictive caching: Frequently used Mascot logs, task checkpoints, and DCX computations are cached to reduce recomputation."
+]

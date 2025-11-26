@@ -1,0 +1,19 @@
+{
+    "high_load_snapback":  {
+                               "scenario":  "10 tasks simultaneously propose external actions, 3 require snapback.",
+                               "response":  [
+                                                "Parallel execution engine prioritizes snapback tasks.",
+                                                "Memory manager retrieves checkpoints quickly via cache.",
+                                                "Retry manager applies exponential backoff concurrently.",
+                                                "Audit logger streams all events without blocking operations."
+                                            ]
+                           },
+    "massive_reflective_pause":  {
+                                     "scenario":  "Idle period triggers reflective pause for 50 tasks.",
+                                     "response":  [
+                                                      "Tasks evaluated in batch with cached Mascot snapshots.",
+                                                      "DCX scores computed efficiently using vectorized operations.",
+                                                      "Adjustments applied concurrently while respecting internal dependencies."
+                                                  ]
+                                 }
+}

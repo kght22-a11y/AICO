@@ -1,0 +1,11 @@
+{
+    "description":  "Allocates CPU/GPU/accelerator resources to tasks dynamically.",
+    "implementation":  {
+                           "prioritization":  [
+                                                  "real-time critical tasks",
+                                                  "snapshot-intensive tasks",
+                                                  "low-priority reflective operations"
+                                              ],
+                           "preemption":  "Lower-priority tasks can be paused for higher-priority ones."
+                       }
+}

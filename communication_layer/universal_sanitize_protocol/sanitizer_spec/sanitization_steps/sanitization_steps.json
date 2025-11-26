@@ -1,0 +1,7 @@
+[
+    "taint_check",
+    "redaction",
+    "pseudonymization",
+    "entropy_check",
+    "final_attestation"
+]

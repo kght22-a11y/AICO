@@ -1,0 +1,6 @@
+{
+    "min_approvals":  3,
+    "role_diversity":  true,
+    "evidence_blob_required":  true,
+    "attestation_by_shadow":  true
+}

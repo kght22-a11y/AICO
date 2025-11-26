@@ -1,0 +1,8 @@
+{
+    "cached_items":  [
+                         "DCX computations for frequent actions",
+                         "recent Mascot sensor snapshots",
+                         "last sane task checkpoints"
+                     ],
+    "eviction_policy":  "LRU with priority weighting for high-risk actions."
+}
