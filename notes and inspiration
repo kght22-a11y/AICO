@@ -1,0 +1,40 @@
+"gate_architecture": {
+  "principle": "Scalable output validation, platform-optimized",
+  "desktop_deployment": {
+    "gate_implementation": "software",
+    "overhead": "<1%",
+    "latency": "5 microseconds",
+    "components": ["dcx_validator", "dms_checker", "decision_router"]
+  },
+  "robotics_deployment": {
+    "gate_implementation": "ASIC/FPGA",
+    "overhead": "0% (parallel, independent)",
+    "latency": "nanoseconds",
+    "cost_per_unit": "$50-200",
+    "components": ["dedicated_dcx_engine", "inductive_receiver", "relay_array"]
+  },
+  "autonomous_vehicle_deployment": {
+    "gate_implementation": "hybrid",
+    "critical_path": "ASIC (steering/brake)",
+    "non_critical_path": "CPU (infotainment)",
+    "overhead": "asymmetric"
+  }
+}
+"soc_simplified": {
+  "principle": "Removed computer logic; now just a timer chip for heartbeat watchdog",
+  "components": {
+    "timer_chip": "Counts heartbeat pulses from DMS",
+    "relay_array": "Normally-open relays that SHORT outputs when timer expires",
+    "power_rail": "Independent (cannot be starved by AICO)"
+  },
+  "operation": {
+    "normal": "Heartbeat pulse received every N ms → timer resets → relay stays open → outputs active",
+    "fault": "No heartbeat pulse for >N ms → timer expires → relay closes → outputs SHORT to ground"
+  },
+  "why_this_is_safer": {
+    "no_logic_to_corrupt": "Just a timer; can't be hacked",
+    "cannot_be_overridden": "Timer is independent hardware",
+    "single_point_failure_tolerant": "One relay failing can't hide the short"
+  },
+  "timeout_window": "100ms (tunable per deployment)"
+}
