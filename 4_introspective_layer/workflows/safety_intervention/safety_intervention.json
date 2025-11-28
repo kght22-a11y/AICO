@@ -1,6 +1,0 @@
-[
-    "shadow_monitoring.report_divergence()",
-    "safety_evaluator.compute_risk_score()",
-    "if risk \u003e threshold -\u003e freeze_manager.freeze_agent()",
-    "emit audit_explainer explanation"
-]

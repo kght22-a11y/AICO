@@ -1,5 +1,0 @@
-[
-    "models produce context snapshots",
-    "shadow_monitoring.compute_dcx()",
-    "controller merges according to merge_context rules"
-]

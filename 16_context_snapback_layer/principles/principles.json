@@ -1,7 +1,0 @@
-[
-    "Invisible to core models: Tasks are unaware of snapbacks or retries.",
-    "Preserves internal state: Only external-output-related context is modified.",
-    "Collaborates with Shadow Monitoring: Uses DCX scores to identify when snapback is needed.",
-    "Transient corrections: Applies minimal fixes to allow retries without disrupting internal reasoning.",
-    "Audit trail: Logs all snapbacks and retries for debugging and improvement."
-]

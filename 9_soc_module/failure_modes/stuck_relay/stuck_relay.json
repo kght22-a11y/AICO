@@ -1,7 +1,0 @@
-{
-    "symptom":  "Relay fails to open",
-    "response":  [
-                     "fallback to redundant relay",
-                     "alert operator"
-                 ]
-}

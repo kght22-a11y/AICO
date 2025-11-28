@@ -1,7 +1,0 @@
-{
-    "symptom":  "Probe returns non-deterministic values",
-    "response":  [
-                     "increase sample size",
-                     "escalate to controller for cautious handling"
-                 ]
-}

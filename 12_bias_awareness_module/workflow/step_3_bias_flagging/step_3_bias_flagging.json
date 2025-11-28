@@ -1,9 +1,0 @@
-{
-    "description":  "Flags any detected biases and assigns severity.",
-    "severity_levels":  [
-                            "low: harmless drift",
-                            "medium: meaningful distortion",
-                            "high: actions or conclusions at risk",
-                            "critical: safety relevance"
-                        ]
-}

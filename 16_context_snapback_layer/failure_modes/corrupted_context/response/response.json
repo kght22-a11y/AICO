@@ -1,5 +1,0 @@
-[
-    "Introspection terminates the task and spawns a replacement.",
-    "SOC module resets related hardware to a known-safe state.",
-    "Audit log records the corruption for debugging."
-]

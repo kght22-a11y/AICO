@@ -1,4 +1,0 @@
-{
-    "algorithm":  "Walk backward through context logs to find the state with the lowest DCX score.",
-    "restore":  "Reload the task\u0027s memory and registers from the identified checkpoint."
-}

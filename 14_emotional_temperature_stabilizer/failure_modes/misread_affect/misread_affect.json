@@ -1,4 +1,0 @@
-{
-    "description":  "Misinterprets sarcasm or humor.",
-    "mitigation":  "Shadow-layer context cues + sarcasm detector."
-}

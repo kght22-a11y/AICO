@@ -1,7 +1,0 @@
-{
-    "symptom":  "Cluster stopped sending heartbeats",
-    "response":  [
-                     "restart cluster",
-                     "escalate to SOC if restart fails"
-                 ]
-}

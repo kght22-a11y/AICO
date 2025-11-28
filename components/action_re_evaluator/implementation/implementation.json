@@ -1,6 +1,0 @@
-{
-    "outcomes":  {
-                     "low_dcx":  "Release previously blocked actions.",
-                     "high_dcx":  "Keep blocked; log for review."
-                 }
-}

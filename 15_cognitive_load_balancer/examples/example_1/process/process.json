@@ -1,8 +1,0 @@
-{
-    "tier_assignment":  "Tier 3 — moderate computational reasoning.",
-    "assigned_clusters":  [
-                              "engineering_model",
-                              "math_model"
-                          ],
-    "fusion_notes":  "Math model handles trigonometry; engineering model contextualizes solar incidence."
-}

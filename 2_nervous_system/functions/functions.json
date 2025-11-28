@@ -1,7 +1,0 @@
-[
-    "Task scheduling and prioritization",
-    "Heartbeat and liveness management for clusters",
-    "Resource arbitration (CPU/GPU/IO/Power)",
-    "Emergency aborts and fast-path safety enforcement",
-    "Expose APIs to introspection and controller"
-]

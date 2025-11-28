@@ -1,5 +1,0 @@
-{
-    "with_narrative_coherence":  "Ensures emotional tone matches narrative flow.",
-    "with_context_snapback":  "If emotional drift is prolonged, snapback resets tone baseline.",
-    "with_reflective_pause_layer":  "Pause layer can intervene to adjust tone before output."
-}

@@ -1,6 +1,0 @@
-[
-    "Channel isolation per cluster",
-    "Translation/adaptation between external protocols and internal signaling",
-    "Comprehensive audit logging of all inbound/outbound messages",
-    "Enforce access controls and rate-limits"
-]

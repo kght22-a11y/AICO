@@ -1,6 +1,0 @@
-{
-    "phase_0":  "ROM execution — minimal logic, deterministic verification routines",
-    "phase_1":  "Hardware enumeration and crypto checks",
-    "phase_2":  "Launch main AICO process in secure enclave mode",
-    "phase_3":  "Handoff and dormancy or watchdog monitoring"
-}

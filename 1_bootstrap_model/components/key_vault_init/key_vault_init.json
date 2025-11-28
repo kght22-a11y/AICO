@@ -1,7 +1,0 @@
-{
-    "description":  "Initializes cryptographic identity and seals keys",
-    "outputs":  [
-                    "sealed_keys",
-                    "bootstrap_identity"
-                ]
-}

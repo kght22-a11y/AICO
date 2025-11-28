@@ -1,8 +1,0 @@
-{
-    "description":  "Handles natural language understanding and generation tasks",
-    "properties":  [
-                       "context_window",
-                       "response_policy",
-                       "cost_model"
-                   ]
-}

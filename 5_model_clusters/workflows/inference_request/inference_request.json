@@ -1,6 +1,0 @@
-[
-    "controller.send_request(cluster_id, payload)",
-    "cluster.perform_inference()",
-    "cluster.return_structured_output()",
-    "controller.aggregate_and_log()"
-]

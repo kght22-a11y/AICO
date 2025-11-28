@@ -1,9 +1,0 @@
-{
-    "scenario":  "10 tasks simultaneously propose external actions, 3 require snapback.",
-    "response":  [
-                     "Parallel execution engine prioritizes snapback tasks.",
-                     "Memory manager retrieves checkpoints quickly via cache.",
-                     "Retry manager applies exponential backoff concurrently.",
-                     "Audit logger streams all events without blocking operations."
-                 ]
-}

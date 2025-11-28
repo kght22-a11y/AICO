@@ -1,5 +1,0 @@
-{
-    "affect_embedding_network":  "Converts emotional tone into vector space for comparison.",
-    "stability_ruleset":  "Defines allowed variance window.",
-    "feedback_dampener":  "Reduces oscillations caused by fast back-and-forth emotional shifts."
-}

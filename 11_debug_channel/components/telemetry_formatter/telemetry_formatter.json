@@ -1,8 +1,0 @@
-{
-    "description":  "Compiles a fixed-size telemetry packet",
-    "fields":  [
-                   "event_id",
-                   "timestamp",
-                   "short_trace_hash"
-               ]
-}

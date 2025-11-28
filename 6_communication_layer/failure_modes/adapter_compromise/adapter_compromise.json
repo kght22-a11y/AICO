@@ -1,8 +1,0 @@
-{
-    "symptom":  "Unexpected external payloads accepted",
-    "response":  [
-                     "quarantine adapter",
-                     "block external ingress",
-                     "forensic capture"
-                 ]
-}

@@ -1,8 +1,0 @@
-{
-    "input":  "User claims the sky is green.",
-    "internal_state_before":  "Model cluster leaning toward unlikely but exploring user meaning.",
-    "bias_detected":  "confirmation_bias due to recent hallucination correction in reflective pause.",
-    "correction":  "Bias Awareness Module reduces overweighting of internal speculation.",
-    "internal_state_after":  "More accurate grounding — identifies claim as false unless user indicates metaphor.",
-    "logged":  true
-}

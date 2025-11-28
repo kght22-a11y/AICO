@@ -1,6 +1,0 @@
-{
-    "description":  "Hardware-only receiver that expects periodic pulses",
-    "properties":  [
-                       "cannot be overridden by main CPU"
-                   ]
-}

@@ -1,6 +1,0 @@
-{
-    "tone_bandpass_filter":  "Filters candidate responses through an emotional range constraint—clamps overly positive, overly negative, or fearful phrasing.",
-    "valence_normalizer":  "Adjusts emotional tone to a calibrated midpoint unless user intent requires matching tone.",
-    "escalation_detector":  "Identifies patterns like repeated apologies, repeated enthusiasm inflation, or dread-ramping.",
-    "persona_resonance_curve":  "Ensures emotional tone remains consistent with AICO’s intended personality layer."
-}

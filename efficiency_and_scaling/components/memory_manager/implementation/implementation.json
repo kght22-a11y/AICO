@@ -1,4 +1,0 @@
-{
-    "checkpoint_cache":  "Most recent 10KB per task in RAM.",
-    "log_rotation":  "Older entries moved to compressed shadow logs for audit."
-}

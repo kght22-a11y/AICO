@@ -1,7 +1,0 @@
-{
-    "description":  "Enumerates hardware, checks MMIO regions and critical peripherals",
-    "outputs":  [
-                    "hardware_map",
-                    "probe_report"
-                ]
-}

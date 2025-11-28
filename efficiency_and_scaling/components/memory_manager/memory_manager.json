@@ -1,7 +1,0 @@
-{
-    "description":  "Handles efficient storage and retrieval of task checkpoints, DCX logs, and Mascot data.",
-    "implementation":  {
-                           "checkpoint_cache":  "Most recent 10KB per task in RAM.",
-                           "log_rotation":  "Older entries moved to compressed shadow logs for audit."
-                       }
-}

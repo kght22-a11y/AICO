@@ -1,5 +1,0 @@
-[
-    "require quorum of cluster representatives",
-    "validate post-freeze diagnostics",
-    "perform controlled unfreeze if safe"
-]

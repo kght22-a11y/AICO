@@ -1,9 +1,0 @@
-[
-    "inbound_adapter.normalize()",
-    "translator.translate_to_internal()",
-    "controller or cluster handles request",
-    "translator.translate_to_external()",
-    "outbound_sanitizer.sanitize()",
-    "audit_logger.record()",
-    "send response"
-]

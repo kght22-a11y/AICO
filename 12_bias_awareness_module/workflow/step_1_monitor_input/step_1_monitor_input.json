@@ -1,8 +1,0 @@
-{
-    "description":  "Every input from external world, mascot, controller, or internal systems is scanned for bias artifacts before entering shared context.",
-    "methods":  [
-                    "token-level bias signature detection",
-                    "embedding similarity to known bias vectors",
-                    "frequency deviation scoring"
-                ]
-}

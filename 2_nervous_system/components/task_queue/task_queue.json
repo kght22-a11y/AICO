@@ -1,9 +1,0 @@
-{
-    "description":  "Priority-ordered queue with preemption semantics",
-    "fields":  [
-                   "task_id",
-                   "priority",
-                   "deadline",
-                   "resource_requirements"
-               ]
-}

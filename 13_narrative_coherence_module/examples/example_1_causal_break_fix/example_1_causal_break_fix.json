@@ -1,7 +1,0 @@
-{
-    "input":  "Model concludes B happened because C, but earlier stated A prevents C.",
-    "detected_issue":  "Causal contradiction.",
-    "correction":  "Narrative Coherence Module rewrites the reasoning chain to reflect the A-prevents-C rule.",
-    "result":  "A consistent chain A → notC → therefore notB is produced.",
-    "logged":  true
-}

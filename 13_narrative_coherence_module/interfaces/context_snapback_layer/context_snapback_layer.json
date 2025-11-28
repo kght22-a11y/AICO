@@ -1,7 +1,0 @@
-{
-    "description":  "Supplies ground-truth context snapshots after drift correction.",
-    "methods":  [
-                    "fetch_last_valid_snapshot()",
-                    "supply_correction_candidates()"
-                ]
-}

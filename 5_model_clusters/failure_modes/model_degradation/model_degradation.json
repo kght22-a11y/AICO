@@ -1,8 +1,0 @@
-{
-    "symptom":  "Cluster outputs become inconsistent or slow",
-    "response":  [
-                     "restart cluster",
-                     "switch to backup weights",
-                     "escalate to operator"
-                 ]
-}

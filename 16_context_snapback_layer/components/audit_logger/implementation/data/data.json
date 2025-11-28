@@ -1,7 +1,0 @@
-[
-    "Task ID and timestamp.",
-    "Original hallucinated output and DCX score.",
-    "Last sane state and corrections applied.",
-    "Retry outcomes (success/failure).",
-    "Final action (released/terminated)."
-]

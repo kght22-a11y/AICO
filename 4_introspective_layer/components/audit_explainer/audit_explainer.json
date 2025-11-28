@@ -1,6 +1,0 @@
-{
-    "description":  "Generates human-readable rationales for interventions",
-    "methods":  [
-                    "explain_freeze(event_id)"
-                ]
-}

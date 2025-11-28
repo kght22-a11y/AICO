@@ -1,6 +1,0 @@
-{
-    "description":  "Short power hold to finish logging before full shutdown",
-    "properties":  [
-                       "hold_duration_ms"
-                   ]
-}

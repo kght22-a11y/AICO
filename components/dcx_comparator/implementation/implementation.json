@@ -1,4 +1,0 @@
-{
-    "threshold":  0.5,
-    "method":  "Use cosine similarity on vectorized internal states vs. Mascot logs."
-}

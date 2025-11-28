@@ -1,4 +1,0 @@
-{
-    "scenario":  "Controller tasked to map unknown peripheral",
-    "action":  "orchestrate probing tasks to hardware_interface, aggregate findings, produce device map"
-}

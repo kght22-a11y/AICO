@@ -1,6 +1,0 @@
-{
-    "step_1_problem_characterization":  "Classifies the query into complexity tiers 1–5.",
-    "step_2_load_distribution":  "Dispatches appropriate sub-models.",
-    "step_3_fusion_pass":  "Merges outputs using coherence module.",
-    "step_4_shadow_gate":  "Shadow layer verifies output corresponds to reality, not model hallucination loops."
-}

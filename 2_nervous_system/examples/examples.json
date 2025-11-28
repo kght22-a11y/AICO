@@ -1,6 +1,0 @@
-{
-    "latency_sensitive_dispatch":  {
-                                       "scenario":  "Control task for motor requires \u003c5ms latency",
-                                       "action":  "resource_allocator assigns dedicated core, task_queue marks non-preemptible"
-                                   }
-}

@@ -1,8 +1,0 @@
-{
-    "description":  "Processes image/video frames and extracts structured observations",
-    "properties":  [
-                       "frame_rate",
-                       "resolution",
-                       "confidence_thresholds"
-                   ]
-}

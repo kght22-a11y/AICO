@@ -1,6 +1,0 @@
-{
-    "symptom":  "Unexpected read/write pattern detected",
-    "response":  [
-                     "quarantine access, revoke keys, escalate to operator"
-                 ]
-}

@@ -1,5 +1,0 @@
-[
-    "Transmit essential telemetry when normal channels cut",
-    "Provide immutable minimal logs for forensics",
-    "Prevent information leakage by limiting content"
-]

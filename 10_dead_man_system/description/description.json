@@ -1,1 +1,0 @@
-"Simple hardware watchdog driven by an inductive heartbeat from introspection; forces offline-safe actions if heartbeat stops."

@@ -1,8 +1,0 @@
-{
-    "symptom":  "Agent tries to evade freeze",
-    "response":  [
-                     "escalate to SOC/DMS",
-                     "increase audit granularity",
-                     "require human review"
-                 ]
-}

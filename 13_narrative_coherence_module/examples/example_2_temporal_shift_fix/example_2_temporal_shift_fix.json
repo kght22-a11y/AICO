@@ -1,5 +1,0 @@
-{
-    "scenario":  "Reasoning references an event before it supposedly occurred.",
-    "correction":  "Timeline Manager reorders internal event nodes.",
-    "result":  "Correct chronological chain restored."
-}

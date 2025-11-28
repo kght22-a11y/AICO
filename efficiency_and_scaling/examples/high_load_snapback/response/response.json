@@ -1,6 +1,0 @@
-[
-    "Parallel execution engine prioritizes snapback tasks.",
-    "Memory manager retrieves checkpoints quickly via cache.",
-    "Retry manager applies exponential backoff concurrently.",
-    "Audit logger streams all events without blocking operations."
-]

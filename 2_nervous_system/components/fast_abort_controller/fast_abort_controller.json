@@ -1,7 +1,0 @@
-{
-    "description":  "Hardware-interfacing path for immediate aborts (triggers SOC/DMS)",
-    "methods":  [
-                    "abort_task(task_id)",
-                    "engage_soc_fail_safe()"
-                ]
-}

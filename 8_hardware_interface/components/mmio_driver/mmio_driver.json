@@ -1,7 +1,0 @@
-{
-    "description":  "Low-level driver with rate-limits and safety checks",
-    "methods":  [
-                    "read(addr)",
-                    "write(addr, value)"
-                ]
-}

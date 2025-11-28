@@ -1,5 +1,0 @@
-{
-    "required_implementations":  2,
-    "ci_parity_check":  true,
-    "failure_action":  "block_promotion_and_emit_forensic_report"
-}

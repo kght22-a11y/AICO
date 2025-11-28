@@ -1,8 +1,0 @@
-{
-    "symptom":  "Probe appears to have damaged hardware or caused unsafe output",
-    "response":  [
-                     "SOC disable external outputs",
-                     "notify operator",
-                     "preserve logs for forensics"
-                 ]
-}

@@ -1,7 +1,0 @@
-{
-    "description":  "Creates and restores snapshots for snapback and rollback",
-    "methods":  [
-                    "create_snapshot(task_id)",
-                    "restore_snapshot(snapshot_id)"
-                ]
-}

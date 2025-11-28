@@ -1,8 +1,0 @@
-[
-    "sender_id",
-    "sender_manifest_hash",
-    "monotonic_counter",
-    "taint_tags",
-    "payload_hash",
-    "sig"
-]

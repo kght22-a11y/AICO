@@ -1,6 +1,0 @@
-{
-    "description":  "Executes hardware probes in a constrained environment and records responses",
-    "methods":  [
-                    "run_probe_sequence(seq_id)"
-                ]
-}

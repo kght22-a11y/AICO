@@ -1,5 +1,0 @@
-{
-    "with_reflective_pause_layer":  "Pause layer ensures load balancer doesn’t overrun complex chains.",
-    "with_introspection":  "Monitors reasoning quality.",
-    "with_shadow_monitoring":  "Shadow layer ensures final output remains grounded."
-}

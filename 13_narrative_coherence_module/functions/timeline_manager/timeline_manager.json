@@ -1,8 +1,0 @@
-{
-    "description":  "Maintains temporal order and prevents contradictory sequencing.",
-    "operations":  [
-                       "detect_time_inconsistencies",
-                       "correct_temporal_overlaps",
-                       "maintain event chronologies"
-                   ]
-}

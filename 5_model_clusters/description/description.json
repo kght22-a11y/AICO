@@ -1,1 +1,0 @@
-"Specialized transformer or non-transformer modules (language, vision, planning, radio, symbolic reasoning) used as workers; run as isolated clusters with per-cluster context isolation."

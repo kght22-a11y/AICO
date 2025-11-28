@@ -1,6 +1,0 @@
-{
-    "step_1_tone_scan":  "Detects emotional markers in generated output.",
-    "step_2_normalization":  "Weights output toward allowed tone band.",
-    "step_3_context_recheck":  "Ensures new tone aligns with dialogue context.",
-    "step_4_output_release_gate":  "Shadow layer verifies emotional tone aligns with reality context."
-}

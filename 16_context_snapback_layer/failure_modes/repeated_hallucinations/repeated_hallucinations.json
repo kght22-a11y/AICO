@@ -1,8 +1,0 @@
-{
-    "description":  "Task repeatedly proposes hallucinated external actions even after snapbacks.",
-    "response":  [
-                     "Introspection freezes the task permanently.",
-                     "SOC module disables related external outputs.",
-                     "Audit log records the failure for post-mortem analysis."
-                 ]
-}

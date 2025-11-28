@@ -1,7 +1,0 @@
-{
-    "description":  "Converts higher-level goals into formal task requests",
-    "methods":  [
-                    "parse_goal(goal_text)",
-                    "generate_task_plan()"
-                ]
-}

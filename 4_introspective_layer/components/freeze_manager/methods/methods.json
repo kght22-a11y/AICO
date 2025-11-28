@@ -1,4 +1,0 @@
-[
-    "freeze_agent(agent_id)",
-    "collective_unfreeze(token)"
-]

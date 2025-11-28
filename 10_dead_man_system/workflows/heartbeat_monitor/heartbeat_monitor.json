@@ -1,5 +1,0 @@
-[
-    "await pulse within window",
-    "if missing, power_hold_logic.trigger()",
-    "notify SOC and perform safe shutdown steps"
-]

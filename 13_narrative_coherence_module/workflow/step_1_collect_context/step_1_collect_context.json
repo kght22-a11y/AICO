@@ -1,8 +1,0 @@
-{
-    "description":  "Aggregates ongoing threads, world state, and task context.",
-    "tools":  [
-                  "context_snapback_layer",
-                  "shadow_monitoring",
-                  "introspection logs"
-              ]
-}

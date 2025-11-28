@@ -1,4 +1,0 @@
-{
-    "description":  "Bias goes undetected.",
-    "mitigation":  "Periodic reflective pause + shadow comparison."
-}

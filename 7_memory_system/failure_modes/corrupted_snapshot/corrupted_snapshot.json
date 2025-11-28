@@ -1,8 +1,0 @@
-{
-    "symptom":  "Snapshot checksum mismatch",
-    "response":  [
-                     "attempt fallback snapshot",
-                     "notify introspection",
-                     "do not restore corrupted snapshot"
-                 ]
-}

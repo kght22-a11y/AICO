@@ -1,7 +1,0 @@
-{
-    "description":  "Handles inconsistent outputs from clusters before externalization",
-    "methods":  [
-                    "resolve(conflicts)",
-                    "flag_for_introspection()"
-                ]
-}

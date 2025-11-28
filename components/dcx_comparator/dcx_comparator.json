@@ -1,7 +1,0 @@
-{
-    "description":  "Computes DCX scores between internal states and Mascot data to identify misalignments.",
-    "implementation":  {
-                           "threshold":  0.5,
-                           "method":  "Use cosine similarity on vectorized internal states vs. Mascot logs."
-                       }
-}

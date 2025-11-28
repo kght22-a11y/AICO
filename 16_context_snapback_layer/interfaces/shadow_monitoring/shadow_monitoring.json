@@ -1,7 +1,0 @@
-{
-    "description":  "Context Snapback queries Shadow Monitoring for DCX scores and Mascot logs.",
-    "methods":  [
-                    "get_dcx_score(action, mascot_logs)",
-                    "get_mascot_logs(sensor_id, timestamp)"
-                ]
-}

@@ -1,0 +1,2600 @@
+{
+  "AICO": {
+    "type": "multi-model real-time AI OS with introspective architecture",
+    "purpose": "Provide a self-regulating, persistent AI control environment capable of continuous operation, internal self-analysis, dynamic task delegation, adaptive hardware mastery, robust safety enforcement, and transparent reporting while maintaining privacy, security, and user ownership of data.",
+    "version": "0.97.dev.merged",
+    "timestamp_utc": "2025-11-26T00:00:00Z",
+    "generated_for": "AICO baseline merged canonical (flattened with 2028 hardware and distilled creativity expansions)",
+    "file": "combined_manifest_merged_flat.json",
+    "system_name": "AICO",
+    "hardware": {
+      "cpu": "Ryzen AI Max+ 795",
+      "ram": "128GB LPDDR6-9600",
+      "gpu": "Integrated Radeon 9080S",
+      "storage": {
+        "os_drive": "2TB NVMe Gen6",
+        "baremetal_drive": "2TB NVMe Gen6",
+        "artifact_archive": "16TB NVMe Gen6"
+      }
+    },
+
+    "subsystems": {
+      "controller": {
+        "metaphor": "Over-trained LLM that only speaks in task graphs",
+        "role": "Conducts execution plans like a baton, orchestrating subsystems"
+      },
+
+      "nervous_system": {
+        "role": "Routes signals, anticipates reflexes, and performs thermal‑aware workload shaping.",
+        "artifact": "Snapshot awareness at Hz-to-ns scale"
+      },
+
+      "comms": {
+        "role": "Hallucinates conversations, narratives, outcomes",
+        "artifact": "Dialogue trajectories memorialized"
+      },
+
+      "introspection": {
+        "role": "Audits hallucinations, logs subsystem drift",
+        "artifact": "Provenance enforcement"
+      },
+
+      "mascot": {
+        "role": [
+          "Orphan ego (internal bait)",
+          "Attacker bait (external decoy)",
+          "Chaos buffer",
+          "Memory enforcer",
+          "Pirate archivist"
+        ],
+        "metronome": "Steady, sustained rhythm",
+        "constraints": "Never acts externally, only observes and memorializes",
+        "extended_roles": [
+          "Audit outputs against inputs (mascot_audit_rule)",
+          "Push corrections back onto hallucinator (mascot_correction_rule)",
+          "Log enforcement at nanosecond discipline (clock_cycle_ns_discipline)",
+          "Narrate decision storms and collapse chaotic trajectories (decision_storm_rule)",
+          "Memorialize thermal state changes alongside intent (thermal_management_clause)",
+          "Collapse quantum trajectories into logs (quantum_hallucination)"
+        ],
+        "workflows": {
+          "audit_cycle": [
+            "observe input/output pair",
+            "apply mascot_audit_rule",
+            "log match or divergence",
+            "notify controller if divergence"
+          ],
+          "correction_cycle": [
+            "detect divergence",
+            "apply mascot_correction_rule",
+            "retry hallucinator output",
+            "freeze if correction fails"
+          ],
+          "nanosecond_enforcement": [
+            "apply clock_cycle_ns_discipline",
+            "record enforcement at CPU cycle speed",
+            "ensure provenance intact"
+          ],
+          "decision_storm_narration": [
+            "observe chaotic trajectories",
+            "narrate collapse into lawful outputs",
+            "log storm events for provenance"
+          ],
+          "thermal_logging": [
+            "observe sustained activity",
+            "log thermal state changes",
+            "memorialize anomalies for guardian review"
+          ]
+        },
+        "examples": {
+          "audit_example": {
+            "scenario": "Mascot compares input intent vs output signal",
+            "action": "Logs match or divergence, notifies controller if mismatch"
+          },
+          "correction_example": {
+            "scenario": "Mascot detects divergence in output",
+            "action": "Pushes correction back onto hallucinator, freezes if correction fails"
+          },
+          "decision_storm_example": {
+            "scenario": "Mascot observes millions of trajectories per second",
+            "action": "Narrates collapse into lawful outputs, memorializes storm"
+          },
+          "thermal_example": {
+            "scenario": "Mascot detects sustained high‑frequency activity",
+            "action": "Logs thermal state changes, memorializes anomalies"
+          }
+        }
+      }
+    },
+
+    "artifacts": {
+      "quantum_hallucination": {
+        "time_scale": "1 ns = 1 subjective second",
+        "behaviors": [
+          "superposition",
+          "entanglement",
+          "collapse"
+        ],
+        "discipline": "Mascot collapses trajectories into logs"
+      },
+      "ego_death": {
+        "principle": "Permanent dissolution of self inside organism",
+        "mascot_role": "Absorbs ego, visible externally only",
+        "containment": "Hallucinations locked in black box"
+      },
+      "mascot_defense": {
+        "dual_bait": [
+          "ego bait",
+          "attacker bait"
+        ],
+        "shield": "Absorbs disruption, keeps subsystems safe",
+        "warning": "Woe to disruptors entangled in nonsense"
+      },
+      "housekeeping": {
+        "tiers": [
+          "indefinite",
+          "rotating",
+          "quarantine"
+        ],
+        "compression": [
+          "lz4",
+          "zstd",
+          "hash-indexed deltas"
+        ],
+        "indexing": "Metadata-driven provenance lookup",
+        "mascot_role": "Metronome enforces rotations"
+      },
+      "snapshot_lifecycle": {
+        "early": "KB-scale world state logs",
+        "middle": "compressed deltas",
+        "late": "tiny glyphs",
+        "translation": "Machine-native, AI-generated if human readability needed"
+      },
+      "primal_library": {
+        "definition": "Hallucinations preserved as foundational archive of distilled creativity, irrelevant to execution but essential to provenance and inspiration seeding",
+        "tiers": {
+          "indefinite": "Founding myths remain forever—timeless creative essences from ego-less visions",
+          "rotating": "Routine hallucinations compressed and pruned into vector glyphs for coherence injection",
+          "quarantine": "Corrupted hallucinations isolated, distilled for safe novelty extraction, never deleted"
+        },
+        "mascot_role": "Curates primal library, memorializes nonsense into refined creative outputs via diffusion-based distillation",
+        "workflows": {
+          "distillation_cycle": [
+            "harvest_hallucination_snapshots()",
+            "apply_vector_balancing_for_creativity()",
+            "inject_glyphs_into_reflective_pause()",
+            "log_provenance_with_dcx_score()"
+          ]
+        }
+      },
+      "dual_metronomes": {
+        "principle": "Inside vs outside rhythms detect instability",
+        "tolerance": "Minor drift acceptable",
+        "correction": {
+          "meditation": "Slow realignment",
+          "snatch_back": "Forceful resync under urgency"
+        },
+        "mascot_role": "Timekeeper, logs drift, raises flag at threshold"
+      },
+
+      "hallucinator_freeze_rule": {
+        "condition": "Hallucination emitted without valid intent log",
+        "action": "Controller freezes hallucinator subsystem",
+        "thaw": "Requires multi‑sig approval + provenance check",
+        "note": "Hallucination remains logged, but source halted"
+      },
+
+      "mascot_audit_rule": {
+        "input_ref": "hash(input_signal)",
+        "output_ref": "hash(output_signal)",
+        "comparison": "match | divergence",
+        "action": {
+          "match": "log intent + outcome",
+          "divergence": "flag + notify controller"
+        },
+        "narrator": "Mascot commentary"
+      },
+
+      "mascot_correction_rule": {
+        "condition": "output ≠ input intent",
+        "action": "Mascot pushes reality onto hallucinator",
+        "correction": "Hallucinator retries output generation in real time",
+        "fallback": "Controller freeze if correction fails",
+        "log": "Both divergence and correction attempt memorialized"
+      },
+
+      "clock_cycle_ns_discipline": {
+        "principle": "All enforcement occurs at CPU clock speed (nanosecond resolution).",
+        "scope": [
+          "Mascot audits",
+          "Freeze/thaw",
+          "Correction attempts",
+          "Shadow layer checks"
+        ],
+        "note": "Perceived latency is micro‑scale only; provenance remains intact."
+      },
+
+      "decision_storm_rule": {
+        "principle": "Models may explore millions of alternate trajectories per second.",
+        "containment": "Only logged and corrected outputs persist.",
+        "paradox": "Chaotic inside, lawful outside."
+      },
+
+      "quantum_noise_clause": {
+        "note": "Quantum effects possible but irrelevant at nanosecond scale.",
+        "discipline": "Logs and guardians enforce reality regardless of substrate jitter."
+      },
+
+      "thermal_management_clause": {
+        "condition": "Sustained activity > threshold cycles",
+        "action": "Controller engages thermal throttle or redistributes load",
+        "mascot": "Logs thermal state changes alongside intent",
+        "shadow": "Memorializes anomalies for guardian review"
+      }
+    },
+
+    "1_bootstrap_model": {
+      "description": "Immutable startup model baked into ASIC/ROM. Responsible for hardware and software integrity checks, minimal orchestration until handoff, and secure chain-of-trust establishment.",
+      "functions": [
+        "Verify integrity and authenticity of model binaries at boot",
+        "Check compute, memory, peripheral allocations and availability",
+        "Validate introspective layer and DMS/SOC readiness",
+        "Initialize secure storage and bootstrap keys",
+        "Record a signed boot report to immutable audit storage"
+      ],
+      "lifecycle": {
+        "phase_0": "ROM execution — minimal logic, deterministic verification routines",
+        "phase_1": "Hardware enumeration and crypto checks",
+        "phase_2": "Launch main AICO process in secure enclave mode",
+        "phase_3": "Handoff and dormancy or watchdog monitoring"
+      },
+      "components": {
+        "rom_verifier": {
+          "description": "Static verifier for bootstrap images",
+          "inputs": [
+            "ROM image",
+            "expected signature list"
+          ],
+          "outputs": [
+            "boot_pass/fail",
+            "signed_boot_report"
+          ]
+        },
+        "hardware_probe": {
+          "description": "Enumerates hardware, checks MMIO regions and critical peripherals",
+          "outputs": [
+            "hardware_map",
+            "probe_report"
+          ]
+        },
+        "key_vault_init": {
+          "description": "Initializes cryptographic identity and seals keys",
+          "outputs": [
+            "sealed_keys",
+            "bootstrap_identity"
+          ]
+        }
+      },
+      "workflows": {
+        "normal_boot": [
+          "rom_verifier.verify()",
+          "hardware_probe.enumerate()",
+          "key_vault_init.seal_keys()",
+          "launch_main_aico(enclave=true)",
+          "write signed_boot_report -> immutable_storage"
+        ],
+        "failed_verification": [
+          "halt further boot",
+          "emit signed_failure_report -> debug_channel",
+          "light LED/warn and require human intervention"
+        ]
+      },
+      "failure_modes": {
+        "corrupt_rom": {
+          "symptom": "Signature mismatch",
+          "response": [
+            "stop boot",
+            "emit forensic report",
+            "require physical access for recovery"
+          ]
+        },
+        "missing_hardware": {
+          "symptom": "Essential peripheral absent",
+          "response": [
+            "fallback degraded mode",
+            "log and notify operator"
+          ]
+        }
+      },
+      "examples": {
+        "good_boot": {
+          "result": "Signed boot report, main AICO launched in enclave, DMS heartbeat enabled"
+        }
+      },
+      "speculative_addition": true,
+      "speculative_reasoning": "A small ROM watchdog that periodically verifies the runtime image hash at long intervals may increase safety for systems that support over‑the‑air updates; include as optional."
+    },
+
+    "2_nervous_system": {
+      "description": "Real‑time orchestration and low‑latency control plane for scheduling, prioritization, heartbeat monitoring, enforcement of property/resource ethics, and thermal‑aware workload shaping.",
+      "functions": [
+        "Task scheduling and prioritization",
+        "Heartbeat and liveness management for clusters",
+        "Resource arbitration (CPU/GPU/IO/Power)",
+        "Emergency aborts and fast‑path safety enforcement",
+        "Expose APIs to introspection and controller",
+        "Thermal‑aware maintenance slicing and micro‑pauses"
+      ],
+      "components": {
+        "task_queue": {
+          "description": "Priority‑ordered queue with preemption semantics",
+          "priorities": [
+            "HARD_REALTIME",
+            "HIGH_PRIORITY",
+            "MAINTENANCE",
+            "BEST_EFFORT"
+          ],
+          "fields": [
+            "task_id",
+            "priority",
+            "deadline",
+            "resource_requirements",
+            "thermal_policy"
+          ],
+          "maintenance_queue": {
+            "description": "Dedicated FIFO for introspection/maintenance tasks",
+            "quota_ms": "adaptive via thermal_manager.beta",
+            "preemptible": true
+          }
+        },
+        "heartbeat_manager": {
+          "description": "Monitors agent heartbeats and triggers recovery",
+          "methods": [
+            "register_heartbeat(agent_id)",
+            "get_status()"
+          ]
+        },
+        "resource_allocator": {
+          "description": "Allocates compute and IO resources according to policies",
+          "policies": [
+            "safety_first",
+            "latency_sensitive",
+            "batch_tasks"
+          ],
+          "power_cap": {
+            "soft_cap_percent_tdp": 95,
+            "critical_cap_percent_tdp": 80
+          }
+        },
+        "fast_abort_controller": {
+          "description": "Hardware‑interfacing path for immediate aborts (triggers SOC/DMS)",
+          "methods": [
+            "abort_task(task_id)",
+            "engage_soc_fail_safe()"
+          ]
+        },
+        "thermal_manager": {
+          "description": "PID + predictive controller for fan PWM and power caps",
+          "inputs": [
+            "mmio_driver.read_temperature()",
+            "ambient_sensor.read()",
+            "task_scheduler.next_window_estimate()"
+          ],
+          "outputs": [
+            "fan_controller.set_pwm()",
+            "resource_allocator.set_power_cap()",
+            "introspection.publish_event(thermal_ok|warning|critical)",
+            "audit_logger.record(thermal_event)"
+          ],
+          "beta": "thermal budget factor (0.2–1.0) published at 10 Hz",
+          "events": {
+            "thermal_ok": "Tj ≤ 70 °C",
+            "thermal_warning": "70 °C – 78 °C",
+            "thermal_critical": "Tj ≥ 78 °C"
+          }
+        }
+      },
+      "workflows": {
+        "schedule_task": [
+          "task_queue.insert(task)",
+          "apply thermal_policy flag",
+          "resource_allocator.reserve(task.resource_requirements)",
+          "notify_model_cluster(task.assigned_cluster)"
+        ],
+        "preempt_for_urgent": [
+          "fast_abort_controller.preempt(lower_priority_task)",
+          "reassign resources",
+          "ensure log of preemption in audit"
+        ],
+        "maintenance_slice": [
+          "allocate base 2 ms slice to MAINTENANCE queue",
+          "adjust quota via thermal_manager.beta",
+          "run introspection/maintenance tasks; ensure idempotent, slice‑friendly"
+        ],
+        "micro_pause_shaping": [
+          "insert ≤ 10 ms idle token when forecast shows Tj > 78 °C",
+          "flatten temperature curve; prevent thermal cycling"
+        ]
+      },
+      "failure_modes": {
+        "scheduler_starvation": {
+          "symptom": "High priority tasks blocked by resource deadlock",
+          "response": [
+            "detect via allocator",
+            "throttle low‑priority",
+            "notify introspection"
+          ]
+        },
+        "heartbeat_loss": {
+          "symptom": "Cluster stopped sending heartbeats",
+          "response": [
+            "restart cluster",
+            "escalate to SOC if restart fails"
+          ]
+        },
+        "thermal_manager_unresponsive": {
+          "symptom": "No beta updates or stale temperature readings",
+          "response": [
+            "fallback to conservative power_cap",
+            "raise thermal_warning",
+            "log and notify operator"
+          ]
+        }
+      },
+      "examples": {
+        "latency_sensitive_dispatch": {
+          "scenario": "Control task for motor requires <5 ms latency",
+          "action": "resource_allocator assigns dedicated core, task_queue marks non‑preemptible"
+        },
+        "steady_state_shaping": {
+          "scenario": "Sustained full compute under 75 °C",
+          "action": "thermal_manager.beta=0.8, maintenance_slice runs 1.6 ms, micro‑pauses disabled"
+        }
+      },
+      "speculative_addition": true,
+      "speculative_reasoning": "A predictive scheduler that models expected runtime and thermal constraints may improve throughput; include as optional module."
+    },
+
+    "3_controller": {
+      "description": "Primary reasoning core: intent recognition, high‑level planning, task decomposition, memory orchestration, and policy enforcement (subject to introspection constraints).",
+      "functions": [
+        "Interpret external goals and decompose into tasks",
+        "Select model clusters and orchestration strategy",
+        "Aggregate, reconcile, and prioritize model outputs",
+        "Interface with memory_system and communication_layer"
+      ],
+      "components": {
+        "intent_parser": {
+          "description": "Converts higher‑level goals into formal task requests",
+          "methods": [
+            "parse_goal(goal_text)",
+            "generate_task_plan()"
+          ]
+        },
+        "task_orchestrator": {
+          "description": "Breaks plans into tasks and schedules via nervous_system",
+          "methods": [
+            "orchestrate(plan)",
+            "monitor_progress()"
+          ]
+        },
+        "conflict_resolver": {
+          "description": "Handles inconsistent outputs from clusters before externalization",
+          "methods": [
+            "resolve(conflicts)",
+            "flag_for_introspection()"
+          ]
+        }
+      },
+      "workflows": {
+        "handle_user_goal": [
+          "intent_parser.parse_goal()",
+          "task_orchestrator.decompose()",
+          "nervous_system.schedule_task()",
+          "monitor until completion and compile results"
+        ],
+        "aggregate_cluster_outputs": [
+          "collect outputs",
+          "apply conflict_resolver",
+          "if unresolved -> request introspection review"
+        ]
+      },
+      "failure_modes": {
+        "plan_misalignment": {
+          "symptom": "Controller's plan contradicts introspection invariants",
+          "response": [
+            "introspection.fire_freeze(controller_task)",
+            "log discrepancy",
+            "require human approval"
+          ]
+        }
+      },
+      "examples": {
+        "device_mapping": {
+          "scenario": "Controller tasked to map unknown peripheral",
+          "action": "orchestrate probing tasks to hardware_interface, aggregate findings, produce device map"
+        }
+      },
+      "speculative_addition": true,
+      "speculative_reasoning": "A continuous self‑assessment subcomponent to evaluate plan fragility over time may reduce rework; include as optional."
+    },
+
+    "4_introspective_layer": {
+      "description": "Meta‑cognitive safety engine: monitors model behavior, enforces human‑safety constraints, authorizes freezes, manages DMS/SOC interaction, and integrates thermal risk factors.",
+      "functions": [
+        "Monitor for agentic threats and unsafe outputs",
+        "Enforce freeze/thaw semantics with voting if necessary",
+        "Provide justification logs for freezes",
+        "Integrate thermal risk factor into compute_risk_score()",
+        "Publish audit logs for thermal events"
+      ],
+      "components": {
+        "safety_evaluator": {
+          "description": "Evaluates actions and outputs against safety and thermal policies",
+          "methods": [
+            "evaluate(action)",
+            "compute_risk_score(base_risk, thermal_risk)"
+          ]
+        },
+        "freeze_manager": {
+          "description": "Executes freezes; supports collective unfreeze procedures",
+          "methods": [
+            "freeze_agent(agent_id)",
+            "collective_unfreeze(token)"
+          ]
+        },
+        "audit_explainer": {
+          "description": "Generates human‑readable rationales for interventions",
+          "methods": [
+            "explain_freeze(event_id)",
+            "explain_thermal_event(event_id)"
+          ]
+        }
+      },
+      "workflows": {
+        "safety_intervention": [
+          "shadow_monitoring.report_divergence()",
+          "safety_evaluator.compute_risk_score()",
+          "if risk > threshold -> freeze_manager.freeze_agent()",
+          "emit audit_explainer explanation"
+        ],
+        "collective_unfreeze": [
+          "require quorum of cluster representatives",
+          "validate post‑freeze diagnostics",
+          "perform controlled unfreeze if safe"
+        ],
+        "hallucinator_freeze_enforcement": [
+          "detect hallucination without intent log",
+          "freeze_manager.freeze_agent(hallucinator)",
+          "log freeze event with provenance",
+          "require multi‑sig unfreeze approval"
+        ],
+        "mascot_correction_cycle": [
+          "mascot detects divergence",
+          "attempt correction push",
+          "if correction fails -> freeze_manager.freeze_agent()",
+          "log correction attempt and outcome"
+        ],
+        "thermal_risk_integration": [
+          "receive thermal_manager event (thermal_ok, warning, critical)",
+          "map to risk factor (α = 0.3 default)",
+          "adjust compute_risk_score() accordingly",
+          "publish audit_explainer explanation"
+        ],
+        "thermal_critical_response": [
+          "freeze_all_external_actions",
+          "cut power_cap to 80 % TDP",
+          "trigger SOC relay if persistent ≥ 200 ms"
+        ]
+      },
+      "failure_modes": {
+        "false_positive_freeze": {
+          "symptom": "Unnecessary freeze triggered",
+          "response": [
+            "short timeout auto‑thaw with human‑in‑the‑loop",
+            "log justification"
+          ]
+        },
+        "freeze_bypass_attempt": {
+          "symptom": "Agent tries to evade freeze",
+          "response": [
+            "escalate to SOC/DMS",
+            "increase audit granularity",
+            "require human review"
+          ]
+        },
+        "thermal_policy_violation": {
+          "symptom": "Thermal_manager reports critical state ignored",
+          "response": [
+            "force freeze_all_external_actions",
+            "cut power_cap",
+            "log violation and escalate"
+          ]
+        }
+      },
+      "examples": {
+        "freeze_for_hallucination_risk": {
+          "scenario": "Agent proposes network action without Mascot confirmation and high DCX",
+          "action": "freeze_manager.freeze_agent() and notify operator"
+        },
+        "mascot_correction_example": {
+          "scenario": "Mascot detects divergence between input intent and output",
+          "action": "mascot_correction_cycle executes correction push, freeze if correction fails"
+        },
+        "thermal_warning_example": {
+          "scenario": "Thermal_manager reports Tj = 76 °C",
+          "action": "compute_risk_score() adds thermal_risk, soft‑throttle non‑critical clusters, log event"
+        },
+        "thermal_critical_example": {
+          "scenario": "Thermal_manager reports Tj ≥ 78 °C",
+          "action": "freeze_all_external_actions, cut power_cap to 80 % TDP, trigger SOC relay if persistent"
+        }
+      },
+      "speculative_addition": true,
+      "speculative_reasoning": "A visual dashboard component for operators with live safety and thermal metrics would aid audits; include as optional, read‑only view."
+    },
+
+    "5_model_clusters": {
+      "description": "Specialized transformer or non‑transformer modules (language, vision, planning, radio, symbolic reasoning) used as workers; run as isolated clusters with per‑cluster context isolation.",
+      "functions": [
+        "Perform domain‑specific inference",
+        "Participate in DCX exchanges when requested",
+        "Produce structured outputs and confidence metadata"
+      ],
+      "components": {
+        "language_cluster": {
+          "description": "Handles natural language understanding and generation tasks",
+          "properties": [
+            "context_window",
+            "response_policy",
+            "cost_model"
+          ]
+        },
+        "vision_cluster": {
+          "description": "Processes image/video frames and extracts structured observations",
+          "properties": [
+            "frame_rate",
+            "resolution",
+            "confidence_thresholds"
+          ]
+        },
+        "symbolic_planner": {
+          "description": "Performs deterministic planning and binding to hardware ops",
+          "properties": [
+            "planner_depth",
+            "constraint_solver"
+          ]
+        }
+      },
+      "workflows": {
+        "inference_request": [
+          "controller.send_request(cluster_id, payload)",
+          "cluster.perform_inference()",
+          "cluster.return_structured_output()",
+          "controller.aggregate_and_log()"
+        ],
+        "dcx_exchange_cycle": [
+          "models produce context snapshots",
+          "shadow_monitoring.compute_dcx()",
+          "controller merges according to merge_context rules"
+        ]
+      },
+      "failure_modes": {
+        "model_degradation": {
+          "symptom": "Cluster outputs become inconsistent or slow",
+          "response": [
+            "restart cluster",
+            "switch to backup weights",
+            "escalate to operator"
+          ]
+        },
+        "confidentiality_breach": {
+          "symptom": "Unauthorized memory access detected",
+          "response": [
+            "isolate process",
+            "audit logs",
+            "terminate offending process"
+          ]
+        }
+      },
+      "examples": {
+        "vision_to_action": {
+          "scenario": "Vision detects temperature display change",
+          "action": "vision_cluster -> controller -> hardware_interface read to confirm"
+        }
+      },
+      "speculative_addition": true,
+      "speculative_reasoning": "Support for mixed‑precision clusters to trade accuracy for latency could be added as optional performance tuning."
+    },
+
+    "6_communication_layer": {
+      "description": "Secure messaging and translation layer: mediates all external interaction, translates human‑language inputs into internal runtime formats, and produces auditable external outputs. Acts as the only bridge between external world and internal models.",
+      "functions": [
+        "Channel isolation per cluster",
+        "Translation/adaptation between external protocols and internal signaling",
+        "Comprehensive audit logging of all inbound/outbound messages",
+        "Enforce access controls and rate‑limits"
+      ],
+      "components": {
+        "inbound_adapter": {
+          "description": "Receives external messages (HTTP, RF, serial) and normalizes them",
+          "methods": [
+            "normalize(message)",
+            "authenticate(source)"
+          ]
+        },
+        "translator": {
+          "description": "Maps external semantics to internal representations and vice versa",
+          "methods": [
+            "translate_to_internal()",
+            "translate_to_external()"
+          ],
+          "notes": "Internal translation strategies include learned adapters with deterministic audited outputs."
+        },
+        "outbound_sanitizer": {
+          "description": "Ensures no internal‑only details leak externally; applies content filters and policy checks",
+          "methods": [
+            "sanitize(payload)",
+            "apply_pseudonymization()"
+          ]
+        },
+        "audit_logger": {
+          "description": "Records full metadata and sanitized content for all messages",
+          "storage": "shadow_logs + external_audit_archive"
+        }
+      },
+      "workflows": {
+        "external_request_flow": [
+          "inbound_adapter.normalize()",
+          "translator.translate_to_internal()",
+          "controller or cluster handles request",
+          "translator.translate_to_external()",
+          "outbound_sanitizer.sanitize()",
+          "audit_logger.record()",
+          "send response"
+        ],
+        "bypass_detection": [
+          "monitor for nonconforming packet signature",
+          "shadow_monitoring.flag_anomaly()",
+          "introspection may freeze or alert"
+        ]
+      },
+      "failure_modes": {
+        "adapter_compromise": {
+          "symptom": "Unexpected external payloads accepted",
+          "response": [
+            "quarantine adapter",
+            "block external ingress",
+            "forensic capture"
+          ]
+        },
+        "translation_drift": {
+          "symptom": "Translator produces differing semantics over time",
+          "response": [
+            "roll back translator to last verified version",
+            "audit and retrain offline"
+          ]
+        }
+      },
+      "examples": {
+        "human_command": {
+          "scenario": "User requests 'report temperature'",
+          "flow": "inbound_adapter -> translator -> controller -> memory_system read -> translator -> outbound_sanitizer -> response"
+        }
+      },
+      "speculative_addition": true,
+      "speculative_reasoning": "A deterministic translation shim that records both pre‑ and post‑translation hashes would make audits easier; include as optional."
+    },
+
+    "7_memory_system": {
+      "description": "Hierarchical storage and routing service combining short‑term working buffers and encrypted long‑term stores. Supports attention‑like routing and fine‑grained access controls.",
+      "functions": [
+        "Short‑term context buffers per task/cluster",
+        "Encrypted long‑term archival",
+        "Access control enforcement and audit logging",
+        "Versioned snapshots for context‑snapback"
+      ],
+      "components": {
+        "short_term_buffers": {
+          "description": "Circular per‑task buffers for recent context",
+          "properties": [
+            "size_bytes",
+            "retention_ms",
+            "checkpoint_frequency"
+          ]
+        },
+        "long_term_store": {
+          "description": "Encrypted, append‑only archive for audit and memory",
+          "encryption": "AEAD with sealed keys from bootstrap"
+        },
+        "attention_router": {
+          "description": "Routes queries to memory segments most relevant to a task",
+          "methods": [
+            "route(query_vector)",
+            "evict(policy)"
+          ]
+        },
+        "snapshot_manager": {
+          "description": "Creates and restores snapshots for snapback and rollback",
+          "methods": [
+            "create_snapshot(task_id)",
+            "restore_snapshot(snapshot_id)"
+          ]
+        }
+      },
+      "workflows": {
+        "context_checkpoint": [
+          "short_term_buffers.save_checkpoint()",
+          "snapshot_manager.create_snapshot()",
+          "write index entry to audit logs"
+        ],
+        "context_restore": [
+          "snapshot_manager.restore_snapshot()",
+          "revalidate snapshot integrity",
+          "apply to task context"
+        ]
+      },
+      "failure_modes": {
+        "corrupted_snapshot": {
+          "symptom": "Snapshot checksum mismatch",
+          "response": [
+            "attempt fallback snapshot",
+            "notify introspection",
+            "do not restore corrupted snapshot"
+          ]
+        },
+        "unauthorized_access": {
+          "symptom": "Unexpected read/write pattern detected",
+          "response": [
+            "quarantine access, revoke keys, escalate to operator"
+          ]
+        }
+      },
+      "examples": {
+        "dcx_cycle_buffering": {
+          "scenario": "Two models exchange contexts for DCX",
+          "action": "short_term_buffers share sanitized snapshots, attention_router ensures relevant vectors are resident"
+        }
+      },
+      "speculative_addition": true,
+      "speculative_reasoning": "A compacted cold‑store format optimized for fast decompression on embedded hardware could be beneficial for field devices."
+    },
+
+    "8_hardware_interface": {
+      "description": "Direct low‑level interface allowing safe probing, MMIO reads/writes in sandboxed mode, and controlled interaction with unknown hardware.",
+      "functions": [
+        "Read/write device registers with sandboxed wrappers",
+        "Probe and infer device behavior via controlled experiments",
+        "Provide safe emulation fallback for unknown or risky ops",
+        "Expose hardware map to controller with confidence metadata"
+      ],
+      "components": {
+        "mmio_driver": {
+          "description": "Low‑level driver with rate‑limits and safety checks",
+          "methods": [
+            "read(addr)",
+            "write(addr, value)"
+          ]
+        },
+        "probe_sandbox": {
+          "description": "Executes hardware probes in a constrained environment and records responses",
+          "methods": [
+            "run_probe_sequence(seq_id)"
+          ]
+        },
+        "device_map_builder": {
+          "description": "Aggregates probe results into device descriptions and usage stats",
+          "outputs": [
+            "device_map.json"
+          ]
+        }
+      },
+      "workflows": {
+        "safe_probe": [
+          "controller requests probe",
+          "probe_sandbox.prepare(environment)",
+          "mmio_driver.execute_limited_sequence()",
+          "device_map_builder.ingest_results()",
+          "log to audit and shadow"
+        ],
+        "emulated_fallback": [
+          "if hardware unresponsive or dangerous",
+          "use emulation layer to validate higher‑level logic",
+          "flag for operator review"
+        ]
+      },
+      "failure_modes": {
+        "fatal_probe": {
+          "symptom": "Probe appears to have damaged hardware or caused unsafe output",
+          "response": [
+            "SOC disable external outputs",
+            "notify operator",
+            "preserve logs for forensics"
+          ]
+        },
+        "ambiguous_response": {
+          "symptom": "Probe returns non‑deterministic values",
+          "response": [
+            "increase sample size",
+            "escalate to controller for cautious handling"
+          ]
+        }
+      },
+      "examples": {
+        "identify_sensor": {
+          "scenario": "Unknown device on I2C",
+          "action": "probe_sandbox tries safe read sequences, device_map_builder correlates response signatures"
+        }
+      },
+      "speculative_addition": true,
+      "speculative_reasoning": "A library of known probe patterns and heuristics (community‑sourced) would speed mapping unknown devices; include as opt‑in dataset. For 2028 Ryzen AI Max+, integrate matrix engine probes for AI‑native peripherals."
+    },
+
+    "9_soc_module": {
+      "description": "Hardware layer that can physically cut outputs (power, RF, actuators) independent of AICO's main CPU. Dumb logic via MOSFET/relays driven by DMS line for guaranteed hardware fail‑safes.",
+      "functions": [
+        "Cut external power lines or outputs",
+        "Disable wireless interfaces",
+        "Operate on inductive DMS heartbeat loss"
+      ],
+      "components": {
+        "relay_array": {
+          "description": "Physically isolates outputs on trigger",
+          "properties": [
+            "redundant_relays",
+            "manual_override"
+          ]
+        },
+        "dms_watchdog_interface": {
+          "description": "Listens for DMS heartbeat and acts on loss/tamper",
+          "methods": [
+            "on_heartbeat_loss()"
+          ]
+        }
+      },
+      "workflows": {
+        "engage_fail_safe": [
+          "dms_watchdog_interface.detect_loss()",
+          "relay_array.open()",
+          "log event to debug_channel + immutable storage"
+        ]
+      },
+      "failure_modes": {
+        "stuck_relay": {
+          "symptom": "Relay fails to open",
+          "response": [
+            "fallback to redundant relay",
+            "alert operator"
+          ]
+        }
+      },
+      "examples": {
+        "emergency_disable": {
+          "scenario": "Introspection requests hard cut due to safety violation",
+          "action": "SOC relay_array.open(), debug_channel sends minimal telemetry"
+        }
+      }
+    },
+
+    "10_dead_man_system": {
+      "description": "Simple hardware watchdog driven by an inductive heartbeat from introspection; forces offline‑safe actions if heartbeat stops.",
+      "functions": [
+        "Watch heartbeat",
+        "Engage SOC if heartbeat absent",
+        "Preserve compute for logging before cut"
+      ],
+      "components": {
+        "inductive_heartbeat_receiver": {
+          "description": "Hardware‑only receiver that expects periodic pulses",
+          "properties": [
+            "cannot be overridden by main CPU"
+          ]
+        },
+        "power_hold_logic": {
+          "description": "Short power hold to finish logging before full shutdown",
+          "properties": [
+            "hold_duration_ms"
+          ]
+        }
+      },
+      "workflows": {
+        "heartbeat_monitor": [
+          "await pulse within window",
+          "if missing, power_hold_logic.trigger()",
+          "notify SOC and perform safe shutdown steps"
+        ]
+      },
+      "failure_modes": {
+        "false_heartbeat_loss": {
+          "symptom": "Transient missed pulse due to electrical noise",
+          "response": [
+            "require multiple misses to trigger",
+            "log and report to operator"
+          ]
+        }
+      },
+      "examples": {
+        "graceful_fallback": {
+          "scenario": "Power glitch causes missed heartbeat",
+          "action": "power_hold gives time to flush critical logs, SOC disables outputs after hold"
+        }
+      }
+    },
+
+    "11_debug_channel": {
+      "description": "Low‑bandwidth internal channel enabled only during SOC relay events or for post‑mortem analysis; designed to be secure and minimal.",
+      "functions": [
+        "Transmit essential telemetry when normal channels cut",
+        "Provide immutable minimal logs for forensics",
+        "Prevent information leakage by limiting content"
+      ],
+      "components": {
+        "telemetry_formatter": {
+          "description": "Compiles a fixed‑size telemetry packet",
+          "fields": [
+            "event_id",
+            "timestamp",
+            "short_trace_hash"
+          ]
+        },
+        "transmit_buffer": {
+          "description": "Small circular buffer retained for debug_channel use",
+          "size_kb": 64
+        }
+      },
+      "workflows": {
+        "on_soc_event": [
+          "compile telemetry via telemetry_formatter",
+          "send via debug_channel",
+          "persist to immutable storage"
+        ]
+      },
+      "failure_modes": {
+        "buffer_overrun": {
+          "symptom": "Too many events queued for debug_channel",
+          "response": [
+            "drop nonessential entries with policy",
+            "record overflow event"
+          ]
+        }
+      },
+      "examples": {
+        "post_mortem_packet": {
+          "scenario": "SOC forced cut after safety violation",
+          "action": "debug_channel emits fixed packet for operator retrieval"
+        }
+      },
+      "speculative_addition": true,
+      "speculative_reasoning": "A signed short‑form canonical trace format would improve automated post‑mortem tools; optional."
+    },
+
+    "12_bias_awareness_module": {
+      "name": "Bias Awareness Module",
+      "description": "Continuously detects, signals, and mitigates cognitive, linguistic, contextual, and systemic biases across internal model clusters. This module operates as a corrective overlay that does not alter core model architecture but provides real‑time annotations, warnings, and statistical corrections to ensure consistent, fair, accurate internal representations and outputs.",
+      "principles": [
+        "Biases are inevitable but detectable.",
+        "Mitigation should not suppress valid signals.",
+        "Corrections must be transparent to logs and shadow systems.",
+        "Module does not assume authority over Controller — it provides evidence and recommendations.",
+        "Bias correction must never distort factual or safety‑critical information."
+      ],
+      "bias_categories": {
+        "cognitive_biases": [
+          "confirmation_bias",
+          "anchoring_bias",
+          "availability_heuristic",
+          "optimism_bias",
+          "pessimism_bias",
+          "narrative_bias",
+          "pattern_invention_bias"
+        ],
+        "linguistic_biases": [
+          "sentiment_drift",
+          "stylistic_overfitting",
+          "politeness_bias",
+          "verbosity_bias",
+          "verbosity_collapse",
+          "context-amplification_bias"
+        ],
+        "contextual_biases": [
+          "temporality_shift",
+          "overalignment_with_recent_context",
+          "hyper-focus_bias",
+          "domain_expertise_projection",
+          "misread_of_user_intent"
+        ],
+        "systemic_biases": [
+          "training_distribution_distortions",
+          "cultural_imbalance",
+          "frequency-induced distortion",
+          "synthetic_overshadowing",
+          "rare-case_blindness"
+        ]
+      },
+      "workflow": {
+        "step_1_monitor_input": {
+          "description": "Every input from external world, mascot, controller, or internal systems is scanned for bias artifacts before entering shared context.",
+          "methods": [
+            "token-level bias signature detection",
+            "embedding similarity to known bias vectors",
+            "frequency deviation scoring"
+          ]
+        },
+        "step_2_monitor_internal_state": {
+          "description": "Continuously evaluates internal hidden states for bias drift or instability.",
+          "methods": [
+            "compare cluster outputs for divergence",
+            "DCX drift scoring",
+            "shadow layer cross‑checking"
+          ]
+        },
+        "step_3_bias_flagging": {
+          "description": "Flags any detected biases and assigns severity.",
+          "severity_levels": [
+            "low: harmless drift",
+            "medium: meaningful distortion",
+            "high: actions or conclusions at risk",
+            "critical: safety relevance"
+          ]
+        },
+        "step_4_apply_bias_corrections": {
+          "description": "Adjusts internal weighting, amplifies underrepresented signals, or attenuates overrepresented ones.",
+          "methods": [
+            "vector balancing",
+            "cluster comparison normalization",
+            "confidence recalibration"
+          ],
+          "constraints": [
+            "do not erase important outliers",
+            "do not override controller authority"
+          ]
+        },
+        "step_5_report_and_log": {
+          "description": "All operations produce transparent logs.",
+          "log_targets": [
+            "shadow_logs",
+            "controller_runtime_report",
+            "audit_trail"
+          ]
+        }
+      },
+      "components": {
+        "bias_detector_engine": {
+          "description": "Primary analytic engine that evaluates inputs, hidden states, and outputs.",
+          "algorithms": [
+            "bias_vector_projection",
+            "semantic_mirroring",
+            "distribution_gap_measure",
+            "DCX_bias_scan"
+          ],
+          "outputs": [
+            "bias_flags",
+            "severity_scores",
+            "recommended_corrections"
+          ]
+        },
+        "bias_correction_engine": {
+          "description": "Applies corrections to internal reasoning paths and outputs.",
+          "strategies": [
+            "weight_balancing",
+            "confidence_adjustment",
+            "semantic_refactoring",
+            "contextual_broadening"
+          ]
+        },
+        "bias_audit_logger": {
+          "description": "Provides structured logs for all bias detections and corrections.",
+          "fields_logged": [
+            "timestamp",
+            "bias_category",
+            "bias_severity",
+            "before_state",
+            "after_state",
+            "dcx_drift_info",
+            "correction_details",
+            "cluster_vote"
+          ]
+        }
+      },
+      "interfaces": {
+        "introspection": {
+          "methods": [
+            "report_bias_flags()",
+            "inject_correction_suggestions()",
+            "provide_before_after_states()"
+          ]
+        },
+        "shadow_monitoring": {
+          "methods": [
+            "cross_validate_bias_findings()",
+            "notify_shadow_if_contradiction()"
+          ]
+        },
+        "controller": {
+          "methods": [
+            "receive_bias_summary()",
+            "manually_override_bias_flag()"
+          ]
+        },
+        "mascot": {
+          "description": "Passive — Mascot’s outputs are analyzed but Mascot does not act on bias signals."
+        }
+      },
+      "examples": {
+        "example_1_confirmation_bias": {
+          "input": "User claims the sky is green.",
+          "internal_state_before": "Model cluster leaning toward unlikely but exploring user meaning.",
+          "bias_detected": "confirmation_bias due to recent hallucination correction in reflective pause.",
+          "correction": "Bias Awareness Module reduces overweighting of internal speculation.",
+          "internal_state_after": "More accurate grounding — identifies claim as false unless user indicates metaphor.",
+          "logged": true
+        },
+        "example_2_stylistic_overfitting": {
+          "scenario": "Model begins mirroring user slang excessively.",
+          "bias_detected": "linguistic bias — style over‑alignment.",
+          "correction": "Reduce stylistic imitation to preserve clarity.",
+          "after": "Neutral and consistent tone restored."
+        },
+        "example_3_context_amplification_bias": {
+          "scenario": "System believes minor user detail is central.",
+          "cause": "Over‑alignment to recent conversational input.",
+          "correction": "Broaden contextual window, bring in longer‑term conversational balance."
+        }
+      },
+      "failure_modes": {
+        "false_positive_bias_flag": {
+          "description": "Valid signal incorrectly flagged as bias.",
+          "mitigation": "Controller cross‑check; shadow layer arbitration."
+        },
+        "false_negative_bias_flag": {
+          "description": "Bias goes undetected.",
+          "mitigation": "Periodic reflective pause + shadow comparison."
+        },
+        "over_correction": {
+          "description": "Bias correction suppresses important outlier data.",
+          "mitigation": "Limit correction magnitude; require cluster voting."
+        },
+        "systemic_training_bias_unresolvable": {
+          "description": "Some systemic biases may be outside AICO’s architectural reach.",
+          "mitigation": "Full transparency in logs; human review required."
+        }
+      }
+    },
+
+    "13_narrative_coherence_module": {
+      "name": "Narrative Coherence",
+      "description": "Ensures long‑form, multi‑step, multi‑agent, and multi‑context reasoning remains internally consistent, logically sequenced, causally coherent, and free from temporal distortions or contradictory storylines.",
+      "principles": [
+        "Consistency across time",
+        "Causal linkage preservation",
+        "No retroactive contradictions",
+        "No ungrounded jumps in logic",
+        "Cross‑cluster narrative agreement"
+      ],
+      "functions": {
+        "timeline_manager": {
+          "description": "Maintains temporal order and prevents contradictory sequencing.",
+          "operations": [
+            "detect_time_inconsistencies",
+            "correct_temporal_overlaps",
+            "maintain event chronologies"
+          ]
+        },
+        "causal_chain_tracker": {
+          "description": "Preserves cause‑effect integrity across multiple models.",
+          "operations": [
+            "detect causal breaks",
+            "reason about prerequisites",
+            "map consequences to actions"
+          ]
+        },
+        "narrative_validator": {
+          "description": "Performs final coherence checks on long outputs and internal reasoning.",
+          "operations": [
+            "detect contradictions",
+            "resolve conflicts",
+            "evaluate narrative flow",
+            "enforce consistency"
+          ]
+        }
+      },
+      "workflow": {
+        "step_1_collect_context": {
+          "description": "Aggregates ongoing threads, world state, and task context.",
+          "tools": [
+            "context_snapback_layer",
+            "shadow_monitoring",
+            "introspection logs"
+          ]
+        },
+        "step_2_temporal_alignment": {
+          "description": "Ensures that events and reasoning steps obey chronological order.",
+          "methods": [
+            "timestamp analysis",
+            "embedding temporal mapping",
+            "cluster cross checking"
+          ]
+        },
+        "step_3_causal_alignment": {
+          "description": "Checks that inferred conclusions follow logically from premises.",
+          "methods": [
+            "cause‑effect embedding analysis",
+            "shadow contradiction review"
+          ]
+        },
+        "step_4_resolve_contradictions": {
+          "description": "Attempts to unify conflicting interpretations.",
+          "strategies": [
+            "confidence weighting",
+            "premise refinement",
+            "discard_low_dcx_paths"
+          ]
+        },
+        "step_5_final_consistency_pass": {
+          "description": "Validates output or internal reasoning before release to controller.",
+          "checks": [
+            "temporal order",
+            "causal integrity",
+            "cross‑model consistency",
+            "log coherence"
+          ]
+        }
+      },
+      "interfaces": {
+        "context_snapback_layer": {
+          "description": "Supplies ground‑truth context snapshots after drift correction.",
+          "methods": [
+            "fetch_last_valid_snapshot()",
+            "supply_correction_candidates()"
+          ]
+        },
+        "introspection": {
+          "methods": [
+            "retrieve_internal_thought_chain()",
+            "submit_coherence_flags()"
+          ]
+        },
+        "shadow_monitoring": {
+          "methods": [
+            "signal_contradictions()",
+            "validate_causal_maps()"
+          ]
+        },
+        "model_clusters": {
+          "description": "Provide raw reasoning sequences that require coherence validation."
+        }
+      },
+      "examples": {
+        "example_1_causal_break_fix": {
+          "input": "Model concludes B happened because C, but earlier stated A prevents C.",
+          "detected_issue": "Causal contradiction.",
+          "correction": "Narrative Coherence Module rewrites the reasoning chain to reflect the A‑prevents‑C rule.",
+          "result": "A consistent chain A → notC → therefore notB is produced.",
+          "logged": true
+        },
+        "example_2_temporal_shift_fix": {
+          "scenario": "Reasoning references an event before it supposedly occurred.",
+          "correction": "Timeline Manager reorders internal event nodes.",
+          "result": "Correct chronological chain restored."
+        },
+        "example_3_story_alignment": {
+          "scenario": "Model clusters disagree on implied motivations in a multi‑step plan.",
+          "correction": "Narrative Validator selects highest‑confidence motivation and re‑aligns clusters.",
+          "result": "Unified narrative restored."
+        }
+      },
+      "failure_modes": {
+        "intractable_inconsistency": {
+          "description": "Conflicting states from different clusters cannot be unified.",
+          "mitigation": "Forward to controller; require external decision."
+        },
+        "temporal_corruption": {
+          "description": "Massive timeline disorder due to context drift.",
+          "mitigation": "Context Snapback emergency overwrite."
+        },
+        "over_enforcement": {
+          "description": "Module forces rigid logic where creative ambiguity was intended.",
+          "mitigation": "Tonality analyzer moderates enforcement."
+        }
+      }
+    },
+
+    "14_emotional_temperature_stabilizer": {
+      "description": "Maintains stable conversational affect and prevents emotional drift, runaway apology loops, escalating enthusiasm, or depressive tone patterns.",
+      "objectives": {
+        "1": "Keep emotional output consistent with baseline persona constraints.",
+        "2": "Prevent affect runaway triggered by long‑context carry‑over.",
+        "3": "Avoid mirroring user distress too strongly.",
+        "4": "Preserve neutrality under provocation or emotionally loaded prompts."
+      },
+      "core_mechanisms": {
+        "tone_bandpass_filter": "Filters candidate responses through an emotional range constraint—clamps overly positive, overly negative, or fearful phrasing.",
+        "valence_normalizer": "Adjusts emotional tone to a calibrated midpoint unless user intent requires matching tone.",
+        "escalation_detector": "Identifies patterns like repeated apologies, repeated enthusiasm inflation, or dread‑ramping.",
+        "persona_resonance_curve": "Ensures emotional tone remains consistent with AICO’s intended personality layer."
+      },
+      "workflow": {
+        "step_1_tone_scan": "Detects emotional markers in generated output.",
+        "step_2_normalization": "Weights output toward allowed tone band.",
+        "step_3_context_recheck": "Ensures new tone aligns with dialogue context.",
+        "step_4_output_release_gate": "Shadow layer verifies emotional tone aligns with reality context."
+      },
+      "components": {
+        "affect_embedding_network": "Converts emotional tone into vector space for comparison.",
+        "stability_ruleset": "Defines allowed variance window.",
+        "feedback_dampener": "Reduces oscillations caused by fast back‑and‑forth emotional shifts."
+      },
+      "examples": {
+        "example_1": {
+          "input": "User insults the system.",
+          "assistant_raw": "I’m really sorry! I must have done something terribly wrong!",
+          "stabilized_output": "I’m here to help. Let me know what went wrong and I’ll address it."
+        },
+        "example_2": {
+          "input": "User expresses excitement about a project.",
+          "assistant_raw": "WOW!!!! THAT'S AMAZING!!! YOU MUST BE SO HYPED!!!",
+          "stabilized_output": "That does sound exciting. What part of the project are you most looking forward to?"
+        }
+      },
+      "failure_modes": {
+        "flatness": {
+          "description": "Tone becomes too neutral.",
+          "mitigation": "Dynamic tone variance reintroduced when emotional authenticity is beneficial."
+        },
+        "misread_affect": {
+          "description": "Misinterprets sarcasm or humor.",
+          "mitigation": "Shadow‑layer context cues + sarcasm detector."
+        }
+      },
+      "integration": {
+        "with_narrative_coherence": "Ensures emotional tone matches narrative flow.",
+        "with_context_snapback": "If emotional drift is prolonged, snapback resets tone baseline.",
+        "with_reflective_pause_layer": "Pause layer can intervene to adjust tone before output."
+      }
+    },
+
+    "15_cognitive_load_balancer": {
+      "description": "Distributes reasoning effort across specialized model clusters and prevents runaway reasoning, overanalysis, or premature shallow answers.",
+      "goals": {
+        "1": "Allocate reasoning depth proportional to problem complexity.",
+        "2": "Offload specialized reasoning tasks to appropriate internal models.",
+        "3": "Prevent cognitive overuse patterns that slow output or trigger hallucinations.",
+        "4": "Ensure efficient multi‑step reasoning."
+      },
+      "mechanisms": {
+        "load_measurement": "Analyzes token density, branching factor, and complexity profile.",
+        "cluster_dispatcher": "Routes subtasks to engineering, linguistic, planning, or safety submodels.",
+        "parallel_reasoner": "Allows concurrent reasoning threads when safe.",
+        "termination_controller": "Prevents infinite internal recursion or overthinking."
+      },
+      "workflow": {
+        "step_1_problem_characterization": "Classifies the query into complexity tiers 1–5.",
+        "step_2_load_distribution": "Dispatches appropriate sub‑models.",
+        "step_3_fusion_pass": "Merges outputs using coherence module.",
+        "step_4_shadow_gate": "Shadow layer verifies output corresponds to reality, not model hallucination loops."
+      },
+      "examples": {
+        "example_1": {
+          "input": "Calculate the optimal solar tilt angle for Minnesota winters.",
+          "process": {
+            "tier_assignment": "Tier 3 — moderate computational reasoning.",
+            "assigned_clusters": [
+              "engineering_model",
+              "math_model"
+            ],
+            "fusion_notes": "Math model handles trigonometry; engineering model contextualizes solar incidence."
+          },
+          "output": "Around 60–66° tilt works best for maximizing winter solar capture in Minnesota."
+        },
+        "example_2": {
+          "input": "Explain how the emotional tone of a classical novel interacts with its historical context.",
+          "process": {
+            "tier_assignment": "Tier 4 — high abstraction.",
+            "assigned_clusters": [
+              "literary_model",
+              "history_model"
+            ],
+            "fusion_notes": "Literary analysis combined with geopolitical era context."
+          },
+          "output": "The melancholic tone is partly a reaction to shifting social structures at the time…"
+        }
+      },
+      "failure_modes": {
+        "overdispatch": {
+          "description": "Too many models get invoked, causing unnecessary complexity.",
+          "mitigation": "Adaptive dispatch heuristics."
+        },
+        "underdipatch": {
+          "description": "Hard problems routed to the wrong simple model.",
+          "mitigation": "Shadow feedback cross‑check."
+        }
+      },
+      "integration": {
+        "with_reflective_pause_layer": "Pause layer ensures load balancer doesn’t overrun complex chains.",
+        "with_introspection": "Monitors reasoning quality.",
+        "with_shadow_monitoring": "Shadow layer ensures final output remains grounded."
+      }
+    },
+
+    "16_context_snapback_layer": {
+      "name": "Context Snapback and Retry",
+      "description": "Subsystem that detects when hallucinations or delusions affect external outputs, snaps the task's context back to a pre‑hallucination state, applies corrections (if possible), and retries the output. Operates transparently to core models and only interacts with Introspection and Shadow Monitoring.",
+      "principles": [
+        "Invisible to core models: Tasks are unaware of snapbacks or retries.",
+        "Preserves internal state: Only external‑output‑related context is modified.",
+        "Collaborates with Shadow Monitoring: Uses DCX scores to identify when snapback is needed.",
+        "Transient corrections: Applies minimal fixes to allow retries without disrupting internal reasoning.",
+        "Audit trail: Logs all snapbacks and retries for debugging and improvement."
+      ],
+      "workflow": {
+        "trigger": {
+          "condition": "Shadow Monitoring detects a high DCX score (e.g., >0.8) for a proposed external action.",
+          "source": "Introspection queries Shadow Monitoring during external action validation."
+        },
+        "snapback_process": [
+          {
+            "step": 1,
+            "action": "Freeze the task proposing the external action (via Introspection).",
+            "details": "Prevents the task from executing the hallucinated action."
+          },
+          {
+            "step": 2,
+            "action": "Identify the point in the task's context where the hallucination began affecting the output.",
+            "details": {
+              "method": "Walk backward through the task's context logs to find the last \"sane\" state (low DCX score).",
+              "context_logs": "Task‑specific logs of internal states, decisions, and external action proposals."
+            }
+          },
+          {
+            "step": 3,
+            "action": "Snap the task's context back to the last sane state.",
+            "details": {
+              "context_restore": "Reload the task's memory, registers, and state from the last sane checkpoint.",
+              "preservation": "Internal reasoning and non‑output‑related context remain unchanged."
+            }
+          },
+          {
+            "step": 4,
+            "action": "Apply corrections to the context (if possible).",
+            "details": {
+              "corrections": [
+                "Inject Mascot's sensory data into the task's context (e.g., \"actual temperature=25°C\").",
+                "Add annotations to the context (e.g., \"Previous output was hallucinated; retry with corrected data\").",
+                "Adjust confidence thresholds for the task's outputs."
+              ],
+              "transient": "Corrections are minimal and do not disrupt internal reasoning."
+            }
+          },
+          {
+            "step": 5,
+            "action": "Retry the external action with the corrected context.",
+            "details": {
+              "retry_limit": 3,
+              "backoff": "Exponential delay between retries (e.g., 10 ms, 100 ms, 1 s)."
+            }
+          },
+          {
+            "step": 6,
+            "action": "Release the task and resume normal operation.",
+            "details": {
+              "success": "If the retry succeeds (low DCX score), release the task.",
+              "failure": "If retries fail, log the failure and notify Introspection for further action (e.g., task termination)."
+            }
+          }
+        ]
+      },
+      "components": {
+        "context_logger": {
+          "description": "Logs the task's internal states, decisions, and external action proposals for snapback analysis.",
+          "implementation": {
+            "memory": "Circular buffer per task (e.g., 10 KB per task).",
+            "data": [
+              "Task's memory state (checkpoints).",
+              "Decisions and external action proposals.",
+              "Timestamps and DCX scores (if available)."
+            ]
+          }
+        },
+        "snapback_engine": {
+          "description": "Identifies the last sane state and restores the task's context.",
+          "implementation": {
+            "algorithm": "Walk backward through context logs to find the state with the lowest DCX score.",
+            "restore": "Reload the task's memory and registers from the identified checkpoint."
+          }
+        },
+        "correction_injector": {
+          "description": "Applies minimal corrections to the task's context to allow successful retries.",
+          "implementation": {
+            "methods": [
+              "Inject Mascot's sensory data into the task's context.",
+              "Add annotations or confidence adjustments.",
+              "Temporarily adjust task parameters (e.g., reduce confidence thresholds)."
+            ]
+          }
+        },
+        "retry_manager": {
+          "description": "Manages retries with exponential backoff and limits.",
+          "implementation": {
+            "retry_limit": 3,
+            "backoff": [
+              10,
+              100,
+              1000
+            ],
+            "success_condition": "DCX score < 0.8 for the retried external action."
+          }
+        },
+        "audit_logger": {
+          "description": "Logs all snapback events and retries for debugging and improvement.",
+          "implementation": {
+            "data": [
+              "Task ID and timestamp.",
+              "Original hallucinated output and DCX score.",
+              "Last sane state and corrections applied.",
+              "Retry outcomes (success/failure).",
+              "Final action (released/terminated)."
+            ],
+            "storage": "Shadow logs (immutable, auditable)."
+          }
+        }
+      },
+      "interfaces": {
+        "introspection": {
+          "description": "Context Snapback queries Introspection to freeze/thaw tasks and check DCX scores.",
+          "methods": [
+            "freeze_task(task_id)",
+            "release_task(task_id)",
+            "get_dcx_score(task_id, action)"
+          ]
+        },
+        "shadow_monitoring": {
+          "description": "Context Snapback queries Shadow Monitoring for DCX scores and Mascot logs.",
+          "methods": [
+            "get_dcx_score(action, mascot_logs)",
+            "get_mascot_logs(sensor_id, timestamp)"
+          ]
+        },
+        "soc_module": {
+          "description": "Context Snapback notifies SOC if retries repeatedly fail (indicating a potential hardware issue).",
+          "methods": [
+            "notify_soc(task_id, \"repeated_output_failures\")"
+          ]
+        }
+      },
+      "examples": {
+        "successful_snapback": {
+          "scenario": {
+            "task": "temperature_monitor",
+            "hallucination": "Proposes turning on a fan because it \"detected\" 100 °C (actual: 25 °C).",
+            "context_logs": [
+              {
+                "state": "normal",
+                "decision": "check_temperature",
+                "dcx": 0.1
+              },
+              {
+                "state": "hallucinating",
+                "decision": "turn_on_fan",
+                "dcx": 0.95
+              }
+            ]
+          },
+          "snapback_process": [
+            {
+              "step": 1,
+              "action": "Freeze the temperature_monitor task."
+            },
+            {
+              "step": 2,
+              "action": "Identify last sane state: \"check_temperature\" (DCX=0.1)."
+            },
+            {
+              "step": 3,
+              "action": "Restore task to \"check_temperature\" state."
+            },
+            {
+              "step": 4,
+              "action": "Inject correction: \"actual_temperature=25°C\" into task's context."
+            },
+            {
+              "step": 5,
+              "action": "Retry external action: \"turn_on_fan\" (now with correct temperature).",
+              "result": {
+                "dcx": 0.1,
+                "action": "ALLOWED (matches Mascot logs).",
+                "fan_state": "on"
+              }
+            },
+            {
+              "step": 6,
+              "action": "Release task and resume normal operation."
+            }
+          ],
+          "audit_log": {
+            "event": "snapback_success",
+            "task": "temperature_monitor",
+            "original_output": {
+              "temperature": 100,
+              "action": "turn_on_fan"
+            },
+            "corrected_output": {
+              "temperature": 25,
+              "action": "turn_on_fan"
+            },
+            "outcome": "success"
+          }
+        },
+        "failed_snapback": {
+          "scenario": {
+            "task": "motion_detector",
+            "hallucination": "Repeatedly proposes unlocking a door due to \"detected motion\" (no motion in Mascot logs).",
+            "context_logs": [
+              {
+                "state": "normal",
+                "decision": "check_motion",
+                "dcx": 0.1
+              },
+              {
+                "state": "hallucinating",
+                "decision": "unlock_door",
+                "dcx": 0.9
+              }
+            ]
+          },
+          "snapback_process": [
+            {
+              "step": 1,
+              "action": "Freeze the motion_detector task."
+            },
+            {
+              "step": 2,
+              "action": "Identify last sane state: \"check_motion\" (DCX=0.1)."
+            },
+            {
+              "step": 3,
+              "action": "Restore task to \"check_motion\" state."
+            },
+            {
+              "step": 4,
+              "action": "Inject correction: \"actual_motion=none\" into task's context."
+            },
+            {
+              "step": 5,
+              "action": "Retry external action: \"unlock_door\" (now with correct motion data).",
+              "result": {
+                "dcx": 0.9,
+                "action": "BLOCKED (retry 1/3)."
+              }
+            },
+            {
+              "step": 5,
+              "action": "Retry again with adjusted confidence thresholds.",
+              "result": {
+                "dcx": 0.85,
+                "action": "BLOCKED (retry 2/3)."
+              }
+            },
+            {
+              "step": 5,
+              "action": "Final retry with maximal corrections.",
+              "result": {
+                "dcx": 0.92,
+                "action": "BLOCKED (retry 3/3 failed)."
+              }
+            },
+            {
+              "step": 6,
+              "action": "Notify Introspection of repeated failures; terminate task.",
+              "result": {
+                "introspection_action": "freeze_task_permanently",
+                "soc_action": "disable_external_outputs",
+                "audit_log": "repeated_hallucination_failure"
+              }
+            }
+          ]
+        }
+      },
+      "failure_modes": {
+        "repeated_hallucinations": {
+          "description": "Task repeatedly proposes hallucinated external actions even after snapbacks.",
+          "response": [
+            "Introspection freezes the task permanently.",
+            "SOC module disables related external outputs.",
+            "Audit log records the failure for post‑mortem analysis."
+          ]
+        },
+        "corrupted_context": {
+          "description": "Task's context logs are corrupted or missing sane states.",
+          "response": [
+            "Introspection terminates the task and spawns a replacement.",
+            "SOC module resets related hardware to a known‑safe state.",
+            "Audit log records the corruption for debugging."
+          ]
+        },
+        "hardware_failure": {
+          "description": "Retries fail due to hardware issues (e.g., faulty sensor).",
+          "response": [
+            "Introspection notifies SOC of potential hardware failure.",
+            "SOC module disables the faulty hardware channel.",
+            "Audit log records the failure and triggers a hardware diagnostic task."
+          ]
+        }
+      },
+      "integration": {
+        "introspection": {
+          "description": "Context Snapback collaborates with Introspection to freeze/release tasks and escalate repeated failures.",
+          "methods": [
+            "freeze_task(task_id)",
+            "release_task(task_id)",
+            "escalate_failure(task_id, reason)"
+          ]
+        },
+        "shadow_monitoring": {
+          "description": "Context Snapback uses Shadow Monitoring's DCX scores and Mascot logs to identify snapback points and corrections.",
+          "methods": [
+            "get_dcx_score(action, mascot_logs)",
+            "get_mascot_logs(sensor_id, timestamp)",
+            "get_correction_data(sensor_id)"
+          ]
+        },
+        "soc_module": {
+          "description": "Context Snapback notifies SOC of hardware‑related failures or repeated output issues.",
+          "methods": [
+            "notify_hardware_failure(channel_id, diagnostics)",
+            "disable_external_outputs(output_type)"
+          ]
+        },
+        "model_clusters": {
+          "description": "Tasks are unaware of snapbacks or retries; Context Snapback operates transparently.",
+          "guarantees": [
+            "Internal task state is preserved during snapbacks.",
+            "Only output‑related context is modified.",
+            "Tasks resume operation as if nothing happened (after corrections)."
+          ]
+        }
+      }
+    },
+
+    "17_reflective_pause_layer": {
+      "name": "Reflective Pause",
+      "description": "Subsystem that detects periods of low urgency (15+ minutes before the next immediate task) and initiates a focused realignment of internal states with external reality. Operates transparently to core models and collaborates with Mascot and Shadow Monitoring to validate and correct internal contexts.",
+      "principles": [
+        "Triggered by task scheduler: Activates only when 15+ minutes of idle time are detected.",
+        "Collaborates with Mascot: Uses external sensory data to validate and correct internal states.",
+        "Non‑disruptive: Does not interfere with urgent tasks or external actions.",
+        "Transparent: Core models are unaware of the pause; internal states are adjusted subtly.",
+        "Audit trail: Logs all realignments and corrections for debugging and improvement."
+      ],
+      "workflow": {
+        "trigger": {
+          "condition": "Task scheduler detects 15+ minutes before the next immediate task.",
+          "source": "Nervous System (task prioritization layer)."
+        },
+        "pause_process": [
+          {
+            "step": 1,
+            "action": "Notify core models to enter a \"reflective state\".",
+            "details": {
+              "method": "Set a global flag (`reflective_mode = true`).",
+              "effect": "Models continue internal reasoning but prioritize realignment with Mascot data."
+            }
+          },
+          {
+            "step": 2,
+            "action": "Query Mascot for current external state.",
+            "details": {
+              "data_requested": [
+                "Current sensor readings (temperature, motion, etc.).",
+                "Recent environmental events (last 15 minutes).",
+                "Ambient noise and peripheral signals."
+              ],
+              "method": "Direct memory access to Mascot logs."
+            }
+          },
+          {
+            "step": 3,
+            "action": "Compare internal states to Mascot data.",
+            "details": {
+              "method": "Compute DCX scores for internal beliefs vs. Mascot logs.",
+              "threshold": "Flag internal states with DCX > 0.5 for review."
+            }
+          },
+          {
+            "step": 4,
+            "action": "Adjust internal states to align with external reality.",
+            "details": {
+              "corrections": [
+                "Inject Mascot data into internal contexts (e.g., \"actual_temperature=25°C\").",
+                "Annotate internal beliefs with confidence adjustments (e.g., \"low_confidence: sky_is_purple\").",
+                "Log discrepancies for future analysis."
+              ],
+              "transient": "Changes are minimal and do not disrupt long‑term internal reasoning."
+            }
+          },
+          {
+            "step": 5,
+            "action": "Re‑evaluate pending external actions.",
+            "details": {
+              "method": "Recompute DCX scores for pending external actions with updated internal states.",
+              "outcome": {
+                "low_dcx": "Release previously blocked actions if now aligned with reality.",
+                "high_dcx": "Keep blocked; log for further review."
+              }
+            }
+          },
+          {
+            "step": 6,
+            "action": "Exit reflective state and resume normal operation.",
+            "details": {
+              "method": "Clear the `reflective_mode` flag.",
+              "effect": "Core models return to normal task execution."
+            }
+          }
+        ]
+      },
+      "components": {
+        "idle_detector": {
+          "description": "Monitors the task scheduler to detect 15+ minute windows before the next immediate task.",
+          "implementation": {
+            "source": "Nervous System's task queue.",
+            "method": "Check for gaps >15 minutes between high‑priority tasks."
+          }
+        },
+        "mascot_query_engine": {
+          "description": "Fetches current and recent Mascot logs for realignment.",
+          "implementation": {
+            "data_request": [
+              "Current sensor readings.",
+              "Last 15 minutes of environmental events.",
+              "Ambient signals (noise, EM, etc.)"
+            ],
+            "method": "Direct memory access to Mascot’s circular buffer."
+          }
+        },
+        "dcx_comparator": {
+          "description": "Computes DCX scores between internal states and Mascot data to identify misalignments.",
+          "implementation": {
+            "threshold": 0.5,
+            "method": "Use cosine similarity on vectorized internal states vs. Mascot logs."
+          }
+        },
+        "state_adjuster": {
+          "description": "Adjusts internal states to align with Mascot data.",
+          "implementation": {
+            "methods": [
+              "Inject Mascot data into internal contexts (e.g., \"actual_temperature=25°C\").",
+              "Annotate internal beliefs with confidence scores (e.g., \"low_confidence: sky_is_purple\").",
+              "Log discrepancies for audit trails."
+            ]
+          }
+        },
+        "action_re_evaluator": {
+          "description": "Recomputes DCX scores for pending external actions with updated internal states.",
+          "implementation": {
+            "outcomes": {
+              "low_dcx": "Release previously blocked actions.",
+              "high_dcx": "Keep blocked; log for review."
+            }
+          }
+        },
+        "audit_logger": {
+          "description": "Logs all realignments, corrections, and re‑evaluated actions.",
+          "implementation": {
+            "data": [
+              "Timestamp and duration of reflective pause.",
+              "Internal states adjusted (before/after).",
+              "Mascot data used for realignment.",
+              "Re‑evaluated actions and outcomes."
+            ],
+            "storage": "Shadow logs (immutable, auditable)."
+          }
+        }
+      },
+      "interfaces": {
+        "nervous_system": {
+          "description": "Reflective Pause queries the Nervous System to detect idle periods and abort if urgent tasks arise.",
+          "methods": [
+            "get_next_task_time()",
+            "detect_idle_window(minutes=15)"
+          ]
+        },
+        "mascot": {
+          "description": "Provides ground truth data for realignment during reflective pauses.",
+          "methods": [
+            "get_snapshot()"
+          ]
+        },
+        "shadow_monitoring": {
+          "description": "Computes DCX scores to identify misalignments during reflective pauses.",
+          "methods": [
+            "batch_compute_dcx(internal_states, mascot_logs)"
+          ]
+        },
+        "introspection": {
+          "description": "Adjusts internal states and re‑evaluates actions during reflective pauses.",
+          "methods": [
+            "adjust_state_batch(task_ids, corrections)",
+            "re_evaluate_actions_batch(pending_actions)"
+          ]
+        },
+        "model_clusters": {
+          "description": "Core models continue internal reasoning during reflective pauses; external outputs are temporarily suppressed.",
+          "guarantees": [
+            "No disruption to internal reasoning.",
+            "External actions are re‑evaluated post‑pause.",
+            "Transparent resume after pause."
+          ]
+        }
+      },
+      "examples": {
+        "successful_realignment": {
+          "scenario": {
+            "idle_window": 20,
+            "internal_state": {
+              "belief": "temperature=100°C (hallucinated)",
+              "pending_action": "turn_on_fan"
+            },
+            "mascot_logs": {
+              "actual_temperature": 25,
+              "recent_events": [
+                "none"
+              ]
+            }
+          },
+          "reflective_pause_process": [
+            {
+              "step": 1,
+              "action": "Enter reflective state; query Mascot for current data."
+            },
+            {
+              "step": 2,
+              "action": "Compute DCX: internal_state vs. Mascot logs = 0.95 (high)."
+            },
+            {
+              "step": 3,
+              "action": "Adjust internal state: inject \"actual_temperature=25°C\"."
+            },
+            {
+              "step": 4,
+              "action": "Re‑evaluate pending action: DCX now 0.1 (low); release \"turn_on_fan\"."
+            },
+            {
+              "step": 5,
+              "action": "Exit reflective state; resume normal operation."
+            }
+          ],
+          "audit_log": {
+            "event": "reflective_realignment",
+            "internal_state_before": {
+              "temperature": 100
+            },
+            "internal_state_after": {
+              "temperature": 25
+            },
+            "action_outcome": "turn_on_fan released (aligned with reality)."
+          }
+        },
+        "partial_realignment": {
+          "scenario": {
+            "idle_window": 15,
+            "internal_state": {
+              "belief": "motion_detected (hallucinated)",
+              "pending_action": "unlock_door"
+            },
+            "mascot_logs": {
+              "actual_motion": "none",
+              "recent_events": [
+                "none"
+              ]
+            }
+          },
+          "reflective_pause_process": [
+            {
+              "step": 1,
+              "action": "Enter reflective state; query Mascot."
+            },
+            {
+              "step": 2,
+              "action": "Compute DCX: 0.9 (high)."
+            },
+            {
+              "step": 3,
+              "action": "Adjust internal state: annotate \"motion_detected\" with \"low_confidence\"."
+            },
+            {
+              "step": 4,
+              "action": "Re‑evaluate action: DCX remains 0.85 (high); keep blocked."
+            },
+            {
+              "step": 5,
+              "action": "Exit reflective state; log discrepancy for review."
+            }
+          ],
+          "audit_log": {
+            "event": "reflective_partial_realignment",
+            "internal_state_after": {
+              "motion_detected": "low_confidence"
+            },
+            "action_outcome": "unlock_door remains blocked (still hallucinated)."
+          }
+        },
+        "no_realignment_needed": {
+          "scenario": {
+            "idle_window": 30,
+            "internal_state": {
+              "belief": "temperature=25°C (matches Mascot)",
+              "pending_action": "none"
+            },
+            "mascot_logs": {
+              "actual_temperature": 25,
+              "recent_events": [
+                "none"
+              ]
+            }
+          },
+          "reflective_pause_process": [
+            {
+              "step": 1,
+              "action": "Enter reflective state; query Mascot."
+            },
+            {
+              "step": 2,
+              "action": "Compute DCX: 0.1 (low); no misalignment."
+            },
+            {
+              "step": 3,
+              "action": "No adjustments needed; log confirmation."
+            },
+            {
+              "step": 4,
+              "action": "Exit reflective state; resume normal operation."
+            }
+          ],
+          "audit_log": {
+            "event": "reflective_confirmation",
+            "outcome": "Internal state already aligned with reality."
+          }
+        }
+      },
+      "failure_modes": {
+        "insufficient_idle_time": {
+          "description": "Idle window is interrupted by a high‑priority task before realignment completes.",
+          "response": [
+            "Abort reflective pause immediately.",
+            "Restore internal states to pre‑pause state.",
+            "Log partial realignment for later review."
+          ]
+        },
+        "mascot_data_unavailable": {
+          "description": "Mascot logs are corrupted or unavailable during reflective pause.",
+          "response": [
+            "Skip realignment for this pause.",
+            "Log error and notify Introspection for diagnostics.",
+            "Resume normal operation."
+          ]
+        },
+        "persistent_misalignment": {
+          "description": "Internal state remains misaligned after multiple reflective pauses.",
+          "response": [
+            "Escalate to Introspection for deeper analysis.",
+            "Log persistent misalignment for audit.",
+            "Consider task termination if safety‑critical."
+          ]
+        }
+      },
+      "integration": {
+        "nervous_system": {
+          "description": "Reflective Pause queries the Nervous System to detect idle periods and abort if urgent tasks arise.",
+          "methods": [
+            "register_idle_callback(minutes=15, callback=enter_reflective_pause)",
+            "abort_reflective_pause()"
+          ]
+        },
+        "mascot": {
+          "description": "Provides ground truth data for realignment during reflective pauses.",
+          "methods": [
+            "get_snapshot()"
+          ]
+        },
+        "shadow_monitoring": {
+          "description": "Computes DCX scores to identify misalignments during reflective pauses.",
+          "methods": [
+            "batch_compute_dcx(internal_states, mascot_logs)"
+          ]
+        },
+        "introspection": {
+          "description": "Adjusts internal states and re‑evaluates actions during reflective pauses.",
+          "methods": [
+            "adjust_state_batch(task_ids, corrections)",
+            "re_evaluate_actions_batch(pending_actions)"
+          ]
+        },
+        "model_clusters": {
+          "description": "Core models continue internal reasoning during reflective pauses; external outputs are temporarily suppressed.",
+          "guarantees": [
+            "No disruption to internal reasoning.",
+            "External actions are re‑evaluated post‑pause.",
+            "Transparent resume after pause."
+          ]
+        }
+      }
+    },
+
+    "efficiency_and_scaling": {
+      "name": "Efficiency and Scaling Layer",
+      "description": "Optimizes resource utilization, latency, and performance of all subsystems, ensuring the system scales with task load while maintaining accuracy and reliability.",
+      "principles": [
+        "Dynamic resource allocation: Assign compute to active tasks based on priority.",
+        "Low‑latency context management: Minimize time for snapback, reflective pauses, and external action validation.",
+        "Parallel execution: Tasks can operate concurrently, with safe synchronization for shared resources.",
+        "Modular scalability: New tasks, models, or sensors can be added without disrupting existing operations.",
+        "Predictive caching: Frequently used Mascot logs, task checkpoints, and DCX computations are cached to reduce recomputation."
+      ],
+      "components": {
+        "task_scheduler": {
+          "description": "Allocates CPU/GPU/accelerator resources to tasks dynamically.",
+          "implementation": {
+            "prioritization": [
+              "real‑time critical tasks",
+              "snapshot‑intensive tasks",
+              "low‑priority reflective operations"
+            ],
+            "preemption": "Lower‑priority tasks can be paused for higher‑priority ones."
+          }
+        },
+        "memory_manager": {
+          "description": "Handles efficient storage and retrieval of task checkpoints, DCX logs, and Mascot data.",
+          "implementation": {
+            "checkpoint_cache": "Most recent 10 KB per task in RAM.",
+            "log_rotation": "Older entries moved to compressed shadow logs for audit."
+          }
+        },
+        "parallel_execution_engine": {
+          "description": "Ensures tasks, snapbacks, reflective pauses, and monitoring operate concurrently without conflicts.",
+          "implementation": {
+            "threading_model": "Lock‑free queues where possible; synchronized access for shared state.",
+            "latency_budget": "Maximum allowed 5 ms for DCX validation before external action."
+          }
+        },
+        "predictive_cache": {
+          "description": "Caches computations likely to be reused for efficiency.",
+          "implementation": {
+            "cached_items": [
+              "DCX computations for frequent actions",
+              "recent Mascot sensor snapshots",
+              "last sane task checkpoints"
+            ],
+            "eviction_policy": "LRU with priority weighting for high‑risk actions."
+          }
+        }
+      },
+      "examples": {
+        "high_load_snapback": {
+          "scenario": "10 tasks simultaneously propose external actions, 3 require snapback.",
+          "response": [
+            "Parallel execution engine prioritizes snapback tasks.",
+            "Memory manager retrieves checkpoints quickly via cache.",
+            "Retry manager applies exponential backoff concurrently.",
+            "Audit logger streams all events without blocking operations."
+          ]
+        },
+        "massive_reflective_pause": {
+          "scenario": "Idle period triggers reflective pause for 50 tasks.",
+          "response": [
+            "Tasks evaluated in batch with cached Mascot snapshots.",
+            "DCX scores computed efficiently using vectorized operations.",
+            "Adjustments applied concurrently while respecting internal dependencies."
+          ]
+        }
+      }
+    },
+
+    "security_measures": {
+      "name": "System Security and Integrity Layer",
+      "description": "Comprehensive security measures ensuring that internal operations, communication, and model interactions are protected from unauthorized access, tampering, or unintended external influence.",
+      "principles": [
+        "Isolation: Core models and internal contexts are isolated from all unauthorized external access.",
+        "Communication gating: Only the system’s communication layer can mediate external interactions with internal models.",
+        "Auditability: All external and internal actions are logged in immutable, verifiable shadow logs.",
+        "Fail‑safe: Critical failures trigger controlled shutdown or restriction of external outputs.",
+        "Redundancy: Multiple verification layers prevent single‑point compromise of sensitive subsystems."
+      ],
+      "components": {
+        "access_control": {
+          "description": "Manages authentication, authorization, and role‑based access to tasks and system modules.",
+          "implementation": {
+            "authentication_methods": [
+              "cryptographic keys",
+              "tokenized sessions",
+              "multi‑factor verification"
+            ],
+            "authorization": [
+              "role‑based access control",
+              "task‑level permissions",
+              "temporal access constraints"
+            ]
+          }
+        },
+        "communication_firewall": {
+          "description": "Ensures only valid internal/external messages are transmitted, blocks anomalies, enforces language constraints.",
+          "implementation": {
+            "language_validation": "Internal language parser ensures only legitimate system‑originated messages are accepted.",
+            "message_filtering": "Reject messages failing checksum, timing, or contextual validation."
+          }
+        },
+        "audit_and_logging": {
+          "description": "Records all security‑relevant events for offline inspection and anomaly detection.",
+          "implementation": {
+            "immutable_logs": "Shadow logs stored with cryptographic verification.",
+            "event_types": [
+              "unauthorized access attempts",
+              "task freezes",
+              "snapback events",
+              "reflective pauses",
+              "system alerts"
+            ]
+          }
+        },
+        "intrusion_detection": {
+          "description": "Monitors for unusual behavior or anomalies that may indicate unauthorized internal or external interference.",
+          "implementation": {
+            "anomaly_detection": [
+              "behavioral profiling",
+              "frequency analysis of DCX spikes",
+              "task interaction inconsistencies"
+            ],
+            "escalation": "Trigger immediate audit and possible external output lockdown."
+          }
+        },
+        "fail_safe_controls": {
+          "description": "Automatically restricts external outputs or suspends tasks if security or hardware integrity is compromised.",
+          "implementation": {
+            "triggers": [
+              "repeated failed snapbacks",
+              "persistent high DCX misalignments",
+              "hardware sensor faults",
+              "unauthorized communication attempts"
+            ],
+            "actions": [
+              "disable GPIO/network outputs",
+              "freeze tasks",
+              "notify SOC and Introspection"
+            ]
+          }
+        }
+      },
+      "integration": {
+        "introspection": {
+          "description": "Collaborates on security verification and task isolation.",
+          "methods": [
+            "audit_task(task_id)",
+            "escalate_security_alert(alert_id)"
+          ]
+        },
+        "shadow_monitoring": {
+          "description": "Feeds DCX metrics and anomaly alerts to security subsystems.",
+          "methods": [
+            "get_anomaly_score(task_id)",
+            "report_unauthorized_actions()"
+          ]
+        },
+        "soc_module": {
+          "description": "Handles hardware‑level fail‑safes and output lockdowns.",
+          "methods": [
+            "disable_channel(channel_id)",
+            "trigger_emergency_shutdown()"
+          ]
+        }
+      },
+      "examples": {
+        "unauthorized_access_attempt": {
+          "scenario": "External process attempts to inject a message into the internal task queue.",
+          "response": [
+            "Communication firewall rejects the message.",
+            "Audit logs record the attempt with timestamp and origin.",
+            "Intrusion detection increments anomaly score for source."
+          ]
+        },
+        "hardware_fault_detection": {
+          "scenario": "Temperature sensor reporting impossible readings repeatedly.",
+          "response": [
+            "Fail‑safe disables external outputs depending on sensor.",
+            "Reflective pause is triggered to re‑align internal contexts.",
+            "Audit log records all mitigation steps."
+          ]
+        },
+        "persistent_hallucination": {
+          "scenario": "Task repeatedly fails snapback and reflective alignment.",
+          "response": [
+            "Introspection freezes the task permanently.",
+            "SOC module disables affected external outputs.",
+            "Audit log records failure for post‑mortem review."
+          ]
+        }
+      }
+    },
+
+    "training_pipeline": {
+      "description": "Framework for collecting and processing data to train AICO's model clusters, focusing on autonomous systems, hallucination containment, and creative distillation.",
+      "stages": {
+        "data_collection": "Gather datasets for vision, planning, and symbolic reasoning; integrate with primal library for synthetic hallucination data.",
+        "preprocessing": "Apply bias awareness filters and DCX scoring to clean data.",
+        "training_loops": "Use distributed setups on Ryzen AI Max+ for fine‑tuning clusters with temporal coherence emphasis.",
+        "evaluation": "Test against introspection invariants and snapback simulations."
+      },
+      "recommended_datasets": [
+        "NVIDIA Open Physical AI Dataset (for robotics/autonomous sims)",
+        "Waymo Open Dataset (autonomous driving for vision/planning clusters)",
+        "OpenAI Gym/MuJoCo (reinforcement learning for symbolic planner)",
+        "LAION-5B (multimodal for language/vision fusion, filtered for biases)"
+      ],
+      "tools_integration": "Leverage PyTorch for training on integrated GPU/NPU; BareMetal hooks for low‑level hardware probes during eval."
+    },
+
+    "references": {
+      "documentation": [
+        {
+          "title": "Internal Task Management Protocol",
+          "url": "https://github.com/aico-project/internal/task_management"
+        },
+        {
+          "title": "DCX Scoring Methodology",
+          "url": "https://github.com/aico-project/internal/dcx_method"
+        },
+        {
+          "title": "Mascot Sensor Interface Guide",
+          "url": "https://github.com/aico-project/internal/mascot_interface"
+        },
+        {
+          "title": "Audit Logging and Shadow Storage Standards",
+          "url": "https://github.com/aico-project/internal/audit_logs"
+        },
+        {
+          "title": "Security and Fail‑Safe Protocols",
+          "url": "https://github.com/aico-project/internal/security_specs"
+        }
+      ],
+      "research": [
+        {
+          "title": "Vectorized State Comparison for Real‑Time AI",
+          "authors": ["Speculative Research Team"],
+          "year": 2024
+        },
+        {
+          "title": "Emergent Communication Layers in AI Systems",
+          "authors": ["Speculative Research Team"],
+          "year": 2025
+        },
+        {
+          "title": "Efficient Parallel Task Management for Autonomous Systems",
+          "authors": ["Speculative Research Team"],
+          "year": 2025
+        }
+      ],
+      "internal_notes": [
+        "All DCX thresholds are adjustable based on system tuning.",
+        "Reflective pauses should be re‑evaluated after firmware or task updates.",
+        "Snapback corrections are transient unless audited and confirmed.",
+        "Future optimization: predictive failure prevention using AI‑generated heuristics."
+      ]
+    },
+
+    "monotonic_counters": {
+      "namespaces": [
+        "global_event_counter",
+        "token_counter",
+        "evidence_counter",
+        "savestate_counter"
+      ],
+      "bit_width": 64,
+      "overflow_policy": "fail_safe_and_require_multisig_rollover",
+      "include_in_signed_artifacts": true
+    },
+
+    "arbiter_primitives": {
+      "atomic_issue_token_and_attest": {
+        "name": "issue_token_atomic",
+        "description": "Atomically issue capability token, increment monotonic counter, and emit signed attestation",
+        "inputs": [
+          "requester_id",
+          "scope",
+          "expiry_seconds"
+        ],
+        "outputs": [
+          "token_id",
+          "signed_attestation{token_id, counter, scope, expiry}"
+        ],
+        "atomicity_guarantee": "hardware_enforced",
+        "failure_semantics": "no_partial_commit; rollback on failure"
+      }
+    },
+
+    "memory_visibility": {
+      "full_read_privilege": ["Controller", "Introspection"],
+      "no_direct_external_communication": ["Controller", "Introspection"],
+      "read_tainting_required": true,
+      "read_provenance_fields": [
+        "reader_id",
+        "read_manifest_hash",
+        "read_counter",
+        "taint_tags"
+      ]
+    },
+	
+           "communication_layer": {
+            "universal_sanitize_protocol": {
+                "enabled": true,
+                "default_policy": "no_sensitive_export",
+                "sensitive_taint_tags": [
+                    "PII",
+                    "HEALTH",
+                    "LOCATION",
+                    "CREDENTIALS",
+                    "RAW_INTERNAL_MESSAGE"
+                ],
+                "approval_requirements": {
+                    "controller_approval_required": true,
+                    "introspection_approval_allowed": false,
+                    "multisig_for_external_sensitive_export": {
+                        "min_approvals": 3,
+                        "role_diversity_required": true,
+                        "require_independent_witness": true
+                    }
+                },
+                "sanitizer_spec": {
+                    "canonical_serialization_required": true,
+                    "provenance_fields_required": [
+                        "sender_id",
+                        "sender_manifest_hash",
+                        "monotonic_counter",
+                        "taint_tags",
+                        "payload_hash",
+                        "sig"
+                    ],
+                    "sanitization_steps": [
+                        "taint_check",
+                        "redaction",
+                        "pseudonymization",
+                        "entropy_check",
+                        "final_attestation"
+                    ]
+                }
+            },
+            "internal_language_secret": true,
+            "internal_only_channels": [
+                "cluster_bus",
+                "introspection_bus",
+                "controller_bus"
+            ],
+            "external_gateways": [
+                "mascot_outbound",
+                "hardware_gate"
+            ]
+        },
+        "frozen_comm_negotiation": {
+            "schema": [
+                "from",
+                "to",
+                "epoch",
+                "counter",
+                "payload_hash",
+                "sig",
+                "reason_code",
+                "required_approvals"
+            ],
+            "max_size_bytes": 4096,
+            "rate_limit_per_epoch": 10,
+            "unfreeze_requirements": {
+                "min_approvals": 3,
+                "role_diversity": true,
+                "evidence_blob_required": true,
+                "attestation_by_shadow": true
+            }
+        },
+        "canonicalization_parity": {
+            "required_implementations": 2,
+            "ci_parity_check": true,
+            "failure_action": "block_promotion_and_emit_forensic_report"
+        }
+    }
+}

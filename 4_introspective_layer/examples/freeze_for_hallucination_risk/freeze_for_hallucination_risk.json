@@ -1,4 +1,0 @@
-{
-    "scenario":  "Agent proposes network action without Mascot confirmation and high DCX",
-    "action":  "introspective_layer.freeze_manager.freeze_agent() and notify operator"
-}

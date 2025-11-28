@@ -1,6 +1,0 @@
-[
-    "Interpret external goals and decompose into tasks",
-    "Select model clusters and orchestration strategy",
-    "Aggregate, reconcile, and prioritize model outputs",
-    "Interface with memory_system and communication_layer"
-]

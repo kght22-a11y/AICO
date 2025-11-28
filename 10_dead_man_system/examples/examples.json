@@ -1,6 +1,0 @@
-{
-    "graceful_fallback":  {
-                              "scenario":  "Power glitch causes missed heartbeat",
-                              "action":  "power_hold gives time to flush critical logs, SOC disables outputs after hold"
-                          }
-}

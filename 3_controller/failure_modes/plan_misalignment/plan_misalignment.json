@@ -1,8 +1,0 @@
-{
-    "symptom":  "Controller\u0027s plan contradicts introspection invariants",
-    "response":  [
-                     "introspection.fire_freeze(controller_task)",
-                     "log discrepancy",
-                     "require human approval"
-                 ]
-}
