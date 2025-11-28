@@ -1,0 +1,1 @@
+resource_allocator assigns dedicated core, task_queue marks non‑preemptible

@@ -1,0 +1,1 @@
+Hardware layer that can physically cut outputs (power, RF, actuators) independent of AICO's main CPU. Dumb logic via MOSFET/relays driven by DMS line for guaranteed hardware fail‑safes.
