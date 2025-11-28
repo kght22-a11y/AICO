@@ -1,0 +1,1 @@
+Ensures no internal‑only details leak externally; applies content filters and policy checks

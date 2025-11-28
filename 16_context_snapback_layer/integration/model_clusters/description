@@ -1,0 +1,1 @@
+Tasks are unaware of snapbacks or retries; Context Snapback operates transparently.

@@ -1,0 +1,1 @@
+Monitors the task scheduler to detect 15+ minute windows before the next immediate task.

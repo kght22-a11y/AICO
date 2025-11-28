@@ -1,0 +1,6 @@
+{
+    "early":  "KB-scale world state logs",
+    "middle":  "compressed deltas",
+    "late":  "tiny glyphs",
+    "translation":  "Machine-native, AI-generated if human readability needed"
+}

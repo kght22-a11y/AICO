@@ -1,0 +1,1 @@
+Context Snapback notifies SOC if retries repeatedly fail (indicating a potential hardware issue).

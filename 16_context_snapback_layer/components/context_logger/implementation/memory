@@ -1,0 +1,1 @@
+Circular buffer per task (e.g., 10 KB per task).
