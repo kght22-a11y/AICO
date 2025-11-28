@@ -1,1 +1,0 @@
-Atomically issue capability token, increment monotonic counter, and emit signed attestation

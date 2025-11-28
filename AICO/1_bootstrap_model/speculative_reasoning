@@ -1,1 +1,0 @@
-A small ROM watchdog that periodically verifies the runtime image hash at long intervals may increase safety for systems that support over‑the‑air updates; include as optional.

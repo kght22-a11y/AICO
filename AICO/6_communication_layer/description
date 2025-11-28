@@ -1,1 +1,0 @@
-Secure messaging and translation layer: mediates all external interaction, translates human‑language inputs into internal runtime formats, and produces auditable external outputs. Acts as the only bridge between external world and internal models.

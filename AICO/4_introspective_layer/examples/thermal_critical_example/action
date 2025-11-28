@@ -1,1 +1,0 @@
-freeze_all_external_actions, cut power_cap to 80 % TDP, trigger SOC relay if persistent
