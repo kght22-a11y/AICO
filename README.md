@@ -1,3 +1,5 @@
+Find Notebook Here https://notebooklm.google.com/notebook/0108bbfc-8ca1-418e-a38e-23b44fc37896
+
 AICO: The Ego Death of the Operating System
 A Proposal for a Self-Assembling, Bi-Directional Unikernel Architecture[1]
 
