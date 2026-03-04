@@ -1,0 +1,26 @@
+{
+  "model": "qwen2.5:0.5b",
+  "n_paths": 10,
+  "temperature": 0.1,
+  "max_tokens": 64,
+  "stop": null,
+  "embed_model_hint": "ollama-embed",
+  "temporal": {
+    "subjective_ns_per_step": 1,
+    "lambda": 0.015
+  },
+  "thresholds": {
+    "dcx_threshold": 0.35,
+    "collapse_threshold": 0.2,
+    "freeze_threshold": 0.75
+  },
+  "runtime": {
+    "workers": 1
+  },
+  "enhancements": true,
+  "frontend": {
+    "prompt": "Test",
+    "storm_variant": "All Enhancements",
+    "num_trajectories": 10
+  }
+}

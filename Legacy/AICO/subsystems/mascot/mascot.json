@@ -1,0 +1,11 @@
+{
+    "role":  [
+                 "Orphan ego (internal bait)",
+                 "Attacker bait (external decoy)",
+                 "Chaos buffer",
+                 "Memory enforcer",
+                 "Pirate archivist"
+             ],
+    "metronome":  "Steady, sustained rhythm",
+    "constraints":  "Never acts externally, only observes and memorializes"
+}

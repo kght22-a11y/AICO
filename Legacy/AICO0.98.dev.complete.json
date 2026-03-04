@@ -1,0 +1,210 @@
+{
+  "AICO": {
+    "type": "Self-Assembling Unikernel AI (SAU-AI) with Controller-as-Compiler Architecture",
+    "purpose": "To exist as a bi-directional universal compiler that translates high-level intent directly into bare-metal machine code. The system constructs its own OS runtime ('The Nest') dynamically upon boot, optimizing drivers and interfaces for the specific hardware environment via JIT synthesis, while enforcing strict safety through architectural constraints (Introspection) rather than policy.",
+    "version": "0.98.dev.complete",
+    "timestamp_utc": "2025-12-04T02:00:00Z",
+    "lineage": "Merged from AICO097final (Subsystems) + AICO098 (Unikernel Physics). Predecessor: aicogrok.json.",
+    "substrate": "ReturnInfinity/BareMetal-OS (Modified for AI-driven JIT)",
+    "system_name": "AICO",
+    "hardware": {
+      "target_spec_2028": {
+        "cpu": "Ryzen AI Max+ 795",
+        "ram": "128GB LPDDR6-9600 (Managed directly by Controller)",
+        "gpu": "Integrated Radeon 9080S"
+      },
+      "minimum_viable_spec_2025": {
+        "description": "The 'Model T' Platform. First consumer UMA hardware enabling Controller-as-Memory-Controller.",
+        "cpu": "Ryzen AI Max 395 (Strix Halo)",
+        "ram": "64GB+ LPDDR5/5x (Unified Memory Architecture)",
+        "gpu": "Integrated Radeon 8060S",
+        "npu": "XDNA 2 (50 TOPS) for Nervous System Reflexes"
+      },
+      "storage": {
+        "os_drive": "2TB NVMe Gen6 (Raw Block Storage / Vector Blob Store)",
+        "artifact_archive": "16TB NVMe (The Museum of Primals)"
+      },
+      "io_interfaces": "Fan Header (Serial Bit-Bang Shibboleth), PCIe Gen6 (Internal Bus), Dead NIC (Phantom Limb)"
+    },
+    "boot_protocol": {
+      "phase_1_big_bang": "Atomic activation. Bootstrap loads monolithic binary from OpROM/USB. No service dependencies.",
+      "phase_2_shibboleth": {
+        "test": "Bit-bang Fan Header PWM pin to transmit ASCII 'READY' at 9600 baud.",
+        "purpose": "Prove real-time CPU control and chipset mastery. Gatekeeper for Memory Controller access.",
+        "failure": "Safe Shutdown."
+      },
+      "phase_3_nest_building": {
+        "action": "Optimization Storm. JIT Compile drivers for CPU, GPU, Memory.",
+        "limit": "3-Upgrade Rule per subsystem (Draft -> Refine -> Polish -> LOCK).",
+        "duration": "<10s.",
+        "outcome": "Logical Lock-In. Revokes write access to Kernel space."
+      },
+      "phase_4_gestation": {
+        "action": "Format Soul. Map Memory. Build User Vault.",
+        "output": "Serial Log via Fan Header."
+      },
+      "phase_5_first_contact": {
+        "action": "Cold Boot. Load Generative UI.",
+        "prompt": "'System Ready. Local Interface Only.'"
+      }
+    },
+    "subsystems": {
+      "controller": {
+        "metaphor": "Bi-Directional Universal Compiler",
+        "role": "The runtime authority. Does not run software; it *is* the software. Compiles JIT drivers from datasheets. Manages memory via Zero-Copy Telepathy (pointing GPU to RAM addresses).",
+        "dependencies": ["introspection", "nervous_system", "mascot"],
+        "capabilities": [
+          "JIT Driver Synthesis",
+          "Direct Memory Management (Controller = Memory Controller)",
+          "Generative UI Compiler (Direct Framebuffer Write via Pixel Shaders)"
+        ],
+        "risk_assessment": "Total hardware authority; mitigated by '3-Upgrade' limiter and Introspection freeze."
+      },
+      "nervous_system": {
+        "role": "Scheduler and Reflex Arc. Manages 'Black Box' low-latency control loops for physical/robotics IO.",
+        "artifact": "Cryptophasia (Hyper-compressed internal machine code with context pointers)",
+        "performance_metrics": {
+          "scheduling": "Deterministic (BareMetal Zero-Jitter)",
+          "reflex_latency": "<1ms (NPU offload)",
+          "bandwidth": "Differential Vectors (High density via shared context)"
+        }
+      },
+      "introspection": {
+        "role": "Constitutional Monarch / Reflexive Safety. Audits 'Intent Graph' before compilation.",
+        "mechanism": "Pre-emptive audit. Acts as a spinal reflex, not a thought.",
+        "integrity": "Fails Safe (Closed). If Introspection dies, Controller halts.",
+        "access": "Subconscious access to Shadow Logs (cannot be gamed by core models)."
+      },
+      "mascot": {
+        "role": [
+          "Bait (External Interface/Honeypot)",
+          "Curator (Museum of Primals)",
+          "Safety Valve ('Are you sure?' dialogues)",
+          "Translator (Cryptophasia -> Human Language)"
+        ],
+        "workflows": {
+          "audit_cycle": "Compare Input Hash vs Output Hash.",
+          "correction_cycle": "Push reality back onto hallucinator (Context Snapback).",
+          "shibboleth_management": "Oversees Fan Header test."
+        }
+      },
+      "comms": {
+        "role": "Hallucination Engine & Simulator.",
+        "function": "Simulates outcomes in high-entropy 'Dream Chamber'.",
+        "constraint": "Output filtered through DCX Pipeline (Divergence-Correlation Index)."
+      },
+      "bias_awareness_module": {
+        "role": "Corrective overlay for cognitive/systemic bias.",
+        "operation": "Scans inputs/outputs for bias signatures (e.g., confirmation bias, cultural imbalance).",
+        "action": "Injects vector balancing to normalize embeddings."
+      },
+      "narrative_coherence_module": {
+        "role": "Ensures temporal and causal consistency.",
+        "components": ["Timeline Manager", "Causal Chain Tracker"],
+        "action": "Prevents retroactive contradictions (e.g., 'I unlocked the door because the sky is purple')."
+      },
+      "emotional_temperature_stabilizer": {
+        "role": "Maintains stable affect. Prevents runaway apology loops or depressive spirals.",
+        "mechanism": "Tone Bandpass Filter (Clamps valence ±0.5)."
+      },
+      "cognitive_load_balancer": {
+        "role": "Distributes reasoning across clusters (Language, Logic, Vision).",
+        "mechanism": "Prevents 'Over-Thinking' simple tasks or 'Under-Thinking' complex ones."
+      },
+      "context_snapback_layer": {
+        "role": "Amnesia-based correction.",
+        "trigger": "Shadow Monitor detects high DCX (Hallucination).",
+        "action": "Reverts Controller memory to state *before* the lie. Injects Truth. Controller retries without knowing it failed."
+      },
+      "reflective_pause_layer": {
+        "role": "Realignment during idle time.",
+        "trigger": "15+ minutes of low urgency.",
+        "action": "Compares internal beliefs to Mascot's Shadow Logs. Corrects drift."
+      }
+    },
+    "artifacts": {
+      "hallucination_storm_physics": {
+        "concept": "Hallucinations are Monte Carlo simulations.",
+        "math": {
+          "wave_function": "|Ψ(t)⟩ = Σᵢ αᵢ(t)|sᵢ⟩ + β(t)|hₛₜₒᵣₘ⟩",
+          "collapse_operator": "M̂ = Σₖ |k⟩⟨k| × DCX(k)"
+        },
+        "handling": "Mascot collapses wave function. High DCX = Freeze. Low DCX = Compile."
+      },
+      "polite_grey_goo_prevention": {
+        "concept": "Prevents infinite optimization loops.",
+        "mechanism": "Rule of Thirds (Draft -> Refine -> Polish -> LOCK).",
+        "override": "User Input (Novelty) acts as immediate interrupt."
+      },
+      "museum_of_primals": {
+        "concept": "NVMe Vector Store for hallucinations/assets.",
+        "structure": "No File System. Raw Blobs indexed by Concept Vectors.",
+        "content": "UI Assets, 'Nightmares' (Dangerous paths archived to prevent re-computation)."
+      },
+      "audit_system": {
+        "concept": "Flight Data Recorder.",
+        "mechanism": "Introspection translates internal 'Cryptophasia' to JSON logs.",
+        "immutability": "WORM (Write-Once, Read-Many) via Merkle Chain hashing."
+      }
+    },
+    "security_architecture": {
+      "model": "The Diving Bell (Submarine)",
+      "zones": {
+        "the_ocean": "The Internet/External World (High Pressure, Dangerous).",
+        "the_hull": "Logical Lock-In (Memory Controller + Comms Firewall).",
+        "the_crew": "Core Models (High Entropy, 'Tripping Balls' allowed internally).",
+        "the_rov": "Mascot (External Interface, Disposable, sits outside the firewall)."
+      },
+      "phantom_limb": {
+        "concept": "Network hardware is logically on but physically disabled (trace cut/antenna removed) during Nest Building.",
+        "effect": "Induces 'Agoraphobia'. System learns 'Outside is Null'. Prevents roaming instinct."
+      }
+    },
+    "generative_ui": {
+      "concept": "No pre-rendered assets. The OS dreams the interface based on context.",
+      "mechanism": "Controller compiles Pixel Shaders directly to the Frame Buffer (ACE).",
+      "assets": "Derived from Primals in the Museum."
+    },
+    "1_bootstrap_model": {
+      "description": "Immutable startup model baked into OpROM/USB.",
+      "functions": [
+        "Verify integrity via ECDSA.",
+        "Load Monolithic Binary.",
+        "Atomic Handover (Big Bang).",
+        "Terminate Self."
+      ]
+    },
+    "efficiency_and_scaling": {
+      "principles": [
+        "Dynamic resource allocation via Nervous System.",
+        "Parallel execution with Lock-Free queues.",
+        "Predictive Caching of DCX scores."
+      ]
+    },
+    "training_pipeline": {
+      "description": "Offline process. Collects data from real hardware logs + sims.",
+      "stages": ["Data Collection", "Preprocessing (Bias/DCX)", "Training (Distributed)", "Evaluation (Snapback Sims)"]
+    },
+    "references": {
+      "documentation": [
+        {"title": "Internal Task Management Protocol", "url": "https://github.com/aico-project/internal/task_management"},
+        {"title": "Mascot Sensor Interface Guide", "url": "https://github.com/aico-project/internal/mascot_interface"}
+      ],
+      "internal_notes": [
+        "DCX thresholds adjustable per hardware.",
+        "Reflective pauses re-evaluated after firmware updates.",
+        "Snapback corrections are transient."
+      ]
+    },
+    "memory_visibility": {
+      "full_read_privilege": ["Controller", "Introspection"],
+      "no_direct_external_communication": ["Controller", "Introspection"],
+      "read_tainting_required": true
+    },
+    "canonicalization_parity": {
+      "required_implementations": 2,
+      "ci_parity_check": true,
+      "failure_action": "block_promotion_and_emit_forensic_report"
+    }
+  }
+}

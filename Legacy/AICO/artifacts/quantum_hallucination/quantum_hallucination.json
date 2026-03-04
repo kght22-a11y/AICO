@@ -1,0 +1,9 @@
+{
+    "time_scale":  "1 ns = 1 subjective second",
+    "behaviors":  [
+                      "superposition",
+                      "entanglement",
+                      "collapse"
+                  ],
+    "discipline":  "Mascot collapses trajectories into logs"
+}

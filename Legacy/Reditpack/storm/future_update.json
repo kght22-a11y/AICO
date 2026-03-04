@@ -1,0 +1,118 @@
+{
+  "future_update": {
+    "description": "Enhanced prompt refinement and controlled output selection with DCX filtering for rolling context.",
+    "workflow": [
+      {
+        "step": 1,
+        "name": "Prompt Rephrasing",
+        "description": "Generate multiple rephrased versions of the original prompt using a small LLM for accuracy and clarity.",
+        "iterations": "Generate until user has confirmed 25% of total planned prompt variants",
+        "user_action": "Review rephrased prompts one at a time and approve or reject each.",
+        "output": "List of approved rephrased prompts",
+        "notes": [
+          "Each rephrased prompt is stored separately for tracking.",
+          "Rejections are discarded and not sent to the main LLM.",
+          "Could optionally record metadata about why a prompt was rejected."
+        ]
+      },
+      {
+        "step": 2,
+        "name": "Candidate Response Generation",
+        "description": "Generate multiple candidate responses for each approved prompt using the main LLM.",
+        "iterations": "4 responses per approved prompt",
+        "user_action": "Select the best output from each set of 4 candidate responses.",
+        "output": "User-selected responses for each prompt",
+        "notes": [
+          "This step reduces hallucinations by allowing the user to filter out obviously incorrect or irrelevant responses.",
+          "Metadata about which responses were rejected can be stored for further analysis or training."
+        ]
+      },
+      {
+        "step": 3,
+        "name": "DCX Filtering",
+        "description": "Compute DCX (divergence-coherence metric) among all selected responses to identify the most coherent and consistent candidates.",
+        "automated_action": "Collapse responses to the 3 top candidates based on DCX scores.",
+        "user_action": "Optional: review DCX ranking if desired",
+        "output": "3 DCX-filtered candidate responses",
+        "notes": [
+          "DCX helps detect subtle divergences and inconsistencies that human review might miss.",
+          "Allows the system to prioritize responses that are self-consistent across multiple iterations."
+        ]
+      },
+      {
+        "step": 4,
+        "name": "Final Selection",
+        "description": "User chooses 1 response from the 3 DCX-filtered candidates to append to the rolling context.",
+        "user_action": "Select the single response to commit to the context",
+        "output": "Final approved response appended to the rolling context",
+        "notes": [
+          "Ensures that only fully vetted, user-approved content becomes part of the persistent context.",
+          "Final response metadata (prompt, DCX score, selection time) is saved for auditing."
+        ]
+      },
+      {
+        "step": 5,
+        "name": "Context Management",
+        "description": "Maintain a rolling context that includes all approved responses and optionally compressed summaries.",
+        "automated_action": [
+          "Before each new prompt, prepend compressed context summaries to the new prompt.",
+          "Optionally, save the uncompressed content being compressed to a separate archive file for full audit."
+        ],
+        "notes": [
+          "Allows the system to maintain continuity and reference past responses without overloading the LLM context window.",
+          "Fresh content can be kept in a separate 'context.ndjson' to ensure new, uncompressed data is always added at the start."
+        ]
+      }
+    ],
+    "visual_blueprint": {
+      "nodes": [
+        {
+          "id": "prompt_start",
+          "label": "Original Prompt"
+        },
+        {
+          "id": "rephrase",
+          "label": "Prompt Rephrasing (small LLM)",
+          "details": "Iterate until ~25% of planned variants approved",
+          "user_action": "Approve/reject each rephrased prompt"
+        },
+        {
+          "id": "candidate_gen",
+          "label": "Candidate Response Generation",
+          "details": "4 responses per approved prompt",
+          "user_action": "Select best from each set"
+        },
+        {
+          "id": "dcx_filter",
+          "label": "DCX Filtering",
+          "details": "Collapse to 3 top candidates based on DCX",
+          "user_action": "Optional review of DCX ranking"
+        },
+        {
+          "id": "final_selection",
+          "label": "Final Selection",
+          "details": "User chooses 1 to append to rolling context"
+        },
+        {
+          "id": "context_management",
+          "label": "Context Management",
+          "details": "Rolling context includes compressed + fresh uncompressed data"
+        }
+      ],
+      "edges": [
+        {"from": "prompt_start", "to": "rephrase"},
+        {"from": "rephrase", "to": "candidate_gen"},
+        {"from": "candidate_gen", "to": "dcx_filter"},
+        {"from": "dcx_filter", "to": "final_selection"},
+        {"from": "final_selection", "to": "context_management"}
+      ]
+    },
+    "additional_notes": [
+      "System can record metadata at every step (prompt variant, rejections, DCX scores, user selections).",
+      "Compressed context allows longer effective memory without exceeding LLM input limits.",
+      "Rolling context can be versioned for safety and auditing.",
+      "Future extension: introduce a small model to verify factual consistency, or detect repeated made-up content.",
+      "User retains control over prompt approval, response selection, and final context addition, reducing hallucinations and increasing alignment with intended output."
+    ]
+  }
+}
