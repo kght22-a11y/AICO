@@ -36,6 +36,12 @@ class PromptTheatorUI:
         left_panel = tk.LabelFrame(main_frame, text=" Controls ", bg=WIN_GREY, font=COMIC_FONT, bd=2, relief="groove")
         left_panel.pack(side="left", fill="both", padx=5, pady=5, ipadx=10)
 
+        # Persona Control
+        tk.Label(left_panel, text="Character Persona:", bg=WIN_GREY, font=COMIC_FONT).pack(anchor="w", pady=(10,0))
+        self.persona_var = tk.StringVar(value="Baseline")
+        self.persona_menu = ttk.Combobox(left_panel, textvariable=self.persona_var, state="readonly")
+        self.persona_menu.pack(fill="x", padx=5)
+
         tk.Label(left_panel, text="Main Model:", bg=WIN_GREY, font=COMIC_FONT).pack(anchor="w", pady=(10,0))
         self.model_var = tk.StringVar(value="Scanning...")
         self.model_menu = ttk.Combobox(left_panel, textvariable=self.model_var, state="readonly")
@@ -119,6 +125,11 @@ class PromptTheatorUI:
 
         self.output_area = scrolledtext.ScrolledText(right_panel, bg=WIN_WHITE, font=CONSOLE_FONT, bd=2, relief="sunken")
         self.output_area.pack(fill="both", expand=True)
+        self.output_area.tag_configure("BOLD", font=(CONSOLE_FONT[0], CONSOLE_FONT[1], "bold"))
+        self.output_area.tag_configure("HEADER", font=(COMIC_FONT[0], 12, "bold"), foreground=WIN_BLUE)
+        self.output_area.tag_configure("SYSTEM", foreground="#004000", font=(CONSOLE_FONT[0], CONSOLE_FONT[1], "italic"))
+        self.output_area.tag_configure("USER", foreground="#400000", font=(CONSOLE_FONT[0], CONSOLE_FONT[1], "bold"))
+        self.output_area.tag_configure("GHOST", foreground="#4B0082")
         self.add_right_click(self.output_area)
 
         # 3. Progress Bar (Mandatory)
@@ -147,10 +158,12 @@ class PromptTheatorUI:
             from research.engine_v1 import SimpleEngineV1
             from bio_log_manager import BioLogManager
             from storm_logic import StormLogic
+            from persona_manager import PersonaManager
             
             self.engine = SimpleEngineV1()
             self.mascot_engine = SimpleEngineV1() # Mascot uses its own instance
             self.logic = StormLogic()
+            self.pm = PersonaManager(characters_dir="d:/whitepaper/prompt theator/characters")
             self.bio_log = BioLogManager(
                 context_file=os.path.join("d:/whitepaper/prompt theator", "active_context.json"),
                 archive_file=os.path.join("d:/whitepaper/prompt theator", "biolog.ndjson"),
@@ -213,15 +226,62 @@ class PromptTheatorUI:
         tk.Button(about_win, text=" OK ", command=about_win.destroy, font=COMIC_FONT, bg=WIN_GREY, bd=2, relief="raised", padx=20).pack(pady=10)
 
     def log_sys(self, msg):
-        self.output_area.insert(tk.END, f"[SYS] {msg}\n")
+        self._insert_rich(f"[SYS] {msg}\n", "SYSTEM")
+
+    def _insert_rich(self, text, default_tag=None):
+        """Helper to insert text with basic markdown/tag support."""
+        self.output_area.config(state="normal")
+        start_index = self.output_area.index(tk.INSERT)
+        self.output_area.insert(tk.END, text, default_tag)
+        
+        # Apply Regex-based sub-tagging for Bold and Headers
+        content = self.output_area.get(start_index, tk.END)
+        
+        # Simple Bold **text**
+        import re
+        for match in re.finditer(r"\*\*(.*?)\*\*", text):
+            # We need to map relative match positions to actual text widget indices
+            m_start, m_end = match.span()
+            # This is complex in tk, simpler to do it line-by-line during insertion
+            pass 
+
         self.output_area.see(tk.END)
+        self.output_area.config(state="disabled")
+
+    def log_rich(self, msg, tag=None):
+        import re
+        self.output_area.config(state="normal")
+        
+        # Split by potential bold tokens
+        parts = re.split(r"(\*\*.*?\*\*)", msg)
+        for part in parts:
+            if part.startswith("**") and part.endswith("**"):
+                self.output_area.insert(tk.END, part[2:-2], ("BOLD", tag) if tag else "BOLD")
+            elif part.startswith("# "):
+                self.output_area.insert(tk.END, part, ("HEADER", tag) if tag else "HEADER")
+            elif "[GHOST" in part:
+                 self.output_area.insert(tk.END, part, ("GHOST", tag) if tag else "GHOST")
+            else:
+                self.output_area.insert(tk.END, part, tag)
+        
+        self.output_area.insert(tk.END, "\n")
+        self.output_area.see(tk.END)
+        self.output_area.config(state="disabled")
 
     def refresh_models(self):
-        self.log_sys("Scanning for inference models...")
+        self.log_sys("Scanning for inference models & personas...")
         models = self.engine.get_models() if hasattr(self, 'engine') else ["qwen2.5:0.5b"]
         self.model_menu['values'] = models
         self.mascot_menu['values'] = models
         
+        # Refresh Personas
+        if hasattr(self, 'pm'):
+            self.pm.load_personas()
+            personas = self.pm.get_persona_names()
+            self.persona_menu['values'] = personas
+            if self.persona_var.get() not in personas and personas:
+                self.persona_var.set("Baseline" if "Baseline" in personas else personas[0])
+
         # Preserve selection if it's still in the list, otherwise pick first
         current_m = self.model_var.get()
         if models and (current_m not in models or current_m == "Scanning..."):
@@ -235,7 +295,7 @@ class PromptTheatorUI:
         prompt = self.input_field.get().strip()
         if not prompt: return
         self.input_field.delete(0, tk.END)
-        self.log_sys(f"USER: {prompt}")
+        self.log_rich(f"USER: {prompt}", "USER")
         
         self.btn_execute.config(state="disabled", text=" BUSY ")
         self.progress.start(10)
@@ -262,17 +322,20 @@ class PromptTheatorUI:
             if self.toggle_ghost.get():
                 ghosts = self.bio_log.get_ghost_memories(prompt)
                 if ghosts:
-                    self.log_sys(f"GHOSTS DETECTED: {len(ghosts)} memories triggered.")
+                    self.log_rich(f"GHOSTS DETECTED: {len(ghosts)} memories triggered.", "GHOST")
                     mem_block = "\n".join([f"[GHOST MEMORY]: Q: {m['prompt'][:60]}... A: {m['response'][:60]}..." for m in ghosts])
                     ghost_context = f"LONG-TERM ARCHIVE (GHOST MEMORIES):\n{mem_block}\n\n"
             
             context = f"{ghost_context}{active_context}"
-            current_prompt = prompt
+            
+            # --- Persona Wrapping (Phase 5) ---
+            current_persona = self.persona_var.get()
+            full_raw_prompt = self.pm.wrap_prompt(current_persona, prompt, context)
+            current_prompt = prompt # The intent for synthesis/refinement
             
             # --- STAGE 1: Recursive Refinement (Phase 3) ---
             if recursive:
-                self.log_sys("STAGE 1/2: Recursive Prompt Refinement...")
-                full_raw_prompt = f"CONTEXT:\n{context}\n\nUSER: {current_prompt}"
+                self.log_sys(f"STAGE 1/2: Recursive Refinement via {current_persona}...")
                 
                 # Small storm for refinement
                 refine_trajs = []
@@ -294,8 +357,9 @@ class PromptTheatorUI:
                 self.log_sys(f"REFINED PROMPT: {current_prompt[:100]}...")
 
             # --- STAGE 2: Final Storm & Dual Collapse ---
-            self.log_sys("STAGE 2: Final Theatrical Storm...")
-            full_prompt = f"CONTEXT:\n{context}\n\nUSER: {current_prompt}"
+            self.log_sys(f"STAGE 2: Final Theatrical Storm ({current_persona})...")
+            # Final prompt also uses persona wrapping
+            full_prompt = self.pm.wrap_prompt(current_persona, current_prompt, context)
             
             trajectories = []
             model_names = []
@@ -371,8 +435,11 @@ class PromptTheatorUI:
     def finish(self, result, status):
         self.progress.stop()
         self.progress.configure(value=0)
-        self.output_area.insert(tk.END, f"RESULT > {result}\n")
-        self.output_area.see(tk.END)
+        
+        self.output_area.config(state="normal")
+        self.output_area.insert(tk.END, "RESULT > ")
+        self.log_rich(result)
+        
         self.btn_execute.config(state="normal", text=" EXECUTE ")
         self.log_sys(f"Collapse complete. Status: {status}")
 
