@@ -5,7 +5,6 @@ import concurrent.futures
 import sys
 import os
 import time
-import numpy as np
 
 # Foundation UI - Phase 1
 # Style: Windows 95 Retro / Comic Sans
@@ -19,7 +18,6 @@ CONSOLE_FONT = ("Consolas", 10)
 
 class PromptTheatorUI:
     def __init__(self, root):
-        self._force_collapse = threading.Event()
         self.root = root
         self.root.title("PROMPT THEATOR v1.0 - [Registered]")
         self.root.geometry("900x700")
@@ -40,7 +38,7 @@ class PromptTheatorUI:
 
         # Persona Control
         tk.Label(left_panel, text="Character Persona:", bg=WIN_GREY, font=COMIC_FONT).pack(anchor="w", pady=(10,0))
-        self.persona_var = tk.StringVar(value="None")
+        self.persona_var = tk.StringVar(value="Baseline")
         self.persona_menu = ttk.Combobox(left_panel, textvariable=self.persona_var, state="readonly")
         self.persona_menu.pack(fill="x", padx=5)
 
@@ -66,12 +64,6 @@ class PromptTheatorUI:
         self.temp_scale = tk.Scale(left_panel, from_=0.1, to=1.0, resolution=0.1, 
                                    orient="horizontal", variable=self.temp_var, bg=WIN_GREY, highlightthickness=0)
         self.temp_scale.pack(fill="x", padx=5)
-
-        tk.Label(left_panel, text="Max Tokens (Limit):", bg=WIN_GREY, font=COMIC_FONT).pack(anchor="w", pady=(10,0))
-        self.tokens_var = tk.IntVar(value=512)
-        self.tokens_menu = ttk.Combobox(left_panel, textvariable=self.tokens_var, 
-                                        values=[128, 256, 512, 1024, 2048, 4096, 8192], state="readonly")
-        self.tokens_menu.pack(fill="x", padx=5)
 
         tk.Label(left_panel, text="Storm Intensity (Threads):", bg=WIN_GREY, font=COMIC_FONT).pack(anchor="w", pady=(10,0))
         self.workers_var = tk.IntVar(value=min(4, max(1, (os.cpu_count() or 1) - 1)))
@@ -109,9 +101,6 @@ class PromptTheatorUI:
 
         self.toggle_dual = tk.BooleanVar(value=True)
         tk.Checkbutton(left_panel, text="Dual-Path Display", variable=self.toggle_dual, bg=WIN_GREY, font=COMIC_FONT).pack(anchor="w")
-
-        self.toggle_audit = tk.BooleanVar(value=False)
-        tk.Checkbutton(left_panel, text="Log Storm Data (JSON)", variable=self.toggle_audit, bg=WIN_GREY, font=COMIC_FONT).pack(anchor="w")
 
         tk.Button(left_panel, text=" ? ABOUT ", command=self.show_about, font=COMIC_FONT, bg=WIN_GREY, bd=2, relief="raised").pack(side="bottom", fill="x", pady=10)
 
@@ -160,10 +149,6 @@ class PromptTheatorUI:
         self.btn_execute = tk.Button(input_frame, text=" EXECUTE ", command=self.execute, 
                                      font=COMIC_FONT, bg=WIN_GREY, bd=3, relief="raised")
         self.btn_execute.pack(side="right", padx=5)
-
-        self.btn_collapse = tk.Button(input_frame, text=" COLLAPSE ", command=self.force_collapse,
-                                      font=COMIC_FONT, bg="#800000", fg="white", bd=3, relief="raised", state="disabled")
-        self.btn_collapse.pack(side="right", padx=5)
 
         # Initial logic
         self.log_sys("System booting...")
@@ -292,10 +277,10 @@ class PromptTheatorUI:
         # Refresh Personas
         if hasattr(self, 'pm'):
             self.pm.load_personas()
-            personas = ["None"] + self.pm.get_persona_names()
+            personas = self.pm.get_persona_names()
             self.persona_menu['values'] = personas
-            if self.persona_var.get() not in personas:
-                self.persona_var.set("None")
+            if self.persona_var.get() not in personas and personas:
+                self.persona_var.set("Baseline" if "Baseline" in personas else personas[0])
 
         # Preserve selection if it's still in the list, otherwise pick first
         current_m = self.model_var.get()
@@ -306,34 +291,23 @@ class PromptTheatorUI:
         if models and (current_mascot not in models or current_mascot == "Scanning..."):
             self.mascot_var.set(models[0])
 
-    def force_collapse(self):
-        """Signals the running storm to stop and collapse on what it has."""
-        self._force_collapse.set()
-        self.log_sys("!! MANUAL COLLAPSE TRIGGERED - Collapsing on partial trajectories...")
-        self.btn_collapse.config(state="disabled")
-
     def execute(self, event=None):
         prompt = self.input_field.get().strip()
         if not prompt: return
         self.input_field.delete(0, tk.END)
         self.log_rich(f"USER: {prompt}", "USER")
-
-        self._force_collapse.clear()  # Reset collapse flag for new run
+        
         self.btn_execute.config(state="disabled", text=" BUSY ")
-        self.btn_collapse.config(state="normal")
         self.progress.start(10)
         
         # Worker thread for real engine call
         threading.Thread(target=self.run_engine, args=(prompt,), daemon=True).start()
 
     def run_engine(self, prompt):
-        start_time = time.time()
-        self.log_sys(f"--- STORM INITIATED AT {time.strftime('%H:%M:%S')} ---")
         try:
             # 1. Setup Parameters
             n = self.traj_var.get()
             temp = self.temp_var.get()
-            tokens = self.tokens_var.get()
             l_thresh = float(self.dcx_low.get())
             h_thresh = float(self.dcx_high.get())
             main_model = self.model_var.get()
@@ -356,28 +330,8 @@ class PromptTheatorUI:
             
             # --- Persona Wrapping (Phase 5) ---
             current_persona = self.persona_var.get()
-            if current_persona != "None":
-                full_raw_prompt = self.pm.wrap_prompt(current_persona, prompt, context)
-            else:
-                full_raw_prompt = f"CONTEXT:\n{context}\n\nUSER: {prompt}"
-            
+            full_raw_prompt = self.pm.wrap_prompt(current_persona, prompt, context)
             current_prompt = prompt # The intent for synthesis/refinement
-            
-            # Audit Data Collection
-            audit_data = {
-                "timestamp": time.strftime("%Y%m%d_%H%M%S"),
-                "user_intent": prompt,
-                "persona": current_persona,
-                "settings": {
-                    "model": main_model,
-                    "mascot": mascot_model,
-                    "trajectories": n,
-                    "temp": temp,
-                    "recursive": recursive
-                },
-                "recursive_stage": None,
-                "final_storm": {}
-            }
             
             # --- STAGE 1: Recursive Refinement (Phase 3) ---
             if recursive:
@@ -390,7 +344,7 @@ class PromptTheatorUI:
                 
                 def run_path(p_idx):
                     self.log_sys(f"- Thought Path {p_idx+1}/{n}...")
-                    return self.engine.generate(full_raw_prompt, temperature=temp, num_predict=tokens)
+                    return self.engine.generate(full_raw_prompt)
 
                 concurrency_cap = self.workers_var.get()
                 with concurrent.futures.ThreadPoolExecutor(max_workers=concurrency_cap) as executor:
@@ -401,11 +355,6 @@ class PromptTheatorUI:
                 self.mascot_engine.set_model(mascot_model)
                 current_prompt = self.logic.generate_refined_prompt(self.mascot_engine, refine_trajs, prompt)
                 self.log_sys(f"REFINED PROMPT: {current_prompt[:100]}...")
-                
-                audit_data["recursive_stage"] = {
-                    "raw_outputs": refine_trajs,
-                    "refined_prompt": current_prompt
-                }
 
             # --- STAGE 2: Final Storm & Dual Collapse ---
             self.log_sys(f"STAGE 2: Final Theatrical Storm ({current_persona})...")
@@ -423,7 +372,7 @@ class PromptTheatorUI:
             def run_single_path(idx):
                 nonlocal completed
                 self.log_sys(f"- Starting Path {idx+1}/{n}...")
-                res = self.engine.generate(full_prompt, temperature=temp, num_predict=tokens)
+                res = self.engine.generate(full_prompt)
                 completed += 1
                 self.root.after(0, lambda: self.progress.configure(value=completed))
                 return res
@@ -431,26 +380,14 @@ class PromptTheatorUI:
             concurrency_cap = self.workers_var.get()
             with concurrent.futures.ThreadPoolExecutor(max_workers=concurrency_cap) as executor:
                 futures = [executor.submit(run_single_path, i) for i in range(n)]
-                for f in concurrent.futures.as_completed(futures):
-                    result_traj = f.result()
-                    if result_traj:
-                        trajectories.append(result_traj)
-                        model_names.append(main_model)
-                    # Check for manual collapse after each trajectory lands
-                    if self._force_collapse.is_set():
-                        self.log_sys(f"!! Collapse triggered with {len(trajectories)}/{n} trajectories collected.")
-                        # Cancel remaining futures
-                        for pending in futures:
-                            pending.cancel()
-                        break
+                trajectories = [f.result() for f in futures]
+                model_names = [main_model] * n
 
             # 3. Vectorize & Analyze
             self.log_sys("Collapsing Wave Function (DCX)...")
             self.root.after(0, lambda: self.progress.configure(value=n+1))
             
-            storm_result = self.logic.analyze_storm(
-                trajectories, model_names, engine=self.engine, low_thresh=l_thresh, high_thresh=h_thresh
-            )
+            storm_result = self.logic.analyze_storm(trajectories, model_names, l_thresh, h_thresh)
             status = storm_result["status"]
             
             if status == "FROZEN_HIGH_DIVERGENCE":
@@ -468,36 +405,13 @@ class PromptTheatorUI:
             path_a_result = trajectories[best_idx]
             
             # Path B: Synthesis (Top-3 Combined)
-            synth_coherence = 0.0
             if self.toggle_synth.get() and n >= 5:
-                top_3_indices = storm_result["top_3_indices"]
-                top_3_texts = [trajectories[i] for i in top_3_indices]
-                
+                top_3 = [trajectories[i] for i in storm_result["top_3_indices"]]
                 self.log_sys("Synthesizing Path B via Mascot...")
                 self.mascot_engine.set_model(mascot_model)
-                path_b_result = self.logic.semantic_synthesis(self.mascot_engine, top_3_texts, current_prompt)
-                
-                # --- Phase 6 Audit Step ---
-                self.log_sys("Performing Synthesis Audit Loopback...")
-                synth_coherence = self.logic.verify_synthesis(path_b_result, top_3_texts, mascot_model, engine=self.mascot_engine)
-                
-                if synth_coherence < 0.7:
-                    self.log_rich("!! WARNING: LOW SYNTHESIS COHERENCE DETECTED !!", "USER")
-                    self.log_sys(f"Audit score {synth_coherence:.3f} indicates potential mascot hallucination.")
-                else:
-                    self.log_sys(f"Synthesis Verified. Coherence: {synth_coherence:.3f}")
+                path_b_result = self.logic.semantic_synthesis(self.mascot_engine, top_3, current_prompt)
             else:
                 path_b_result = "SYNTHESIS DISABLED (N < 5 or Toggle Off)"
-
-            # --- Immortal Outlier Path (Path C) ---
-            immortal_index = storm_result.get("immortal_index", -1)
-            path_c_result = None
-            if immortal_index >= 0:
-                path_c_result = trajectories[immortal_index]
-                immortal_dcx = storm_result["scores"][immortal_index]
-                cluster_mean = float(np.mean(storm_result["scores"]))
-                self.log_sys(f"!! IMMORTAL OUTLIER DETECTED at index {immortal_index} "
-                             f"(DCX: {immortal_dcx:.3f} vs cluster mean: {cluster_mean:.3f})")
 
             # Construct Final Multi-Output
             if self.toggle_dual.get():
@@ -505,77 +419,23 @@ class PromptTheatorUI:
                     f"=== [ PATH A: STABLE (SINGLE) ] ===\n{path_a_result}\n\n"
                     f"=== [ PATH B: CONVERGENT (SYNTH) ] ===\n{path_b_result}"
                 )
-                if path_c_result:
-                    final_result += (
-                        f"\n\n=== [ PATH C: IMMORTAL OUTLIER ] ===\n"
-                        f"[DCX: {immortal_dcx:.3f} — isolated from cluster]\n{path_c_result}"
-                    )
             else:
+                # Streamlined Mode: Only show the "Upscalement"
                 final_result = path_b_result if (self.toggle_synth.get() and n >= 5) else path_a_result
-                if path_c_result:
-                    final_result += f"\n\n=== [ PATH C: IMMORTAL OUTLIER ] ===\n{path_c_result}"
-
-            status = (
-                f"Collapsed ({'Recursive' if recursive else 'Single'}) | "
-                f"DCX Min: {storm_result['min_dcx']:.2f} | "
-                f"Synth Coh: {synth_coherence:.2f}"
-                + (f" | IMMORTAL: #{immortal_index}" if immortal_index >= 0 else "")
-            )
-
             
-            # Save final to memory (Strip signature if present to prevent context pollution)
-            clean_result = path_a_result
-            if current_persona in self.pm.personas:
-                sig = self.pm.personas[current_persona].get("signature", "")
-                if sig and clean_result.startswith(sig):
-                    clean_result = clean_result[len(sig):].lstrip(": ").strip()
-                elif sig and f"{sig}:" in clean_result[:len(sig)+5]:
-                    clean_result = clean_result.split(f"{sig}:", 1)[-1].strip()
-
-            self.bio_log.add_entry(prompt, clean_result) 
+            status = f"Collapsed ({'Recursive' if recursive else 'Single'}) | DCX Min: {storm_result['min_dcx']:.2f}"
             
-            # --- Phase 7 JSON Audit Export ---
-            if self.toggle_audit.get():
-                audit_data["final_storm"] = {
-                    "prompt": full_prompt,
-                    "trajectories": [
-                        {"text": t, "score": s} for t, s in zip(trajectories, storm_result["scores"])
-                    ],
-                    "dcx_min": storm_result["min_dcx"],
-                    "synthesis": path_b_result,
-                    "synthesis_coherence": synth_coherence
-                }
-                self.save_storm_audit(audit_data)
-            
-            end_time = time.time()
-            elapsed, rem = divmod(end_time - start_time, 60)
-            self.log_sys(f"--- STORM COMPLETED AT {time.strftime('%H:%M:%S')} (Elapsed: {int(elapsed)}m {rem:.1f}s) ---")
+            # Save final to memory
+            self.bio_log.add_entry(prompt, path_a_result) # Store stable path in long term memory
             
             self.root.after(0, lambda: self.finish(final_result, status))
         except Exception as e:
-            err_msg = str(e)
-            self.root.after(0, lambda: self.finish(f"CRITICAL ERROR: {err_msg}", "CRASH"))
-
-    def save_storm_audit(self, data):
-        """Saves deep diagnostic storm data to JSON."""
-        folder = "d:/whitepaper/prompt theator/storms"
-        if not os.path.exists(folder): os.makedirs(folder)
-        
-        filename = f"storm_{data['timestamp']}.json"
-        path = os.path.join(folder, filename)
-        
-        try:
-            with open(path, "w") as f:
-                json.dump(data, f, indent=4)
-            self.log_sys(f"Deep Audit saved to: storms/{filename}")
-        except Exception as e:
-            self.log_sys(f"FAILED TO SAVE AUDIT: {e}")
+            self.root.after(0, lambda: self.finish(f"CRITICAL ERROR: {e}", "CRASH"))
 
     def finish(self, result, status):
         self.progress.stop()
         self.progress.configure(value=0)
-        self.btn_collapse.config(state="disabled")
-
+        
         self.output_area.config(state="normal")
         self.output_area.insert(tk.END, "RESULT > ")
         self.log_rich(result)

@@ -65,11 +65,8 @@ class PersonaManager:
             f"{context}\n"
             f"{'---' if context else ''}\n"
             f"USER INTENT: {user_intent}\n\n"
+            f"RESPONSE {signature}:"
         )
-        if signature:
-            wrapped += f"RESPONSE {signature}:"
-        else:
-            wrapped += "RESPONSE:"
         return wrapped
 
 if __name__ == "__main__":
