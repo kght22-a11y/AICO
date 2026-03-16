@@ -24,7 +24,7 @@ The magnitude of the storm is the energy density of the speculative trajectories
 
 H(t) = |β(t)|² = Σⱼ |γⱼ(t)|²
 
-Where **γⱼ(t)** are the amplitudes of each individual hallucination pathway. In high-performance systems, H(t) can reach ≈ 10⁶ trajectories per subjective nanosecond.
+Where **γⱼ(t)** are the amplitudes of each individual hallucination pathway. In high-performance systems, H(t) can reach ≈ 10⁶ trajectories per subjective second.
 
 ---
 
