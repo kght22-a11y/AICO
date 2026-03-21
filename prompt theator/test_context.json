@@ -1,0 +1,24 @@
+{
+  "history": [
+    {
+      "timestamp": 1773701682.2858758,
+      "user": "Hello",
+      "ai": "Hi there!"
+    },
+    {
+      "timestamp": 1773786616.7493653,
+      "user": "Hello",
+      "ai": "Hi there!"
+    },
+    {
+      "timestamp": 1773806331.2610507,
+      "user": "Hello",
+      "ai": "Hi there!"
+    },
+    {
+      "timestamp": 1773806334.7940114,
+      "user": "Hello",
+      "ai": "Hi there!"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import scrolledtext, ttk
+from tkinter import scrolledtext, ttk, filedialog, messagebox
 import threading
 import concurrent.futures
 import sys
@@ -70,7 +70,7 @@ class PromptTheatorUI:
         tk.Label(left_panel, text="Max Tokens (Limit):", bg=WIN_GREY, font=COMIC_FONT).pack(anchor="w", pady=(10,0))
         self.tokens_var = tk.IntVar(value=512)
         self.tokens_menu = ttk.Combobox(left_panel, textvariable=self.tokens_var, 
-                                        values=[128, 256, 512, 1024, 2048, 4096, 8192], state="readonly")
+                                        values=[0,128, 256, 512, 1024, 2048, 4096, 8192,99999], state="readonly")
         self.tokens_menu.pack(fill="x", padx=5)
 
         tk.Label(left_panel, text="Storm Intensity (Threads):", bg=WIN_GREY, font=COMIC_FONT).pack(anchor="w", pady=(10,0))
@@ -581,7 +581,7 @@ class PromptTheatorUI:
         self.log_rich(result)
         
         self.btn_execute.config(state="normal", text=" EXECUTE ")
-        self.log_sys(f"Collapse complete. Status: {status}")
+        self.log_sys(f"Collapse complete. Status: {status} @ {time.strftime('%H:%M:%S')}")
 
 if __name__ == "__main__":
     root = tk.Tk()
