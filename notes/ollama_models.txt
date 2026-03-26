@@ -1,0 +1,26 @@
+NAME                        ID              SIZE      MODIFIED     
+nomic-embed-text:latest     0a109f422b47    274 MB    10 days ago     
+gemma3:1b                   8648f39daa8f    815 MB    13 days ago     
+llama3:latest               365c0bd3c000    4.7 GB    2 weeks ago     
+llama3.1:8b                 46e0c10c039e    4.9 GB    2 weeks ago     
+gpt-oss:20b                 17052f91a42e    13 GB     2 weeks ago     
+deepseek-coder:6.7b         ce298d984115    3.8 GB    6 weeks ago     
+glm-4.6:cloud               05277b76269f    -         8 weeks ago     
+qwen3-vl:8b                 901cae732162    6.1 GB    2 months ago    
+qwen2.5-coder:1.5b-base     02e0f2817a89    986 MB    3 months ago    
+llama3.1:latest             46e0c10c039e    4.9 GB    3 months ago    
+qwen3-vl:235b-cloud         86b3322ec200    -         3 months ago    
+qwen2.5:0.5b                a8b0c5157701    397 MB    3 months ago    
+llama3:8b                   365c0bd3c000    4.7 GB    3 months ago    
+all-minilm:latest           1b226e2802db    45 MB     3 months ago    
+all-minilm:l6-v2            1b226e2802db    45 MB     3 months ago    
+minimax-m2:cloud            698ab6d56142    -         3 months ago    
+qwen3:4b                    359d7dd4bcda    2.5 GB    3 months ago    
+deepseek-v3.1:671b-cloud    d3749919e45f    -         3 months ago    
+qwen3:8b                    500a1f067a9f    5.2 GB    4 months ago    
+qwen3-coder:480b-cloud      e30e45586389    -         4 months ago    
+gpt-oss:120b-cloud          569662207105    -         4 months ago    
+qwen3-coder:30b             06c1097efce0    18 GB     4 months ago    
+deepseek-r1:8b              6995872bfe4c    5.2 GB    4 months ago    
+gemma3:27b                  a418f5838eaf    17 GB     7 months ago    
+gemma3:4b                   a2af6cc3eb7f    3.3 GB    7 months ago    

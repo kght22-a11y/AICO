@@ -1,0 +1,117 @@
+Chapter 11 — Lifecycle, Registry, and Update Flows
+1 Overview
+AICO is not a static system; it is a living cognitive organism that must grow, heal, and evolve while maintaining its constitutional integrity. The lifecycle model defines how artifacts move from theoretical concepts to trusted system components, how the system recovers from failures, and how updates are validated and deployed without compromising the Diving Bell's security guarantees.
+
+The registry serves as AICO's immune system - it remembers every mutation, every rollback, and every decision point, creating an immutable evolutionary record that can be audited but never falsified.
+
+2 The Burn → Canary → Promote Ladder
+All new capabilities, models, and system modifications must prove their worth through a three-stage validation process before becoming trusted components of the Nest.
+
+Burn:
+
+New artifacts begin in isolated sandboxes with no system access
+Extensive testing against adversarial inputs and edge cases
+Introspection monitors for deception attempts or unexpected behaviors
+Only artifacts that survive 48 hours of continuous stress testing proceed
+Canary:
+
+Gradual exposure to live data in read-only contexts
+Parallel execution with existing trusted components
+DCX scores continuously monitored for divergence
+Canary artifacts may influence system decisions but cannot control them
+Promote:
+
+Human multi-signature approval required for final promotion
+Full regression testing against the Museum of Primals
+Artifact signature permanently burned into the rulebook
+Promoted artifacts gain full capability tokens within their domain
+3 Quarantine and CI Testing
+The Continuous Integration pipeline serves as AICO's circulatory system, constantly validating that new components don't compromise the whole.
+
+Automated Quarantine:
+
+Any component failing DCX threshold >0.85 is automatically isolated
+Introspection triggers immediate evidence blob generation
+System continues operating without the quarantined component
+Human operators receive detailed forensic analysis
+CI Test Matrix:
+
+{
+  "test_domains": [
+    "thermal_stress",
+    "intent_injection", 
+    "hardware_interface",
+    "cognitive_load",
+    "longevity_72hr"
+  ],
+  "pass_criteria": {
+    "dcx_drift": "< 0.1",
+    "thermal_stability": "±2°C baseline",
+    "intent_integrity": "100% preservation",
+    "resource_efficiency": "> 95% expected"
+  }
+}
+4 Model Revocation Protocol
+Even promoted artifacts can be revoked if they demonstrate dangerous behavior. Revocation is a surgical, not wholesale, operation.
+
+Revocation Triggers:
+
+Sustained DCX drift beyond 0.9 threshold
+Detection of prohibited privilege escalation
+Unexplained resource consumption patterns
+Multiple snapback failures attributable to the component
+Revocation Process:
+
+Freeze: Immediate isolation, capability tokens revoked
+Evidentiate: Full state capture and forensic logging
+Fallback: System reverts to last known-good artifact version
+Analyze: Human review of failure patterns and root causes
+Patch: Either fix the artifact or permanently blacklist it
+5 Offline Witness Verification
+The Outer Mascot serves as the eternal witness, maintaining an independent record of all system transitions that cannot be altered by any in-bell component.
+
+Witness Capabilities:
+
+Cryptographic hash of every rulebook version
+Signed attestations of all promotion events
+Continuous heartbeat monitoring with independent timestamping
+Immutable storage of all freeze/thaw events
+Verification Protocols:
+
+Any boot can be compared against the witness record
+Tamper-evident logs show if any component exceeded its authority
+Cross-validation against hardware TPM measurements
+Human operators can audit the complete evolutionary history
+6 The Immune Response Loop
+AICO learns from every failure, building stronger defenses over time through an adaptive immune system.
+
+Pattern Recognition:
+
+Introspection identifies common failure signatures across components
+The Museum of Primals catalogs successful recovery patterns
+Future components are automatically tested against historical failure modes
+Adaptive Thresholds:
+
+Safety thresholds can tighten but never loosen without human approval
+Components with proven reliability earn gradual trust increases
+New domains automatically inherit conservative defaults that evolve with experience
+Self-Healing:
+
+When a component fails, the system searches the Museum for alternatives
+Context snapback automatically applies proven recovery patterns
+The Controller can synthesize temporary replacements while permanent fixes are developed
+7 Update Without Reboot
+True liveness requires the ability to update without halting cognition. AICO achieves this through hot-swappable component architecture.
+
+Live Update Mechanisms:
+
+New components can be loaded into memory while old ones continue operating
+State transfer protocols ensure no data loss during transitions
+Capability tokens prevent conflicts during overlapping execution
+Rollback is instantaneous if the new component fails validation
+Update Atomicity:
+
+Either the entire update succeeds atomically or the system reverts completely
+No partial states are ever visible to users or other subsystems
+The Dead Man System ensures hardware safety during critical transitions
+This establishes AICO as a system that can evolve safely - learning from failures, incorporating improvements, and maintaining its constitutional integrity throughout its entire lifecycle.

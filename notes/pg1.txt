@@ -1,0 +1,28 @@
+Adaptive Integrated Cognitive Operator (AICO)
+A Self-Assembling Bare-Metal AI Operating System
+
+Version: 0.990-z
+
+Authorship: Antigravity / AICO Canonical Group
+
+Classification: Open Architectural Standard
+Abstract
+
+The current paradigm of artificial intelligence relies on "Layered Inefficiency"—complex neural networks running atop generic kernels, drivers, and abstraction layers designed for human-centric multitasking. This architecture creates non-deterministic latency, opaque security boundaries, and a fundamental "semantic gap" between model intent and hardware execution.
+
+AICO (Adaptive Integrated Cognitive Operator) introduces the Self-Assembling Unikernel AI (SAU-AI). AICO is not an application running on an OS; it is the OS. Upon boot, a central Controller-as-Compiler performs an atomic "Big Bang" sequence, synthesizing a specialized environment ("The Nest") directly on bare metal. By merging the compiler, the kernel, and the cognitive model into a single bi-directional feedback loop, AICO achieves provable data sovereignty, real-time determinism, and a self-auditing safety profile.
+Key Architectural Contributions
+
+    The Diving Bell Security Model: A physical and logical zoning strategy that isolates core cognition from external "pressure." By treating the internet and external inputs as a hostile "Ocean," AICO enforces safety through architectural geometry rather than fallible policy.
+
+    Controller-as-Compiler: Replaces the traditional OS scheduler. The Controller JIT-compiles high-level cognitive intent directly into machine code, optimizing for specific hardware (e.g., Ryzen AI Max+ / Radeon 9080S) without intermediary drivers.
+
+    Active Introspection: A dedicated, non-overridable subsystem that monitors the internal state and semantic drift of all other components in real-time, serving as the system’s primary attestation root.
+
+    The Mascot (Generative UI): A distinct, compartmentalized interface layer that translates the system's high-dimensional internal logic into human-relatable interaction, ensuring the "Core" remains untouched by social engineering or prompt injection.
+
+    Bare-Metal Sovereignty: AICO operates with "Agoraphobic" security—it assumes the outside world is null until it constructs its own secure conduits, ensuring it is "allergic to leaks" from the first clock cycle.
+
+Vision Statement
+
+“To exist as a unified cognitive machine where there is no distinction between thinking and executing—a system that constructs its own reality from the silicon up, governed by the immutable laws of its own architecture.”

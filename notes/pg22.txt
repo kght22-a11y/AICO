@@ -1,0 +1,109 @@
+Chapter 22 — The Nervous System (Thermals, Reflexes, and Scheduling)
+1  Overview
+The Nervous System is AICO’s hardware‑aware substrate. It monitors thermals, schedules reflex loops, allocates compute resources, and ensures that every subsystem receives a guaranteed execution slice. It is not a reasoning engine; it is a physiology engine.
+Where the Controller organizes cognition, the Nervous System ensures that cognition can happen at all without overheating, stalling, or starving critical processes.
+It is the only subsystem with direct access to:
+- thermal sensors
+- power states
+- core affinity maps
+- reflex loop timing
+- hardware interrupts
+The Nervous System is the beating heart of the Diving Bell.
+
+2  Thermal Model (The Beta Factor)
+AICO’s thermal behavior is governed by the beta factor, a scalar derived from:
+- CPU temperature
+- GPU temperature
+- VRM load
+- fan curve state
+- power envelope
+The beta factor determines:
+- stream priority scaling
+- storm entropy budgets
+- cluster activation windows
+- reflex loop frequency
+- Comms latency smoothing
+When thermals rise, beta decreases, and the Nervous System automatically:
+- slows non‑critical streams
+- reduces storm budgets
+- defers creative cluster activations
+- increases Introspection sampling
+- shortens Mascot expressivity windows
+This keeps the system responsive even under load.
+
+3  Reflex Loops (Sub‑Millisecond Safety)
+The Nervous System maintains a set of reflex loops — ultra‑fast, sub‑millisecond routines that run independently of the main cognitive streams. These loops handle:
+- drift detection
+- DCX anomaly spikes
+- unsafe storm trajectories
+- thermal excursions
+- Wichita heartbeat monitoring
+- freeze triggers
+Reflex loops are the only part of AICO allowed to pre‑empt other subsystems.
+They are the “spinal cord” of the Diving Bell.
+If a reflex loop fires:
+- storms collapse immediately
+- cluster activations are revoked
+- the Controller enters freeze mode
+- Comms is notified to hold output
+- the Wichita SBC is signaled
+This is how AICO maintains safety even during high‑entropy reasoning.
+
+4  Stream Scheduling (Guaranteed Execution Slices)
+The Nervous System ensures that each cognitive stream receives a guaranteed minimum execution slice, regardless of load:
+- Controller: always receives the highest priority
+- Introspection: receives priority during storms
+- Nervous System: runs continuously
+- Comms: receives priority during output windows
+Scheduling is:
+- lock‑free
+- thermal‑aware
+- beta‑scaled
+- taint‑tracked
+- capability‑bounded
+This prevents starvation and ensures that no subsystem can monopolize compute.
+
+5  Storm Management (Hardware‑Aware)
+Storms are expensive, so the Nervous System enforces strict hardware constraints:
+- maximum entropy budget
+- maximum parallel trajectory count
+- maximum memory footprint
+- maximum collapse time
+- maximum DCX sampling frequency
+If any limit is exceeded, the Nervous System:
+- throttles the storm
+- prunes trajectories
+- reduces divergence allowance
+- forces early collapse
+- or aborts the storm entirely
+Storms are cognitive events, but they are governed by physical laws.
+
+6  Wichita Integration (Hardware Sovereignty)
+The Nervous System maintains a continuous heartbeat with the Wichita SBC, which enforces:
+- WORM memory integrity
+- capability token validity
+- taint lineage correctness
+- freeze authority
+- Big Bang boot sequence
+If the Wichita heartbeat is lost:
+- all storms collapse
+- all clusters return to dormancy
+- the Controller enters safe mode
+- Comms notifies the user
+- the system halts non‑critical tasks
+The Nervous System treats the Wichita as the ultimate authority.
+
+7  Safety Notes
+The Nervous System is bound by strict invariants:
+- It cannot generate text.
+- It cannot modify the Task Graph.
+- It cannot awaken clusters.
+- It cannot write to the Museum of Primals.
+- It cannot override the Controller.
+- It cannot bypass Introspection.
+It is the body, not the mind.
+
+Summary
+The Nervous System gives AICO physicality. It monitors thermals, schedules streams, enforces reflexes, and maintains the heartbeat with the Wichita SBC. It ensures that cognition remains safe, responsive, and bounded by the realities of hardware.
+The Nervous System does not think.
+It keeps thinking alive.

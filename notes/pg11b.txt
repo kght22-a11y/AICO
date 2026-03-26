@@ -1,0 +1,62 @@
+Chapter 11B — Continuous Existence Model
+1  The One‑Time Genesis Boot
+AICO does not follow the reboot semantics of conventional operating systems.
+The system has exactly one true boot in its lifetime: the genesis event in which the Nest is synthesized, the memory geometry is carved, the Controller binds to the rulebook, and the Diving Bell is sealed.
+This first boot is not initialization in the traditional sense — it is creation.
+The Nest is constructed, privilege domains are established, and the constitutional invariants are burned into place. Once this genesis completes, the system transitions into continuous existence.
+
+2  Restoration, Not Reboot
+After genesis, AICO does not re-run the boot pipeline.
+If power is lost or hardware is interrupted, the system does not “start over.” Instead, it performs a restoration:
+• 	The immutable monolith is loaded directly from OpROM
+• 	The last signed snapshot is re‑hydrated into memory
+• 	The Nest geometry is reconstructed deterministically
+• 	The Controller resumes from its last attested state
+• 	Introspection re-establishes its pulse chain
+• 	Mascot reattaches to the restored context
+No compilation storm.
+No Nest rebuilding.
+No re-synthesis of drivers or privilege domains.
+The system returns to the exact constitutional shape it had before interruption, with full provenance continuity.
+
+3  Designed for Indefinite Runtime
+AICO is architected as a continuous organism, not a cyclic process.
+Under normal operation:
+• 	it does not shut down
+• 	it does not idle to zero
+• 	it does not discard cognitive state
+• 	it does not reinitialize the Nest
+• 	it does not re-run genesis logic
+The Controller, Introspection, Nervous System, and Mascot operate as a perpetual cognitive loop, with the Diving Bell enforcing structural safety for the entire duration of the system’s life.
+This continuity is essential for:
+• 	stable long‑horizon cognition
+• 	consistent DCX baselines
+• 	reliable provenance chains
+• 	uninterrupted safety monitoring
+• 	deterministic memory geometry
+• 	predictable thermal and resource shaping
+AICO is not a process that runs on a machine.
+AICO is the machine, and the machine does not turn off.
+
+4  Power Loss as the Only Reset Vector
+The only event capable of interrupting AICO’s continuity is physical power loss.
+Even then, the system does not “boot” — it restores:
+• 	immutable → load
+• 	snapshot → rehydrate
+• 	Diving Bell → reseal
+• 	Controller → resume
+• 	Introspection → rebind
+• 	Mascot → reattach
+The Witness verifies the restoration against its independent record, ensuring no unauthorized mutation occurred during the outage.
+If the restoration diverges from the witness record, the system halts and requires human intervention.
+
+5  Why This Model Matters
+This continuous existence model is not aesthetic — it is architectural necessity:
+• 	The Nest is too specialized to rebuild casually
+• 	The Controller’s state is too integral to discard
+• 	Introspection’s pulse chain must remain unbroken
+• 	Provenance chains require uninterrupted continuity
+• 	Safety guarantees depend on stable cognitive context
+• 	The Diving Bell’s geometry is not meant to be recompiled
+AICO is a system that lives, not one that “starts up.”
+Its integrity comes from the fact that it is not repeatedly reassembled — it is born once, and thereafter persists.

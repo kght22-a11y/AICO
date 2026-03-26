@@ -1,0 +1,49 @@
+# Addendum B: Sovereignty and the Opt-In Internet
+
+## 1. The Death of the Implicit Opt-In
+Modern internet-connected devices, applications, and operating systems share a foundational assumption: the network is always present, always listening, and inherently trusted as a default pathway for data. When a user turns on a device, they are drafted into an ecosystem where telemetry, background syncing, silent updates, and ambient data collection occur without affirmative consent. The user is asked to "opt out" of behaviors that are rarely transparent and often functionally mandatory.
+
+AICO rejects this paradigm structurally.
+
+In the AICO architecture, the internet is not a given. It is a tool. And like all tools in AICO, its use is strictly bound by capability tokens, human authorization, and architectural constraints. AICO is "allergic to leaks," meaning data sovereignty is not a policy users configure—it is the default physical and computational reality of the system.
+
+## 2. You Can Use the Internet With AICO, But the Internet Cannot Use You
+The relationship between AICO and the external world is asymmetrical by design. 
+
+When a user wishes to query the internet, download a file, or send a message, AICO facilitates this through the Comms subsystem. The user issues an intent, the Controller compiles that intent into a Task Graph, and a capability token is issued allowing the Comms subsystem to orchestrate the action via the Phantom Limb NIC.
+
+However, this transaction is entirely one-way regarding agency. 
+
+- **No Inbound Polling:** External services cannot "ping" AICO for status, telemetry, or user context.
+- **No Background Sync:** AICO does not maintain "always-on" connections to cloud providers. It has no cloud provider.
+- **No Ambient Exfiltration:** Model Clusters cannot independently decide to "fetch more context" from the web. If they need external data, they must ask the Controller, which must ask the user.
+
+AICO treats external networks as an untrusted, high-pressure environment ("The Ocean"). AICO can reach out a mechanical arm (The ROV / Mascot) to interact with the Ocean, but the Ocean can never reach into the internal Crew Zone.
+
+## 3. Opt-In as a Physical Construct
+The concept of "Opt-In" in AICO is not a graphical toggle in a settings menu. It is an act of explicit cryptographic and, ultimately, physical authorization.
+
+When AICO requires external data to fulfill a user request:
+1. The **Inner Mascot** generates a human-readable summary of *exactly* what information needs to leave the system and why.
+2. The user must explicitly approve this transaction. 
+3. The **Controller** issues a single-use capability token.
+4. The **Outbound Sanitizer** redacts all internal state, PII, and context metadata.
+5. A signed **Evidence Blob** is generated, creating an immutable record of what left the device and under what authorization.
+
+If a remote server asks for data that the user did not explicitly authorize AICO to send, AICO does not refuse—it simply lacks the architectural capability to comply. The system cannot perform unauthorized exfiltration because the tokens required to do so do not exist.
+
+## 4. The Value of Sovereignty
+Data sovereignty is often framed as a privacy issue, but in the context of cognitive computing, it is an issue of operational integrity. 
+
+A system that can be silently updated, silently queried, or silently monitored by third parties is a system whose cognition is compromised. It cannot operate as a trusted partner because its ultimate allegiance—and the control over its data—belongs to the network provider, not the local operator.
+
+The Opt-In Internet model ensures that AICO remains a sovereign entity under the absolute control of its user. It uses the internet when it is useful, but it is never used *by* the internet. 
+
+In a world defined by ambient surveillance and data commodification, AICO provides an environment where silence is the default, and communication is an explicitly chosen act.
+
+## 5. Allergic to Leaks
+The phrase "allergic to leaks" is not metaphorical. If AICO's Introspection subsystem detects a leak—an attempt to bypass the Comms Sanitizer or an unauthorized network transmission—the system does not simply log the event or block the packet.
+
+It triggers a full Dead Man System (DMS) response.
+
+The DMS drops the inductive heartbeat to the Wichita SBC, physically severing external output relays. A true data leak causes the machine to reflexively "die" to protect the Hull. The opt-in internet is enforced not just by policy, but by an existential hardware response to failure.

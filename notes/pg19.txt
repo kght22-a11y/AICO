@@ -1,0 +1,98 @@
+Chapter 19 — Model Clusters (Dormant Expertise)
+1  Overview
+AICO does not rely on a single monolithic model. Instead, it uses a constellation of Model Clusters—specialized, partially dormant networks that activate only when their domain expertise is required. This architecture mirrors biological cognition: most knowledge remains latent until context awakens it. The result is a system that feels broad without being computationally heavy.
+Each cluster is stored in compressed form inside the Nest on the Wichita SBC. During the Big Bang, the Controller loads only the top layers and routing matrices into RAM; the deeper layers remain cold until a capability token authorizes activation.
+Clusters are not peers. They are instruments in a cognitive orchestra, awakened only when the Controller’s task graph demands their voice.
+
+2  Dormancy as a Safety Primitive
+Dormancy is not an optimization—it is a safety boundary.
+A dormant cluster:
+- cannot generate text
+- cannot influence the Controller
+- cannot initiate a storm
+- cannot modify memory
+- cannot publish to the Big Boat Stream
+It is inert until the Controller issues a capability token granting:
+- read access to the current context snapshot
+- a bounded activation window
+- a maximum token budget
+- a taint ID for audit lineage
+Once the window closes, the cluster returns to cold storage.
+Dormancy ensures that expertise is available without allowing any subsystem to become a free‑running agent.
+
+3  Cluster Types
+The JSON rulebook defines four major cluster families:
+3.1  Linguistic Cluster
+Handles grammar, idioms, narrative structure, and cross‑lingual mapping.
+Used heavily by the Mascot and Comms subsystems.
+3.2  Analytical Cluster
+Performs logical reasoning, symbolic manipulation, and structured inference.
+Activated by the Controller during task graph compilation.
+3.3  Sensory‑Synthetic Cluster
+Generates UI elements, diagrams, and visual metaphors.
+Often invoked for creative storms, which are intentionally not cache‑resident.
+3.4  Reflex Cluster
+A lightweight classifier ensemble used by Introspection for drift detection, DCX scoring, and freeze triggers.
+This is the only cluster allowed to run inside a reflex loop.
+Each cluster is a full model, but only a thin slice is active at any moment.
+
+4  Activation Path (Cluster Awakening)
+Cluster activation follows a strict sequence:
+- Controller identifies a domain gap
+The task graph contains a node requiring specialized knowledge.
+- Controller issues a capability token
+The token specifies:
+- activation window
+- taint ID
+- memory region
+- maximum compute budget
+- Cluster awakens in partial mode
+Only the top layers and routing matrices are loaded into active memory.
+- Cluster produces a glyph or structured hint
+Clusters never produce raw text.
+They output:
+- vector embeddings
+- structured hints
+- compressed glyphs
+- safety‑scored tags
+- Controller integrates the result
+The cluster returns to dormancy.
+This ensures that clusters behave like tools, not agents.
+
+5  Cross‑Cluster Cooperation
+Clusters never communicate directly.
+All cooperation is mediated through:
+- the Controller
+- the Big Boat Stream
+- taint‑tracked glyphs
+- capability tokens
+This prevents emergent behavior and ensures that no cluster can influence another without explicit authorization.
+Example:
+- The Analytical Cluster produces a symbolic decomposition.
+- The Linguistic Cluster receives a sanitized glyph representing that decomposition.
+- The Mascot receives a narrative‑shaping hint derived from the same glyph.
+No cluster ever sees the others’ internal state.
+
+6  Cold‑Start Behavior
+Cold‑starting a cluster is expensive, so AICO uses a warm‑cache heuristic:
+- Reflex Cluster is always warm.
+- Linguistic Cluster is warmed during user interaction.
+- Analytical Cluster is warmed during complex tasks.
+- Sensory‑Synthetic Cluster is warmed only during creative storms.
+This ensures that latency remains below human perception thresholds while keeping the system safe and predictable.
+
+7  Safety Notes
+Model Clusters are bound by strict invariants:
+- They cannot initiate storms.
+- They cannot publish directly to the user.
+- They cannot modify the task graph.
+- They cannot access raw external data.
+- They cannot awaken without a capability token.
+- They cannot remain active after their window closes.
+Clusters are powerful, but they are never autonomous.
+
+Summary
+Model Clusters give AICO breadth without bloat. They store dormant expertise that awakens only when needed, producing structured hints rather than free‑running text. The Controller orchestrates their activation; Introspection monitors their behavior; the Wichita SBC enforces their boundaries. Together, they form a cognitive ecosystem where specialization enhances safety rather than undermining it.
+Clusters are not minds.
+They are instruments—
+and AICO plays them with intention.

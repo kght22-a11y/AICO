@@ -1,0 +1,39 @@
+# Chapter 24 — Risks & Mitigations: The Limits of the Hull
+
+## 1. Safety by Architecture, Not Policy
+AICO abandons the illusion of perfect software. Policed systems ultimately fail because policies can be rewritten, bypassed, or ignored by compromised processes. AICO relies on Safety by Architecture—enforcing constraints through memory geometry, capability tokens, and hardware backstops. 
+
+However, no architecture is invulnerable. This chapter outlines the structural risks inherent to AICO and the mitigation strategies designed to contain them.
+
+## 2. Hardware Failure: The Wichita SBC and the Dead Man System
+Because AICO relies on the Wichita Single Board Computer (SBC) as its external root of trust and immutable WORM storage (Chapter 15), the physical hardware itself represents a single point of failure.
+
+*   **Risk:** What happens if the Wichita SBC suffers a catastrophic hardware failure (e.g., a power surge destroys the board)?
+*   **Mitigation:** The Dead Man System (DMS) operates on a fail-closed principle. The main compute host relies on an inductive heartbeat *from* the Wichita SBC to keep the external output relays energized. If the Wichita dies, the heartbeat stops. The main host is instantly physically severed from all external peripherals and networks. The system fails into a localized, inert state rather than a compromised one. 
+
+## 3. The Zero-Day Cluster Exploit
+Model Clusters are dormant, specialized neural weights activated only when necessary. But what if a legitimate user prompt contains a novel zero-day adversarial payload designed to exploit the Linguistic or Analytical Cluster during an authorized inference window?
+
+*   **Risk:** The cluster processes the payload, and its internal logic is subverted to generate malicious output or attempt privilege escalation.
+*   **Mitigation:** This is mitigated by the combination of Capability Sandboxing and Introspection. 
+    1.  **Capability Sandboxing:** The cluster operates within a strictly defined memory geometry. It cannot execute arbitrary code, modify the Controller, or write to the WORM drive, regardless of the payload. It only has read access to the input buffer and write access to the output buffer.
+    2.  **Introspection & DCX:** Even if the cluster produces a malicious output glyph, that glyph must pass through the Introspection stream's DCX scoring. A payload designed to subvert the system will invariably cause a semantic divergence from the established context. Introspection will flag the high DCX score, quarantine the output, and trigger Context Snapback (Chapter 23) before the glyph ever reaches the Comms subsystem.
+
+## 4. Controller Over-Reliance
+The Controller is the executive compiler of the system. While it is heavily constrained by the Rulebook and monitored by Introspection, it remains the most privileged software component inside the Diving Bell.
+
+*   **Risk:** A bug in the Controller's JIT compilation logic could result in a malformed Task Graph, potentially issuing capability tokens out of sequence or mismanaging memory allocation.
+*   **Mitigation:** The Controller cannot bypass Introspection. Introspection monitors the *state* of the memory, not just the output. If the Controller issues a token that violates the structural invariants encoded in the Rulebook, or if memory allocation overlaps improperly, Introspection detects the geometric violation. Introspection then triggers a hard freeze (Chapter 10) and writes an evidence blob to the shadow log. The thaw ladder requires human multi-signature authorization to resume, preventing a degraded Controller from perpetuating a loop.
+
+## 5. Thermal Degradation and Hardware Subversion
+AICO demands significant continuous compute. The Nervous System manages thermals via the beta factor (Chapter 22), but sustained extreme thermal stress can lead to hardware unpredictability (bit flips, cache errors). 
+
+*   **Risk:** Extreme thermals cause physical bit flips in active RAM, randomly altering a capability token's scope or corrupting a Context Snapshot.
+*   **Mitigation:** AICO employs multiple failsafes:
+    1.  **Cryptographic Signatures:** Every capability token is cryptographically signed and utilizes a monotonic counter. A bit flip would invalidate the signature, causing the Controller to reject the token immediately.
+    2.  **Thermal Hard Cutoff:** If the CPU/GPU die temperature reaches the 90°C hard cutoff, the hardware SOC module completely cuts power, independent of any software state. The system shuts down before physical degradation can induce logical errors.
+
+## 6. The Human Element
+The final, unshakable risk in any system is the human operator. AICO cannot prevent a user with physical access and multi-signature authorization from intentionally loading compromised weights into the OpROM or manually overriding a Lair freeze.
+
+AICO's mitigation is not to prevent the human from controlling the machine, but to ensure that the machine cannot hide what the human made it do. Every action, override, and promotion is cryptographically signed and logged in the immutable WORM drive. The system maintains perfect forensic provenance, ensuring unconditional accountability for the operator.

@@ -1,0 +1,74 @@
+Chapter 8 — AICO Systems JSON (Machine-Readable Architecture Specification)
+
+1 Purpose & Scope
+
+Chapter 8 presents the canonical machine-readable specification of the AICO architecture. This JSON defines every subsystem, invariant, interface, and safety policy. The Controller treats this JSON as executable law—it is parsed, validated, and enforced at runtime. All human-readable descriptions in this whitepaper are derived from this JSON.
+
+The full specification is maintained at [repository URL] and validated through CI pipelines before any promotion. What follows is a condensed representation highlighting the architectural skeleton.
+
+2 Core Architecture (Abbreviated)
+json
+
+{
+  "meta": {
+    "system_name": "AICO",
+    "version": "0.990-z",
+    "purpose": "Bi-directional universal compiler translating intent to bare-metal code"
+  },
+  "security_architecture": {
+    "model": "The Diving Bell",
+    "zones": {
+      "the_ocean": "External world",
+      "the_hull": "Memory Controller + Comms Firewall", 
+      "the_crew": "Core models",
+      "the_rov": "Mascot"
+    }
+  },
+  "boot_protocol": {
+    "phase_1": "Big Bang — atomic activation",
+    "phase_2": "Shibboleth — fan header PWM test",
+    "phase_3": "Nest Building — JIT driver compilation (<10s)",
+    "phase_4": "Gestation — memory mapping",
+    "phase_5": "First Contact — UI load"
+  },
+  "subsystems": [
+    "bootstrap", "controller", "introspection", "nervous_system",
+    "comms", "mascot", "model_clusters", "memory_system",
+    "bias_awareness", "narrative_coherence", "emotional_stabilizer",
+    "load_balancer", "hardware_interface", "soc_module", 
+    "dead_man_system", "debug_channel", "emergency_mode"
+  ],
+  "core_invariants": [
+    "Controller must never execute unsigned code",
+    "Introspection heartbeat required for Controller execution",
+    "Outer Mascot may not transmit into Diving Bell",
+    "Thermal emergency cutoff (90°C) non-bypassable"
+  ]
+}
+
+3 Key Invariants (Formal Methods Ready)
+
+The JSON defines four invariant classes verified through TLA+ modeling:
+Class	Example	Verification Target
+Safety	No unsigned execution	Boot protocol
+Liveness	Controller running ⇒ Inner Mascot running	Heartbeat graph
+Authority	Only human multi-sig thaws freeze	Freeze/thaw ladder
+Immutability	Primals are write-once	Museum storage
+
+4 Execution & Security Model
+
+    Diving Bell — Maps directly to security_architecture.zones
+
+    Parallel cognition — Defined in runtime_logic.realtime_interaction_model
+
+    Fail-safe hardware — soc_module and dead_man_system enforce thermal/power cuts independent of software
+
+5 Using This Specification
+
+    For Engineers: Treat the JSON (full version at [URL]) as authoritative contract
+
+    For Auditors: Trace safety claims to rulebook.core_invariants and hardware subsystems
+
+    For Training: training_pipeline section aligns model objectives with architecture constraints
+
+The complete JSON ensures that every claim in this whitepaper corresponds to a machine-enforced rule—not merely a design intention.

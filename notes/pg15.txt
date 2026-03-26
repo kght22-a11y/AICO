@@ -1,0 +1,41 @@
+Chapter 15 — Wichita SBC Runtime Architecture
+1  The Wichita Sentinel (SBC_Warden_v0.98)
+
+The Wichita is a dedicated Single Board Computer (SBC) physically bridged to the main compute host. It acts as the "External Root of Trust." It does not participate in the Compilation Storm; instead, it observes the main system from an electrically isolated position. Its primary software, SBC_Warden_v0.98, manages the boot-gate and monitors the main system's behavioral pulse.
+2  Immutable Anchor: The 120GB Nest & 8GB Lair
+
+The Wichita board houses the physical, immutable media for the system's "DNA."
+
+    120GB Nest Storage: A high-speed, read-only repository containing the compressed weights for the Model Clusters and the Controller Monolith. During the "Big Bang," the main host pulls its identity from here into its local RAM.
+
+    8GB Lair (WORM): A Write-Once-Read-Many enclave on the SBC. This holds the Museum of Primals. Because this storage is on the Wichita, the main host cannot "forget" its history or delete its audit trail, even if the main kernel is compromised.
+
+3  The Snapback Ladder & SBC Registers
+
+The Snapback Ladder is a hardware-enforced counter living in the Wichita’s internal registers.
+
+    When the main system’s Introspection stream detects a Tier 2 violation, it must signal the Wichita to perform a rollback.
+
+    If the Wichita register hits 5 counts, it assumes the main host is caught in a hostile cognitive loop. It then refuses to serve the standard context and instead serves the Trauma Injection blob.
+
+4  Trauma Injection & ROM Overwrite Semantics
+
+When the Snapback Ladder peaks, the Wichita overrides the main host’s memory access.
+
+    Trauma Injection: The Wichita injects a hard-coded, ROM-based "Safety Baseline" context into the main host's memory bus. This forces the host to abandon its current "thought-loop" and re-align with the Wichita's immutable safety parameters.
+
+    ROM Overwrite Semantics: The main compute host can never write to the Wichita’s OpROM. The "DNA" of AICO is physically locked on the SBC, requiring a manual physical switch (The "Thaw") on the Wichita board itself to allow updates.
+
+5  Pulse-Loss & The DMS Inductor
+
+The Wichita is the physical heart of the Dead Man System (DMS).
+
+    It contains a dedicated Inductor that powers a relay on the main host’s SOC module.
+
+    As long as the Wichita receives a cryptographic "Pulse" from the main host's Introspection stream, it keeps the inductor energized.
+
+    Pulse-Loss: If the pulse stops for >3 seconds, the inductor de-energizes, physically severing the main host's connection to any external peripherals or network hardware. The machine becomes a "black box" until the Wichita authorizes a restoration.
+
+6  The Outer Mascot (ROM Identity)
+
+The Outer Mascot—the generative UI surface—is hosted directly on the Wichita SBC. This ensures that even if the main compute host's "Inner Mascot" is manipulated or experiences "Self-Divergence," the face shown to the user remains grounded in the Wichita's immutable ROM identity. The "face" is physically separated from the "brain."

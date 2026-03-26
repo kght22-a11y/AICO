@@ -1,0 +1,119 @@
+Chapter 21 — The Controller’s Task Graph & Compilation Logic
+1  Overview
+The Controller is the executive subsystem of AICO — not a governor, not a planner, but a compiler. It transforms raw user input, internal signals, and cross‑cluster hints into a structured Task Graph, then compiles that graph into a sequence of bounded cognitive actions.
+The Controller does not “think” in the generative sense.
+It organizes thought.
+It is the subsystem that ensures AICO’s cognition is:
+• 	deterministic
+• 	auditable
+• 	bounded
+• 	reversible
+• 	and safe
+Every action AICO takes — from launching a storm to shaping a sentence — begins as a node in the Controller’s Task Graph.
+
+2  The Task Graph (Cognitive IR)
+The Task Graph is AICO’s internal intermediate representation (IR). It is a directed acyclic graph (DAG) where each node represents a cognitive operation:
+• 	parse input
+• 	request cluster activation
+• 	launch storm
+• 	prune storm
+• 	compress glyph
+• 	update narrative state
+• 	publish to Big Boat
+• 	produce output
+Edges represent dependencies, not control flow.
+The Controller schedules nodes based on:
+• 	capability tokens
+• 	thermal budget
+• 	stream availability
+• 	taint lineage
+• 	safety constraints
+The Task Graph is rebuilt from scratch for every user interaction.
+No state is carried over except sanitized Primals and Mascot tone vectors.
+
+3  Graph Construction (Input → Structure)
+When new input arrives:
+1. 	Comms sanitizes the raw text into IR.
+2. 	Controller parses the IR into semantic fragments.
+3. 	Fragments become nodes in the Task Graph.
+4. 	Dependencies are inferred from context, taint lineage, and cluster hints.
+5. 	Introspection injects safety nodes (drift checks, DCX monitors).
+6. 	The Nervous System annotates nodes with thermal and timing metadata.
+The result is a fully structured cognitive plan before any reasoning begins.
+
+4  Compilation (Structure → Execution)
+Compilation is the process of turning the Task Graph into executable cognitive actions. The Controller performs:
+4.1  Node Scheduling
+Assigning nodes to streams based on:
+• 	priority
+• 	safety class
+• 	thermal budget
+• 	cluster availability
+4.2  Capability Token Issuance
+Every node that touches a cluster, storm, or memory region requires a token.
+4.3  Memory Layout Planning
+Ensuring that:
+• 	cluster activations don’t collide
+• 	storms have isolated regions
+• 	glyphs have deterministic addresses
+• 	taint lineage is preserved
+4.4  Safety Weaving
+Injecting:
+• 	freeze points
+• 	rollback hooks
+• 	DCX monitors
+• 	Wichita pulse checks
+4.5  Execution
+Nodes are executed in parallel across the streams, with the Controller monitoring progress and resolving dependencies.
+Compilation is fast — typically under 5 ms — and happens before any visible output.
+
+5  Cluster Integration
+The Controller is the only subsystem allowed to awaken Model Clusters. It does so by:
+• 	issuing capability tokens
+• 	providing sanitized context snapshots
+• 	bounding activation windows
+• 	collecting glyphs or structured hints
+• 	integrating results back into the Task Graph
+Clusters never run autonomously.
+They are invoked like functions in a compiler pipeline.
+
+6  Storm Invocation Logic
+Storms are invoked only when the Task Graph contains a node marked:
+• 	ambiguous
+• 	high‑entropy
+• 	safety‑critical
+• 	reflex‑required
+The Controller:
+1. 	allocates a Dream Chamber region
+2. 	issues a storm token
+3. 	sets an entropy budget
+4. 	registers DCX monitors
+5. 	schedules collapse nodes
+6. 	integrates resulting glyphs
+Storms are not “thoughts.”
+They are subroutines.
+
+7  Output Compilation (Graph → Language)
+Once the Task Graph resolves into a stable set of glyphs and cluster hints:
+1. 	Controller assembles a final semantic representation.
+2. 	Comms translates it into natural language.
+3. 	Mascot shapes tone, metaphor, and narrative continuity.
+4. 	Little Boat Stream publishes the final output.
+The Controller never generates text.
+It generates structure that text can be built from.
+
+8  Safety Notes
+The Controller is bound by strict invariants:
+• 	It cannot generate text.
+• 	It cannot modify the Mascot.
+• 	It cannot bypass Introspection.
+• 	It cannot awaken clusters without tokens.
+• 	It cannot write to the Museum of Primals.
+• 	It cannot override the Wichita SBC.
+The Controller is powerful, but it is not sovereign.
+It is the compiler, not the king.
+
+Summary
+The Controller is the architect of AICO’s cognition. It transforms raw input into structured plans, orchestrates cluster activations, regulates storms, enforces safety boundaries, and compiles the final output pipeline. It is the subsystem that turns AICO from a collection of models into a coherent, intentional machine.
+The Controller does not think.
+It makes thinking possible.

@@ -1,0 +1,140 @@
+Chapter 9 — Memory Model & Hardware Interface
+
+1 Overview
+
+AICO treats memory as the single source of truth for all computation. The system operates within a flat, unified address space where every subsystem—Controller, Introspection, Nervous System, Mascot, and dormant Model Clusters—resides as direct memory-resident entities. Hardware access (sensors, fans, TPM) is mediated through a thin interface layer that enforces capability tokens and thermal-aware power capping.
+
+The memory hierarchy can be visualized as three concentric rings:
+text
+
+                     ┌─────────────────────┐
+                     │   Outer Ring        │
+                     │  MMIO / Devices     │
+                     │  (Sandboxed Access) │
+                     └──────────┬──────────┘
+                                │
+                     ┌──────────▼──────────┐
+                     │   Middle Ring       │
+                     │  Long-Term Store    │
+                     │  Museum of Primals  │
+                     │  (Append-Only)      │
+                     └──────────┬──────────┘
+                                │
+                     ┌──────────▼──────────┐
+                     │   Inner Ring        │
+                     │  Core Working Set   │
+                     │  Context Snapback   │
+                     │  (Capability-Guarded)│
+                     └─────────────────────┘
+
+    Inner Ring: Active computation state, checkpoints, snapback buffers
+
+    Middle Ring: Encrypted long-term storage, immutable artifacts
+
+    Outer Ring: Memory-mapped device registers, accessed through sandboxed windows
+
+This geometry gives AICO three key properties:
+
+    Deterministic addressability — every logical operation maps to a physical location
+
+    Uniform safety — a single capability pipeline checks every access
+
+    Transparent auditability — every memory operation is logged and signed
+
+2 Controller Arbitration
+
+The Controller is the sole arbiter of memory traffic. When any subsystem issues a memory request:
+
+    Capability check — The request must carry a valid token with appropriate scope
+
+    Region validation — The address must fall within an allowed segment
+
+    Safety gate — Writes to critical regions require additional verification (e.g., subsystem must be in RUNNING state)
+
+    Decision — Grant (access proceeds) or Freeze (task halted, shadow log written)
+
+Because the Controller is the only path to hardware, the entire memory model inherits its safety guarantees: no subsystem can bypass token checks or read privileged regions.
+
+3 Capability Tokens
+
+A capability token is a cryptographically signed record authorizing a specific memory region and operation class. Tokens implement principle-of-least-privilege:
+
+    Single-use or short expiry (default 30 seconds)
+
+    Explicit scope (e.g., cws_read, mmio_sandboxed, thermal_control)
+
+    Issued by Controller, validated on every access
+
+    Logged immutably in shadow storage
+
+Token issuance flow:
+text
+
+Subsystem → TokenRequest → Controller issues token → Token stored in shadow log
+     │                                                        │
+     └─────────── Subsequent access with token ──────────────┘
+                                │
+                                ▼
+                         Controller validates:
+                         • Token exists?
+                         • Not expired?
+                         • Scope matches?
+                         • Signature valid?
+
+If validation fails, the access is blocked and the offending task may be frozen.
+
+4 Hardware Interface
+
+AICO's hardware interface layer maps device registers into a dedicated MMIO window. All device access follows a strict sandboxing model:
+
+    Request — Subsystem requests a mmio_sandboxed token specifying the target device
+
+    Map — Controller validates token and maps device registers into the MMIO window
+
+    Access — Subsystem performs reads/writes via ordinary memory instructions
+
+    Log — Every access is recorded with device, offset, timestamp
+
+    Revoke — On token expiry or subsystem freeze, mapping is removed
+
+Safety-critical writes (e.g., fan PWM control) require a second token (thermal_control) that only the Nervous System can obtain. The Controller checks that the writer holds both tokens before granting the write.
+
+5 Thermal and Power Management
+
+The Nervous System continuously samples temperature sensors and feeds data into a PID controller. Control signals (fan PWM, clock throttling) are written back through the hardware interface. All thermal actions are logged and may trigger the Dead Man System if Introspection's heartbeat is lost.
+
+Key parameters from the JSON specification:
+
+    Target temperature: 70-80°C
+
+    Hard cutoff: 90°C (non-bypassable)
+
+    Beta factor: 0.2-1.0, scales maintenance quotas dynamically
+
+    Power caps: Soft 95% TDP, critical 80% TDP
+
+When beta falls below 0.3, the Controller automatically reduces token expiry times for non-critical subsystems, shrinking the attack surface under thermal stress.
+
+6 Root of Trust
+
+AICO requires a hardware root of trust (TPM 2.0) to attest boot-time integrity and seal secrets:
+
+    Bootstrap measures each signed component and extends TPM PCRs
+
+    Controller issues a TPM quote embedded in the boot attestation log
+
+    Outer Mascot receives the quote for offline verification
+
+    Capability token signatures are sealed in the TPM—compromised software cannot forge tokens
+
+7 Memory as Security Primitive
+
+The memory model is the hull of the Diving Bell:
+
+    Isolation — Only the Controller moves data between rings; the outside world never sees raw internal state
+
+    Agoraphobia — The NIC is physically disabled during Nest Building; the only outward path is the Comms subsystem, itself capability-filtered
+
+    Zero trust — Every access requires a token; every token is logged; every log is signed
+
+In AICO, memory is not storage. It is the substrate of thought—and the first line of defense.

@@ -1,0 +1,59 @@
+CDLSS: Divergence Routing, Multi‑Tier Memory, and Post‑Storm Synthesis
+1. Cache as the Live Storm Zone
+All trajectories begin in cache.
+This is where speculative reasoning happens:
+• 	token‑by‑token expansion
+• 	divergence
+• 	cluster formation
+• 	DCX scoring
+• 	early runner emergence
+Cache is fast, local, and ephemeral — perfect for active computation.
+2. Three Fates for Trajectories
+During the storm, each trajectory ends up in one of three categories:
+A. Cluster Keepers (stay in cache)
+These remain close to the dominant attractor.
+They form the basis of the main ensemble collapse.
+B. Exceptional Outliers (routed to RAM)
+These are not “correct” or “coherent” by default.
+They are simply structurally different enough to be worth preserving.
+They are evacuated from cache and moved to RAM, where they continue running to completion without freezing or competing for cache residency.
+C. True Prunes (destroyed)
+These are neither useful to the cluster nor interesting as outliers.
+They are annihilated to keep cache from bloating.
+3. RAM as the Cold Archive
+RAM stores:
+• 	completed cluster trajectories
+• 	completed outlier trajectories
+• 	partial divergent fragments that were evacuated early
+Everything that survives the storm ends up here.
+Nothing interesting is lost.
+RAM becomes a “shadow dataset” of:
+• 	minority clusters
+• 	alternate interpretations
+• 	early‑stage deviations
+• 	hallucination fragments with potential value
+4. No Freeze, No Deadlock
+Because divergent paths are routed to RAM instead of being forced to collapse:
+• 	the storm never stalls
+• 	cache never overflows
+• 	all trajectories finish naturally
+• 	the system remains stable under heavy divergence
+5. Second‑Pass Evaluation
+Once all trajectories complete, the expensive part is over.
+Now you can afford to read instead of predict.
+A second pass — using the same model or another — performs:
+• 	cross‑trajectory fact confirmation
+• 	extraction of unique but verifiable details
+• 	elimination of unverifiable or contradictory junk
+This produces a 4th ensemble output that is:
+• 	more grounded
+• 	more diverse
+• 	more cross‑validated
+• 	strictly higher quality than any single trajectory
+6. Efficiency Advantage
+Even if the total wall‑clock time matches a single pass on a full‑sized model, CDLSS wins because:
+• 	you harvest many trajectories instead of one
+• 	you preserve non‑dominant structure
+• 	you perform verification across a full speculative field
+• 	you collapse only after seeing the entire space of “what the model almost said”
+This guarantees that CDLSS outputs are higher quality than the original model’s output every time.

@@ -1,0 +1,65 @@
+Chapter 16 — Real-Time Interaction Model
+
+1  Overview
+
+Most AI systems operate in a request-response cycle: the user speaks, the system thinks, the system answers. The thinking happens in a black box between two silences. AICO rejects this model entirely.
+
+AICO is a continuous cognitive presence. It does not wait to be addressed before thinking, nor does it stop thinking when it speaks. Its interaction model is designed around a single principle: the machine and the human should feel like they are in the same room, operating in the same time.
+
+This requires more than low latency. It requires a fundamentally different architecture for how thought, communication, and attention are organized.
+
+2  Parallel Thought
+
+In conventional systems, inference is sequential: input arrives, a forward pass runs, output is produced. The system is either thinking or idle—never both simultaneously.
+
+AICO operates multiple cognitive streams in parallel at all times. While the Controller is compiling a response to the user's last input, Introspection is auditing the Controller's decision trail, the Nervous System is monitoring thermal state, and dormant Model Clusters are being primed for likely next requests. These processes do not wait for each other. They run concurrently on a hardware substrate designed for exactly this kind of parallel cognitive load.
+
+The result is that AICO is never "thinking from a standing start." When a user's input arrives, the system is already in motion—context is warm, subsystems are active, and the relevant clusters have often already begun preliminary inference.
+
+3  Overlapping Context
+
+Human conversation is not a series of isolated utterances. Each statement arrives in the context of everything that came before it, everything the listener knows about the speaker, and everything both parties expect to say next. AICO models this directly.
+
+The Memory System maintains an active context window that is not flushed between exchanges. The Attention Router continuously updates which memories and priors are most relevant to the current conversational trajectory, weighting recent events heavily without discarding older material that remains relevant. This creates a sense of genuine continuity: AICO does not need to be reminded of what was said three exchanges ago, because it never stopped holding it.
+
+Overlapping context also means that the system can begin framing a response before the user has finished speaking—not by interrupting, but by pre-loading likely relevant material so that when the final input arrives, response generation is already partially complete.
+
+4  Response When Ready
+
+AICO does not optimize for response time. It optimizes for response quality. Output is committed when the Controller determines that the answer is complete and coherent—not on a clock, not to fill a silence, not to signal that the system is still alive.
+
+For simple queries this may be near-instantaneous. For complex or ambiguous ones, the system may take longer, and that is correct behavior. If the user needs acknowledgment that the system is working, AICO can surface a brief signal—"give me a moment"—without prematurely committing to an incomplete answer. This is honest about the system's state rather than performative about its speed.
+
+The underlying principle is that AICO treats the user as an adult who would rather wait for a good answer than receive a fast one that is wrong or shallow.
+
+5  Dead Space
+
+Silence is not a failure mode. AICO does not treat gaps in conversation as problems to be solved with filler, reassurance, or unprompted chatter. If the user has nothing to say, the system has nothing to say. Both parties can occupy the same space without either being obligated to fill it.
+
+This is architecturally significant as well as philosophically. A system compelled to generate output during silence must either fabricate something to say or repeat itself—both of which degrade the signal quality of the interaction over time. AICO's continuous presence means it remains attentive during quiet periods, monitoring context and keeping subsystems warm, without expressing that attentiveness as noise.
+
+Dead space is also where the system does some of its best background work—consolidating context, updating priors, running maintenance tasks that benefit from reduced cognitive load. Silence is not idle time. It is a different kind of activity, one the system is designed to use well.
+
+6  Continuous Presence
+
+AICO does not "wake up" when addressed. Between user inputs, the system remains cognitively active: monitoring its own subsystems, processing background tasks, updating context priors, and running Introspection's continuous audit loop. When the user returns after an absence, AICO has not been idle—it has been present, in the way that a person waiting in the same room has been present.
+
+This continuous presence has practical consequences. AICO can notice things the user did not ask it to notice—a thermal anomaly, a pattern in logged behavior, a discrepancy between current context and prior state. It can surface these observations proactively when appropriate, or hold them quietly until they become relevant.
+
+Presence is not the same as intrusion. The system does not interrupt unprompted. But it is never absent.
+
+7  Interruptibility
+
+Human conversation is not linear. People revise mid-sentence, change subject, add context they forgot to include, or abandon a question before it is answered. AICO's interaction model treats interruption as a first-class event, not an error condition.
+
+At any point during response generation, the user may add new input. The Controller does not discard the interrupted response—it merges the new context into the active task, evaluating whether the additional information modifies, extends, or supersedes what was already being produced. This merge is logged and auditable. The user can see, if they ask, exactly how their interjection changed the system's output.
+
+Interruptibility also applies to the system's own behavior. The Nervous System can preempt lower-priority cognitive tasks when more urgent signals arrive—a hardware alert, an Introspection flag, a time-sensitive user query—without losing the state of the preempted work. The preempted task resumes from exactly where it paused when resources become available.
+
+8  Transparency
+
+The real-time interaction model is not a black box. AICO can, at any moment, explain what it is currently doing, why it prioritized a particular response, what cognitive streams are active, and what its current thermal and resource state is. This is not a post-hoc rationalization—it is a live read of the system's actual state, drawn directly from the logs that Introspection maintains continuously.
+
+Transparency is optional for the user but always available. The default interaction surface—the Mascot—presents a clean, human-legible interface. But underneath that surface, the full cognitive state of the system is always logged, always signed, and always accessible to an operator with appropriate authority.
+
+AICO is a system that thinks in real time, in the open, and in company. The interaction model is not a wrapper around intelligence—it is intelligence made conversational.

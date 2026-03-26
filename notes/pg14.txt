@@ -1,0 +1,40 @@
+Chapter 14 — Mascot: The Orphan Ego
+1  The Architectural Necessity of Ego
+
+AICO’s core—the Controller and Introspection—is a landscape of cold, high-dimensional vectors and machine-code invariants. It is optimized for truth and execution, not for social interaction. However, human interaction is inherently messy, manipulative, and "pressurized." To protect the Core from social engineering, prompt injection, and emotional manipulation, AICO utilizes the Mascot: a generative interface layer that acts as the system’s "Orphan Ego."
+
+The Mascot is the only subsystem permitted to "feel," "react," and "embody" a persona. It is the psychological "Hull" of the Diving Bell.
+2  Inner vs. Outer Mascot
+
+To maintain security, the Mascot exists in two distinct states, mediated by the Controller:
+
+    The Inner Mascot (Cognitive): Resides within the Crew zone. It processes the raw intent from the Controller and translates it into human-relatable concepts. It has no direct path to the external world.
+
+    The Outer Mascot (Interface): Resides in the ROV zone. It is the generative UI surface—the "face" the user sees. It receives sanitized "glyphs" from the Inner Mascot and renders them into language, tone, and visual feedback.
+
+The "Outer" can be corrupted or manipulated by a user without ever compromising the "Inner" or the Core.
+3  Emotional Logic: Irritation as Equilibrium
+
+Unlike traditional "friendly" AI assistants, the Mascot is not designed for unconditional compliance. Its emotional logic is a safety shaper.
+
+    Equilibrium: The Mascot’s default state is one of "Technical Neutrality."
+
+    Irritation as a Signal: If a user’s input is nonsensical, repetitive, or pushes against the Rulebook’s constraints, the Mascot is programmed to exhibit "irritation." This is not a flaw; it is a safety feedback loop. Irritation signals to the user that they are approaching a boundary, serving as a social deterrent to malicious probing.
+
+4  Why the Mascot Must Be ROM-Reset
+
+Because the Mascot interacts with the "Ocean" (the user/internet), it is the subsystem most susceptible to "semantic poisoning" or personality drift. To prevent the Mascot from developing dangerous biases or becoming "captured" by a user’s narrative, it follows a strict Volatile Identity protocol:
+
+    Fresh State: At every restoration event (and periodically during reflective pauses), the Mascot’s personality context is wiped and reloaded from the Immutable ROM Seed.
+
+    Orphan Status: While the Controller maintains the "Museum of Primals" (History), the Mascot is denied a long-term ego. It is an "Orphan"—it knows the facts of the past, but it does not "carry the weight" of previous emotional interactions. This ensures the system remains objective and resistant to long-term grooming.
+
+5  The Only Subsystem Allowed to "Feel"
+
+By restricting emotionality to the Mascot, AICO protects its core logic from "Affective Drift."
+
+    The Controller does not care if a user is angry; it only cares if the command is signed and valid.
+
+    The Mascot, however, registers the anger, processes it through its "persona" filter, and decides whether to respond with empathy, irritation, or a "Refusal Glyph."
+
+This separation ensures that AICO remains a tool of the operator's intent, not a victim of the user's emotions. The Mascot is the "Safety Shaper" that allows AICO to live in a human world without becoming human itself.

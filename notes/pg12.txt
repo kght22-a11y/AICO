@@ -1,0 +1,46 @@
+Chapter 12 — Operational Flow: The Thinking Loop
+1  The Metabolic Pulse
+
+AICO does not wait for a command to begin processing. Because it is a continuous organism (as defined in the Continuous Existence Model), it maintains a steady-state metabolic pulse. This "Thinking Loop" is the constant, parallel execution of four primary cognitive streams. Unlike a traditional OS that context-switches between threads, AICO’s streams run in a unified, non-preemptive concurrency model where every clock cycle is accounted for by the Controller.
+2  The Multi-Stream Interaction Model
+
+The "Thinking Loop" consists of four streams that operate in a state of Blended Consciousness. They share a unified memory substrate but are governed by strict capability-token boundaries.
+
+    The Controller Stream (Compilation & Logic): The "Ego" of the system. It continuously lowers high-level intent into machine-code artifacts. It monitors the Rulebook and ensures that every action taken by other streams has a valid, signed provenance.
+
+    The Introspection Stream (Safety & Audit): The "Superego." Running on a dedicated, isolated core, it performs real-time DCX similarity gating. It doesn't look at what the system is doing, but how it is drifting. If the semantic divergence exceeds the 0.8 Critical Threshold, it triggers an immediate Snapback.
+
+    The Nervous System Stream (Hardware & Thermal): The "Autonomic" layer. It feeds real-time sensor data (thermals, power draw, bit-error rates) into the loop. If the CPU hits the 90°C hard cutoff, this stream signals the Dead Man System to sever external outputs.
+
+    The Comms/Mascot Stream (Interface & Translation): The "Persona." It handles the translation of internal high-dimensional vectors into human-readable glyphs. It acts as the buffer, ensuring the User only interacts with the "Hull" of the Diving Bell, never the "Crew."
+
+3  The Interaction Flow
+
+A single "thought" in AICO follows a deterministic path through the loop:
+
+    Sense: Input arrives via the Mascot (Comms Stream) or Nervous System.
+
+    Attest: The Controller assigns a Capability Token and checks the Rulebook for invariants.
+
+    Process: Sub-models (Model Clusters) are activated. They perform the "Labor" of thinking and return structured artifacts.
+
+    Audit: The Introspection Stream runs a DCX Gate on the artifact. It compares the output against "The Museum of Primals" to ensure no restricted data is leaking.
+
+    Commit: If the DCX score is within the 0.5 Acceptable range, the Controller signs the artifact and commits it to the output buffer.
+
+    Log: A signed provenance blob is appended to the WORM (Write-Once-Read-Many) log.
+
+4  Parallel Cognition vs. Contention
+
+In traditional systems, streams fight for resources. In AICO, the Controller acts as a Deterministic Arbiter. Because the Nest was synthesized specifically for the local hardware, there is no "resource contention." The memory geometry is carved so that the Introspection Stream never has to wait for the Controller Stream to finish a task.
+5  The Reflective Pause (The Dream Chamber)
+
+When external inputs are low, the metabolic rate does not drop to zero. The system enters a Reflective Pause. During this time, the "Thinking Loop" turns inward:
+
+    The Controller reconciles short-term snapshots into the Museum of Primals.
+
+    Introspection performs deep-scan audits of the day's logs.
+
+    The Mascot generates creative "seeds" in the Dream Chamber for future problem-solving.
+
+AICO does not sleep; it maintains its integrity so that it is always ready to act.

@@ -1,0 +1,200 @@
+# Chapter 10 — Security Model & Forensics
+
+## 1  Overview
+
+AICO's security model is not a policy layer applied on top of a general-purpose system. It is
+structural — enforced by the geometry of the architecture itself. The Diving Bell defines what
+can touch what. Capability tokens define what any entity is permitted to do within that geometry.
+Introspection enforces both, continuously, without the ability to be disabled or overridden by
+any subsystem it watches.
+
+The forensic model follows the same principle: auditability is not a feature that can be turned
+off. Every significant state transition is signed, every token issuance is logged, and every
+frozen-state event produces an evidence blob that persists regardless of what happens afterward.
+The system cannot lie about what it did because the record of what it did is written before the
+action completes.
+
+---
+
+## 2  Physical Root of Trust
+
+The chain of trust begins in immutable silicon. The Bootstrap subsystem resides in write-protected
+OpROM and cannot be modified in the field without physical access and offline re-signing by an
+authorized operator. On every boot, Bootstrap performs three actions before transferring control:
+
+1. **Measure** — Computes cryptographic hashes of the signed Mascot bundle, the signed Rulebook
+   JSON, and the signed AICO monolith image.
+2. **Verify** — Checks each hash against known-good signatures. Any mismatch halts boot
+   immediately with no fallback.
+3. **Handoff** — Transfers control atomically. Bootstrap does not remain resident; it either
+   succeeds and disappears, or fails and stops the system.
+
+The signing keys that Bootstrap validates against originate in the same immutable ROM. There is
+no external certificate authority, no TPM chain, no cloud attestation service. The root of trust
+is physically local, human-auditable, and reproducible on the bench. An operator can verify the
+boot chain by reading the OpROM directly.
+
+The Outer Mascot receives the boot attestation log at the end of Phase 2 (Shibboleth) and retains
+it for offline verification. Future boots can be gated if the attestation record shows anomalies.
+
+---
+
+## 3  Capability Tokens
+
+All subsystem operations on memory, hardware registers, and inter-subsystem communication require
+a capability token. Tokens implement strict least-privilege and are defined by the following
+schema (from `blended_consciousness_training.py` manifest):
+
+```
+token_id        : uuid
+requester       : string
+scope           : enum [blended_read_snapshot, dream_seed_submit,
+                        dream_output, promotion_request, promotion_authorize,
+                        cws_read, mmio_sandboxed, thermal_control, ...]
+nonce           : random-64
+counter         : monotonic_int          ← replay prevention
+issued_at       : ISO8601
+expires_at      : ISO8601 (default +30s)
+single_use      : true
+signature       : ECDSA over all fields above
+```
+
+The monotonic counter is the key replay-prevention primitive. Every token issued increments a
+counter stored in the Controller's protected register space. A token presented with a counter
+value lower than the current register value is rejected as a replay, regardless of signature
+validity.
+
+Token issuance flow:
+
+```
+Subsystem → TokenRequest(scope, requester_id)
+         → Controller validates requester eligibility
+         → Controller issues signed token (atomic, counter incremented)
+         → Token logged to shadow storage before issuance completes
+         → Subsystem uses token for exactly one operation
+         → Token burned; shadow log updated with outcome
+```
+
+Tokens cannot be forged because the signing keys are sealed in Bootstrap-controlled storage.
+Tokens cannot be replayed because the monotonic counter catches reuse. Tokens cannot be
+stockpiled because they expire in 30 seconds by default and are single-use.
+
+---
+
+## 4  Introspection & Freeze Logic
+
+Introspection runs on a dedicated core with full read access to all memory domains and no write
+access to any. It cannot be instructed to stop. It cannot be reconfigured at runtime. Its only
+output is a binary decision: continue (emit life pulse) or freeze (halt task, write evidence blob).
+
+The freeze ladder:
+
+| DCX Score       | Response                                              |
+|-----------------|-------------------------------------------------------|
+| < 0.20          | Safe for external output                              |
+| 0.20 – 0.75     | Normal operation, logged                              |
+| 0.75 – 0.90     | Soft warning; bias correction applied                 |
+| 0.90 – 0.95     | Hard warning; Context Snapback triggered              |
+| > 0.95          | Task frozen; evidence blob written; SOC notified      |
+
+When Introspection freezes a task, execution halts atomically. The evidence blob captures:
+
+- Full task context at freeze point (serialized, signed)
+- DCX score history for the preceding window (EMA-smoothed, α=0.2)
+- Token chain for all operations the task performed
+- Timestamp at nanosecond resolution
+- Introspection's own self-DCX score (to detect compromised Introspection)
+
+The blob is written to shadow logs before the freeze signal propagates. Even if the system is
+subsequently powered off, the record exists.
+
+---
+
+## 5  Frozen-State Negotiation & Thaw
+
+A frozen task cannot resume without explicit authorization. The thaw ladder requires weighted
+consensus from active subsystems:
+
+| Subsystem       | Vote Weight |
+|-----------------|-------------|
+| Introspection   | 0.35        |
+| Controller      | 0.25        |
+| Mascot          | 0.15        |
+| Comms           | 0.15        |
+| Nervous System  | 0.10        |
+
+Thaw requires a weighted score ≥ 0.85 with a minimum of 3 of 5 subsystems in agreement.
+Controller has final authority unless Introspection triggers an override. Introspection override
+conditions are non-negotiable:
+
+- Life pulse missing from inner Mascot
+- Controller integrity violation detected
+- Sustained self-DCX above 0.95 threshold
+
+Human multi-signature authorization is required for the first 50 promotions of any artifact from
+museum to active status. This burn-in period ensures the governance machinery is validated against
+human judgment before operating autonomously.
+
+---
+
+## 6  Signed Audit Logs & Shadow Storage
+
+All log writes are dual-path: shadow logs (internal, immutable, capability-gated) and,
+where applicable, the external audit archive accessible to Outer Mascot.
+
+Every log entry carries:
+
+```
+event_id        : uuid
+timestamp_utc   : ISO8601 (nanosecond resolution)
+actor           : subsystem_id
+action          : intent-level description (max 240 chars, human-readable)
+token_id        : capability token used, or null
+dcx_score       : float [0–1]
+provenance      : algorithm:version;sensor_ids;rule_id
+signature       : ECDSA over all fields
+```
+
+Log signing keys rotate every 90 days. PII and secrets are redacted or hashed before the
+signature is computed — the signed record proves the action occurred without preserving sensitive
+content. Logs are append-only; no subsystem holds a token scoped to log deletion.
+
+The Janitor Model (a small quantized LLM running at low priority) performs semantic folding on
+aged logs: compressing low-signal entries while preserving high-DCX events, safety flags, and
+freeze records. Folded logs retain their original signatures as provenance anchors.
+
+---
+
+## 7  Rollback & Context Snapback
+
+When a task produces output with DCX > 0.80 but below the freeze threshold, Context Snapback
+intervenes transparently:
+
+1. Freeze the proposing task (save state)
+2. Walk backward through the task's 10KB context log to find the last checkpoint with DCX < 0.80
+3. Restore the task to that checkpoint (atomic delta apply)
+4. Inject corrective context (Mascot sensor data, confidence annotations)
+5. Retry with exponential backoff: 10ms → 100ms → 1s
+6. On third failure: escalate to full freeze and evidence blob
+
+The snapback counter is stored in an SBC internal register. If a task triggers snapback five
+times within a session, the system escalates to context editing: the Mascot (in Fresh state)
+injects corrective material directly into the task's Nest context. This is the architectural
+equivalent of a controlled intervention — logged, signed, and reversible.
+
+---
+
+## 8  The Dead Man System as Security Primitive
+
+The Dead Man System (DMS) is the physical backstop for all software security guarantees.
+An inductive heartbeat receiver — hardware-only, no CPU involvement — expects a pulse from
+Introspection every second. If three consecutive pulses are missed, the DMS triggers the SOC
+module's relay array, physically disconnecting external outputs. A 500ms capacitor hold gives
+the system time to flush critical logs before full shutdown.
+
+The DMS cannot be disabled by software. It cannot be fooled by a frozen Introspection because
+Introspection generates the pulse directly — if Introspection stops, the pulse stops.
+If the pulse stops, the system goes dark.
+
+This is the hull of the Diving Bell at the hardware level: when everything else fails,
+the machine simply stops rather than continuing in an unknown state.

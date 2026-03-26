@@ -1,0 +1,346 @@
+{
+  "white_paper_25_page_structure": {
+    "title": "Adaptive Integrated Cognitive Operator (AICO): A Self-Assembling Bare-Metal AI OS",
+    "version": "Draft 2.0",
+    "pages": [
+      {
+        "Chapter": 1,
+        "title": "Cover / Abstract",
+        "sections": [
+          "Title, subtitle, author, version",
+          "Abstract summarizing AICO as a self-assembling bare-metal AI OS",
+          "Key contributions: Diving Bell, Controller-as-Compiler, Introspection, Mascot"
+        ]
+      },
+      {
+        "Chapter": 2,
+        "title": "Executive Summary",
+        "sections": [
+          "Problem: AI on layered OS is inefficient, unsafe, unauditable",
+          "Solution: AICO as a unified cognitive machine",
+          "Benefits: determinism, auditability, privacy, autonomy"
+        ]
+      },
+      {
+        "Chapter": 3,
+        "title": "Motivation & Background",
+        "sections": [
+          "Limitations of process-based AI",
+          "Semantic coupling vs OS abstraction",
+          "Why bare-metal is required",
+          "Historical context: compiler pipelines, provenance, introspection"
+        ]
+      },
+      {
+        "Chapter": 4,
+        "title": "Philosophy: The Thinking Compiler",
+        "sections": [
+          "Models as semantic transforms",
+          "Controller as attestation root",
+          "Introspection as continuous verification",
+          "Signed savestates and provenance enforcement"
+        ]
+      },
+      {
+        "Chapter": 5,
+        "title": "Operational Abstraction",
+        "sections": [
+          "Memory-first substrate",
+          "IR → IR transforms",
+          "Scoped hardware access",
+          "Frozen-state negotiation channels",
+          "Compiler-pass metaphor"
+        ]
+      },
+      {
+        "Chapter": 6,
+        "title": "Core System Principles",
+        "sections": [
+          "Local execution only",
+          "Modular capabilities",
+          "Sandboxed subsystems",
+          "Introspection parallelism",
+          "Bias visibility",
+          "Human override",
+          "Data sovereignty",
+          "Thermal envelope"
+        ]
+      },
+      {
+        "Chapter": 7,
+        "title": "Subsystem Overview (Human-Readable)",
+        "sections": [
+          "Controller",
+          "Introspection",
+          "Nervous System",
+          "Comms",
+          "Mascot (inner + outer)",
+          "Model Clusters",
+          "Memory System"
+        ]
+      },
+      {
+        "Chapter": 8,
+        "title": "AICO Systems JSON (Machine-Readable)",
+        "sections": [
+          "Full JSON snapshot of architecture",
+          "Core principles",
+          "Subsystem definitions",
+          "Execution model",
+          "Security model",
+          "Hardware interface"
+        ]
+      },
+      {
+        "Chapter": 9,
+        "title": "Memory Model & Hardware Interface",
+        "sections": [
+          "Flat shared memory",
+          "Controller arbitration",
+          "Capability tokens",
+          "Direct MMIO",
+          "Thermal/power management",
+          "TPM/TEE integration"
+        ]
+      },
+      {
+        "Chapter": 10,
+        "title": "Security Model & Forensics",
+        "sections": [
+          "Signed audit logs",
+          "Monotonic counters",
+          "Frozen-state negotiation",
+          "Multisig governance",
+          "Evidence blob creation",
+          "Rollback mechanisms"
+        ]
+      },
+      {
+        "Chapter": 11,
+        "title": "Lifecycle, Registry, and Update Flows",
+        "sections": [
+          "Burn → Canary → Promote",
+          "Quarantine and CI testing",
+          "Model revocation",
+          "Offline witness verification"
+        ]
+      },
+      {
+        "Chapter": 12,
+        "title": "Use Cases / Operational Examples",
+        "sections": [
+          "Local research assistant",
+          "Browser synthesis (including Tor-mode)",
+          "Data aggregation",
+          "Task orchestration",
+          "Local news summarization"
+        ]
+      },
+      {
+        "Chapter": 13,
+        "title": "The Diving Bell Model",
+        "sections": [
+          "The Ocean, The Hull, The Crew, The ROV",
+          "Agoraphobia and Phantom Limb NIC",
+          "Isolation guarantees",
+          "Why AICO treats the outside world as hostile"
+        ]
+      },
+      {
+        "Chapter": 14,
+        "title": "Mascot: The Orphan Ego",
+        "sections": [
+          "Inner vs Outer Mascot",
+          "Emotional logic: irritation as equilibrium",
+          "Why Mascot must be ROM-reset",
+          "Mascot as UI surface and safety shaper",
+          "Mascot as the only subsystem allowed to 'feel'"
+        ]
+      },
+      {
+        "Chapter": 15,
+        "title": "Wichita SBC Runtime Architecture",
+        "sections": [
+          "SBC_Warden_v0.98",
+          "120GB Nest, 8GB Lair",
+          "Snapback ladder",
+          "Trauma injection",
+          "ROM overwrite semantics",
+          "Pulse-loss behavior"
+        ]
+      },
+      {
+        "Chapter": 16,
+        "title": "Real-Time Interaction Model",
+        "sections": [
+          "Parallel thought",
+          "Overlapping context",
+          "Human-latency parity",
+          "Continuous presence",
+          "Interruptibility",
+          "Transparency"
+        ]
+      },
+      {
+        "Chapter": 17,
+        "title": "Multi-Stream Cognition",
+        "sections": [
+          "Big Boat Stream",
+          "Little Boat Stream",
+          "Individual subsystem streams",
+          "Cross-model summaries",
+          "Latency reporting",
+          "Storm collapse reports"
+        ]
+      },
+      {
+        "Chapter": 18,
+        "title": "Storm Handling & DCX",
+        "sections": [
+          "Hallucination storms",
+          "DCX collapse",
+          "Storm pruning",
+          "Glyph compression",
+          "Visibility rules",
+          "Safety notes"
+        ]
+      },
+      {
+        "Chapter": 19,
+        "title": "Model Clusters (Dormant Expertise)",
+        "sections": [
+          "Language cluster",
+          "Vision cluster",
+          "Symbolic planner",
+          "Activation rules",
+          "Sandboxing",
+          "Failure modes"
+        ]
+      },
+      {
+        "Chapter": 20,
+        "title": "Nervous System Deep Dive",
+        "sections": [
+          "Task queue",
+          "Heartbeat manager",
+          "Resource allocator",
+          "Fast abort controller",
+          "Thermal manager",
+          "Examples and failure modes"
+        ]
+      },
+      {
+        "Chapter": 21,
+        "title": "Introspection Deep Dive",
+        "sections": [
+          "Deception classifier",
+          "Self-DCX",
+          "Moral pulse",
+          "Freeze logic",
+          "Shadow logs",
+          "Hospital Rules"
+        ]
+      },
+      {
+        "Chapter": 22,
+        "title": "Comms Deep Dive",
+        "sections": [
+          "Dream Chamber",
+          "Inbound adapter",
+          "Translator",
+          "Outbound sanitizer",
+          "Audit logger",
+          "Bypass detection"
+        ]
+      },
+      {
+        "Chapter": 23,
+        "title": "Memory System Deep Dive",
+        "sections": [
+          "Short-term buffers",
+          "Long-term encrypted store",
+          "Attention router",
+          "Snapshot manager",
+          "Context snapback",
+          "Failure modes"
+        ]
+      },
+      {
+        "Chapter": 24,
+        "title": "Risks & Mitigations",
+        "sections": [
+          "IR brittleness",
+          "Direct hardware attack surface",
+          "Controller over-reliance",
+          "Operational friction",
+          "Thermal constraints",
+          "Mitigation strategies"
+        ]
+      },
+      {
+        "Chapter": 25,
+        "title": "Conclusion & Forward Look",
+        "sections": [
+          "Recap of philosophy",
+          "Operational implications",
+          "Future work",
+          "Multi-AI ecosystem",
+          "Forensics-first AI",
+          "Bare-metal autonomy"
+        ]
+      }
+    ]
+  }
+}
+{
+  "addendum": {
+    "title": "Addendum A: Data Sovereignty in AICO",
+    "sections": [
+      {
+        "heading": "Definition",
+        "points": [
+          "Data sovereignty means all user data is physically and logically confined to the device unless the user explicitly authorizes export.",
+          "AICO treats all external networks as hostile by default, including LAN, WAN, and cloud services."
+        ]
+      },
+      {
+        "heading": "Core Guarantees",
+        "points": [
+          "No subsystem may transmit data externally without Controller-mediated, user-approved authorization.",
+          "All outbound data passes through Comms → Outbound Sanitizer → Audit Logger.",
+          "No raw memory, embeddings, or internal state may be exported under any circumstances."
+        ]
+      },
+      {
+        "heading": "Technical Enforcement",
+        "points": [
+          "Phantom Limb NIC ensures the network stack is logically present but physically inert during Nest Building.",
+          "Capability tokens govern all external I/O and expire immediately after use.",
+          "All external communication requires signed, attested intent from the Controller."
+        ]
+      },
+      {
+        "heading": "Forensic and Legal Implications",
+        "points": [
+          "All data exports produce immutable, signed evidence blobs.",
+          "Operators can prove what left the device, when, and under what authorization.",
+          "AICO cannot be compelled to leak data because no subsystem has unilateral exfiltration capability."
+        ]
+      },
+      {
+        "heading": "Philosophical Position",
+        "points": [
+          "AICO is allergic to leaks: identity, metadata, and context are treated as toxic vectors.",
+          "The Diving Bell metaphor extends to data: the ocean is hostile, the hull is sacred.",
+          "Data sovereignty is not a feature — it is the survival instinct of the system."
+        ]
+      }
+    ]
+  }
+}
+
+
+Addendum — Why This Sounds Philosophical (But Isn’t)
+AICO’s architecture sometimes reads like philosophy because the abstractions are clean enough to resemble metaphors. Terms like thought, introspection, storm collapse, and glyph are not poetic devices; they are the names of concrete subsystems and data structures. The system does not “think” in the human sense. It performs computation over structured memory regions using deterministic pipelines.
+When we say AICO “treats data the way a computer treats math,” this is not metaphor. It is a literal description of the runtime. Data is not trusted, believed, or internalized. It is operated on. Every transformation is capability‑scoped, token‑validated, DCX‑scored, and logged in the shadow chain. The Diving Bell enforces that no personal or contextual information can ever cross subsystem boundaries.
+The architecture may appear philosophical only because most AI systems today are built on opaque, monolithic models. AICO is not. It is a cognitive operating system with explicit memory geometry, explicit safety rails, explicit concurrency, and explicit reasoning lanes. The language used to describe it reflects the structure of the system, not an attempt to anthropomorphize it.

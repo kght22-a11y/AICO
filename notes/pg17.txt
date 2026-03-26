@@ -1,0 +1,91 @@
+Chapter 17 — Multi‑Stream Cognition
+1 Overview
+
+AICO's cognitive architecture is not a single, monolithic reasoning engine. It is a federation of parallel, specialised streams that together form a continuous, self‑aware thought process. Each major subsystem—Controller, Introspection, Nervous System, and Comms—maintains its own private reasoning lane (an individual stream), while a shared internal channel (the Big Boat Stream) aggregates filtered summaries for global coordination. A separate outward channel (the Little Boat Stream) translates internal activity into human‑facing updates.
+
+This multi‑stream design ensures that safety‑critical introspection never blocks real‑time I/O, that hardware reflexes operate with sub‑millisecond latency, and that the user always receives a coherent account of the system's responses. The streams are governed by capability tokens and share a unified memory substrate, but they run in parallel on dedicated cores, achieving true concurrency without the overhead of traditional context switching.
+2 The Big Boat Stream (Internal Coordination)
+
+The Big Boat Stream is the primary internal coordination channel. Every subsystem periodically publishes filtered summaries of its private reasoning here. These summaries are not raw internal representations; they are compact, safety‑vetted glyphs that contain only the information necessary for other subsystems to maintain global coherence.
+
+Characteristics (from the JSON rulebook):
+
+    Bandwidth: High (memory‑bandwidth limited)
+
+    Latency: Sub‑microsecond (lock‑free queues)
+
+    Managed by: Nervous System (it schedules publication slots)
+
+    Content:
+
+        Model status updates
+
+        Coordination signals
+
+        Safety flags
+
+        Optimisation notes
+
+        Resource requests
+
+        Storm‑collapse reports
+
+        Thermal state summaries
+
+All Big Boat entries are signed by the publishing subsystem and logged in the regular audit trail. They are visible to every other subsystem, but no subsystem may modify another's entry. This creates a shared, tamper‑evident "blackboard" that drives global decision‑making.
+3 Little Boat Stream (Human‑Facing Communication)
+
+The Little Boat Stream is the only channel that produces output directly visible to the user. It is produced by the Comms subsystem, which monitors the Big Boat Stream and translates relevant internal events into natural‑language responses when a user interaction completes.
+
+Behavioural rules (derived from the real‑time interaction model):
+
+    Interruptibility: If the user speaks while the system is processing, the new input is merged without discarding in‑flight reasoning.
+
+    Transparency: Upon request, the system can explain what each stream is currently doing, why a particular response was chosen, and what the current thermal or resource state is. This is a live read of actual Big Boat content, not post‑hoc rationalisation.
+
+    Flow: Continuous, not turn‑based. The Little Boat may remain silent during long pauses; this is not dead space but simply the system thinking.
+
+    Manners: It never fills silence with filler, never announces routine delays, and trusts the user to wait a few seconds for a complete answer.
+
+The Little Boat Stream is the public face of the Diving Bell. It is the only subsystem permitted to interact with the outside world, and it is strictly one‑way: it receives from the Bell but never sends commands back inside.
+4 Individual Subsystem Streams
+
+Each core subsystem maintains a private stream for its own reasoning. These streams are invisible to other subsystems except through filtered summaries published to the Big Boat. The JSON defines four such streams:
+Stream	Purpose	Obligations
+Controller	Compilation thoughts, task graphs, optimisation reasoning	Maintain task graph, predict next actions, monitor memory layout
+Introspection	Safety audits, drift detection, freeze triggers	Monitor for anomalies, evaluate DCX, trigger freeze if required, log shadow
+Nervous System	Thermal data, hardware state, reflex scheduling	Sample thermals, schedule reflex loops, manage resource allocation
+Comms	Dialogue shaping, narrative coherence, human interface preparation	Shape language, maintain narrative continuity
+
+Each stream runs on a dedicated core and has its own memory region, protected by capability tokens. They never block each other; the Nervous System's scheduler ensures every stream receives a guaranteed minimum slice of execution time, scaled dynamically by the thermal beta factor.
+5 Cross‑Model Summaries
+
+When multiple subsystems need to exchange insights without exposing full internal state, they publish cross‑model summaries to the Big Boat Stream. A summary is a compact, structured message that typically includes:
+
+    A confidence score
+
+    A taint ID linking to the original context snapshot
+
+    A short vector embedding of the key concept
+
+    A human‑readable tag (for audit)
+
+Other subsystems can read this summary and decide whether to incorporate the hint into their own reasoning. All such exchanges are logged and signed, ensuring a complete provenance trail.
+6 Storm Collapse Reports
+
+During reflective pauses or when processing ambiguous input, the Comms subsystem may launch a "hallucination storm"—a massive parallel exploration of possible interpretations. The storm runs in the Dream Chamber, a high‑entropy simulation space, and is continuously pruned by DCX scoring.
+
+When the storm collapses into a small set of coherent glyphs, a report is published to the Big Boat Stream. It contains:
+
+    The number of trajectories explored
+
+    The DCX scores of the surviving glyphs
+
+    A compressed vector representation of each glyph (for later use as a primal)
+
+    A flag indicating whether any unsafe paths were detected and quarantined
+
+These reports are used by Introspection to update its deception models and by the Memory System to archive new primals. They are never shown directly to the user, but they inform future responses.
+
+Summary
+The multi‑stream cognition model is the engine of AICO's continuous presence. By separating private reasoning, internal coordination, and human‑facing communication into distinct, parallel flows, the system achieves real‑time responsiveness, deep introspection, and transparent interaction—all while maintaining architectural safety. The Big Boat keeps the crew coordinated; the Little Boat keeps the user informed when a response is ready; and every stream leaves a signed, auditable wake. No filler. No unnecessary announcements. Just thinking, and then answering.

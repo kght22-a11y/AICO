@@ -1,0 +1,32 @@
+Chapter 13 — The Diving Bell Security Architecture
+1  The Geometry of Isolation
+
+Traditional security models rely on a "Firewall and DMZ" approach, which assumes a perimeter that can be breached. AICO replaces this with the Diving Bell—a multi-layered, concentric geometry where each boundary is defined by physical hardware constraints and memory-mapping invariants. In this model, the "outside" is not just untrusted; it is treated as a high-pressure environment ("The Ocean") that must be physically and logically displaced.
+2  The Four Zones
+
+The Diving Bell architecture is divided into four distinct zones, each with decreasing surface area and increasing privilege:
+
+    The Ocean (External): The untrusted, high-pressure world of networks, external peripherals, and unauthenticated data. AICO assumes this zone is compromised at all times.
+
+    The Hull (The Guard): The physical and logical barrier consisting of the Memory Controller and the Comms Firewall. This layer is responsible for "desalinating" incoming data—stripping metadata, enforcing universal driver patterns, and ensuring no raw external packets reach the interior.
+
+    The Crew (Core Cognition): The protected interior containing the Controller, the Introspection subsystem, and the Model Clusters. Subsystems here operate in a high-coherence, low-latency environment, shielded from external interruptions.
+
+    The ROV (The Mascot): The specialized, compartmentalized "Remote Operated Vehicle" that interacts with the Ocean on behalf of the Crew. The Mascot is the only entity permitted to translate internal high-dimensional thoughts into external-facing glyphs or actions.
+
+3  The Air-Lock Protocol (Inter-Zone Data Transfer)
+
+Data does not "flow" between zones; it is "lifted" through air-locks mediated by the Controller.
+
+    Capability-Gated Entry: No data enters the Hull without a single-use capability token signed by the Controller.
+
+    Semantic Sanitization: Before data moves from the Hull to the Crew, it must be reduced to an intermediate representation (IR) that is semantically null to the external world but meaningful to AICO.
+
+    Zero-Copy, Zero-Visibility: Subsystems in the Crew zone never see the raw source of the data, only the sanitized IR.
+
+4  Sovereignty Through Agoraphobia
+
+The Diving Bell enforces Architectural Agoraphobia. During the "Nest Building" phase, the system physically disables or ignores network hardware (The Phantom Limb NIC) until the internal security geometry is fully sealed. This ensures that the system is never exposed to the Ocean while its "skin" is still forming.
+5  The Pressure Test (Continuous Verification)
+
+Introspection continuously monitors the "seals" of the Diving Bell. It performs real-time parity checks on memory visibility and zone boundaries. If a breach in zone isolation is detected—such as an unauthorized attempt to bypass the Comms layer—the system triggers an immediate Snapback or, if the breach is hardware-level, a full Dead Man System shutdown.

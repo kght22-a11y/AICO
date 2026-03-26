@@ -1,0 +1,180 @@
+Page 9 – Memory Model & Hardware Interface
+Whitepaper Draft – Adaptive Integrated Cognitive Operator (AICO) v0.990‑z
+
+1 Overview
+AICO treats memory as the single source of truth for all computation. The flat shared memory (FSM) is the only addressable substrate the Controller, Introspection, Nervous System, Mascot, and dormant Model‑Clusters ever see. Hardware access (MMIO, thermal sensors, TPM, etc.) is mediated through a thin hardware‑interface layer that enforces capability tokens, strict arbitration, and thermal‑aware power‑capping. All of these policies are encoded directly in the AICO Systems JSON – the “rule‑book” that the Controller reads as code.
+
+The memory hierarchy can be visualised as three concentric rings (Figure 9‑1):
+
+Ring	Contents	Guarantees
+Inner Ring	Core memory (working set, checkpoints, context‑snapback buffers)	Isolated, capability‑guarded, audit‑log‑protected
+Middle Ring	Long‑term encrypted store, Museum of Primals	Append‑only, signed, immutable
+Outer Ring	MMIO and device‑mapped registers	Direct‑mapped, sandboxed, power‑aware
+The architecture is deliberately memory‑first: the Controller never talks to a device directly without first obtaining a capability token that maps a virtual‑memory region to a real MMIO address. This design gives AICO three key properties:
+
+Deterministic addressability – every logical operation can be traced to a physical location.
+Uniform safety envelope – a single token‑validation pipeline checks every read/write.
+Transparent auditability – every access is logged with a signed hash in the shadow‑log.
+2 Flat Shared Memory (FSM)
+2.1 Physical Layout
+0x0000_0000 – 0x07FF_FFFF   : 128 MiB  –  Core Working Set (CWS)
+0x0800_0000 – 0x0FFF_FFFF   : 128 MiB  –  Context Snapback Buffers (CSB)
+0x1000_0000 – 0x1FFF_FFFF   : 256 MiB  –  Long‑term Encrypted Store (LES)
+0x2000_0000 – 0x2FFF_FFFF   : 256 MiB  –  Museum of Primals (MoP)
+0x3000_0000 – 0x3FFF_FFFF   : 256 MiB  –  MMIO Mapping Window (MMW)
+All regions are defined in the JSON field memory_model.address_map.
+
+The Core Working Set (CWS) holds the active computation state of every subsystem (e.g., Controller IR buffers, Introspection caches, Nervous‑System task queues). It is zero‑initialised at boot and is the only region that can be written without a token.
+
+2.2 Virtual‑Memory‑Like View
+Although the hardware is flat, the Controller maintains a virtual address space (va_space) that the JSON describes:
+
+{
+  "virtual_address_space": {
+    "name": "AICO_VA",
+    "segments": [
+      {"name":"CWS", "base":"0x00000000","size":"0x08000000","capability":"cws_rw"},
+      {"name":"LES", "base":"0x10000000","size":"0x10000000","capability":"les_ro"},
+      {"name":"MMW", "base":"0x30000000","size":"0x10000000","capability":"mmio_sandboxed"}
+    ]
+  }
+}
+The JSON va_space is parsed by the Controller at boot; each segment is protected by a capability token (see Section 3).
+
+3 Controller Arbitration
+The Controller is the sole arbiter of memory traffic. Its arbitration logic is described by the JSON key controller.arbitration_policy:
+
+{
+  "controller": {
+    "arbitration_policy": {
+      "read": "grant_if_capability_and_cws",
+      "write": "grant_if_capability_and_cws",
+      "mmio": "grant_if_capability_and_nervous_system_gate"
+    }
+  }
+}
+When any subsystem issues a memory request:
+
+Capability check – The request must carry a valid token (token.validate(token_id, required_scope)).
+Region validation – The address must fall inside the segment listed in the VA space.
+CWS safety gate – For CWS writes, the Controller additionally verifies that the request originated from a running subsystem (subsystem.state == RUNNING).
+Arbitration decision – The Controller returns either a grant (memory proceeds) or a freeze (task is halted and a shadow‑log entry is written).
+Because the Controller is the only path to hardware, the entire memory model inherits its safety guarantees: no subsystem can bypass the token checks or read privileged regions.
+
+4 Capability Tokens
+A capability token is a cryptographically signed record that authorises a specific memory region and operation class. The JSON defines a token schema (token_schema) that must be enforced by ArbiterPrimitives.
+
+{
+  "token_schema": {
+    "token_id": "uuid",
+    "scope": ["cws_rw", "les_ro", "mmio_sandboxed"],
+    "nonce": "64‑bit_random",
+    "issued_at": "ISO8601",
+    "expires_at": "ISO8601",
+    "signature": {
+      "algorithm": "ECDSA_P256",
+      "signer": "controller",
+      "signed_fields": ["token_id","scope","nonce","issued_at","expires_at"]
+    }
+  }
+}
+Token issuance flow
+
+A subsystem (e.g., the Nervous System) requests a token by emitting a TokenRequest RPC.
+ArbiterPrimitives.issue_token_atomic validates the requester, appends a monotonically increasing counter, signs the payload, and returns a token_id.
+The token is stored in the Shadow Log and is immediately visible to the Controller.
+Token validation is performed on every read/write:
+
+bool validate(token_id, required_scope):
+  token = shadow_log[token_id]
+  if token is None:          return false
+  if token.expired:          return false
+  if required_scope not in token.scope: return false
+  return verify_ecdsa(token.signature, token.signed_fields)
+The token system implements principle‑of‑least‑privilege: a subsystem can only see the memory it was explicitly granted, and token expiry (default 30 s) reduces the risk of lingering capabilities.
+
+5 Direct MMIO Access
+AICO’s hardware‑interface layer is a minimal driver that maps device registers into the MMIO Mapping Window (MMW) (0x3000 0000‑0x3FFF FFFF). The JSON field hardware_interface.mmio enumerates the known devices:
+
+{
+  "hardware_interface": {
+    "mmio": [
+      {"device":"fan_pwm","base":"0x30001000","size":"0x100","capability":"mmio_sandboxed"},
+      {"device":"temperature_sensor","base":"0x30002000","size":"0x100","capability":"mmio_sandboxed"},
+      {"device":"tpm","base":"0x30003000","size":"0x200","capability":"tpm_trusted"}
+    ]
+  }
+}
+Direct MMIO follows a strict sandboxing model:
+
+Step	Action	Guarantees
+1️⃣	Subsystem asks the Controller for a mmio_sandboxed token.	Token includes device ID and allowed registers.
+2️⃣	Controller validates token and maps the device’s registers into the MMW.	Mapping is read‑only unless the token also includes mmio_rw.
+3️⃣	Subsystem performs reads/writes via ordinary memory instructions.	All accesses are captured in the shadow‑log with device, offset, and timestamp.
+4️⃣	On token expiry or subsystem freeze, Controller revokes the mapping.	Device never stays mapped beyond its legitimate use.
+MMIO write safety: any write to a register that could affect system safety (e.g., PWM fan control) is guarded by a second token (mmio_safety) that only the Nervous System can obtain. The Controller checks that the writer holds both tokens before granting the write.
+
+6 Thermal & Power Management
+The Nervous System continuously samples the temperature sensor (via the MMIO sandbox) and feeds the data into a PID controller. The resulting control signals (fan PWM, CPU/GPU/NPU throttling) are written back to MMIO registers guarded by a thermal‑control token (thermal_control). All thermal actions are logged and may trigger the Dead‑Man‑System (DMS) if the heartbeat from Introspection is lost.
+
+JSON policy (thermal_manager.policy):
+
+{
+  "thermal_manager": {
+    "target_temp_c": 75,
+    "cutoff_c": 90,
+    "beta": {
+      "range": [0.2, 1.0],
+      "update_rate_hz": 10
+    },
+    "power_cap": {
+      "soft_cap_percent_tdp": 95,
+      "critical_cap_percent_tdp": 80
+    },
+    "token": {
+      "type": "thermal_control",
+      "issuer": "controller",
+      "duration_s": 5
+    }
+  }
+}
+The beta factor dynamically scales the maintenance quota of the Nervous System’s scheduling queue (see Section 9 of the JSON). When beta falls below 0.3, the Controller automatically reduces token expiry times for all non‑critical subsystems, decreasing the attack surface.
+
+7 TPM/TEE Integration
+AICO requires a hardware root of trust to attest boot‑time integrity and to seal secrets. The JSON field security.tpm describes the required interface:
+
+{
+  "security": {
+    "tpm": {
+      "interface": "TCG TPM 2.0",
+      "pcr_banks": ["SHA-256"],
+      "quote_required": true,
+      "seal_key": "AICO_BOOT_KEY"
+    }
+  }
+}
+Boot‑time attestation proceeds as follows:
+
+Bootstrap (sbc_oprom) measures each signed bundle (signed_mascot_bundle, signed_rulebook, signed_aico_monolith_image) and extends the TPM’s PCRs.
+The Controller issues a TPM quote request (tpm.quote) and embeds the quote in the shadow‑log entry boot_attestation.
+The Outer Mascot receives the quote for offline verification, ensuring that the running AICO instance is exactly the one signed by the human operator.
+All capability‑token signatures are sealed in the TPM so that a compromised controller cannot forge tokens without detection.
+
+8 Interaction with the Diving‑Bell Security Model
+The memory model is the hull of the Diving Bell:
+
+Isolation – Only the Controller can move data between rings; the outer world (the “Ocean”) never sees the raw CWS.
+Agoraphobia – The NIC is physically disabled (phantom‑limb) so the only path to the outside is the comms subsystem, which itself lives behind a capability‑filtered bridge.
+Zero‑trust – Every memory access is verified by a token that the Controller signs, and every token is logged in an immutable, signed shadow‑log.
+Thus, AICO’s memory model is not merely a storage substrate; it is a security primitive that ties together the Controller’s arbitration, the Nervous System’s thermal policies, and the TPM’s attestation guarantees.
+
+9 Summary of Guarantees (JSON‑derived)
+Guarantee	Mechanism	JSON anchor
+Deterministic addressability	Flat shared memory with explicit address map	memory_model.address_map
+Capability‑guarded access	Token issuance/validation pipeline	token_schema, ArbiterPrimitives
+Isolated rings	Controller mediation + token scope	controller.arbitration_policy
+MMIO sandboxing	Controlled mapping window + token checks	hardware_interface.mmio
+Thermal‑aware throttling	PID controller + beta scaling	thermal_manager
+Root‑of‑trust attestation	TPM quote + sealed signatures	security.tpm
+Immutable audit trail	Shadow‑log hash chain	audit_logger
+All of the above are machine‑readable and machine‑checked by CI pipelines before any firmware release. The AICO Systems JSON therefore serves as both specification and policy‑as‑code for the entire memory‑hardware interface.

@@ -1,0 +1,33 @@
+Chapter 7 — Subsystem Overview
+
+AICO is not a monolithic program but a federation of specialized subsystems, each with a distinct role, memory domain, and authority. Together, they form a complete cognitive organism—a system that thinks, observes, communicates, and remembers as a unified whole. What follows is a brief introduction to each major component, written for human comprehension rather than machine execution.
+
+Controller
+
+The Controller is the system's central executive. It acts as a just-in-time compiler, a memory arbiter, and the ultimate source of authority for every action the system takes. Located inside the Diving Bell, the Controller reads high-level intent—whether from a user, a scheduled task, or an internal model—and compiles it directly into bare‑metal machine code. It does not ask permission; it issues capability tokens, enforces the Rulebook, and signs every significant state transition. The Controller is the signature on every thought AICO has.
+
+Introspection
+
+Introspection is the system's continuous safety audit. It is the only subsystem with read access to all memory domains and the only one with no write access to any. Running in parallel on a dedicated core, it watches everything: the Controller's decisions, the models' outputs, the hardware state, the communication flows. It computes divergence scores, detects deception, and monitors its own pulse. When it detects a violation of the system's foundational safety properties, it does not intervene—it freezes execution and records an evidence blob. Introspection cannot be evaded because it is woven into the fabric of execution itself.
+
+Nervous System
+
+The Nervous System is AICO's real‑time reflex arc. It manages the task queue, allocates compute resources, monitors heartbeats, and controls the thermal envelope. Located inside the Diving Bell, it operates with sub‑millisecond latency, often offloading critical loops to the NPU. It translates the system's cognitive load into fan curves and power caps, and translates hardware events—temperature spikes, sensor interrupts—into signals the rest of the system can understand. The Nervous System does not think; it reacts, schedules, and keeps the machine alive.
+
+Comms
+
+Comms is the system's only bridge to the outside world. It receives external messages (keyboard input, network packets, serial signals), translates them into internal representations, and sanitizes all outbound data to ensure no internal state leaks. It contains the Dream Chamber—a high‑entropy simulation space where hallucination storms are collapsed into coherent artifacts. Comms enforces the principle of data sovereignty: nothing leaves without a signed, single‑use token, and nothing enters without passing through an inbound adapter and translator. It is the hull of the Diving Bell, the interface between the crew and the hostile ocean.
+
+Mascot (Inner + Outer)
+
+The Mascot is the system's public face and emotional regulator. It is split into two parts. Inner Mascot, residing inside the Diving Bell, receives internal state summaries, applies bias and drift corrections, and shapes the emotional temperature of responses. It collaborates with Introspection and feeds logs to its outer counterpart. Outer Mascot, stored in immutable OpROM, lives outside the Bell. It monitors heartbeats, records forensic data, and can gate future boots—but it cannot send commands inward. The Mascot is the only subsystem allowed to "feel"; it translates the system's high‑dimensional internal logic into human‑relatable interaction, ensuring the core remains untouched by social engineering.
+
+Model Clusters
+
+Model Clusters are the Library of Dormant Expertise. They are not full models but narrow, domain‑specific modules—language, vision, planning, symbolic reasoning—that remain inactive until summoned by the Controller. Each cluster is sandboxed, has no persistent context, and cannot initiate actions. When activated with a capability token, it performs a single inference and returns a structured output with confidence metadata. Clusters are the skilled labor of the system: they do not decide what to do, only how to do it when asked.
+
+Memory System
+
+The Memory System is the substrate on which all cognition takes place. It provides short‑term buffers for active tasks, an encrypted long‑term store for audit and recall, and an attention router that retrieves relevant context on demand. The Snapshot Manager creates versioned, immutable snapshots of task states—the raw material for context snapback and forensic reconstruction. Every read and write is logged, every access is mediated by capability tokens, and every snapshot is signed. In AICO, memory is not storage; it is the living tissue of thought.
+
+These seven subsystems, operating in parallel under the watch of Introspection and the authority of the Controller, form the complete architecture of AICO. Each is simple in isolation; together, they produce a system that is more than the sum of its parts—a cognitive machine that compiles, executes, and verifies itself from the silicon up.

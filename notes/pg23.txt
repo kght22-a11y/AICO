@@ -1,0 +1,53 @@
+# Chapter 23 — Memory System Deep Dive: The Inner Ring
+
+## 1. Overview
+As established in Chapter 9, AICO’s memory architecture is divided into three concentric rings: the Outer Ring (MMIO and hardware access), the Middle Ring (the WORM Museum of Primals), and the Inner Ring. 
+
+Chapter 23 focuses entirely on the **Inner Ring**—the high-speed, capability-gated workspace where active cognition occurs. This is not a passive storage medium; it is the living tissue of thought. In the Inner Ring, memory is structured around isolation, continuous versioning, and instant reversibility, ensuring that active cognition is both resilient against collapse and provably safe.
+
+## 2. Short-Term Buffers and Semantic Geometry
+When the Controller compiles a Task Graph (Chapter 21), it allocates specific short-term buffers within the Inner Ring for the required cognitive streams. These buffers are not generic heaps; they possess strict semantic geometry.
+
+- **Isolation by Capability:** A Model Cluster awakened for a visual reasoning task cannot read the memory buffer of a Linguistic Cluster working on parallel text formatting. 
+- **The Taint Lineage:** Every piece of data written into a short-term buffer carries a "taint ID" tracking its origin (User, Sensor, Primal, or Dream Chamber). Taint cannot be scrubbed; if tainted data touches a new buffer, that buffer inherits the taint.
+- **Volatile Lifespans:** Short-term buffers exist only as long as the task graph demands. When the Controller finalizes a cognitive action and commits output to the Little Boat Stream, the associated buffers are not "freed" to be garbage collected—they are crytographically wiped.
+
+This guarantees that AICO approaches each new cognition cycle with a perfectly clean slate, immune to residual semantic poisoning from previous interactions.
+
+## 3. The Attention Router
+AICO does not use a traditional context window where old text is simply pushed out by new text. Instead, it uses the **Attention Router**.
+
+The Attention Router dynamically maintains the "working set" of memory accessible to the active models. It operates on two axes:
+- **Recency:** Immediate conversational context.
+- **Relevance:** Conceptually related items pulled from the Museum of Primals or earlier in the session.
+
+Because AICO handles parallel cognition (Chapter 16), the Attention Router must ensure that context overlapping does not cause semantic collisions. It achieves this by issuing capability tokens specifically scoped to *read* targeted context subsets, preventing a dormant expertise cluster from being overwhelmed by irrelevant data when activated.
+
+## 4. Snapshot Manager and Continuous Versioning
+Cognition in AICO is not a single point moving forward in time; it is a continuously checkpointed state tree. 
+
+The **Snapshot Manager** takes highly compressed, instantaneous captures of the active memory state—not just the text being generated, but the exact disposition of the Controller's Task Graph, the Introspection's DCX scores, and the active capability tokens.
+
+- **Checkpoints are instantaneous** because they leverage the flat, uniform memory geography established by the bare-metal architecture.
+- **Checkpoints are signed** by the Controller.
+- **Checkpoints are immutable** within their brief existence. Once a task completes successfully, the intermediate snapshots are typically collapsed into a single Primal (if applicable) and the rest are wiped.
+
+## 5. Context Snapback: Reversing the Drift
+The true power of the Snapshot Manager is realized in the event of semantic drift.
+
+If the Introspection subsystem observes the DCX score of a cognitive thread rising into the "Hard Warning" zone (0.90 - 0.95), it does not need to analyze *why* the thread went bad. It simply signals a **Context Snapback**.
+
+Because the Snapshot Manager has been meticulously versioning the state:
+1. The Controller immediately halts the drifting task.
+2. The working memory is atomically rolled back to the last known-good snapshot (where the DCX score was acceptable).
+3. The context that led to the drift is marked as a "toxic pathway" to prevent the model from walking down the same logical branch.
+4. The system seamlessly retries the cognitive action from the safe checkpoint.
+
+This happens in milliseconds. From the user's perspective, AICO never drifted at all. Context Snapback ensures that AICO doesn't have to be perfect on the first try; it simply has to be perfectly auditable and instantly reversible.
+
+## 6. Failure Modes of the Inner Ring
+Even a system this robust has potential failure modes:
+- **Snapback Exhaustion:** If a task triggers Snapback five times in a row, the Controller refuses to retry. The task is frozen, an evidence blob is generated, and the Mascot surfaces an Irritation/Refusal Glyph to the user.
+- **Buffer Starvation:** If a high-entropy storm in the Dream Chamber requests more memory than the beta factor (thermal envelope) permits, the Nervous System will prematurely prune the storm, resulting in a lower-fidelity but safe glyph. 
+
+Safety in the Inner Ring is not based on preventing models from making errors; it is based on ensuring that errors can never persist long enough to become output.

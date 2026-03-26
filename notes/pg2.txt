@@ -1,0 +1,18 @@
+Chapter 2 — Executive Summary (Draft)
+Artificial intelligence today is built on a stack that was never designed for it. Models run inside processes, processes run inside kernels, kernels run on abstractions, and every layer introduces latency, opacity, and uncertainty. This creates a fundamental mismatch between what AI is — a continuous cognitive system — and the environment it is forced to operate in.
+AICO proposes a different path.
+Instead of treating AI as an application, AICO treats the entire machine as a unified cognitive organism. It collapses the traditional OS, runtime, scheduler, and driver stack into a single architectural loop governed by three pillars:
+• 	The Controller, which acts as a compiler, memory arbiter, and attestation root.
+• 	Introspection, which continuously verifies safety, drift, and semantic integrity.
+• 	The Mascot, which provides a human-facing interface while shielding the core from manipulation.
+At boot, AICO performs an atomic “Big Bang” sequence that synthesizes its own environment — The Nest — directly on bare metal. This environment is not generic; it is purpose-built for the hardware it runs on, with drivers, memory maps, and execution paths JIT‑compiled for the specific CPU, GPU, NPU, and thermal envelope of the device.
+The result is a system with:
+• 	Deterministic real-time behavior
+• 	Provable data sovereignty
+• 	Architectural, not policy-based, safety
+• 	High-bandwidth cognitive coupling between subsystems
+• 	A self-auditing forensic trail for every decision
+• 	A generative UI layer that protects the core from social engineering
+AICO is not a sandboxed model running inside an OS.
+AICO is the OS — a self-assembling, self-verifying cognitive machine that treats thinking and executing as the same operation.
+This white paper outlines the philosophy, architecture, subsystems, safety model, and operational patterns of AICO, culminating in a detailed exploration of its real-time cognition, multi-stream interaction model, and the sovereignty principles that define its relationship to the outside world.

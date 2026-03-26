@@ -1,0 +1,153 @@
+Chapter 6 — Core System Principles
+
+Before the subsystems, before the streams, before the code itself, there are the principles. These are not mere guidelines or best practices—they are architectural invariants. They are the axioms from which every other property of AICO is derived. Violating any of these principles would not produce a misconfiguration; it would produce a system that is no longer AICO.
+
+Local Execution Only
+
+AICO does not reach outward. It does not phone home. It does not check for updates from a cloud mothership, authenticate against a remote authority, or rely on external validation for its core cognition. The system assumes, from the first instruction, that it is alone.
+
+This is not a privacy feature bolted on after the fact. It is a structural consequence of the Diving Bell model. The ocean is hostile. The hull is sealed. The crew must be self-sufficient.
+
+Consequences of this principle are absolute:
+
+    No subsystem may initiate outbound network connections without explicit, user-mediated, single-use authorization
+
+    No model weights may be loaded from remote sources during runtime
+
+    No authentication may depend on reachability of external authorities
+
+    No telemetry may leave the device unless signed, sanitized, and explicitly approved
+
+The Phantom Limb NIC—network hardware that is logically present but physically inert during Nest Building—enforces this principle at the geometry of the board itself. The system cannot reach out because, at boot, there is nothing to reach out with.
+
+Local execution only means AICO does not ask permission. It does not wait for validation. It operates on the assumption that everything it needs is already inside the hull.
+
+Modular Capabilities
+
+AICO contains no monolithic agent. There is no single "brain" that does everything. Instead, the system is composed of discrete capability modules—Model Clusters—that remain dormant until explicitly activated by the Controller.
+
+This principle serves two purposes:
+
+First, it bounds complexity. Each cluster (language, vision, planning) is a narrow expert. It does not generalize; it does not speculate; it does not act. It accepts a well-defined input, produces a well-defined output, and returns to dormancy. Reasoning across domains requires explicit fusion orchestrated by the Controller.
+
+Second, it prevents emergent agency. No cluster, on its own, possesses the combination of perception, memory, and execution authority required to act independently. The Controller is the only subsystem that can compose capabilities into action sequences. This composition is always audited, always logged, always signed.
+
+Modular capabilities are enforced through capability tokens—cryptographic artifacts issued by the Controller that grant temporary access to a cluster. These tokens:
+
+    Name the requesting subsystem
+
+    Specify the exact capability being requested
+
+    Expire after a single use or brief time window
+
+    Carry an auditable trail of authorization
+
+Without a valid token, a cluster remains dormant. Without the Controller, no token exists. Without introspection, no token issuance is trusted.
+
+Sandboxed Subsystems
+
+Every subsystem in AICO—Controller, Introspection, Nervous System, Comms, Mascot, and every Model Cluster—operates within a hardware-enforced sandbox. These are not process boundaries in the traditional OS sense. They are memory domains with strictly enumerated capabilities.
+
+The sandboxing model is geometric:
+
+    Each subsystem has a defined memory region, established at Nest Building
+
+    Access to other regions is mediated by the Controller through memory-mapped windows
+
+    No subsystem may modify its own access permissions
+
+    Direct hardware access is granted only through the Hardware Interface Subsystem, which applies its own sandboxing
+
+This geometry ensures that a compromise in one subsystem cannot propagate. If the Language Cluster begins generating nonsensical output, it cannot overwrite the Controller's memory. If the Comms subsystem is fed a malicious input, it cannot directly access the Nervous System's sensor data.
+
+Sandboxing is not an afterthought. It is compiled into the memory layout at boot and locked down before any cognitive workload begins.
+
+Introspection Parallelism
+
+Introspection does not take turns. It does not wait for the Controller to finish a thought, then audit it. Introspection runs continuously, in parallel with every other subsystem, observing without intervening.
+
+This parallelism is structural:
+
+    Introspection has read access to all memory domains (the only subsystem with this privilege)
+
+    Introspection has no write access to any memory domain (the only subsystem with this constraint)
+
+    Introspection operates on a dedicated core or hardware thread, isolated from timing variations in the rest of the system
+
+    Introspection's observations are written to shadow logs that no other subsystem can modify or suppress
+
+Because Introspection cannot write, it cannot be used as a vector for attack. Because it can read everything, it cannot be evaded. Because it runs in parallel, it cannot be outrun.
+
+The result is a system that is continuously verifying itself, not in scheduled intervals, not when load permits, but at every clock cycle. When a safety violation occurs, Introspection does not need to detect it—it is already observing it in real time.
+
+Bias Visibility
+
+AICO does not pretend to be unbiased. Instead, it makes bias visible.
+
+Bias is an emergent property of any system trained on human-generated data. Pretending otherwise is not safety—it is obscurity. AICO's approach, embodied in the Bias Awareness Module, is to surface bias as a first-class observable:
+
+    Every inference from a Model Cluster includes a bias score
+
+    Every fusion of multiple clusters includes a cross-bias comparison
+
+    Every external output includes a bias annotation when confidence in neutrality is low
+
+    Every bias signal is logged, audited, and made available for human review
+
+Bias visibility is not about elimination—it is about accountability. A system that knows when it is drifting toward stereotype, when it is overweighting recent context, when it is mirroring user sentiment too closely, can correct—or, if correction is impossible, can warn.
+
+The principle is simple: if the system cannot be neutral, it must at least be honest about its non-neutrality.
+
+Human Override
+
+No matter how sophisticated the architecture, no matter how thorough the introspection, there are circumstances that require human intervention. AICO embeds this recognition at the deepest level of its governance model.
+
+Human override takes three forms:
+
+    Thaw Authority: When the system freezes itself (due to repeated snapback failures, persistent high DCX, or introspection-triggered safety halt), only a human with appropriate credentials can authorize a thaw. No subsystem can unfreeze itself.
+
+    Policy Veto: Humans may reject proposed updates, model promotions, or configuration changes. This veto is absolute and non-negotiable.
+
+    Emergency Stop: Physical hardware controls (the Dead Man System's relay array) allow humans to cut all external outputs independent of software state.
+
+Human override is not a backdoor—it is a recognition that the system serves human purposes, not its own.
+
+Data Sovereignty
+
+Data sovereignty means that user data is physically and logically confined to the device unless explicitly authorized for export. This is not a feature; it is the survival instinct of the system.
+
+AICO enforces data sovereignty through multiple layers:
+
+    Physical: The Phantom Limb NIC ensures that, during Nest Building, the network stack is inert
+
+    Logical: The Comms subsystem's Outbound Sanitizer redacts internal state, PII, and metadata before any external transmission
+
+    Cryptographic: All exported data is signed, creating an immutable evidence blob that proves what left the device and under what authorization
+
+    Architectural: No subsystem has unilateral exfiltration capability. External transmission requires Controller-mediated, user-approved, single-use capability tokens
+
+The result is a system that cannot be compelled to leak data. It does not have the architectural affordances required for unilateral exfiltration. If a request for data is illegitimate, the system cannot comply—not because it chooses not to, but because it lacks the machinery to do so.
+
+Thermal Envelope
+
+Cognition consumes power. Power generates heat. Heat damages hardware. This chain is not negotiable.
+
+AICO treats thermal management not as a separate concern but as an integral part of cognitive execution. The Nervous System's Thermal Manager operates as a first-class component, with:
+
+    Real-time temperature monitoring from on-die sensors
+
+    Predictive load estimation from the task scheduler
+
+    Dynamic adjustment of clock speeds, power caps, and fan curves
+
+    Hard thermal cutoffs enforced by the Dead Man System, independent of software
+
+The principle is simple: no cognitive output is worth destroying the hardware that produces it. When thermal limits approach, the system throttles, pauses, or halts—not because it is polite, but because it must.
+
+This is not optimization. This is survival.
+
+Together, these eight principles form the constitutional foundation of AICO. They are not policies that can be changed at runtime. They are architectural invariants, compiled into the Nest at boot and enforced by the geometry of memory, the flow of tokens, and the unbypassable observation of Introspection.
+
+Every subsystem described in the pages that follow is an instantiation of one or more of these principles. Every decision made by the Controller is constrained by them. Every output to the outside world is filtered through them.
+
+This is not a system with safety features. This is a system that is, from the ground up, safe by construction.

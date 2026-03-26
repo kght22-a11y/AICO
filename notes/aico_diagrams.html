@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AICO Architecture Diagrams</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600;700&display=swap');
+
+  :root {
+    --bg: #060810;
+    --surface: #0c1018;
+    --border: #1a2535;
+    --accent: #00e5ff;
+    --accent2: #ff6b35;
+    --accent3: #7fff6b;
+    --danger: #ff3b5c;
+    --muted: #3a4a5c;
+    --text: #c8d8e8;
+    --text-dim: #5a7090;
+    --glow: 0 0 20px rgba(0,229,255,0.3);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+
+  .page {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header h1 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+
+  .header p {
+    margin-top: 8px;
+    color: var(--text-dim);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  .diagram-block {
+    margin-bottom: 70px;
+  }
+
+  .diagram-title {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .diagram-subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+
+  .diagram-desc {
+    font-size: 13px;
+    color: var(--text-dim);
+    font-family: 'Share Tech Mono', monospace;
+    margin-bottom: 24px;
+  }
+
+  .diagram-wrap {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .diagram-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.6;
+  }
+
+  svg text {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  /* ---- DIAGRAM 1: DIVING BELL ---- */
+  .diving-bell-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ---- DIAGRAM 2: BOOT SEQUENCE ---- */
+  .boot-seq {
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .boot-phase {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 0 20px;
+    position: relative;
+  }
+
+  .boot-phase:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 45px;
+    top: 52px;
+    bottom: -16px;
+    width: 1px;
+    background: linear-gradient(180deg, var(--accent), transparent);
+    opacity: 0.4;
+  }
+
+  .phase-num {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 32px;
+  }
+
+  .phase-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+
+  .phase-content {
+    padding-top: 2px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 0;
+  }
+
+  .boot-phase:last-child .phase-content {
+    border-bottom: none;
+  }
+
+  .phase-name {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .phase-detail {
+    font-size: 13px;
+    color: var(--text-dim);
+    font-family: 'Share Tech Mono', monospace;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+
+  .phase-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .tag {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .tag-cyan { background: rgba(0,229,255,0.08); color: var(--accent); border: 1px solid rgba(0,229,255,0.2); }
+  .tag-orange { background: rgba(255,107,53,0.08); color: var(--accent2); border: 1px solid rgba(255,107,53,0.2); }
+  .tag-green { background: rgba(127,255,107,0.08); color: var(--accent3); border: 1px solid rgba(127,255,107,0.2); }
+  .tag-red { background: rgba(255,59,92,0.08); color: var(--danger); border: 1px solid rgba(255,59,92,0.2); }
+
+  .p1 .phase-circle { border-color: var(--accent); color: var(--accent); }
+  .p2 .phase-circle { border-color: var(--accent2); color: var(--accent2); }
+  .p3 .phase-circle { border-color: var(--accent3); color: var(--accent3); }
+  .p4 .phase-circle { border-color: var(--muted); color: var(--text-dim); }
+  .p5 .phase-circle { border-color: var(--accent); color: var(--accent); background: rgba(0,229,255,0.06); }
+
+  .p1 .phase-name { color: var(--accent); }
+  .p2 .phase-name { color: var(--accent2); }
+  .p3 .phase-name { color: var(--accent3); }
+  .p4 .phase-name { color: var(--text); }
+  .p5 .phase-name { color: var(--accent); }
+
+  /* ---- DIAGRAM 3: SUBSYSTEM MAP ---- */
+  .sys-map-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>AICO v0.990-z · Architectural Diagrams</h1>
+    <h2>ADAPTIVE INTEGRATED COGNITIVE OPERATOR</h2>
+    <p>Self-Assembling Unikernel AI Operating System · Open Architectural Standard</p>
+  </div>
+
+  <!-- DIAGRAM 1: DIVING BELL -->
+  <div class="diagram-block">
+    <div class="diagram-title">Fig. 01 · Security Architecture</div>
+    <div class="diagram-subtitle">The Diving Bell</div>
+    <div class="diagram-desc">Safety enforced through architectural geometry, not policy</div>
+    <div class="diagram-wrap">
+      <svg class="diving-bell-svg" viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="ocean-grad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#0a1520"/>
+            <stop offset="100%" stop-color="#060810"/>
+          </radialGradient>
+          <radialGradient id="hull-grad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#0d1b2a"/>
+            <stop offset="100%" stop-color="#081016"/>
+          </radialGradient>
+          <radialGradient id="bell-grad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#091522"/>
+            <stop offset="100%" stop-color="#060f18"/>
+          </radialGradient>
+          <radialGradient id="core-grad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#0e1f30"/>
+            <stop offset="100%" stop-color="#091520"/>
+          </radialGradient>
+          <filter id="glow-cyan">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="glow-soft">
+            <feGaussianBlur stdDeviation="8" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <pattern id="ocean-dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+            <circle cx="15" cy="15" r="0.8" fill="#1a3050" opacity="0.5"/>
+          </pattern>
+        </defs>
+
+        <!-- Ocean background -->
+        <rect width="900" height="540" fill="url(#ocean-grad)"/>
+        <rect width="900" height="540" fill="url(#ocean-dots)"/>
+
+        <!-- Ocean label area -->
+        <text x="50" y="50" font-family="'Share Tech Mono', monospace" font-size="10" fill="#1e4060" letter-spacing="3" text-anchor="start">THE OCEAN</text>
+        <text x="50" y="65" font-family="'Share Tech Mono', monospace" font-size="9" fill="#1a3550" letter-spacing="1">INTERNET · EXTERNAL WORLD · HIGH PRESSURE</text>
+
+        <!-- Pressure arrows (ocean) -->
+        <g opacity="0.25">
+          <line x1="80" y1="120" x2="110" y2="145" stroke="#1e4060" stroke-width="1"/>
+          <line x1="820" y1="120" x2="790" y2="145" stroke="#1e4060" stroke-width="1"/>
+          <line x1="80" y1="420" x2="110" y2="395" stroke="#1e4060" stroke-width="1"/>
+          <line x1="820" y1="420" x2="790" y2="395" stroke="#1e4060" stroke-width="1"/>
+          <text x="58" y="270" font-family="'Share Tech Mono', monospace" font-size="9" fill="#1e4060" text-anchor="middle" transform="rotate(-90,58,270)">PRESSURE</text>
+          <text x="842" y="270" font-family="'Share Tech Mono', monospace" font-size="9" fill="#1e4060" text-anchor="middle" transform="rotate(90,842,270)">PRESSURE</text>
+        </g>
+
+        <!-- Zone 1: Hull (outermost) -->
+        <ellipse cx="450" cy="270" rx="330" ry="210" fill="url(#hull-grad)" stroke="#1a3550" stroke-width="1.5" opacity="0.9"/>
+        <ellipse cx="450" cy="270" rx="330" ry="210" fill="none" stroke="#0e4070" stroke-width="1" stroke-dasharray="4,6" opacity="0.5"/>
+
+        <!-- Hull label -->
+        <text x="450" y="96" font-family="'Share Tech Mono', monospace" font-size="10" fill="#1e5080" letter-spacing="3" text-anchor="middle">THE HULL</text>
+        <text x="450" y="110" font-family="'Share Tech Mono', monospace" font-size="8" fill="#1a4060" letter-spacing="1" text-anchor="middle">MEMORY CONTROLLER · COMMS FIREWALL · LOGICAL LOCK-IN</text>
+
+        <!-- Zone 2: Diving Bell (mid) -->
+        <ellipse cx="450" cy="280" rx="230" ry="155" fill="url(#bell-grad)" stroke="#1e4a6a" stroke-width="1.5"/>
+
+        <!-- Zone 3: Core / Crew -->
+        <ellipse cx="450" cy="285" rx="145" ry="98" fill="url(#core-grad)" stroke="#00e5ff" stroke-width="1" opacity="0.7" filter="url(#glow-soft)"/>
+        <ellipse cx="450" cy="285" rx="145" ry="98" fill="none" stroke="#00e5ff" stroke-width="0.5" opacity="0.4"/>
+
+        <!-- Core label -->
+        <text x="450" y="256" font-family="'Rajdhani', sans-serif" font-size="13" fill="#00e5ff" font-weight="700" letter-spacing="3" text-anchor="middle" opacity="0.9">THE CREW</text>
+        <text x="450" y="272" font-family="'Share Tech Mono', monospace" font-size="9" fill="#4abccc" letter-spacing="1" text-anchor="middle">CORE MODELS · CONTROLLER · INTROSPECTION</text>
+        <text x="450" y="285" font-family="'Share Tech Mono', monospace" font-size="9" fill="#3a9aaa" letter-spacing="1" text-anchor="middle">HIGH ENTROPY · JIT SYNTHESIS</text>
+
+        <!-- Inner glow pulse rings -->
+        <ellipse cx="450" cy="285" rx="100" ry="67" fill="none" stroke="#00e5ff" stroke-width="0.5" opacity="0.2"/>
+        <ellipse cx="450" cy="285" rx="65" ry="43" fill="none" stroke="#00e5ff" stroke-width="0.5" opacity="0.15"/>
+
+        <!-- MASCOT (outside hull, top right) -->
+        <g>
+          <rect x="670" y="165" width="120" height="60" rx="4" fill="#0c1a28" stroke="#ff6b35" stroke-width="1"/>
+          <rect x="670" y="165" width="120" height="60" rx="4" fill="none" stroke="#ff6b35" stroke-width="0.5" stroke-dasharray="3,4" opacity="0.5"/>
+          <text x="730" y="186" font-family="'Rajdhani', sans-serif" font-size="12" fill="#ff6b35" font-weight="700" letter-spacing="2" text-anchor="middle">THE MASCOT</text>
+          <text x="730" y="200" font-family="'Share Tech Mono', monospace" font-size="8" fill="#8a4a30" letter-spacing="1" text-anchor="middle">EXTERNAL WITNESS</text>
+          <text x="730" y="213" font-family="'Share Tech Mono', monospace" font-size="8" fill="#8a4a30" letter-spacing="1" text-anchor="middle">OBSERVE · LOG · ROM RELOAD</text>
+          <!-- One-way arrow from hull to mascot -->
+          <line x1="671" y1="195" x2="640" y2="220" stroke="#ff6b35" stroke-width="1" stroke-dasharray="3,4" opacity="0.5"/>
+          <polygon points="640,220 648,214 644,224" fill="#ff6b35" opacity="0.5"/>
+          <text x="649" y="208" font-family="'Share Tech Mono', monospace" font-size="8" fill="#ff6b35" opacity="0.6" text-anchor="middle">LOG ONLY →</text>
+        </g>
+
+        <!-- PHANTOM LIMB (outside hull, bottom right) -->
+        <g>
+          <rect x="668" y="340" width="124" height="56" rx="4" fill="#0c1a28" stroke="#3a4a5c" stroke-width="1" stroke-dasharray="4,4"/>
+          <text x="730" y="362" font-family="'Rajdhani', sans-serif" font-size="12" fill="#4a5a6c" font-weight="700" letter-spacing="2" text-anchor="middle">PHANTOM LIMB</text>
+          <text x="730" y="376" font-family="'Share Tech Mono', monospace" font-size="8" fill="#3a4a5a" letter-spacing="1" text-anchor="middle">NIC: LOGICALLY ON</text>
+          <text x="730" y="388" font-family="'Share Tech Mono', monospace" font-size="8" fill="#3a4a5a" letter-spacing="1" text-anchor="middle">PHYSICALLY DISABLED</text>
+          <!-- null line -->
+          <line x1="668" y1="368" x2="626" y2="340" stroke="#3a4a5c" stroke-width="1" stroke-dasharray="2,4" opacity="0.6"/>
+          <text x="636" y="330" font-family="'Share Tech Mono', monospace" font-size="8" fill="#3a4a5a" text-anchor="middle">OUTSIDE = NULL</text>
+        </g>
+
+        <!-- BOOTSTRAP label (outside hull, bottom left) -->
+        <g>
+          <rect x="106" y="340" width="116" height="56" rx="4" fill="#0c1a28" stroke="#7fff6b" stroke-width="1" opacity="0.8"/>
+          <text x="164" y="362" font-family="'Rajdhani', sans-serif" font-size="12" fill="#7fff6b" font-weight="700" letter-spacing="2" text-anchor="middle">BOOTSTRAP</text>
+          <text x="164" y="376" font-family="'Share Tech Mono', monospace" font-size="8" fill="#4a8a40" letter-spacing="1" text-anchor="middle">SBC · OPROM</text>
+          <text x="164" y="388" font-family="'Share Tech Mono', monospace" font-size="8" fill="#4a8a40" letter-spacing="1" text-anchor="middle">IMMUTABLE IN-FIELD</text>
+          <line x1="222" y1="368" x2="250" y2="348" stroke="#7fff6b" stroke-width="1" opacity="0.5"/>
+        </g>
+
+        <!-- Zone divider labels (Diving Bell) -->
+        <text x="310" y="162" font-family="'Share Tech Mono', monospace" font-size="9" fill="#2a5070" letter-spacing="2" text-anchor="middle">DIVING BELL</text>
+        <text x="310" y="174" font-family="'Share Tech Mono', monospace" font-size="8" fill="#1e4060" text-anchor="middle">CONTROLLER · NERVOUS SYSTEM</text>
+
+        <!-- Separator tick marks on hull -->
+        <line x1="450" y1="60" x2="450" y2="68" stroke="#0e4070" stroke-width="1" opacity="0.6"/>
+        <line x1="450" y1="472" x2="450" y2="480" stroke="#0e4070" stroke-width="1" opacity="0.6"/>
+
+        <!-- Legend -->
+        <g transform="translate(36, 460)">
+          <rect width="8" height="8" rx="1" fill="none" stroke="#00e5ff" stroke-width="1"/>
+          <text x="14" y="8" font-family="'Share Tech Mono', monospace" font-size="9" fill="#4a7a8a">CORE (INSIDE BELL)</text>
+          <rect x="150" width="8" height="8" rx="1" fill="none" stroke="#1e4a6a" stroke-width="1"/>
+          <text x="164" y="8" font-family="'Share Tech Mono', monospace" font-size="9" fill="#4a7a8a">BELL INTERIOR</text>
+          <rect x="280" width="8" height="8" rx="1" fill="none" stroke="#ff6b35" stroke-width="1"/>
+          <text x="294" y="8" font-family="'Share Tech Mono', monospace" font-size="9" fill="#4a7a8a">OUTSIDE HULL</text>
+          <rect x="410" width="8" height="8" rx="1" fill="none" stroke="#3a4a5c" stroke-width="1" stroke-dasharray="2,2"/>
+          <text x="424" y="8" font-family="'Share Tech Mono', monospace" font-size="9" fill="#4a7a8a">DISABLED / NULL</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <!-- DIAGRAM 2: BOOT SEQUENCE -->
+  <div class="diagram-block">
+    <div class="diagram-title">Fig. 02 · Initialization Protocol</div>
+    <div class="diagram-subtitle">The Boot Sequence</div>
+    <div class="diagram-desc">From cold silicon to locked runtime in under 10 seconds</div>
+    <div class="diagram-wrap">
+      <div class="boot-seq">
+
+        <div class="boot-phase p1">
+          <div class="phase-num">
+            <div class="phase-circle">01</div>
+          </div>
+          <div class="phase-content">
+            <div class="phase-name">BIG BANG</div>
+            <div class="phase-detail">Atomic activation. Bootstrap loads monolithic binary from OpROM or USB. No service dependencies. Single-shot integrity verification and handoff.</div>
+            <div class="phase-tags">
+              <span class="tag tag-cyan">ATOMIC</span>
+              <span class="tag tag-cyan">OPROM</span>
+              <span class="tag tag-cyan">NO DEPS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="boot-phase p2">
+          <div class="phase-num">
+            <div class="phase-circle">02</div>
+          </div>
+          <div class="phase-content">
+            <div class="phase-name">SHIBBOLETH</div>
+            <div class="phase-detail">Hardware proof-of-control. Bit-bang Fan Header PWM pin to transmit ASCII "READY" at 9600 baud. Proves microsecond-level CPU authority over the chipset. Failure triggers immediate safe shutdown — no retry.</div>
+            <div class="phase-tags">
+              <span class="tag tag-orange">FAN HEADER</span>
+              <span class="tag tag-orange">9600 BAUD</span>
+              <span class="tag tag-red">FAIL = SHUTDOWN</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="boot-phase p3">
+          <div class="phase-num">
+            <div class="phase-circle">03</div>
+          </div>
+          <div class="phase-content">
+            <div class="phase-name">NEST BUILDING</div>
+            <div class="phase-detail">Optimization Storm. JIT-compile drivers for CPU, GPU, and Memory directly from hardware register maps. Each subsystem follows the 3-Upgrade Rule: Draft → Refine → Polish → LOCK. Duration target: under 10 seconds.</div>
+            <div class="phase-tags">
+              <span class="tag tag-green">JIT SYNTHESIS</span>
+              <span class="tag tag-green">3-UPGRADE LOCK</span>
+              <span class="tag tag-green">&lt;10s</span>
+              <span class="tag tag-red">WRITE ACCESS REVOKED</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="boot-phase p4">
+          <div class="phase-num">
+            <div class="phase-circle">04</div>
+          </div>
+          <div class="phase-content">
+            <div class="phase-name">GESTATION</div>
+            <div class="phase-detail">Format Soul. Map memory. Build User Vault. Establish Introspection baseline. Serial log emitted via Fan Header throughout. Mascot initialized in outer zone.</div>
+            <div class="phase-tags">
+              <span class="tag tag-cyan">MEMORY MAP</span>
+              <span class="tag tag-cyan">USER VAULT</span>
+              <span class="tag tag-cyan">SERIAL LOG</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="boot-phase p5">
+          <div class="phase-num">
+            <div class="phase-circle">05</div>
+          </div>
+          <div class="phase-content">
+            <div class="phase-name">FIRST CONTACT</div>
+            <div class="phase-detail">Cold boot complete. Generative UI compiled to framebuffer. Local interface only. System ready for cognitive operation within the locked Nest.</div>
+            <div class="phase-tags">
+              <span class="tag tag-cyan">LOCAL ONLY</span>
+              <span class="tag tag-cyan">UI GENERATED</span>
+              <span class="tag tag-green">NEST LOCKED</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- DIAGRAM 3: SUBSYSTEM MAP -->
+  <div class="diagram-block">
+    <div class="diagram-title">Fig. 03 · Subsystem Architecture</div>
+    <div class="diagram-subtitle">Controller Feedback Loop</div>
+    <div class="diagram-desc">Authority flow and safety invariants across all active subsystems</div>
+    <div class="diagram-wrap">
+      <svg class="sys-map-svg" viewBox="0 0 900 580" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arrow-cyan" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#00e5ff" opacity="0.7"/>
+          </marker>
+          <marker id="arrow-orange" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#ff6b35" opacity="0.7"/>
+          </marker>
+          <marker id="arrow-red" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#ff3b5c" opacity="0.9"/>
+          </marker>
+          <marker id="arrow-green" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#7fff6b" opacity="0.7"/>
+          </marker>
+          <marker id="arrow-muted" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#4a6a8a" opacity="0.7"/>
+          </marker>
+          <filter id="box-glow-cyan">
+            <feGaussianBlur stdDeviation="4" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <rect width="900" height="580" fill="#060810"/>
+
+        <!-- Background zone: inside bell -->
+        <rect x="190" y="40" width="520" height="480" rx="6" fill="#080f18" stroke="#0e3050" stroke-width="1" stroke-dasharray="6,6" opacity="0.6"/>
+        <text x="450" y="32" font-family="'Share Tech Mono', monospace" font-size="9" fill="#1e4060" letter-spacing="3" text-anchor="middle">INSIDE THE DIVING BELL</text>
+
+        <!-- CONTROLLER (center) -->
+        <rect x="340" y="230" width="220" height="96" rx="4" fill="#0a1822" stroke="#00e5ff" stroke-width="1.5" filter="url(#box-glow-cyan)"/>
+        <text x="450" y="258" font-family="'Rajdhani', sans-serif" font-size="15" fill="#00e5ff" font-weight="700" letter-spacing="3" text-anchor="middle">CONTROLLER</text>
+        <text x="450" y="275" font-family="'Share Tech Mono', monospace" font-size="9" fill="#4a9aaa" letter-spacing="1" text-anchor="middle">CONTROLLER-AS-COMPILER</text>
+        <text x="450" y="291" font-family="'Share Tech Mono', monospace" font-size="9" fill="#3a7a8a" letter-spacing="1" text-anchor="middle">JIT · INTENT → BINARY</text>
+        <text x="450" y="307" font-family="'Share Tech Mono', monospace" font-size="9" fill="#2a6070" letter-spacing="1" text-anchor="middle">JSON RULEBOOK AUTHORITY</text>
+
+        <!-- INTROSPECTION (top) -->
+        <rect x="340" y="68" width="220" height="80" rx="4" fill="#0a1822" stroke="#ff3b5c" stroke-width="1.5"/>
+        <text x="450" y="94" font-family="'Rajdhani', sans-serif" font-size="14" fill="#ff3b5c" font-weight="700" letter-spacing="3" text-anchor="middle">INTROSPECTION</text>
+        <text x="450" y="110" font-family="'Share Tech Mono', monospace" font-size="9" fill="#8a3a50" letter-spacing="1" text-anchor="middle">NON-OVERRIDABLE</text>
+        <text x="450" y="124" font-family="'Share Tech Mono', monospace" font-size="9" fill="#8a3a50" letter-spacing="1" text-anchor="middle">DCX MONITOR · SEMANTIC DRIFT</text>
+        <text x="450" y="138" font-family="'Share Tech Mono', monospace" font-size="9" fill="#6a2a3a" letter-spacing="1" text-anchor="middle">FREEZE · HALT · OVERRIDE</text>
+
+        <!-- NERVOUS SYSTEM (left) -->
+        <rect x="210" y="234" width="110" height="80" rx="4" fill="#0a1822" stroke="#7fff6b" stroke-width="1"/>
+        <text x="265" y="260" font-family="'Rajdhani', sans-serif" font-size="12" fill="#7fff6b" font-weight="700" letter-spacing="2" text-anchor="middle">NERVOUS</text>
+        <text x="265" y="276" font-family="'Rajdhani', sans-serif" font-size="12" fill="#7fff6b" font-weight="700" letter-spacing="2" text-anchor="middle">SYSTEM</text>
+        <text x="265" y="294" font-family="'Share Tech Mono', monospace" font-size="8" fill="#4a7a40" letter-spacing="1" text-anchor="middle">THERMAL · LATENCY</text>
+        <text x="265" y="306" font-family="'Share Tech Mono', monospace" font-size="8" fill="#4a7a40" letter-spacing="1" text-anchor="middle">TASK SCHEDULER</text>
+
+        <!-- COMMS (right) -->
+        <rect x="580" y="234" width="110" height="80" rx="4" fill="#0a1822" stroke="#a06bff" stroke-width="1"/>
+        <text x="635" y="264" font-family="'Rajdhani', sans-serif" font-size="12" fill="#a06bff" font-weight="700" letter-spacing="2" text-anchor="middle">COMMS</text>
+        <text x="635" y="282" font-family="'Share Tech Mono', monospace" font-size="8" fill="#5a3a8a" letter-spacing="1" text-anchor="middle">DIALOGUE SHAPING</text>
+        <text x="635" y="296" font-family="'Share Tech Mono', monospace" font-size="8" fill="#5a3a8a" letter-spacing="1" text-anchor="middle">SANITIZE PROTOCOL</text>
+        <text x="635" y="310" font-family="'Share Tech Mono', monospace" font-size="8" fill="#5a3a8a" letter-spacing="1" text-anchor="middle">EXTERNAL INTERFACE</text>
+
+        <!-- MODEL CLUSTERS (bottom) -->
+        <rect x="340" y="410" width="220" height="80" rx="4" fill="#0a1822" stroke="#4a6a8a" stroke-width="1"/>
+        <text x="450" y="436" font-family="'Rajdhani', sans-serif" font-size="13" fill="#6a9ab0" font-weight="700" letter-spacing="2" text-anchor="middle">MODEL CLUSTERS</text>
+        <text x="450" y="452" font-family="'Share Tech Mono', monospace" font-size="8" fill="#3a5a70" letter-spacing="1" text-anchor="middle">LIBRARY OF DORMANT EXPERTISE</text>
+        <text x="450" y="466" font-family="'Share Tech Mono', monospace" font-size="8" fill="#3a5a70" letter-spacing="1" text-anchor="middle">DORMANT BY DEFAULT · SANDBOXED</text>
+        <text x="450" y="480" font-family="'Share Tech Mono', monospace" font-size="8" fill="#2a4a60" letter-spacing="1" text-anchor="middle">ATTACH ON REQUEST · NO INIT</text>
+
+        <!-- MASCOT (outside, far right) -->
+        <rect x="740" y="234" width="120" height="80" rx="4" fill="#0a1418" stroke="#ff6b35" stroke-width="1" stroke-dasharray="4,4"/>
+        <text x="800" y="260" font-family="'Rajdhani', sans-serif" font-size="13" fill="#ff6b35" font-weight="700" letter-spacing="2" text-anchor="middle">MASCOT</text>
+        <text x="800" y="278" font-family="'Share Tech Mono', monospace" font-size="8" fill="#8a4a30" letter-spacing="1" text-anchor="middle">OUTER WITNESS</text>
+        <text x="800" y="292" font-family="'Share Tech Mono', monospace" font-size="8" fill="#8a4a30" letter-spacing="1" text-anchor="middle">ROM RELOAD ON FAIL</text>
+        <text x="800" y="306" font-family="'Share Tech Mono', monospace" font-size="8" fill="#6a3a20" letter-spacing="1" text-anchor="middle">MAX 3 RELOADS</text>
+
+        <!-- HARDWARE (bottom center, below clusters) -->
+        <rect x="355" y="514" width="190" height="46" rx="4" fill="#080e16" stroke="#2a3a4a" stroke-width="1"/>
+        <text x="450" y="534" font-family="'Rajdhani', sans-serif" font-size="12" fill="#3a5a70" font-weight="700" letter-spacing="2" text-anchor="middle">BARE METAL</text>
+        <text x="450" y="550" font-family="'Share Tech Mono', monospace" font-size="8" fill="#2a3a4a" letter-spacing="1" text-anchor="middle">RYZEN AI MAX · UMA · XDNA 2 · NVMe</text>
+
+        <!-- ARROWS -->
+        <!-- Introspection → Controller (OVERRIDE, down) -->
+        <line x1="450" y1="148" x2="450" y2="229" stroke="#ff3b5c" stroke-width="1.5" marker-end="url(#arrow-red)" opacity="0.8"/>
+        <rect x="458" y="175" width="72" height="14" rx="2" fill="#060810" opacity="0.9"/>
+        <text x="494" y="185" font-family="'Share Tech Mono', monospace" font-size="8" fill="#ff3b5c" text-anchor="middle">OVERRIDE / HALT</text>
+
+        <!-- Controller → Introspection (reports, up) -->
+        <line x1="432" y1="230" x2="432" y2="149" stroke="#00e5ff" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-cyan)" opacity="0.5"/>
+        <rect x="368" y="175" width="58" height="14" rx="2" fill="#060810" opacity="0.9"/>
+        <text x="397" y="185" font-family="'Share Tech Mono', monospace" font-size="8" fill="#00e5ff" opacity="0.6" text-anchor="middle">REPORTS STATE</text>
+
+        <!-- Nervous System ↔ Controller -->
+        <line x1="320" y1="274" x2="341" y2="274" stroke="#7fff6b" stroke-width="1" marker-end="url(#arrow-green)" opacity="0.7"/>
+        <line x1="341" y1="262" x2="320" y2="262" stroke="#00e5ff" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-cyan)" opacity="0.5"/>
+        <text x="330" y="255" font-family="'Share Tech Mono', monospace" font-size="7" fill="#4a7a40" text-anchor="middle">HW STATE</text>
+
+        <!-- Controller → Comms -->
+        <line x1="560" y1="262" x2="579" y2="262" stroke="#00e5ff" stroke-width="1" marker-end="url(#arrow-cyan)" opacity="0.7"/>
+        <line x1="579" y1="276" x2="560" y2="276" stroke="#a06bff" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-muted)" opacity="0.5"/>
+        <text x="569" y="256" font-family="'Share Tech Mono', monospace" font-size="7" fill="#4a9aaa" text-anchor="middle">INTENT</text>
+
+        <!-- Controller ↔ Model Clusters -->
+        <line x1="460" y1="326" x2="460" y2="409" stroke="#4a6a8a" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-muted)" opacity="0.6"/>
+        <line x1="440" y1="409" x2="440" y2="326" stroke="#00e5ff" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-cyan)" opacity="0.4"/>
+        <text x="478" y="372" font-family="'Share Tech Mono', monospace" font-size="7" fill="#4a6a8a">ACTIVATE</text>
+        <text x="410" y="372" font-family="'Share Tech Mono', monospace" font-size="7" fill="#4a9aaa" text-anchor="end">OUTPUT</text>
+
+        <!-- Model Clusters → Hardware -->
+        <line x1="450" y1="490" x2="450" y2="513" stroke="#2a3a4a" stroke-width="1" stroke-dasharray="2,4" marker-end="url(#arrow-muted)" opacity="0.5"/>
+
+        <!-- Comms → Mascot (one-way log only) -->
+        <line x1="690" y1="274" x2="739" y2="274" stroke="#ff6b35" stroke-width="1" stroke-dasharray="3,4" marker-end="url(#arrow-orange)" opacity="0.6"/>
+        <text x="714" y="266" font-family="'Share Tech Mono', monospace" font-size="7" fill="#8a4a30" text-anchor="middle">LOG ONLY</text>
+        <text x="714" y="286" font-family="'Share Tech Mono', monospace" font-size="7" fill="#5a3a20" text-anchor="middle">NO INWARD CMD</text>
+
+        <!-- Introspection → Mascot (state reports) -->
+        <path d="M560,108 Q680,100 740,254" stroke="#ff3b5c" stroke-width="0.8" stroke-dasharray="3,5" fill="none" marker-end="url(#arrow-red)" opacity="0.4"/>
+        <text x="670" y="130" font-family="'Share Tech Mono', monospace" font-size="7" fill="#6a2a3a" text-anchor="middle">PULSE</text>
+
+        <!-- Legend -->
+        <g transform="translate(30, 510)">
+          <line x1="0" y1="6" x2="22" y2="6" stroke="#00e5ff" stroke-width="1.5" marker-end="url(#arrow-cyan)"/>
+          <text x="28" y="10" font-family="'Share Tech Mono', monospace" font-size="8" fill="#4a7a8a">AUTHORITY / DATA FLOW</text>
+
+          <line x1="100" y1="6" x2="122" y2="6" stroke="#ff3b5c" stroke-width="1.5" marker-end="url(#arrow-red)"/>
+          <text x="128" y="10" font-family="'Share Tech Mono', monospace" font-size="8" fill="#4a7a8a">OVERRIDE / HALT</text>
+
+          <line x1="200" y1="6" x2="222" y2="6" stroke="#4a6a8a" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-muted)"/>
+          <text x="228" y="10" font-family="'Share Tech Mono', monospace" font-size="8" fill="#4a7a8a">CONDITIONAL / LOG ONLY</text>
+
+          <rect x="310" y="0" width="9" height="9" rx="1" fill="none" stroke="#ff6b35" stroke-width="1" stroke-dasharray="2,2"/>
+          <text x="324" y="9" font-family="'Share Tech Mono', monospace" font-size="8" fill="#4a7a8a">OUTSIDE DIVING BELL</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

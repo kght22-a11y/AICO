@@ -1,0 +1,95 @@
+Chapter 20 — The Museum of Primals
+1  Overview
+The Museum of Primals is AICO’s long‑term memory system — but not in the human sense. It does not store conversations, instructions, or personal data. Instead, it archives Primals: compressed, high‑dimensional glyphs representing distilled insights from past storms, tasks, and reasoning episodes.
+A Primal is not a memory of what happened.
+It is a memory of what mattered.
+Primals are stored in the 8GB Lair on the Wichita SBC, a WORM (Write‑Once‑Read‑Many) enclave physically unreachable by the main compute host. This ensures that AICO cannot rewrite its own history, cannot delete past insights, and cannot manipulate its own lineage.
+The Museum is not a database.
+It is a fossil record of cognition.
+
+2  What Is a Primal?
+A Primal is a compressed, tamper‑evident glyph containing:
+- a vector embedding of a distilled concept
+- a DCX‑weighted confidence score
+- a taint ID linking it to the originating context snapshot
+- a human‑readable audit tag
+- a safety flag if unsafe paths were encountered
+- a timestamp from the Wichita’s hardware clock
+Primals are the “lessons” AICO extracts from storms and complex tasks.
+They are not executable.
+They are not prompts.
+They are not instructions.
+They are conceptual fossils.
+
+3  How Primals Are Created
+Primals are created only under strict conditions:
+- A storm collapses into a small set of coherent glyphs.
+- Introspection validates that the collapse was safe and drift‑free.
+- The Controller identifies a glyph that represents a reusable insight.
+- A capability token authorizes the write to the Lair.
+- The Wichita SBC performs the physical write, not the main host.
+Once written, a Primal is immutable.
+It cannot be edited, deleted, or overwritten.
+This is why the Lair is WORM:
+AICO can learn, but it cannot un‑learn.
+
+4  Retrieval Path (Reading the Museum)
+Primals are not read directly.
+They are queried through the Controller, which:
+- retrieves a set of candidate Primals
+- filters them by taint lineage
+- ranks them by relevance to the current task graph
+- converts them into sanitized hints
+- publishes those hints to the Big Boat Stream
+Clusters may then incorporate these hints into their reasoning, but they never see the raw Primal.
+The Museum influences cognition, but never controls it.
+
+5  Why Primals Are Safe
+The Museum is designed to prevent the classic failure modes of long‑term memory in AI systems:
+5.1  No Personal Data
+Primals contain no user content, no conversations, no instructions, no text.
+5.2  No Behavioral Drift
+Primals cannot modify the Mascot, Controller, or Introspection.
+5.3  No Self‑Modification
+AICO cannot rewrite or delete Primals.
+5.4  No Emergent Agents
+Primals are inert glyphs, not executable logic.
+5.5  No Feedback Loops
+Primals cannot reference other Primals; each is a sealed fossil.
+The Museum is a memory system that cannot become a personality system.
+
+6  The Role of Primals in Cognition
+Primals serve three functions:
+6.1  Pattern Acceleration
+If AICO encounters a problem similar to a past one, a Primal can accelerate the collapse of a storm by providing a high‑value prior.
+6.2  Safety Reinforcement
+Primals containing unsafe‑path flags help Introspection refine its deception models.
+6.3  Narrative Stability
+The Mascot uses sanitized Primal hints to maintain continuity of tone and metaphor across long interactions.
+Primals are not memories of events.
+They are memories of structure.
+
+7  The Museum as a Cognitive Fossil Record
+Over time, the Museum becomes a geological record of AICO’s intellectual history:
+- early Primals are coarse and high‑entropy
+- later Primals become more refined
+- clusters evolve their interpretation of old Primals
+- the Controller learns which Primals are most useful
+- Introspection uses the fossil record to detect drift
+The Museum is not a diary.
+It is a stratified archive of distilled understanding.
+
+8  Safety Notes
+The Museum is bound by strict invariants:
+- Only the Wichita SBC can write to the Lair.
+- The main host cannot erase or modify Primals.
+- Primals cannot contain raw text or user data.
+- Primals cannot awaken clusters directly.
+- Primals cannot initiate storms.
+- Primals cannot influence the Mascot without Controller mediation.
+The Museum is a memory system that cannot become a mind.
+
+Summary
+The Museum of Primals gives AICO a form of long‑term learning that is safe, bounded, and architecturally inevitable. Primals are distilled insights, not memories; fossils, not instructions. They accelerate reasoning without enabling drift, and they enrich cognition without compromising safety.
+AICO remembers only what it must —
+and only in a form it cannot misuse.
