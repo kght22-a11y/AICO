@@ -1,0 +1,11 @@
+{
+  "model": {
+    "name": "llama3.1:8b",
+    "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "size": 4920753328,
+    "modified_at": "2026-03-04T00:33:20.2623547-06:00"
+  },
+  "started_at_utc": "2026-03-27T08:09:18.644242+00:00",
+  "target_trajectories": 1000,
+  "status": "running"
+}
