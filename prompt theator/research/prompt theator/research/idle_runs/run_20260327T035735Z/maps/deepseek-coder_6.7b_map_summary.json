@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-03-27T18:36:38.342541+00:00",
+  "model": {
+    "name": "deepseek-coder:6.7b",
+    "digest": "ce298d984115b93bb1b191b47fee6b39e4e9fbd5f18e651c02f9fa74e0edcd13",
+    "size": 3827834503,
+    "modified_at": "2026-02-06T00:22:56.2152198-06:00"
+  },
+  "trajectory_count": 1000,
+  "required_trajectory_count": 1000,
+  "map_method": "deterministic_hash_embedding_64d + pca_2d",
+  "centroid": {
+    "x": 3.3378602104505717e-09,
+    "y": 7.152557435219364e-10
+  },
+  "spread": {
+    "x_std": 0.1555708795785904,
+    "y_std": 0.1527787744998932
+  },
+  "map_csv": "maps\\deepseek-coder_6.7b_map.csv"
+}

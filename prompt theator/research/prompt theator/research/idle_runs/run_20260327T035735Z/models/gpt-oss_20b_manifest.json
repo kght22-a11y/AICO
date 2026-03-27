@@ -1,0 +1,14 @@
+{
+  "model": {
+    "name": "gpt-oss:20b",
+    "digest": "17052f91a42e97930aa6e28a6c6c06a983e6a58dbb00434885a0cf5313e376f7",
+    "size": 13793441244,
+    "modified_at": "2026-03-03T23:53:57.9655129-06:00"
+  },
+  "started_at_utc": "2026-03-27T12:07:07.834977+00:00",
+  "target_trajectories": 1000,
+  "status": "completed",
+  "completed_trajectories": 1000,
+  "ended_at_utc": "2026-03-27T15:42:43.829261+00:00",
+  "map_generated": true
+}
