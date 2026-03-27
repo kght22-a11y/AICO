@@ -7,5 +7,8 @@
   },
   "started_at_utc": "2026-03-27T18:36:40.370631+00:00",
   "target_trajectories": 1000,
-  "status": "running"
+  "status": "completed",
+  "completed_trajectories": 1000,
+  "ended_at_utc": "2026-03-27T20:03:42.179822+00:00",
+  "map_generated": true
 }
