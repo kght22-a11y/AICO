@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-03-28T01:10:51.631010+00:00",
+  "model": {
+    "name": "qwen2.5-coder:1.5b-base",
+    "digest": "02e0f2817a890a6de385d534465c04c5d0980abddc83615c09e79cee2c094446",
+    "size": 986060385,
+    "modified_at": "2025-12-19T03:54:50.5447012-06:00"
+  },
+  "trajectory_count": 1000,
+  "required_trajectory_count": 1000,
+  "map_method": "deterministic_hash_embedding_64d + pca_2d",
+  "centroid": {
+    "x": -7.152557435219364e-10,
+    "y": 7.152557435219364e-10
+  },
+  "spread": {
+    "x_std": 0.15427470207214355,
+    "y_std": 0.15262354910373688
+  },
+  "map_csv": "maps\\qwen2.5-coder_1.5b-base_map.csv"
+}

@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-03-28T00:17:19.194884+00:00",
+  "model": {
+    "name": "qwen3-vl:8b",
+    "digest": "901cae73216286ea8c5aba8b46d307ff7188f737285ec500c795a12f05225d28",
+    "size": 6140415879,
+    "modified_at": "2026-01-02T17:34:57.8182299-06:00"
+  },
+  "trajectory_count": 1000,
+  "required_trajectory_count": 1000,
+  "map_method": "deterministic_hash_embedding_64d + pca_2d",
+  "centroid": {
+    "x": -7.3872511165973265e-06,
+    "y": -4.0745185003743245e-14
+  },
+  "spread": {
+    "x_std": 0.0,
+    "y_std": 0.0
+  },
+  "map_csv": "maps\\qwen3-vl_8b_map.csv"
+}
