@@ -1,0 +1,13 @@
+{
+  "model": {
+    "name": "deepseek-v3.1:671b-cloud",
+    "digest": "d3749919e45f955731da7a7e76849e20f7ed310725d3b8b52822e811f55d0a90",
+    "size": 405,
+    "modified_at": "2025-11-26T17:37:50.0019784-06:00"
+  },
+  "started_at_utc": "2026-03-28T16:22:11.934130+00:00",
+  "target_trajectories": 1000,
+  "status": "stopped_early",
+  "completed_trajectories": 244,
+  "ended_at_utc": "2026-03-28T17:02:27.278968+00:00"
+}

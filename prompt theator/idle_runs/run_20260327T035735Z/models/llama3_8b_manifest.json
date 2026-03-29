@@ -1,0 +1,14 @@
+{
+  "model": {
+    "name": "llama3:8b",
+    "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+    "size": 4661224676,
+    "modified_at": "2025-12-01T09:06:10.7905262-06:00"
+  },
+  "started_at_utc": "2026-03-28T08:37:50.731564+00:00",
+  "target_trajectories": 1000,
+  "status": "completed",
+  "completed_trajectories": 1000,
+  "ended_at_utc": "2026-03-28T11:32:30.084341+00:00",
+  "map_generated": true
+}

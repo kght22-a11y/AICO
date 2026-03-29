@@ -1,0 +1,14 @@
+{
+  "model": {
+    "name": "gemma3:1b",
+    "digest": "8648f39daa8fbf5b18c7b4e6a8fb4990c692751d49917417b8842ca5758e7ffc",
+    "size": 815319791,
+    "modified_at": "2026-03-11T17:30:55.9530201-05:00"
+  },
+  "started_at_utc": "2026-03-27T04:32:08.521530+00:00",
+  "target_trajectories": 1000,
+  "status": "completed",
+  "completed_trajectories": 1000,
+  "ended_at_utc": "2026-03-27T05:28:22.172044+00:00",
+  "map_generated": true
+}

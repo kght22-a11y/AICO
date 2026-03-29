@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-03-27T08:09:16.580501+00:00",
+  "model": {
+    "name": "llama3:latest",
+    "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+    "size": 4661224676,
+    "modified_at": "2026-03-04T00:33:57.9786562-06:00"
+  },
+  "trajectory_count": 1000,
+  "required_trajectory_count": 1000,
+  "map_method": "deterministic_hash_embedding_64d + pca_2d",
+  "centroid": {
+    "x": 4.291534239087014e-09,
+    "y": 4.768371808516747e-10
+  },
+  "spread": {
+    "x_std": 0.27340590953826904,
+    "y_std": 0.1482829749584198
+  },
+  "map_csv": "maps\\llama3_latest_map.csv"
+}

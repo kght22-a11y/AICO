@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-03-27T05:28:22.170531+00:00",
+  "model": {
+    "name": "gemma3:1b",
+    "digest": "8648f39daa8fbf5b18c7b4e6a8fb4990c692751d49917417b8842ca5758e7ffc",
+    "size": 815319791,
+    "modified_at": "2026-03-11T17:30:55.9530201-05:00"
+  },
+  "trajectory_count": 1000,
+  "required_trajectory_count": 1000,
+  "map_method": "deterministic_hash_embedding_64d + pca_2d",
+  "centroid": {
+    "x": -1.4305114870438729e-09,
+    "y": -3.3378602104505717e-09
+  },
+  "spread": {
+    "x_std": 0.21761080622673035,
+    "y_std": 0.19342496991157532
+  },
+  "map_csv": "maps\\gemma3_1b_map.csv"
+}

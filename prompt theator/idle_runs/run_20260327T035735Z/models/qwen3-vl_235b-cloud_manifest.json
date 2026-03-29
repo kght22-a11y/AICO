@@ -1,0 +1,14 @@
+{
+  "model": {
+    "name": "qwen3-vl:235b-cloud",
+    "digest": "86b3322ec200a5d4c450b758fe56a3c172e3e712a87b3ef4917417ab7499042a",
+    "size": 393,
+    "modified_at": "2025-12-07T19:15:51.8175965-06:00"
+  },
+  "started_at_utc": "2026-03-28T04:41:14.717087+00:00",
+  "target_trajectories": 1000,
+  "status": "completed",
+  "completed_trajectories": 1000,
+  "ended_at_utc": "2026-03-28T07:51:50.840149+00:00",
+  "map_generated": true
+}

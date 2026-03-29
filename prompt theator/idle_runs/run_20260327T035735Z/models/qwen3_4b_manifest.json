@@ -1,0 +1,14 @@
+{
+  "model": {
+    "name": "qwen3:4b",
+    "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "size": 2497293931,
+    "modified_at": "2025-11-28T11:09:09.9528984-06:00"
+  },
+  "started_at_utc": "2026-03-28T13:39:18.252107+00:00",
+  "target_trajectories": 1000,
+  "status": "completed",
+  "completed_trajectories": 1000,
+  "ended_at_utc": "2026-03-28T16:22:09.878701+00:00",
+  "map_generated": true
+}
