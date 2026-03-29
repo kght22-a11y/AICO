@@ -7,5 +7,7 @@
   },
   "started_at_utc": "2026-03-28T16:22:11.934130+00:00",
   "target_trajectories": 1000,
-  "status": "running"
+  "status": "stopped_early",
+  "completed_trajectories": 244,
+  "ended_at_utc": "2026-03-28T17:02:27.278968+00:00"
 }
