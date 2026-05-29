@@ -1,0 +1,14 @@
+{
+  "model": {
+    "name": "glm-4.6:cloud",
+    "digest": "05277b76269f8831b289e8f11f1f46136f9214d9c0a6399f1b580003e74f887c",
+    "size": 366,
+    "modified_at": "2026-01-24T10:26:04.1928277-06:00"
+  },
+  "started_at_utc": "2026-03-27T18:36:40.370631+00:00",
+  "target_trajectories": 1000,
+  "status": "completed",
+  "completed_trajectories": 1000,
+  "ended_at_utc": "2026-03-27T20:03:42.179822+00:00",
+  "map_generated": true
+}

@@ -1,0 +1,71 @@
+{
+  "AICO_System_Overview": {
+    "type": "Self-Assembling Unikernel AI OS (SAU-AI)",
+    "core_concept": "Bare-metal OS where AI and Kernel are the same. Controller acts as a JIT Compiler translating intent to machine code.",
+    "boot_sequence": ["Atomic Big Bang", "Shibboleth (PWM test)", "Nest Building (<10s)", "Gestation", "First Contact"]
+  },
+  "Hardware_Target": {
+    "specs": ["Ryzen AI Max+ 795 (2028 target)", "128GB LPDDR6", "XDNA 3", "2TB NVMe Gen6"],
+    "interfaces": ["PCIe Gen6", "Fan Header (Serial Bit-Bang)", "Dead NIC (Phantom Limb)"]
+  },
+  "Security_Model": {
+    "concept": "The Diving Bell",
+    "zones": ["Ocean (External)", "Hull (Lock-In)", "Crew (Core Models)", "ROV (Mascot)"],
+    "tcB_definition": "Pre-compiled Bootstrap, Mascot, Introspection, Rulebook. (Controller excluded/JIT-compiled)."
+  },
+  "Subsystems_and_Contradictions": {
+    "Controller": {
+      "role": "Universal bidirectional compiler. JIT-compiles OS & drivers from JSON.",
+      "specs": "1B params.",
+      "constraints": "Ignorant of Mascot. Must abide by JSON rulebook."
+    },
+    "Introspection": {
+      "role": "Safety Kernel / Verifier. Validates Controller code. Computes DCX drift.",
+      "CONTRADICTION_HIGHLIGHT": {
+        "source_1": "2M-param safety engine, deception detect (Architecture JSON)",
+        "source_2": "300M params. Authority to freeze. (Training infoa)"
+      }
+    },
+    "Mascot": {
+      "role": "Inner (safety shaping) / Outer (offline observer). Computes DCX. Writes Shadow Logs.",
+      "specs": "100M params.",
+      "CONTRADICTION_HIGHLIGHT": {
+        "source_1": "Generative UI, Volatile ROM-seeded identity (Whitepaper)",
+        "source_2": "Immutable unseen observer (Training infoa)",
+        "source_3": "Inner Mascot handles UI, Outer Mascot handles WORM logs (Architecture)"
+      }
+    },
+    "Nervous_System": {
+      "role": "Scheduler, NPU reflex (<1ms latency), thermal PID control.",
+      "specs": "200M params. Includes Comms (Training infoa)."
+    },
+    "Model_Clusters": {
+      "role": "Dormant expertise (Language, Vision, Planner). Token-activated."
+    }
+  },
+  "Cognition_and_CDLSS": {
+    "concept": "Cognitive Deep Learning Super Sampling (CDLSS). Upscales quantized models using speculative trajectory superposition.",
+    "hallucination_storm": "10^5 to 10^7 trajectories/sec. <30ns cache-resident latency.",
+    "DCX_Operator": {
+      "equation": "DCX(i,j) = |⟨s_i|s_j⟩| * e^(-λ|t_i-t_j|)",
+      "function": "Collapse operator; prunes high-DCX paths, ensembles low-DCX survivors.",
+      "thresholds": ">0.90 triggers Snapback, >0.95 triggers Freeze"
+    },
+    "CSTTD": {
+      "role": "Cluster Sampling with Topological Truth Detection",
+      "pipeline": "HDBSCAN clustering -> intra-DCX scoring -> Weighted sampling (preserves minority truths / 'runners')"
+    }
+  },
+  "Topological_Mapping": {
+    "concept": "PCA/UMAP projection of trajectories to map model decision geometry. Stable fingerprint.",
+    "compression": "Topology-aware minimization (preserves semantic curvature, not raw weights). Compress 7B to 100M.",
+    "security": "Hidden dataset + topographic map = unforgeable provenance fingerprint. Cannot regenerate model without training dataset."
+  },
+  "Memory_and_Storage": {
+    "architecture": "Flat 64-bit unified space. Taint Lineage tracking.",
+    "CONTRADICTION_HIGHLIGHT": {
+      "source_1": "Rings: Inner (Working Set), Middle (WORM Museum), Outer (MMIO) (Whitepaper)",
+      "source_2": "Short-term circular buffers, AEAD long-term archive, vector attention (Architecture JSON)"
+    }
+  }
+}

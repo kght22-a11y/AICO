@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-03-27T15:42:43.826480+00:00",
+  "model": {
+    "name": "gpt-oss:20b",
+    "digest": "17052f91a42e97930aa6e28a6c6c06a983e6a58dbb00434885a0cf5313e376f7",
+    "size": 13793441244,
+    "modified_at": "2026-03-03T23:53:57.9655129-06:00"
+  },
+  "trajectory_count": 1000,
+  "required_trajectory_count": 1000,
+  "map_method": "deterministic_hash_embedding_64d + pca_2d",
+  "centroid": {
+    "x": 8.606910455455363e-07,
+    "y": 2.8359889370221936e-07
+  },
+  "spread": {
+    "x_std": 0.30765053629875183,
+    "y_std": 0.1725485920906067
+  },
+  "map_csv": "maps\\gpt-oss_20b_map.csv"
+}

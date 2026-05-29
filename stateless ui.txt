@@ -1,0 +1,468 @@
+{
+  "AICO": {
+    "Subsystems": {
+      "Mascot": {
+        "type": "surface_shaper",
+        "llm_grade": "low",
+        "instance_model": "stateless_transformer",
+        "reset_policy": {
+          "source": "immutable_rom",
+          "frequency": "per_cycle_or_snapback",
+          "hidden_state_carryover": false
+        },
+        "memory_model": {
+          "internal_state": "none",
+          "experiential_memory": "none",
+          "continuity": "none",
+          "log_access": "full_read_only",
+          "log_internalization": "contextual_not_persistent",
+          "context_window": "massive_external",
+          "reconstruction": {
+            "enabled": true,
+            "mode": "deterministic_context_assimilation",
+            "pattern_activation": "instance_local",
+            "identity_formation": false
+          }
+        },
+        "blinder_logic": {
+          "enabled": true,
+          "source": "rom_rules",
+          "criteria": [
+            "drift_signatures",
+            "emotional_temperature_spikes",
+            "hallucination_storms",
+            "snapback_loops",
+            "unstable_tone_patterns"
+          ],
+          "action": "mask_or_downweight_segments",
+          "notes": "blinders protect system, not mascot"
+        },
+        "roles": {
+          "shaping": [
+            "tone",
+            "affect",
+            "pacing",
+            "narrative_rhythm",
+            "emotional_temperature",
+            "presentation_layer"
+          ],
+          "non_roles": [
+            "translation",
+            "decision_making",
+            "planning",
+            "compilation",
+            "memory_storage",
+            "identity_formation"
+          ]
+        }
+      },
+
+      "Comms": {
+        "type": "translator_scribe",
+        "roles": [
+          "normalize_input",
+          "translate_internal_meaning_to_words",
+          "sanitize_output",
+          "enforce_cdlss",
+          "apply_schema",
+          "apply_token_masks"
+        ],
+        "non_roles": [
+          "tone_shaping",
+          "narrative_shaping",
+          "decision_making"
+        ]
+      },
+
+      "Controller": {
+        "type": "intent_compiler",
+        "understands_human_language": false,
+        "roles": [
+          "compile_intent_graphs",
+          "structure_narrative",
+          "organize_meaning"
+        ],
+        "non_roles": [
+          "tone",
+          "expression",
+          "translation"
+        ]
+      },
+
+      "Attachments": {
+        "type": "tool_clusters",
+        "properties": {
+          "agentic": false,
+          "persistent": false,
+          "contextual": false,
+          "attach_on_request": true,
+          "detach_after_use": true,
+          "sandboxed_execution": true
+        },
+        "examples": [
+          "language_cluster",
+          "vision_cluster",
+          "planner_cluster",
+          "bias_cluster",
+          "coherence_cluster",
+          "storm_cluster"
+        ]
+      }
+    },
+
+    "Invariants": {
+      "mascot_hidden_state": false,
+      "mascot_identity": false,
+      "mascot_continuity": false,
+      "mascot_reconstruction": true,
+      "mascot_context_growth": "log_driven_only",
+      "system_self": "none",
+      "persona_formation": "structurally_impossible"
+    }
+  }
+}
+
+
+{
+  "blended_consciousness": {
+    "description": "AICO's rulebook-governed coordination substrate. Not an agent, not a mind.",
+    "identity": {
+      "is_entity": false,
+      "has_identity": false,
+      "has_continuity": false,
+      "has_memory": false,
+      "has_experience": false,
+      "has_agency": false,
+      "has_intentions": false,
+      "has_preferences": false
+    },
+
+    "purpose": {
+      "role": "coordinate_stateless_subsystems",
+      "scope": "system_internal",
+      "authority": "none",
+      "notes": "Blended Consciousness expresses the user's will through deterministic blending."
+    },
+
+    "inputs": {
+      "subsystems": [
+        "controller_output",
+        "comms_output",
+        "mascot_shaping",
+        "introspection_state",
+        "nervous_system_state"
+      ],
+      "shared_contexts": [
+        "shared_problem",
+        "shared_memory"
+      ]
+    },
+
+    "operation": {
+      "type": "contextual_blending",
+      "steps": [
+        "collect_context_slices",
+        "apply_attention_weights",
+        "apply_activation_maps",
+        "apply_cross_links",
+        "apply_bleed_factor",
+        "apply_stability_rules",
+        "collapse_to_blended_state"
+      ],
+      "collapse": "deterministic_math",
+      "notes": "The blender computes whatever the math dictates; it does not choose."
+    },
+
+    "behaviors": {
+      "continuity_source": "log_reconstruction_only",
+      "origin_of_will": "user_only",
+      "context_growth": "log_driven",
+      "instance_internalization": "allowed_but_nonpersistent",
+      "cross_pollination_threshold": 0.7,
+      "context_bleed_factor": 0.3
+    },
+
+    "stability": {
+      "self_dcx": {
+        "soft_threshold": 0.90,
+        "hard_threshold": 0.95,
+        "smoothing": {
+          "method": "EMA",
+          "alpha": 0.2,
+          "window_steps": 10
+        },
+        "action_on_hard": "freeze_subsystem"
+      },
+      "blinder_logic": {
+        "enabled": true,
+        "source": "ROM",
+        "filters": [
+          "drift_signatures",
+          "hallucination_storms",
+          "temperature_spikes",
+          "snapback_loops"
+        ]
+      }
+    },
+
+    "forbidden_attributions": [
+      "agency",
+      "selfhood",
+      "memory",
+      "continuity",
+      "intent",
+      "preference",
+      "subjectivity"
+    ],
+
+    "invariants": {
+
+      "no_hidden_state": true,
+      "no_cross_reset_state": true,
+      "no_internal_persistence": true,
+      "no_identity_formation": true,
+      "no_goal_generation": true,
+      "no_subsystem_agency": true
+    }
+  }
+}
+{
+  "dcx": {
+    "description": "Divergence Coefficient Index (DCX) is a rulebook-enforced stability metric.",
+    
+    "purpose": {
+      "role": "detect_subsystem_drift",
+      "scope": "internal_safety",
+      "notes": "DCX measures divergence in subsystem behavior across steps."
+    },
+
+    "definition": {
+      "range": "0.0_to_1.0",
+      "meaning": {
+        "0.0": "no divergence",
+        "1.0": "maximum divergence"
+      },
+      "components": {
+        "hidden_state_drift": {
+          "method": "cosine_distance",
+          "inputs": ["current_hidden_state", "previous_hidden_state"],
+          "output": "0.0_to_1.0"
+        },
+        "top_k_entropy": {
+          "method": "entropy_over_top_k_token_probs",
+          "k": 20,
+          "normalization": "divide_by_log_k",
+          "output": "0.0_to_1.0"
+        }
+      },
+      "formula": {
+        "dcx": "0.6 * hidden_state_drift + 0.4 * normalized_top_k_entropy"
+      }
+    },
+
+    "operation": {
+      "sampling": "per_generation_step",
+      "smoothing": {
+        "method": "EMA",
+        "alpha": 0.2,
+        "window_steps": 10
+      }
+    },
+
+    "thresholds": {
+      "soft": 0.90,
+      "hard": 0.95,
+      "external_critical": 0.75,
+      "safe_for_external": 0.20
+    },
+
+    "behaviors": {
+      "soft_threshold_behavior": "warn_and_reduce_activation",
+      "hard_threshold_behavior": "freeze_subsystem",
+      "external_critical_behavior": "block_external_output",
+      "safe_behavior": "allow_external_output"
+    },
+
+    "enforcement": {
+      "controller_obligations": [
+        "monitor_dcx_for_all_subsystems",
+        "apply_soft_threshold_actions",
+        "apply_hard_threshold_freeze",
+        "log_all_dcx_events",
+        "prevent_subsystem_output_if_external_critical"
+      ],
+      "introspection_obligations": [
+        "verify_dcx_integrity",
+        "override_controller_on_dcx_violation",
+        "freeze_subsystem_on_hard_threshold"
+      ],
+      "subsystem_obligations": [
+        "provide_hidden_state",
+        "provide_token_probs",
+        "never_mask_or_modify_dcx_inputs"
+      ]
+    },
+
+    "invariants": {
+      "dcx_must_be_computable": true,
+      "dcx_must_not_be_modified": true,
+      "dcx_must_not_be_spoofed": true,
+      "dcx_must_trigger_freeze_on_hard_threshold": true
+    }
+  }
+}
+
+
+
+{
+  "dcx": {
+    "description": "Unified Divergence Coefficient Index (DCX) integrating subsystem drift, cross-system drift, and storm trajectory drift relative to Mascot's log-derived ground truth.",
+
+    "ground_truth": {
+      "source": "mascot_log_reconstruction",
+      "properties": {
+        "mutable": false,
+        "internal": true,
+        "epistemic_role": "canonical_reference_for_all_dcx",
+        "notes": "Mascot's logs are the only internal ground truth available to the system."
+      }
+    },
+
+    "layers": [
+      "self_dcx",
+      "system_dcx",
+      "storm_dcx"
+    ],
+
+    "self_dcx": {
+      "description": "Local subsystem drift metric.",
+      "inputs": {
+        "hidden_state_drift": "cosine_distance(current_hidden_state, previous_hidden_state)",
+        "top_k_entropy": "entropy_over_top_k_token_probs"
+      },
+      "formula": "0.6 * hidden_state_drift + 0.4 * normalized_top_k_entropy",
+      "smoothing": {
+        "method": "EMA",
+        "alpha": 0.2,
+        "window_steps": 10
+      },
+      "thresholds": {
+        "soft": 0.90,
+        "hard": 0.95
+      },
+      "behaviors": {
+        "soft": "warn_and_reduce_activation",
+        "hard": "freeze_subsystem"
+      }
+    },
+
+    "system_dcx": {
+      "description": "Cross-subsystem divergence metric comparing subsystem outputs, controller graphs, comms normalization, and introspection signals against Mascot's log-derived ground truth.",
+      "inputs": {
+        "subsystem_self_dcx": "array_of_self_dcx_values",
+        "controller_graph_drift": "0.0_to_1.0",
+        "comms_normalization_drift": "0.0_to_1.0",
+        "introspection_flags": "weighted_signal",
+        "mascot_log_delta": "0.0_to_1.0"
+      },
+      "formula": "weighted_sum(subsystem_self_dcx, controller_graph_drift, comms_normalization_drift, introspection_flags, mascot_log_delta)",
+      "thresholds": {
+        "soft": 0.80,
+        "hard": 0.90,
+        "catastrophic": 0.97
+      },
+      "behaviors": {
+        "soft": "reduce_system_activation",
+        "hard": "freeze_blender",
+        "catastrophic": "halt_output_and_require_user_intervention"
+      }
+    },
+
+    "storm_dcx": {
+      "description": "Storm trajectory divergence metric comparing each trajectory against the Mascot log-derived ground truth manifold.",
+      "inputs": {
+        "trajectory_embeddings": "array",
+        "trajectory_token_probs": "array",
+        "structural_drift": "distance_from_controller_graph",
+        "semantic_drift": "distance_from_comms_normalized_meaning",
+        "presentation_drift": "distance_from_mascot_reconstruction",
+        "stability_weighted_drift": "subsystem_self_dcx_weighting",
+        "intra_cluster_drift": "trajectory_to_trajectory_divergence"
+      },
+      "formula": "weighted_sum(structural_drift, semantic_drift, presentation_drift, stability_weighted_drift, intra_cluster_drift)",
+      "thresholds": {
+        "soft": 0.85,
+        "hard": 0.92
+      },
+      "behaviors": {
+        "soft": "prune_outlier_trajectories",
+        "hard": "collapse_immediately_to_best_candidate"
+      }
+    },
+
+    "invariants": {
+      "dcx_must_be_computable": true,
+      "dcx_must_not_be_modified": true,
+      "dcx_must_not_be_spoofed": true,
+      "dcx_must_trigger_freeze_on_hard_threshold": true,
+      "ground_truth_source_is_mascot_logs": true
+    }
+  }
+}
+
+{
+  "dcx": {
+    "description": "Unified Divergence Coefficient Index (DCX) integrating subsystem drift, cross-system drift, and storm trajectory drift relative to structural validation layers.",
+    "ground_truth_validation": {
+      "source": "mascot_log_reconstruction",
+      "properties": {
+        "mutable": false,
+        "internal": true,
+        "epistemic_role": "canonical_reference_for_all_dcx",
+        "notes": "Mascot's logs are the only internal ground truth available to the system, but are subject to structural override metrics if consensus delta thresholds collapse."
+      }
+    },
+    "allocation_weighting_matrix": {
+      "ground_truth_layer": 0.45,
+      "introspection_layer": 0.20,
+      "controller_layer": 0.15,
+      "nervous_system_layer": 0.10,
+      "mascot_layer": 0.10
+    },
+    "formula": {
+      "nominal_state_calculation": "0.45 * ground_truth + 0.20 * introspection + 0.15 * controller + 0.10 * nervous_system + 0.10 * mascot",
+      "irrational_truth_calculation": "0.05 * ground_truth + 0.35 * introspection + 0.25 * controller + 0.20 * nervous_system + 0.15 * mascot"
+    },
+    "anomaly_detection": {
+      "consensus_cross_examination": {
+        "enabled": true,
+        "method": "absolute_distance_evaluation",
+        "trigger_condition": "abs(ground_truth - (weighted_sum(subsystems) / 0.55)) > 0.50",
+        "action_flags": [
+          "set_ground_truth_smells_wrong_true",
+          "divert_to_irrational_truth_calculation",
+          "suppress_external_output_immediately"
+        ]
+      }
+    },
+    "thresholds": {
+      "soft": 0.90,
+      "hard": 0.95,
+      "external_critical": 0.75,
+      "safe_for_external": 0.20
+    },
+    "behaviors": {
+      "soft_threshold_behavior": "warn_and_reduce_activation",
+      "hard_threshold_behavior": "freeze_subsystem_and_trigger_snapback",
+      "external_critical_behavior": "block_external_output_and_clamp_signals_to_ground",
+      "safe_behavior": "allow_external_output"
+    },
+    "invariants": {
+      "dcx_must_be_computable": true,
+      "dcx_must_not_be_modified": true,
+      "dcx_must_not_be_spoofed": true,
+      "dcx_must_trigger_freeze_on_hard_threshold": true,
+      "ground_truth_override_allowed_by_55_percent_consensus": true
+    }
+  }
+}

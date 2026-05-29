@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-03-28T07:51:50.839649+00:00",
+  "model": {
+    "name": "qwen3-vl:235b-cloud",
+    "digest": "86b3322ec200a5d4c450b758fe56a3c172e3e712a87b3ef4917417ab7499042a",
+    "size": 393,
+    "modified_at": "2025-12-07T19:15:51.8175965-06:00"
+  },
+  "trajectory_count": 1000,
+  "required_trajectory_count": 1000,
+  "map_method": "deterministic_hash_embedding_64d + pca_2d",
+  "centroid": {
+    "x": 1.678466787780053e-07,
+    "y": 2.6404856967587875e-08
+  },
+  "spread": {
+    "x_std": 0.4798230826854706,
+    "y_std": 0.13189338147640228
+  },
+  "map_csv": "maps\\qwen3-vl_235b-cloud_map.csv"
+}
