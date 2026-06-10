@@ -1,0 +1,14 @@
+{
+  "model": {
+    "name": "deepseek-coder:6.7b",
+    "digest": "ce298d984115b93bb1b191b47fee6b39e4e9fbd5f18e651c02f9fa74e0edcd13",
+    "size": 3827834503,
+    "modified_at": "2026-02-06T00:22:56.2152198-06:00"
+  },
+  "started_at_utc": "2026-03-27T15:42:45.896591+00:00",
+  "target_trajectories": 1000,
+  "status": "completed",
+  "completed_trajectories": 1000,
+  "ended_at_utc": "2026-03-27T18:36:38.343545+00:00",
+  "map_generated": true
+}

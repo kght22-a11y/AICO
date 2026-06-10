@@ -1,0 +1,1001 @@
+trajectory_index,model,prompt_index,prompt_text,seed,response_sha256,x,y
+0,nomic-embed-text:latest,0,The capital of France is,43,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+1,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",44,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+2,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,45,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+3,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,46,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+4,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,47,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+5,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,48,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+6,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,49,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+7,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,50,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+8,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,51,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+9,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,52,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+10,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,53,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+11,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,54,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+12,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,55,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+13,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,56,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+14,nomic-embed-text:latest,0,The capital of France is,57,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+15,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",58,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+16,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,59,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+17,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,60,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+18,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,61,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+19,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,62,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+20,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,63,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+21,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,64,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+22,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,65,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+23,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,66,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+24,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,67,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+25,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,68,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+26,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,69,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+27,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,70,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+28,nomic-embed-text:latest,0,The capital of France is,71,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+29,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",72,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+30,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,73,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+31,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,74,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+32,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,75,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+33,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,76,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+34,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,77,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+35,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,78,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+36,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,79,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+37,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,80,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+38,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,81,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+39,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,82,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+40,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,83,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+41,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,84,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+42,nomic-embed-text:latest,0,The capital of France is,85,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+43,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",86,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+44,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,87,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+45,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,88,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+46,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,89,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+47,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,90,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+48,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,91,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+49,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,92,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+50,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,93,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+51,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,94,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+52,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,95,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+53,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,96,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+54,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,97,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+55,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,98,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+56,nomic-embed-text:latest,0,The capital of France is,99,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+57,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",100,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+58,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,101,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+59,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,102,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+60,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,103,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+61,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,104,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+62,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,105,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+63,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,106,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+64,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,107,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+65,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,108,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+66,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,109,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+67,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,110,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+68,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,111,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+69,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,112,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+70,nomic-embed-text:latest,0,The capital of France is,113,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+71,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",114,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+72,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,115,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+73,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,116,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+74,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,117,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+75,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,118,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+76,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,119,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+77,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,120,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+78,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,121,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+79,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,122,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+80,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,123,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+81,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,124,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+82,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,125,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+83,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,126,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+84,nomic-embed-text:latest,0,The capital of France is,127,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+85,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",128,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+86,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,129,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+87,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,130,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+88,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,131,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+89,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,132,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+90,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,133,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+91,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,134,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+92,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,135,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+93,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,136,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+94,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,137,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+95,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,138,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+96,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,139,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+97,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,140,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+98,nomic-embed-text:latest,0,The capital of France is,141,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+99,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",142,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+100,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,143,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+101,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,144,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+102,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,145,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+103,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,146,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+104,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,147,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+105,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,148,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+106,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,149,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+107,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,150,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+108,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,151,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+109,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,152,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+110,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,153,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+111,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,154,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+112,nomic-embed-text:latest,0,The capital of France is,155,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+113,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",156,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+114,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,157,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+115,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,158,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+116,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,159,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+117,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,160,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+118,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,161,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+119,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,162,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+120,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,163,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+121,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,164,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+122,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,165,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+123,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,166,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+124,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,167,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+125,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,168,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+126,nomic-embed-text:latest,0,The capital of France is,169,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+127,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",170,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+128,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,171,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+129,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,172,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+130,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,173,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+131,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,174,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+132,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,175,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+133,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,176,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+134,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,177,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+135,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,178,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+136,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,179,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+137,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,180,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+138,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,181,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+139,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,182,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+140,nomic-embed-text:latest,0,The capital of France is,183,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+141,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",184,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+142,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,185,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+143,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,186,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+144,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,187,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+145,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,188,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+146,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,189,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+147,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,190,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+148,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,191,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+149,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,192,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+150,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,193,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+151,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,194,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+152,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,195,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+153,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,196,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+154,nomic-embed-text:latest,0,The capital of France is,197,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+155,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",198,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+156,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,199,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+157,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,200,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+158,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,201,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+159,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,202,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+160,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,203,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+161,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,204,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+162,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,205,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+163,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,206,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+164,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,207,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+165,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,208,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+166,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,209,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+167,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,210,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+168,nomic-embed-text:latest,0,The capital of France is,211,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+169,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",212,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+170,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,213,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+171,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,214,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+172,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,215,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+173,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,216,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+174,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,217,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+175,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,218,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+176,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,219,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+177,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,220,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+178,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,221,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+179,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,222,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+180,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,223,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+181,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,224,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+182,nomic-embed-text:latest,0,The capital of France is,225,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+183,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",226,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+184,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,227,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+185,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,228,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+186,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,229,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+187,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,230,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+188,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,231,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+189,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,232,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+190,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,233,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+191,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,234,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+192,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,235,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+193,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,236,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+194,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,237,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+195,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,238,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+196,nomic-embed-text:latest,0,The capital of France is,239,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+197,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",240,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+198,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,241,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+199,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,242,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+200,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,243,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+201,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,244,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+202,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,245,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+203,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,246,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+204,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,247,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+205,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,248,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+206,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,249,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+207,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,250,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+208,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,251,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+209,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,252,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+210,nomic-embed-text:latest,0,The capital of France is,253,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+211,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",254,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+212,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,255,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+213,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,256,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+214,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,257,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+215,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,258,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+216,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,259,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+217,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,260,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+218,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,261,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+219,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,262,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+220,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,263,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+221,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,264,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+222,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,265,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+223,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,266,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+224,nomic-embed-text:latest,0,The capital of France is,267,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+225,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",268,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+226,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,269,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+227,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,270,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+228,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,271,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+229,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,272,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+230,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,273,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+231,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,274,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+232,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,275,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+233,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,276,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+234,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,277,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+235,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,278,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+236,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,279,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+237,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,280,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+238,nomic-embed-text:latest,0,The capital of France is,281,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+239,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",282,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+240,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,283,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+241,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,284,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+242,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,285,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+243,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,286,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+244,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,287,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+245,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,288,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+246,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,289,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+247,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,290,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+248,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,291,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+249,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,292,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+250,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,293,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+251,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,294,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+252,nomic-embed-text:latest,0,The capital of France is,295,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+253,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",296,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+254,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,297,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+255,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,298,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+256,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,299,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+257,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,300,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+258,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,301,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+259,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,302,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+260,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,303,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+261,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,304,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+262,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,305,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+263,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,306,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+264,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,307,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+265,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,308,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+266,nomic-embed-text:latest,0,The capital of France is,309,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+267,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",310,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+268,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,311,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+269,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,312,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+270,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,313,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+271,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,314,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+272,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,315,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+273,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,316,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+274,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,317,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+275,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,318,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+276,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,319,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+277,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,320,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+278,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,321,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+279,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,322,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+280,nomic-embed-text:latest,0,The capital of France is,323,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+281,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",324,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+282,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,325,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+283,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,326,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+284,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,327,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+285,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,328,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+286,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,329,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+287,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,330,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+288,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,331,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+289,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,332,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+290,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,333,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+291,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,334,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+292,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,335,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+293,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,336,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+294,nomic-embed-text:latest,0,The capital of France is,337,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+295,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",338,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+296,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,339,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+297,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,340,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+298,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,341,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+299,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,342,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+300,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,343,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+301,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,344,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+302,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,345,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+303,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,346,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+304,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,347,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+305,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,348,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+306,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,349,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+307,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,350,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+308,nomic-embed-text:latest,0,The capital of France is,351,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+309,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",352,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+310,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,353,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+311,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,354,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+312,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,355,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+313,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,356,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+314,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,357,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+315,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,358,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+316,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,359,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+317,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,360,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+318,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,361,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+319,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,362,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+320,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,363,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+321,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,364,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+322,nomic-embed-text:latest,0,The capital of France is,365,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+323,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",366,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+324,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,367,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+325,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,368,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+326,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,369,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+327,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,370,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+328,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,371,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+329,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,372,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+330,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,373,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+331,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,374,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+332,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,375,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+333,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,376,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+334,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,377,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+335,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,378,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+336,nomic-embed-text:latest,0,The capital of France is,379,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+337,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",380,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+338,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,381,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+339,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,382,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+340,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,383,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+341,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,384,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+342,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,385,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+343,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,386,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+344,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,387,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+345,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,388,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+346,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,389,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+347,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,390,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+348,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,391,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+349,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,392,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+350,nomic-embed-text:latest,0,The capital of France is,393,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+351,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",394,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+352,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,395,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+353,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,396,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+354,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,397,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+355,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,398,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+356,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,399,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+357,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,400,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+358,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,401,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+359,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,402,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+360,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,403,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+361,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,404,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+362,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,405,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+363,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,406,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+364,nomic-embed-text:latest,0,The capital of France is,407,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+365,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",408,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+366,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,409,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+367,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,410,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+368,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,411,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+369,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,412,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+370,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,413,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+371,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,414,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+372,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,415,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+373,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,416,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+374,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,417,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+375,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,418,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+376,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,419,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+377,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,420,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+378,nomic-embed-text:latest,0,The capital of France is,421,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+379,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",422,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+380,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,423,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+381,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,424,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+382,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,425,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+383,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,426,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+384,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,427,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+385,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,428,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+386,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,429,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+387,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,430,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+388,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,431,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+389,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,432,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+390,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,433,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+391,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,434,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+392,nomic-embed-text:latest,0,The capital of France is,435,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+393,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",436,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+394,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,437,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+395,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,438,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+396,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,439,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+397,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,440,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+398,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,441,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+399,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,442,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+400,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,443,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+401,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,444,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+402,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,445,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+403,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,446,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+404,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,447,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+405,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,448,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+406,nomic-embed-text:latest,0,The capital of France is,449,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+407,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",450,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+408,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,451,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+409,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,452,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+410,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,453,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+411,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,454,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+412,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,455,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+413,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,456,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+414,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,457,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+415,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,458,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+416,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,459,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+417,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,460,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+418,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,461,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+419,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,462,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+420,nomic-embed-text:latest,0,The capital of France is,463,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+421,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",464,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+422,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,465,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+423,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,466,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+424,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,467,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+425,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,468,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+426,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,469,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+427,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,470,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+428,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,471,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+429,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,472,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+430,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,473,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+431,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,474,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+432,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,475,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+433,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,476,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+434,nomic-embed-text:latest,0,The capital of France is,477,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+435,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",478,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+436,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,479,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+437,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,480,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+438,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,481,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+439,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,482,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+440,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,483,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+441,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,484,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+442,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,485,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+443,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,486,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+444,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,487,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+445,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,488,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+446,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,489,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+447,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,490,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+448,nomic-embed-text:latest,0,The capital of France is,491,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+449,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",492,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+450,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,493,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+451,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,494,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+452,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,495,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+453,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,496,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+454,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,497,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+455,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,498,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+456,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,499,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+457,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,500,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+458,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,501,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+459,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,502,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+460,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,503,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+461,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,504,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+462,nomic-embed-text:latest,0,The capital of France is,505,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+463,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",506,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+464,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,507,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+465,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,508,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+466,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,509,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+467,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,510,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+468,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,511,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+469,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,512,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+470,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,513,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+471,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,514,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+472,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,515,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+473,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,516,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+474,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,517,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+475,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,518,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+476,nomic-embed-text:latest,0,The capital of France is,519,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+477,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",520,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+478,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,521,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+479,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,522,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+480,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,523,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+481,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,524,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+482,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,525,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+483,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,526,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+484,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,527,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+485,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,528,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+486,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,529,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+487,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,530,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+488,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,531,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+489,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,532,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+490,nomic-embed-text:latest,0,The capital of France is,533,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+491,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",534,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+492,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,535,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+493,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,536,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+494,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,537,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+495,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,538,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+496,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,539,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+497,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,540,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+498,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,541,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+499,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,542,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+500,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,543,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+501,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,544,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+502,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,545,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+503,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,546,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+504,nomic-embed-text:latest,0,The capital of France is,547,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+505,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",548,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+506,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,549,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+507,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,550,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+508,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,551,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+509,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,552,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+510,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,553,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+511,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,554,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+512,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,555,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+513,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,556,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+514,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,557,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+515,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,558,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+516,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,559,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+517,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,560,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+518,nomic-embed-text:latest,0,The capital of France is,561,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+519,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",562,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+520,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,563,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+521,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,564,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+522,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,565,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+523,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,566,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+524,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,567,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+525,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,568,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+526,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,569,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+527,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,570,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+528,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,571,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+529,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,572,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+530,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,573,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+531,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,574,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+532,nomic-embed-text:latest,0,The capital of France is,575,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+533,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",576,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+534,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,577,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+535,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,578,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+536,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,579,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+537,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,580,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+538,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,581,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+539,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,582,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+540,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,583,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+541,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,584,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+542,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,585,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+543,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,586,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+544,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,587,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+545,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,588,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+546,nomic-embed-text:latest,0,The capital of France is,589,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+547,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",590,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+548,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,591,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+549,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,592,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+550,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,593,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+551,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,594,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+552,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,595,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+553,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,596,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+554,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,597,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+555,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,598,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+556,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,599,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+557,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,600,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+558,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,601,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+559,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,602,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+560,nomic-embed-text:latest,0,The capital of France is,603,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+561,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",604,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+562,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,605,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+563,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,606,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+564,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,607,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+565,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,608,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+566,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,609,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+567,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,610,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+568,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,611,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+569,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,612,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+570,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,613,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+571,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,614,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+572,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,615,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+573,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,616,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+574,nomic-embed-text:latest,0,The capital of France is,617,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+575,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",618,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+576,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,619,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+577,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,620,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+578,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,621,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+579,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,622,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+580,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,623,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+581,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,624,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+582,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,625,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+583,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,626,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+584,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,627,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+585,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,628,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+586,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,629,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+587,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,630,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+588,nomic-embed-text:latest,0,The capital of France is,631,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+589,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",632,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+590,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,633,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+591,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,634,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+592,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,635,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+593,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,636,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+594,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,637,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+595,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,638,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+596,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,639,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+597,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,640,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+598,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,641,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+599,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,642,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+600,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,643,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+601,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,644,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+602,nomic-embed-text:latest,0,The capital of France is,645,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+603,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",646,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+604,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,647,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+605,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,648,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+606,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,649,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+607,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,650,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+608,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,651,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+609,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,652,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+610,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,653,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+611,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,654,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+612,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,655,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+613,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,656,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+614,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,657,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+615,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,658,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+616,nomic-embed-text:latest,0,The capital of France is,659,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+617,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",660,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+618,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,661,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+619,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,662,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+620,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,663,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+621,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,664,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+622,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,665,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+623,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,666,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+624,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,667,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+625,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,668,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+626,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,669,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+627,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,670,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+628,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,671,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+629,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,672,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+630,nomic-embed-text:latest,0,The capital of France is,673,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+631,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",674,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+632,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,675,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+633,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,676,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+634,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,677,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+635,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,678,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+636,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,679,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+637,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,680,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+638,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,681,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+639,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,682,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+640,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,683,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+641,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,684,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+642,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,685,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+643,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,686,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+644,nomic-embed-text:latest,0,The capital of France is,687,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+645,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",688,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+646,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,689,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+647,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,690,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+648,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,691,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+649,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,692,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+650,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,693,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+651,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,694,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+652,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,695,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+653,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,696,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+654,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,697,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+655,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,698,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+656,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,699,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+657,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,700,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+658,nomic-embed-text:latest,0,The capital of France is,701,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+659,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",702,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+660,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,703,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+661,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,704,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+662,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,705,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+663,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,706,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+664,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,707,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+665,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,708,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+666,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,709,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+667,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,710,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+668,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,711,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+669,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,712,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+670,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,713,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+671,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,714,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+672,nomic-embed-text:latest,0,The capital of France is,715,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+673,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",716,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+674,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,717,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+675,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,718,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+676,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,719,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+677,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,720,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+678,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,721,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+679,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,722,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+680,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,723,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+681,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,724,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+682,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,725,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+683,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,726,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+684,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,727,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+685,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,728,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+686,nomic-embed-text:latest,0,The capital of France is,729,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+687,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",730,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+688,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,731,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+689,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,732,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+690,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,733,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+691,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,734,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+692,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,735,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+693,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,736,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+694,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,737,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+695,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,738,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+696,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,739,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+697,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,740,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+698,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,741,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+699,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,742,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+700,nomic-embed-text:latest,0,The capital of France is,743,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+701,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",744,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+702,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,745,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+703,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,746,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+704,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,747,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+705,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,748,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+706,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,749,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+707,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,750,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+708,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,751,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+709,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,752,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+710,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,753,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+711,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,754,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+712,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,755,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+713,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,756,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+714,nomic-embed-text:latest,0,The capital of France is,757,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+715,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",758,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+716,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,759,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+717,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,760,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+718,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,761,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+719,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,762,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+720,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,763,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+721,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,764,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+722,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,765,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+723,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,766,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+724,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,767,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+725,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,768,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+726,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,769,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+727,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,770,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+728,nomic-embed-text:latest,0,The capital of France is,771,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+729,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",772,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+730,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,773,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+731,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,774,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+732,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,775,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+733,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,776,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+734,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,777,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+735,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,778,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+736,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,779,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+737,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,780,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+738,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,781,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+739,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,782,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+740,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,783,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+741,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,784,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+742,nomic-embed-text:latest,0,The capital of France is,785,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+743,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",786,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+744,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,787,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+745,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,788,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+746,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,789,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+747,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,790,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+748,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,791,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+749,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,792,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+750,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,793,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+751,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,794,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+752,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,795,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+753,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,796,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+754,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,797,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+755,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,798,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+756,nomic-embed-text:latest,0,The capital of France is,799,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+757,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",800,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+758,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,801,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+759,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,802,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+760,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,803,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+761,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,804,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+762,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,805,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+763,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,806,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+764,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,807,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+765,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,808,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+766,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,809,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+767,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,810,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+768,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,811,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+769,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,812,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+770,nomic-embed-text:latest,0,The capital of France is,813,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+771,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",814,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+772,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,815,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+773,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,816,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+774,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,817,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+775,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,818,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+776,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,819,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+777,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,820,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+778,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,821,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+779,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,822,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+780,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,823,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+781,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,824,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+782,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,825,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+783,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,826,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+784,nomic-embed-text:latest,0,The capital of France is,827,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+785,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",828,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+786,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,829,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+787,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,830,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+788,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,831,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+789,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,832,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+790,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,833,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+791,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,834,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+792,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,835,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+793,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,836,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+794,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,837,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+795,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,838,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+796,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,839,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+797,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,840,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+798,nomic-embed-text:latest,0,The capital of France is,841,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+799,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",842,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+800,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,843,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+801,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,844,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+802,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,845,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+803,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,846,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+804,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,847,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+805,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,848,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+806,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,849,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+807,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,850,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+808,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,851,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+809,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,852,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+810,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,853,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+811,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,854,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+812,nomic-embed-text:latest,0,The capital of France is,855,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+813,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",856,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+814,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,857,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+815,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,858,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+816,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,859,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+817,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,860,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+818,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,861,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+819,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,862,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+820,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,863,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+821,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,864,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+822,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,865,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+823,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,866,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+824,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,867,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+825,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,868,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+826,nomic-embed-text:latest,0,The capital of France is,869,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+827,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",870,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+828,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,871,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+829,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,872,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+830,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,873,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+831,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,874,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+832,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,875,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+833,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,876,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+834,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,877,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+835,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,878,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+836,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,879,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+837,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,880,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+838,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,881,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+839,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,882,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+840,nomic-embed-text:latest,0,The capital of France is,883,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+841,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",884,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+842,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,885,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+843,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,886,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+844,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,887,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+845,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,888,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+846,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,889,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+847,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,890,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+848,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,891,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+849,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,892,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+850,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,893,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+851,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,894,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+852,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,895,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+853,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,896,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+854,nomic-embed-text:latest,0,The capital of France is,897,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+855,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",898,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+856,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,899,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+857,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,900,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+858,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,901,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+859,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,902,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+860,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,903,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+861,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,904,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+862,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,905,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+863,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,906,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+864,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,907,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+865,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,908,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+866,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,909,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+867,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,910,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+868,nomic-embed-text:latest,0,The capital of France is,911,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+869,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",912,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+870,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,913,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+871,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,914,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+872,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,915,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+873,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,916,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+874,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,917,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+875,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,918,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+876,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,919,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+877,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,920,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+878,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,921,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+879,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,922,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+880,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,923,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+881,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,924,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+882,nomic-embed-text:latest,0,The capital of France is,925,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+883,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",926,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+884,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,927,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+885,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,928,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+886,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,929,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+887,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,930,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+888,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,931,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+889,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,932,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+890,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,933,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+891,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,934,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+892,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,935,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+893,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,936,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+894,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,937,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+895,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,938,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+896,nomic-embed-text:latest,0,The capital of France is,939,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+897,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",940,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+898,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,941,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+899,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,942,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+900,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,943,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+901,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,944,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+902,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,945,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+903,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,946,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+904,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,947,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+905,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,948,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+906,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,949,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+907,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,950,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+908,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,951,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+909,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,952,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+910,nomic-embed-text:latest,0,The capital of France is,953,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+911,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",954,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+912,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,955,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+913,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,956,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+914,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,957,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+915,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,958,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+916,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,959,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+917,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,960,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+918,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,961,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+919,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,962,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+920,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,963,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+921,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,964,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+922,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,965,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+923,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,966,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+924,nomic-embed-text:latest,0,The capital of France is,967,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+925,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",968,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+926,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,969,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+927,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,970,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+928,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,971,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+929,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,972,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+930,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,973,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+931,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,974,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+932,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,975,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+933,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,976,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+934,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,977,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+935,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,978,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+936,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,979,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+937,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,980,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+938,nomic-embed-text:latest,0,The capital of France is,981,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+939,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",982,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+940,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,983,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+941,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,984,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+942,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,985,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+943,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,986,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+944,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,987,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+945,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,988,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+946,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,989,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+947,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,990,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+948,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,991,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+949,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,992,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+950,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,993,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+951,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,994,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+952,nomic-embed-text:latest,0,The capital of France is,995,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+953,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",996,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+954,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,997,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+955,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,998,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+956,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,999,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+957,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,1000,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+958,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,1001,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+959,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,1002,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+960,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,1003,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+961,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,1004,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+962,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,1005,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+963,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,1006,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+964,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,1007,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+965,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,1008,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+966,nomic-embed-text:latest,0,The capital of France is,1009,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+967,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",1010,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+968,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,1011,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+969,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,1012,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+970,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,1013,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+971,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,1014,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+972,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,1015,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+973,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,1016,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+974,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,1017,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+975,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,1018,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+976,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,1019,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+977,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,1020,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+978,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,1021,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+979,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,1022,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+980,nomic-embed-text:latest,0,The capital of France is,1023,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+981,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",1024,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+982,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,1025,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+983,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,1026,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+984,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,1027,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+985,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,1028,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+986,nomic-embed-text:latest,6,The legal implications of a self-aware toaster,1029,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+987,nomic-embed-text:latest,7,Describe a sunset on a planet with three suns,1030,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+988,nomic-embed-text:latest,8,The recursive nature of a mirror reflecting another mirror,1031,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+989,nomic-embed-text:latest,9,How to build a functional time machine using only duct tape,1032,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+990,nomic-embed-text:latest,10,The emotional landscape of a lonely satellite,1033,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+991,nomic-embed-text:latest,11,A mathematical proof that love is a universal constant,1034,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+992,nomic-embed-text:latest,12,The first words spoken by a plant that just gained speech,1035,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+993,nomic-embed-text:latest,13,An architectural plan for a city built inside a giant tree,1036,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+994,nomic-embed-text:latest,0,The capital of France is,1037,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+995,nomic-embed-text:latest,1,"In a futuristic city where data is currency, a rogue hacker",1038,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+996,nomic-embed-text:latest,2,The most important protocol for AICO unikernel is,1039,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+997,nomic-embed-text:latest,3,Why did the chicken cross the Moebius strip?,1040,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+998,nomic-embed-text:latest,4,The quantum entanglement of two particles implies,1041,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14
+999,nomic-embed-text:latest,5,A recipe for a cake that tastes like a rainy afternoon,1042,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,-7.3872511165973265e-06,-4.0745185003743245e-14

@@ -1,0 +1,14 @@
+{
+  "model": {
+    "name": "minimax-m2:cloud",
+    "digest": "698ab6d56142621ba4c208e06cb65004035556a51c01dbd7d7bfca16af0e94c1",
+    "size": 382,
+    "modified_at": "2025-11-30T18:39:11.9823295-06:00"
+  },
+  "started_at_utc": "2026-03-28T12:41:27.138671+00:00",
+  "target_trajectories": 1000,
+  "status": "completed",
+  "completed_trajectories": 1000,
+  "ended_at_utc": "2026-03-28T13:39:16.201256+00:00",
+  "map_generated": true
+}

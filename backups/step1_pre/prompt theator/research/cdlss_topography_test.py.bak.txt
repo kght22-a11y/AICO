@@ -1,0 +1,211 @@
+"""
+CDLSS Topography Legitimacy Test - Python Prototype
+
+This script attempts to prove the mathematical stability of the "Hallucination Storm"
+topography by generating multiple speculative trajectories from a small model (e.g. Qwen2.5-0.5B)
+and plotting their final hidden states in a 2D UMAP space. The goal is to verify that these
+trajectories cluster systematically ("Legitimacy Test").
+"""
+
+import os
+import torch
+import numpy as np
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import matplotlib.pyplot as plt
+import umap
+
+# --- Configuration ---
+# You can change this to "Qwen/Qwen2.5-0.5B" or "Qwen/Qwen2.5-0.5B-Instruct" for a closer AICO test
+MODEL_NAME = "gpt2" # Default to gpt2 for faster testing. Change to your preferred small model.
+NUM_TRAJECTORIES_PER_PROMPT = 10  # Very small for quick CPU testing
+MAX_NEW_TOKENS = 15
+TEMPERATURE = 1.5 # High temperature to force the storm divergence
+SEED_1 = 42
+SEED_2 = 1337
+
+# A static, highly specific calibration set
+PROMPTS = [
+    "The capital of France is", # Straightforward fact
+    "In a futuristic city where data is currency, a rogue hacker", # Creative narrative
+    "The most important protocol for AICO unikernel is", # Niche/Specific to domain
+    "Why did the chicken cross the Moebius strip?", # Logic/joke
+    "The quantum entanglement of two particles implies",
+    "A recipe for a cake that tastes like a rainy afternoon",
+    "The legal implications of a self-aware toaster",
+    "Describe a sunset on a planet with three suns",
+    "The recursive nature of a mirror reflecting another mirror",
+    "How to build a functional time machine using only duct tape",
+    "The emotional landscape of a lonely satellite",
+    "A mathematical proof that love is a universal constant",
+    "The first words spoken by a plant that just gained speech",
+    "An architectural plan for a city built inside a giant tree",
+]
+
+def load_model(model_name):
+    print(f"Loading model: {model_name}...")
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+    
+    # We load with output_hidden_states=True to get the trajectory embeddings
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name, 
+        device_map="auto" if torch.cuda.is_available() else "cpu",
+        output_hidden_states=True
+    )
+    model.eval()
+    return tokenizer, model
+
+def run_storm(tokenizer, model, prompts, num_trajectories, seed):
+    """
+    Runs the 'Hallucination Storm' for the given prompts.
+    Returns three types of embeddings for multi-metric analysis.
+    """
+    print(f"\n--- Running Storm (Seed: {seed}, {num_trajectories} trajectories/prompt) ---")
+    torch.manual_seed(seed)
+    np.random.seed(seed)
+    
+    all_consensus = []
+    all_semantic = []
+    all_structure = []
+    labels = []
+    
+    for prompt_idx, prompt in enumerate(prompts):
+        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+        
+        for i in range(num_trajectories):
+            with torch.no_grad():
+                outputs = model.generate(
+                    **inputs,
+                    max_new_tokens=MAX_NEW_TOKENS,
+                    do_sample=True,
+                    temperature=TEMPERATURE,
+                    top_k=50,
+                    top_p=0.95,
+                    pad_token_id=tokenizer.eos_token_id,
+                    return_dict_in_generate=True,
+                    output_hidden_states=True
+                )
+                
+                # outputs.hidden_states: (generated_tokens, layers)
+                # Consensus: Last layer, last token hidden state
+                last_token_layers = outputs.hidden_states[-1]
+                consensus_emb = last_token_layers[-1][0, -1, :].cpu().numpy()
+                all_consensus.append(consensus_emb)
+                
+                # Semantic: Mean pooling of last layer hidden states across all generated tokens
+                generated_hidden_states = [gs[-1][0, -1, :] for gs in outputs.hidden_states]
+                semantic_emb = torch.stack(generated_hidden_states).mean(dim=0).cpu().numpy()
+                all_semantic.append(semantic_emb)
+                
+                # Structure: Middle layer (e.g. layer 6) hidden state of the last token
+                # For GPT-2, there are 13 hidden states (0 is embedding, 1-12 are layers)
+                mid_layer_idx = len(last_token_layers) // 2
+                structure_emb = last_token_layers[mid_layer_idx][0, -1, :].cpu().numpy()
+                all_structure.append(structure_emb)
+                
+                labels.append(prompt_idx)
+                
+    return (np.array(all_consensus), np.array(all_semantic), np.array(all_structure)), np.array(labels)
+
+import glob
+import re
+
+def get_next_filename(base_path, prefix="topography_", ext=".png"):
+    files = glob.glob(os.path.join(base_path, f"{prefix}*{ext}"))
+    max_num = 0
+    for f in files:
+        match = re.search(rf"{prefix}(\d+){ext}", os.path.basename(f))
+        if match:
+            max_num = max(max_num, int(match.group(1)))
+    return os.path.join(base_path, f"{prefix}{max_num + 1}{ext}")
+
+def map_and_plot(metrics, labels, n_neighbors=15, min_dist=0.1):
+    consensus, semantic, structure = metrics
+    print("\n--- Projecting with UMAP ---")
+    
+    reducer = umap.UMAP(n_neighbors=n_neighbors, min_dist=min_dist, random_state=42)
+    
+    print("Fitting UMAP for Consensus...")
+    proj_consensus = reducer.fit_transform(consensus)
+    print("Fitting UMAP for Semantic...")
+    proj_semantic = reducer.fit_transform(semantic)
+    print("Fitting UMAP for Structure...")
+    proj_structure = reducer.fit_transform(structure)
+    
+    print("--- Plotting ---")
+    fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(24, 7))
+    
+    titles = ["1. Consensus/Correlation", "2. Semantic", "3. Sentence Structure"]
+    projs = [proj_consensus, proj_semantic, proj_structure]
+    axes = [ax1, ax2, ax3]
+    
+    last_scatter = None
+    for ax, proj, title in zip(axes, projs, titles):
+        last_scatter = ax.scatter(proj[:, 0], proj[:, 1], c=labels, cmap='tab20', alpha=0.6, s=15)
+        ax.set_title(title)
+        ax.set_xticks([])
+        ax.set_yticks([])
+        ax.set_xlabel("UMAP Dimension 1")
+        ax.set_ylabel("UMAP Dimension 2")
+    
+    # Add a legend
+    if last_scatter:
+        handles, _ = last_scatter.legend_elements()
+        labels_str = [f"P{i}: {PROMPTS[i][:20]}..." for i in range(len(PROMPTS))]
+        fig.legend(handles, labels_str, loc="lower center", ncol=min(7, len(PROMPTS)), fontsize='small')
+    
+    plt.suptitle("CDLSS Topography Legitimacy Test: Multi-Metric Analysis")
+    plt.tight_layout(rect=[0, 0.1, 1, 0.95])
+    
+    out_file = get_next_filename(os.path.dirname(__file__))
+    plt.savefig(out_file)
+    print(f"Plot saved to {out_file}.")
+    plt.show()
+
+if __name__ == "__main__":
+    print("CDLSS Topography Legitimacy Test (Multi-Metric)")
+    print("-----------------------------------------------")
+    try:
+        tokenizer, model = load_model(MODEL_NAME)
+        
+        cons_list, sem_list, struc_list, lbl_list = [], [], [], []
+        
+        print("\n" + "="*50)
+        print("Starting continuous Hallucination Storm.")
+        print("Press Ctrl+C at any time to stop and plot the results!")
+        print("="*50 + "\n")
+        
+        batch_size = 5  # Small batches to allow frequent interruption
+        iteration = 0
+        try:
+            while True:
+                iteration += 1
+                metrics, l = run_storm(tokenizer, model, PROMPTS, batch_size, SEED_1 + iteration)
+                
+                cons_list.extend(metrics[0])
+                sem_list.extend(metrics[1])
+                struc_list.extend(metrics[2])
+                lbl_list.extend(l)
+                
+                total = len(cons_list) // len(PROMPTS)
+                print(f"+++ Total trajectories per prompt so far: {total} +++")
+                
+        except KeyboardInterrupt:
+            print("\n" + "="*50)
+            print("Storm interrupted by user. Proceeding to Topographic Mapping...")
+            print("="*50)
+            
+        if len(cons_list) > 0:
+            map_and_plot((np.array(cons_list), np.array(sem_list), np.array(struc_list)), np.array(lbl_list))
+            print("\nTest completed successfully. Check the output image for multi-metric clustering.")
+        else:
+            print("\nNo trajectories generated. Exiting.")
+            
+    except ImportError as ie:
+        print(f"\nMissing essential package: {ie}")
+        print("Please install requirements: pip install torch transformers numpy matplotlib umap-learn scikit-learn")
+    except Exception as e:
+        print(f"\nError running tests: {e}")
+        import traceback
+        traceback.print_exc()

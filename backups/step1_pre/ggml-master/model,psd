@@ -1,0 +1,9 @@
+pip install huggingface_hub
+python -c "
+from huggingface_hub import hf_hub_download
+import shutil, os
+path = hf_hub_download(repo_id='ggerganov/ggml', filename='ggml-model-gpt-2-117M.bin')
+os.makedirs(r'f:/whitepaper/bare ggml/ggml-master/models/gpt-2-117M', exist_ok=True)
+shutil.copy(path, r'f:/whitepaper/bare ggml/ggml-master/models/gpt-2-117M/ggml-model.bin')
+print('Done.')
+"

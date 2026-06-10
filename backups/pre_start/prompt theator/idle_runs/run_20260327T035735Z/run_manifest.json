@@ -1,0 +1,30 @@
+{
+  "run_id": "run_20260327T035735Z",
+  "started_at_utc": "2026-03-27T03:57:35.191102+00:00",
+  "ollama_url": "http://localhost:11434",
+  "trajectories_per_model": 1000,
+  "seed_base": 42,
+  "options": {
+    "temperature": 0.8,
+    "top_k": 50,
+    "top_p": 0.95,
+    "num_predict": 96
+  },
+  "prompts": [
+    "The capital of France is",
+    "In a futuristic city where data is currency, a rogue hacker",
+    "The most important protocol for AICO unikernel is",
+    "Why did the chicken cross the Moebius strip?",
+    "The quantum entanglement of two particles implies",
+    "A recipe for a cake that tastes like a rainy afternoon",
+    "The legal implications of a self-aware toaster",
+    "Describe a sunset on a planet with three suns",
+    "The recursive nature of a mirror reflecting another mirror",
+    "How to build a functional time machine using only duct tape",
+    "The emotional landscape of a lonely satellite",
+    "A mathematical proof that love is a universal constant",
+    "The first words spoken by a plant that just gained speech",
+    "An architectural plan for a city built inside a giant tree"
+  ],
+  "note": "Map artifacts are generated only when a model reaches full trajectories_per_model."
+}

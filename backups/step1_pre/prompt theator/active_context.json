@@ -1,0 +1,14 @@
+{
+  "history": [
+    {
+      "timestamp": 1780047478.0534954,
+      "user": "is ggml live?",
+      "ai": "[MOCK GGML CDLSS RESULT]\nPrompt: CONTEXT:\n\n\nUSER: is ggml live?...\nTrajectories: 10\nDCX Thresh: 0.85\n(Compile cdlss_engine shared library to see real output)"
+    },
+    {
+      "timestamp": 1780047988.1916919,
+      "user": "there are three boxes of fruit, one labeled apples, one labeled oranges, one labeled apples and oranges. all of the labels are incorrect. you ay take one fruit from one box to deterine which label goes on which box. what box do you take a fruit feom",
+      "ai": "[MOCK GGML CDLSS RESULT]\nPrompt: CONTEXT:\nUSER: is ggml live?\nAI: [MOCK GGML CDLSS ...\nTrajectories: 10\nDCX Thresh: 0.85\n(Compile cdlss_engine shared library to see real output)"
+    }
+  ]
+}

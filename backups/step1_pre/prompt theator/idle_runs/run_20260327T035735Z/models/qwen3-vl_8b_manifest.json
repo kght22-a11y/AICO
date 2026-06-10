@@ -1,0 +1,14 @@
+{
+  "model": {
+    "name": "qwen3-vl:8b",
+    "digest": "901cae73216286ea8c5aba8b46d307ff7188f737285ec500c795a12f05225d28",
+    "size": 6140415879,
+    "modified_at": "2026-01-02T17:34:57.8182299-06:00"
+  },
+  "started_at_utc": "2026-03-27T20:03:44.226450+00:00",
+  "target_trajectories": 1000,
+  "status": "completed",
+  "completed_trajectories": 1000,
+  "ended_at_utc": "2026-03-28T00:17:19.199407+00:00",
+  "map_generated": true
+}

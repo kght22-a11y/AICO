@@ -1,0 +1,14 @@
+{
+  "model": {
+    "name": "llama3:latest",
+    "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+    "size": 4661224676,
+    "modified_at": "2026-03-04T00:33:57.9786562-06:00"
+  },
+  "started_at_utc": "2026-03-27T05:28:24.231319+00:00",
+  "target_trajectories": 1000,
+  "status": "completed",
+  "completed_trajectories": 1000,
+  "ended_at_utc": "2026-03-27T08:09:16.581501+00:00",
+  "map_generated": true
+}

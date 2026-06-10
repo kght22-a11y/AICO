@@ -1,0 +1,9 @@
+{
+  "history": [
+    {
+      "timestamp": 1775440276.1536236,
+      "user": "There are 3 boxes, all 3 boxes are labeled incorrectly. the Three labels are apples, oranges and apples, oranges. You can take one fruit out of one box to discover what label goes on each box. Which box do you take a fruit out of.",
+      "ai": "This is a classic riddle! Here\u2019s the solution:\n\nYou take a fruit out of **the box labeled \"apples.\"**\n\nHere\u2019s why:\n\nIf you take an apple out of the \"apples\" box, you *know* that box contains only apples.  Taking a fruit from the \"oranges\" box will tell you it contains oranges, and taking a fruit from the \"apples\" box will tell you it contains apples."
+    }
+  ]
+}

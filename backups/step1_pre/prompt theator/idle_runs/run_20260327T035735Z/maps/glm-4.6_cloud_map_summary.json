@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-03-27T20:03:42.178815+00:00",
+  "model": {
+    "name": "glm-4.6:cloud",
+    "digest": "05277b76269f8831b289e8f11f1f46136f9214d9c0a6399f1b580003e74f887c",
+    "size": 366,
+    "modified_at": "2026-01-24T10:26:04.1928277-06:00"
+  },
+  "trajectory_count": 1000,
+  "required_trajectory_count": 1000,
+  "map_method": "deterministic_hash_embedding_64d + pca_2d",
+  "centroid": {
+    "x": -7.3872511165973265e-06,
+    "y": -4.0745185003743245e-14
+  },
+  "spread": {
+    "x_std": 0.0,
+    "y_std": 0.0
+  },
+  "map_csv": "maps\\glm-4.6_cloud_map.csv"
+}
