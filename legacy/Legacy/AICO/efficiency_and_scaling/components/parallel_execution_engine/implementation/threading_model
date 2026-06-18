@@ -1,1 +1,0 @@
-Lock‑free queues where possible; synchronized access for shared state.

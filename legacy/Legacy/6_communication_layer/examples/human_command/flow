@@ -1,1 +1,0 @@
-inbound_adapter -> translator -> controller -> memory_system read -> translator -> outbound_sanitizer -> response

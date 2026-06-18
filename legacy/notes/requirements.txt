@@ -1,4 +1,0 @@
-ollama
-numpy
-asyncio
-scikit-learn

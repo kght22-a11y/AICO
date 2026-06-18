@@ -6,7 +6,7 @@
     "base_version": "0.95.LONG.ROAD",
     "lineage": "Merged from AICO097final (Subsystems) + AICO098 (Unikernel Physics) + Refined Structure",
     "timestamp_utc": "2026-02-14T12:00:00Z",
-    "purpose": "To exist as a bi-directional universal compiler that translates high-level intent directly into bare-metal machine code. The system constructs its own OS runtime ('The Nest') dynamically upon boot, optimizing drivers and interfaces for the specific hardware environment via JIT synthesis, while enforcing strict safety through architectural constraints (Introspection) rather than policy.",
+    "purpose": "To exist as a bi-directional universal compiler that translates structured intent directly into bare-metal machine code. The system constructs its own OS runtime ('The Nest') dynamically upon boot, optimizing drivers and interfaces for the specific hardware environment via JIT synthesis, while enforcing strict safety through architectural constraints (Introspection) rather than policy.",
     "authorship": "Terry Robertson",
     "design_intent": {
       "classification": "bounded_sovereign_cognitive_architecture",
@@ -947,11 +947,11 @@
         }
       }
     },
-    "controller": {
+    "Controller": {
       "location": "inside_diving_bell",
       "role": "JSON-as-Code Interpreter & Bi-Directional JIT Compiler.",
       "metaphor": "The Reader of the Rulebook. The JSON *is* the code.",
-      "function": "Interprets this Architecture JSON as the executable specification. Compiles high-level Intents into bare-metal machine code using the JSON rules as the 'Driver Database'.",
+      "function": "Interprets this Architecture JSON as the executable specification. Compiles structured Intents into bare-metal machine code using the JSON rules as the Driver Database. Is sole executor, kerenel level memory controller, only executes code signed by both itself and introspection, only signs code that it generates itself. Can take apart foriegn code to structured intent, sanitize and generate code that is native to the system. does not really need drivers interfaces directly with the hardware it IS the drivers, can set up scaffolds to allow the other core modoels to control hardware directly",
       "capabilities": [
         "Constitutional Knowledge: Reads architecture.json for policy, types, and opcodes.",
         "Situational Knowledge: Ingests PDF datasheets/manuals to synthesize driver logic.",
@@ -1349,7 +1349,7 @@
       "location": "inside_diving_bell",
       "role": "Hallucination Engine, Simulator & Secure Messaging Bridge.",
       "description": "Secure messaging and translation layer: mediates all external interaction, translates human-language inputs into internal runtime formats, and produces auditable external outputs. Acts as the only bridge between external world and internal models, enforcing sanitization.",
-      "function": "Simulates outcomes in high-entropy 'Dream Chamber' uses storms to assist output often has interesting uses for the primals in the ui. All communication comes through here, hands out and recieves all packages with a nice bit of sanitization.",
+      "function": "Simulates outcomes in high-entropy 'Dream Chamber' uses storms to assist output often has interesting uses for the primals in the ui. All communication comes through here, hands out and recieves all packages with a nice bit of sanitization. The only full llm in the system once augmented by the model cluster attachments ~300b oracle transformer equiv. (would never actually need or use that much of the model cluster at a time), structures input and resolves ambiguity for controller",
       "constraint": "Output filtered through CDLSS Pipeline (Cognitive Deep Learning Super Sampling) using Multi-Metric DCX (Consensus, Semantic, Structure).",
       "functions": [
         "Channel isolation per cluster: Dedicated queues.",

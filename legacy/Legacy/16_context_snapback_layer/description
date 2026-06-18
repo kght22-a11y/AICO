@@ -1,1 +1,0 @@
-Subsystem that detects when hallucinations or delusions affect external outputs, snaps the task's context back to a pre‑hallucination state, applies corrections (if possible), and retries the output. Operates transparently to core models and only interacts with Introspection and Shadow Monitoring.

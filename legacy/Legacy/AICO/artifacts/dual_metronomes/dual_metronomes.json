@@ -1,9 +1,0 @@
-{
-    "principle":  "Inside vs outside rhythms detect instability",
-    "tolerance":  "Minor drift acceptable",
-    "correction":  {
-                       "meditation":  "Slow realignment",
-                       "snatch_back":  "Forceful resync under urgency"
-                   },
-    "mascot_role":  "Timekeeper, logs drift, raises flag at threshold"
-}
